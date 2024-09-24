@@ -1,2 +1,2 @@
-# artamonovkirill.github.io
-My personal website
+# Kirill Artamonov's personal website
+
