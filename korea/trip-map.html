@@ -133,6 +133,35 @@
             color: #667eea;
         }
 
+        .location-btn {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .location-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .location-btn:active {
+            transform: translateY(0);
+        }
+
+        .location-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
         .leaflet-popup-content {
             margin: 12px;
             min-width: 200px;
@@ -188,6 +217,10 @@
 
     <div id="container">
         <div id="sidebar">
+            <button class="location-btn" id="find-location-btn">
+                📍 Find My Location
+            </button>
+
             <div class="stats">
                 <h3>Total Locations</h3>
                 <div class="stats-value" id="total-count">0</div>
@@ -301,6 +334,71 @@
                 });
 
                 legendContainer.appendChild(legendItem);
+            });
+
+            // Add Find My Location functionality
+            let userLocationMarker = null;
+            const findLocationBtn = document.getElementById('find-location-btn');
+
+            findLocationBtn.addEventListener('click', () => {
+                if (!navigator.geolocation) {
+                    alert('Geolocation is not supported by your browser');
+                    return;
+                }
+
+                findLocationBtn.disabled = true;
+                findLocationBtn.textContent = '📍 Finding...';
+
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+
+                        // Remove previous user location marker if exists
+                        if (userLocationMarker) {
+                            map.removeLayer(userLocationMarker);
+                        }
+
+                        // Create custom icon for user location
+                        const userIcon = L.divIcon({
+                            html: '<div style="background-color: #4285F4; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 8px rgba(66,133,244,0.6);"></div>',
+                            className: 'user-location-marker',
+                            iconSize: [16, 16],
+                            iconAnchor: [8, 8]
+                        });
+
+                        // Add user location marker
+                        userLocationMarker = L.marker([lat, lng], { icon: userIcon })
+                            .addTo(map)
+                            .bindPopup('<b>📍 You are here</b>')
+                            .openPopup();
+
+                        // Center map on user location
+                        map.setView([lat, lng], 13);
+
+                        findLocationBtn.disabled = false;
+                        findLocationBtn.textContent = '📍 Find My Location';
+                    },
+                    (error) => {
+                        let errorMessage = 'Unable to retrieve your location';
+                        if (error.code === error.PERMISSION_DENIED) {
+                            errorMessage = 'Location access denied. Please enable location permissions.';
+                        } else if (error.code === error.POSITION_UNAVAILABLE) {
+                            errorMessage = 'Location information unavailable.';
+                        } else if (error.code === error.TIMEOUT) {
+                            errorMessage = 'Location request timed out.';
+                        }
+                        alert(errorMessage);
+
+                        findLocationBtn.disabled = false;
+                        findLocationBtn.textContent = '📍 Find My Location';
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 0
+                    }
+                );
             });
         }
     </script>
