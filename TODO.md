@@ -1,3 +1,0 @@
-- pick palette: https://colorhunt.co/
-- pick font(s): https://fonts.google.com/
-- copy contents
