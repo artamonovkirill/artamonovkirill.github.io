@@ -464,6 +464,13 @@
       "city": "Bucheon",
       "coordinates": [37.4858, 126.7859],
       "description": "Miniature world, 109 buildings from 25 countries, great for kids, 30-45min from Incheon"
+    },
+    {
+      "name": "Seongeup Folk Village",
+      "category": "cultural",
+      "city": "Jeju",
+      "coordinates": [33.4086, 126.8080],
+      "description": "⭐ Living traditional village, 600 years old, black lava walls, stone grandfather statues, FREE"
     }
   ],
   "categories": {
