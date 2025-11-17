@@ -1,0 +1,338 @@
+{
+  "trip": {
+    "name": "Korea Family Trip",
+    "dates": ""
+  },
+  "locations": [
+    {
+      "name": "Incheon International Airport",
+      "category": "transportation",
+      "coordinates": [37.4602, 126.4407],
+      "description": "Arrival point - Buy T-money cards and KT SIM here"
+    },
+    {
+      "name": "Gyeongbokgung Palace",
+      "category": "cultural",
+      "city": "Seoul",
+      "coordinates": [37.5796, 126.9770],
+      "description": "Main Joseon palace, FREE last Wednesday or with hanbok, cherry blossoms April 7-14"
+    },
+    {
+      "name": "Bukchon Hanok Village",
+      "category": "cultural",
+      "city": "Seoul",
+      "coordinates": [37.5826, 126.9833],
+      "description": "Traditional Korean homes, FREE, 15-20 min walk from Gyeongbokgung"
+    },
+    {
+      "name": "Yeouido Park",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.5289, 126.9240],
+      "description": "⭐ CHERRY BLOSSOMS - 1,800+ trees, peak early-mid April"
+    },
+    {
+      "name": "Namsan Park & N Seoul Tower",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.5512, 126.9882],
+      "description": "Cherry blossoms April 8-15, city views, hiking trails"
+    },
+    {
+      "name": "Gwangjang Market",
+      "category": "food",
+      "city": "Seoul",
+      "coordinates": [37.5708, 127.0097],
+      "description": "⭐ Seoul's oldest market (1905), bindaetteok, mayak gimbap, most authentic"
+    },
+    {
+      "name": "Namdaemun Market",
+      "category": "food",
+      "city": "Seoul",
+      "coordinates": [37.5599, 126.9777],
+      "description": "15th century, Korea's largest traditional market, Kalguksu Alley"
+    },
+    {
+      "name": "Myeongdong Night Market",
+      "category": "food",
+      "city": "Seoul",
+      "coordinates": [37.5636, 126.9850],
+      "description": "100-150 stalls, lively street food, great for kids"
+    },
+    {
+      "name": "Lotte World",
+      "category": "kids",
+      "city": "Seoul",
+      "coordinates": [37.5111, 127.0982],
+      "description": "⭐ World's largest indoor theme park, $43 adults/$33 kids, 10am-9pm, Jamsil Station"
+    },
+    {
+      "name": "National Museum of Korea",
+      "category": "cultural",
+      "city": "Seoul",
+      "coordinates": [37.5240, 126.9804],
+      "description": "FREE admission, kid-friendly"
+    },
+    {
+      "name": "Cheonggyecheon Stream",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.5691, 126.9780],
+      "description": "Urban stream walk, family-friendly"
+    },
+    {
+      "name": "Nami Island",
+      "category": "getaway",
+      "city": "Gapyeong",
+      "coordinates": [37.7913, 127.5264],
+      "description": "⭐ Couples getaway option - Romantic tree-lined paths, 1-2h from Seoul, K-drama location"
+    },
+    {
+      "name": "Petite France",
+      "category": "getaway",
+      "city": "Gapyeong",
+      "coordinates": [37.6878, 127.4364],
+      "description": "French-themed village, Little Prince exhibits, near Nami Island"
+    },
+    {
+      "name": "Garden of Morning Calm",
+      "category": "getaway",
+      "city": "Gapyeong",
+      "coordinates": [37.7456, 127.3544],
+      "description": "Beautiful botanical gardens in spring"
+    },
+    {
+      "name": "Gyeongju Bomun Lake",
+      "category": "getaway",
+      "city": "Gyeongju",
+      "coordinates": [35.8291, 129.2850],
+      "description": "⭐ Couples getaway option - Historic city, cherry blossoms, romantic lakeside, 1h from Busan"
+    },
+    {
+      "name": "Seokguram Grotto",
+      "category": "getaway",
+      "city": "Gyeongju",
+      "coordinates": [35.7985, 129.3487],
+      "description": "UNESCO site, near Gyeongju"
+    },
+    {
+      "name": "Haeundae Beach",
+      "category": "beach",
+      "city": "Busan",
+      "coordinates": [35.1586, 129.1603],
+      "description": "⭐ Iconic beach, family facilities, beach walks (no swimming in April - 12-17°C water)"
+    },
+    {
+      "name": "Gwangalli Beach",
+      "category": "beach",
+      "city": "Busan",
+      "coordinates": [35.1532, 129.1185],
+      "description": "Gwangan Bridge views, 5km walk from Haeundae"
+    },
+    {
+      "name": "SEA LIFE Busan Aquarium",
+      "category": "kids",
+      "city": "Busan",
+      "coordinates": [35.1583, 129.1603],
+      "description": "⭐ Next to Haeundae Beach, 10,000+ creatures, 80m submarine tunnel, interactive"
+    },
+    {
+      "name": "Gamcheon Culture Village",
+      "category": "cultural",
+      "city": "Busan",
+      "coordinates": [35.0976, 129.0103],
+      "description": "⭐ Korean Santorini, colorful hillside houses, art installations, stairs/hills"
+    },
+    {
+      "name": "Beomeosa Temple",
+      "category": "cultural",
+      "city": "Busan",
+      "coordinates": [35.2366, 129.0664],
+      "description": "Mountain temple, hiking trails (Geumjeongsan), spring wildflowers, great for active kids"
+    },
+    {
+      "name": "Jagalchi Fish Market",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.0967, 129.0306],
+      "description": "Korea's largest seafood market, pick live seafood, educational for kids"
+    },
+    {
+      "name": "Gukje Market",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.1009, 129.0302],
+      "description": "6 zones, 12 buildings, bargains, 9am-7pm, near BIFF Square"
+    },
+    {
+      "name": "BIFF Square",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.0990, 129.0297],
+      "description": "Movie memorabilia, ssiat hotteok (sweet pancake), street food haven"
+    },
+    {
+      "name": "Taejongdae Resort Park",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.0540, 129.0830],
+      "description": "Stunning coastal cliffs, forest trails, picnic areas"
+    },
+    {
+      "name": "Dalmaji Hill",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1649, 129.1827],
+      "description": "Cherry blossoms late March-early April, coastal views"
+    },
+    {
+      "name": "Wando Ferry Terminal",
+      "category": "transportation",
+      "city": "Wando",
+      "coordinates": [34.3115, 126.7551],
+      "description": "⚠️ Ferry option to Jeju - 2h 40min ferry vs 1h flight, 2-3h bus from Busan"
+    },
+    {
+      "name": "Jeju International Airport",
+      "category": "transportation",
+      "city": "Jeju",
+      "coordinates": [33.5066, 126.4929],
+      "description": "Arrival to Jeju Island - Pick up rental car here"
+    },
+    {
+      "name": "Seongsan Ilchulbong (Sunrise Peak)",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.4584, 126.9424],
+      "description": "⭐ MUST-DO UNESCO crater, 30-min climb, 5,000 won, views of Hallasan & Udo Island"
+    },
+    {
+      "name": "Manjanggul Lava Tube",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.5295, 126.7717],
+      "description": "UNESCO underground lava tunnels, great for kids"
+    },
+    {
+      "name": "Hallasan National Park",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.3620, 126.5290],
+      "description": "Volcanic mountain center of island, various hiking trails for active kids"
+    },
+    {
+      "name": "Jeongbang Waterfall",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.2449, 126.5720],
+      "description": "⭐ ONLY waterfall in Korea flowing into sea, 23m high, rocky beach"
+    },
+    {
+      "name": "Cheonjiyeon Waterfall",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.2468, 126.5543],
+      "description": "22m tall, nature reserve, 2,000 won adults"
+    },
+    {
+      "name": "Cheonjeyeon Falls",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.2544, 126.4187],
+      "description": "Three-tier waterfall, largest on Jeju"
+    },
+    {
+      "name": "Hamdeok Beach",
+      "category": "beach",
+      "city": "Jeju",
+      "coordinates": [33.5432, 126.6686],
+      "description": "⭐ BEST for kids - Shallow waters (no swimming April 12-17°C), beach play, white sand"
+    },
+    {
+      "name": "Hyopjae Beach",
+      "category": "beach",
+      "city": "Jeju",
+      "coordinates": [33.3941, 126.2396],
+      "description": "Calm waters, beach activities (no swimming in April), white sand"
+    },
+    {
+      "name": "Jungmun Saekdal Beach",
+      "category": "beach",
+      "city": "Jeju",
+      "coordinates": [33.2388, 126.4121],
+      "description": "500m white sand, beautiful coastal scenery, beach walks"
+    },
+    {
+      "name": "Seopjikoji Cape",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.4239, 126.9294],
+      "description": "⭐ Rocky coast path, lighthouse, canola fields (spring), perfect for 15-20km/day walkers"
+    },
+    {
+      "name": "Jusangjeolli Cliffs",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.2376, 126.4227],
+      "description": "Dramatic coastal rock formations, walking paths"
+    },
+    {
+      "name": "Teddy Bear Museum",
+      "category": "kids",
+      "city": "Jeju",
+      "coordinates": [33.2505, 126.4125],
+      "description": "⭐ Perfect for kids, interactive, 10,000/9,000 won, near Jungmun"
+    },
+    {
+      "name": "Jeju Maze Park",
+      "category": "kids",
+      "city": "Jeju",
+      "coordinates": [33.2866, 126.2385],
+      "description": "Large hedge maze, observation tower, kids burn energy"
+    },
+    {
+      "name": "Udo Island",
+      "category": "nature",
+      "city": "Jeju",
+      "coordinates": [33.5012, 126.9539],
+      "description": "Day trip by ferry, can bike or walk around, perfect for active family"
+    }
+  ],
+  "categories": {
+    "transportation": {
+      "color": "#808080",
+      "icon": "✈️",
+      "description": "Airports & Ferry Terminals"
+    },
+    "cultural": {
+      "color": "#9C27B0",
+      "icon": "🏛️",
+      "description": "Palaces, Temples, Villages, Museums"
+    },
+    "nature": {
+      "color": "#4CAF50",
+      "icon": "🌳",
+      "description": "Parks, Mountains, Waterfalls, Hiking"
+    },
+    "food": {
+      "color": "#FF9800",
+      "icon": "🍜",
+      "description": "Markets & Food Experiences"
+    },
+    "kids": {
+      "color": "#E91E63",
+      "icon": "🎠",
+      "description": "Theme Parks, Aquariums, Kid Activities"
+    },
+    "beach": {
+      "color": "#2196F3",
+      "icon": "🏖️",
+      "description": "Beaches & Coastal Areas"
+    },
+    "getaway": {
+      "color": "#F44336",
+      "icon": "☕",
+      "description": "Getaway Without Kids"
+    }
+  }
+}
