@@ -305,13 +305,6 @@
       "description": "Alternative palace visit (closed Tuesday), UNESCO site, Secret Garden"
     },
     {
-      "name": "Everland",
-      "category": "kids",
-      "city": "Yongin",
-      "coordinates": [37.2940, 127.2021],
-      "description": "Korea's biggest theme park, 5 themed zones, 40km from Seoul"
-    },
-    {
       "name": "Seoraksan National Park",
       "category": "nature",
       "city": "Sokcho",
@@ -401,6 +394,76 @@
       "city": "Gangneung",
       "coordinates": [37.7519, 128.8761],
       "description": "Coastal city, 2.5-3h from Seoul, East Sea coast, fresh seafood"
+    },
+    {
+      "name": "Suwon Hwaseong Fortress",
+      "category": "cultural",
+      "city": "Suwon",
+      "coordinates": [37.2867, 127.0151],
+      "description": "⭐ UNESCO fortress, 30-60min from Seoul, walking walls, palace, chicken street"
+    },
+    {
+      "name": "Incheon Chinatown",
+      "category": "food",
+      "city": "Incheon",
+      "coordinates": [37.4760, 126.6171],
+      "description": "Famous jajangmyeon, walking distance from Incheon Station, colorful streets"
+    },
+    {
+      "name": "Songwol-dong Fairy Tale Village",
+      "category": "cultural",
+      "city": "Incheon",
+      "coordinates": [37.4735, 126.6192],
+      "description": "Street art, cartoon characters, photo spots, near Chinatown"
+    },
+    {
+      "name": "Wolmi Island",
+      "category": "kids",
+      "city": "Incheon",
+      "coordinates": [37.4755, 126.5934],
+      "description": "⭐ Theme park with 115m Ferris wheel, sea views, cafes, Line 1 to Incheon Station"
+    },
+    {
+      "name": "Incheon Grand Park",
+      "category": "nature",
+      "city": "Incheon",
+      "coordinates": [37.3837, 126.6792],
+      "description": "Large park, bike rentals, family walks, relaxing green space"
+    },
+    {
+      "name": "Songdo Central Park",
+      "category": "nature",
+      "city": "Incheon",
+      "coordinates": [37.3954, 126.6364],
+      "description": "Modern urban park, Han River area, appeared on Korean TV shows"
+    },
+    {
+      "name": "Ganghwa Island",
+      "category": "explore",
+      "city": "Ganghwa",
+      "coordinates": [37.7000, 126.4880],
+      "description": "⭐ Island day trip, UNESCO dolmens, Jeondeungsa Temple, 1h from Incheon"
+    },
+    {
+      "name": "Oido Island",
+      "category": "nature",
+      "city": "Siheung",
+      "coordinates": [37.3460, 126.7180],
+      "description": "Prehistoric shell mounds, seafood restaurants, beach walks, 30-40min from Incheon"
+    },
+    {
+      "name": "Soraepo Fish Market",
+      "category": "food",
+      "city": "Incheon",
+      "coordinates": [37.3878, 126.7342],
+      "description": "Fresh seafood market, local atmosphere, grilled fish"
+    },
+    {
+      "name": "Bucheon Aiins World",
+      "category": "kids",
+      "city": "Bucheon",
+      "coordinates": [37.4858, 126.7859],
+      "description": "Miniature world, 109 buildings from 25 countries, great for kids, 30-45min from Incheon"
     }
   ],
   "categories": {
