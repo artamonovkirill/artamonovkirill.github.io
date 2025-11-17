@@ -296,6 +296,111 @@
       "city": "Jeju",
       "coordinates": [33.5012, 126.9539],
       "description": "Day trip by ferry, can bike or walk around, perfect for active family"
+    },
+    {
+      "name": "Changdeokgung Palace",
+      "category": "cultural",
+      "city": "Seoul",
+      "coordinates": [37.5794, 126.9910],
+      "description": "Alternative palace visit (closed Tuesday), UNESCO site, Secret Garden"
+    },
+    {
+      "name": "Everland",
+      "category": "kids",
+      "city": "Yongin",
+      "coordinates": [37.2940, 127.2021],
+      "description": "Korea's biggest theme park, 5 themed zones, 40km from Seoul"
+    },
+    {
+      "name": "Seoraksan National Park",
+      "category": "nature",
+      "city": "Sokcho",
+      "coordinates": [38.1197, 128.4655],
+      "description": "⭐ Majestic mountains, hiking trails, spring wildflowers, 3h from Seoul"
+    },
+    {
+      "name": "Damyang Juknokwon Bamboo Forest",
+      "category": "nature",
+      "city": "Damyang",
+      "coordinates": [35.3223, 127.0196],
+      "description": "310,000 sqm bamboo forest, 8 walking paths, bamboo cafes"
+    },
+    {
+      "name": "Jeonju Hanok Village",
+      "category": "cultural",
+      "city": "Jeonju",
+      "coordinates": [35.8153, 127.1530],
+      "description": "Traditional Korean architecture, famous for bibimbap, hanok cafes"
+    },
+    {
+      "name": "Seokchon Lake",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.5106, 127.1028],
+      "description": "Cherry blossoms April 8-15, lakeside walks, near Lotte World"
+    },
+    {
+      "name": "Geumjeongsan Mountain",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.2520, 129.0926],
+      "description": "Hiking trails at Beomeosa Temple, wildflowers, city/coast views"
+    },
+    {
+      "name": "Songdo Beach",
+      "category": "beach",
+      "city": "Busan",
+      "coordinates": [35.0755, 129.0181],
+      "description": "Marine cable car, Songdo Skywalk, beach walks"
+    },
+    {
+      "name": "Haeundae Blueline Park",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1730, 129.1604],
+      "description": "Scenic coastal train, ocean & mountain views, family activity"
+    },
+    {
+      "name": "Jeongdongjin Beach",
+      "category": "explore",
+      "city": "Gangneung",
+      "coordinates": [37.6900, 129.0334],
+      "description": "Famous sunrise viewing, East Sea coast"
+    },
+    {
+      "name": "Jeju City",
+      "category": "explore",
+      "city": "Jeju",
+      "coordinates": [33.5097, 126.5219],
+      "description": "Northern Jeju hub, accommodation base option, shopping"
+    },
+    {
+      "name": "Seogwipo City",
+      "category": "explore",
+      "city": "Jeju",
+      "coordinates": [33.2541, 126.5601],
+      "description": "Southern Jeju hub, central for waterfalls and attractions"
+    },
+    {
+      "name": "Nampo-dong",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.0976, 129.0289],
+      "description": "Walking district (5-7km loop) connecting markets and BIFF Square"
+    },
+    {
+      "name": "Hongdae",
+      "category": "explore",
+      "city": "Seoul",
+      "coordinates": [37.5563, 126.9236],
+      "description": "Trendy neighborhood, cooking classes, art, nightlife"
+    },
+    {
+      "name": "Gangneung",
+      "category": "explore",
+      "city": "Gangneung",
+      "coordinates": [37.7519, 128.8761],
+      "description": "Coastal city, 2.5-3h from Seoul, East Sea coast, fresh seafood"
     }
   ],
   "categories": {
