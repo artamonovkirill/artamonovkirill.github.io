@@ -82,35 +82,35 @@
     },
     {
       "name": "Nami Island",
-      "category": "getaway",
+      "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.7913, 127.5264],
-      "description": "⭐ Couples getaway option - Romantic tree-lined paths, 1-2h from Seoul, K-drama location"
+      "description": "⭐ Romantic tree-lined paths, 1-2h from Seoul, K-drama location"
     },
     {
       "name": "Petite France",
-      "category": "getaway",
+      "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.6878, 127.4364],
       "description": "French-themed village, Little Prince exhibits, near Nami Island"
     },
     {
       "name": "Garden of Morning Calm",
-      "category": "getaway",
+      "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.7456, 127.3544],
       "description": "Beautiful botanical gardens in spring"
     },
     {
       "name": "Gyeongju Bomun Lake",
-      "category": "getaway",
+      "category": "explore",
       "city": "Gyeongju",
       "coordinates": [35.8291, 129.2850],
-      "description": "⭐ Couples getaway option - Historic city, cherry blossoms, romantic lakeside, 1h from Busan"
+      "description": "⭐ Historic city, cherry blossoms, romantic lakeside, 1h from Busan"
     },
     {
       "name": "Seokguram Grotto",
-      "category": "getaway",
+      "category": "explore",
       "city": "Gyeongju",
       "coordinates": [35.7985, 129.3487],
       "description": "UNESCO site, near Gyeongju"
@@ -329,10 +329,10 @@
       "icon": "🏖️",
       "description": "Beaches & Coastal Areas"
     },
-    "getaway": {
+    "explore": {
       "color": "#F44336",
-      "icon": "☕",
-      "description": "Getaway Without Kids"
+      "icon": "🧭",
+      "description": "Explore More"
     }
   }
 }
