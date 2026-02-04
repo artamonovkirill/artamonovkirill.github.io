@@ -7,6 +7,7 @@
     {
       "name": "Incheon International Airport",
       "hangul": "인천국제공항",
+      "wiki": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
       "category": "transportation",
       "coordinates": [37.4602, 126.4407],
       "description": "Arrival point - Buy T-money cards and KT SIM here"
@@ -14,6 +15,7 @@
     {
       "name": "Gyeongbokgung Palace",
       "hangul": "경복궁",
+      "wiki": "https://en.wikipedia.org/wiki/Gyeongbokgung",
       "category": "cultural",
       "city": "Seoul",
       "coordinates": [37.5796, 126.9770],
@@ -22,6 +24,7 @@
     {
       "name": "Bukchon Hanok Village",
       "hangul": "북촌한옥마을",
+      "wiki": "https://en.wikipedia.org/wiki/Bukchon_Hanok_Village",
       "category": "cultural",
       "city": "Seoul",
       "coordinates": [37.5826, 126.9833],
@@ -30,6 +33,7 @@
     {
       "name": "Yeouido Park",
       "hangul": "여의도공원",
+      "wiki": "https://en.wikipedia.org/wiki/Yeouido_Park",
       "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5289, 126.9240],
@@ -38,6 +42,7 @@
     {
       "name": "Namsan Park & N Seoul Tower",
       "hangul": "남산공원 & N서울타워",
+      "wiki": "https://en.wikipedia.org/wiki/N_Seoul_Tower",
       "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5512, 126.9882],
@@ -46,6 +51,7 @@
     {
       "name": "Gwangjang Market",
       "hangul": "광장시장",
+      "wiki": "https://en.wikipedia.org/wiki/Gwangjang_Market",
       "category": "food",
       "city": "Seoul",
       "coordinates": [37.5708, 127.0097],
@@ -54,6 +60,7 @@
     {
       "name": "Namdaemun Market",
       "hangul": "남대문시장",
+      "wiki": "https://en.wikipedia.org/wiki/Namdaemun_Market",
       "category": "food",
       "city": "Seoul",
       "coordinates": [37.5599, 126.9777],
@@ -62,6 +69,7 @@
     {
       "name": "Myeongdong Night Market",
       "hangul": "명동야시장",
+      "wiki": "https://en.wikipedia.org/wiki/Myeongdong",
       "category": "food",
       "city": "Seoul",
       "coordinates": [37.5636, 126.9850],
@@ -70,6 +78,7 @@
     {
       "name": "Lotte World",
       "hangul": "롯데월드",
+      "wiki": "https://en.wikipedia.org/wiki/Lotte_World",
       "category": "kids",
       "city": "Seoul",
       "coordinates": [37.5111, 127.0982],
@@ -78,6 +87,7 @@
     {
       "name": "National Museum of Korea",
       "hangul": "국립중앙박물관",
+      "wiki": "https://en.wikipedia.org/wiki/National_Museum_of_Korea",
       "category": "cultural",
       "city": "Seoul",
       "coordinates": [37.5240, 126.9804],
@@ -86,6 +96,7 @@
     {
       "name": "Cheonggyecheon Stream",
       "hangul": "청계천",
+      "wiki": "https://en.wikipedia.org/wiki/Cheonggyecheon",
       "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5691, 126.9780],
@@ -94,6 +105,7 @@
     {
       "name": "Nami Island",
       "hangul": "남이섬",
+      "wiki": "https://en.wikipedia.org/wiki/Nami_Island",
       "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.7913, 127.5264],
@@ -102,6 +114,7 @@
     {
       "name": "Petite France",
       "hangul": "쁘띠프랑스",
+      "wiki": "https://en.wikipedia.org/wiki/Petite_France_(theme_park)",
       "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.6878, 127.4364],
@@ -110,6 +123,7 @@
     {
       "name": "Garden of Morning Calm",
       "hangul": "아침고요수목원",
+      "wiki": "https://en.wikipedia.org/wiki/Garden_of_Morning_Calm",
       "category": "explore",
       "city": "Gapyeong",
       "coordinates": [37.7456, 127.3544],
@@ -118,6 +132,7 @@
     {
       "name": "Gyeongju Bomun Lake",
       "hangul": "경주 보문호수",
+      "wiki": "https://en.wikipedia.org/wiki/Bomun_Tourist_Complex",
       "category": "explore",
       "city": "Gyeongju",
       "coordinates": [35.8291, 129.2850],
@@ -126,6 +141,7 @@
     {
       "name": "Seokguram Grotto",
       "hangul": "석굴암",
+      "wiki": "https://en.wikipedia.org/wiki/Seokguram",
       "category": "explore",
       "city": "Gyeongju",
       "coordinates": [35.7985, 129.3487],
@@ -134,6 +150,7 @@
     {
       "name": "Haeundae Beach",
       "hangul": "해운대해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Haeundae_Beach",
       "category": "beach",
       "city": "Busan",
       "coordinates": [35.1586, 129.1603],
@@ -142,6 +159,7 @@
     {
       "name": "Gwangalli Beach",
       "hangul": "광안리해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Gwangalli_Beach",
       "category": "beach",
       "city": "Busan",
       "coordinates": [35.1532, 129.1185],
@@ -150,6 +168,7 @@
     {
       "name": "SEA LIFE Busan Aquarium",
       "hangul": "씨라이프 부산아쿠아리움",
+      "wiki": "https://en.wikipedia.org/wiki/Busan_Aquarium",
       "category": "kids",
       "city": "Busan",
       "coordinates": [35.1583, 129.1603],
@@ -158,6 +177,7 @@
     {
       "name": "Gamcheon Culture Village",
       "hangul": "감천문화마을",
+      "wiki": "https://en.wikipedia.org/wiki/Gamcheon_Culture_Village",
       "category": "cultural",
       "city": "Busan",
       "coordinates": [35.0976, 129.0103],
@@ -166,6 +186,7 @@
     {
       "name": "Beomeosa Temple",
       "hangul": "범어사",
+      "wiki": "https://en.wikipedia.org/wiki/Beomeosa",
       "category": "cultural",
       "city": "Busan",
       "coordinates": [35.2366, 129.0664],
@@ -174,6 +195,7 @@
     {
       "name": "Jagalchi Fish Market",
       "hangul": "자갈치시장",
+      "wiki": "https://en.wikipedia.org/wiki/Jagalchi_Market",
       "category": "food",
       "city": "Busan",
       "coordinates": [35.0967, 129.0306],
@@ -182,6 +204,7 @@
     {
       "name": "Gukje Market",
       "hangul": "국제시장",
+      "wiki": "https://en.wikipedia.org/wiki/Gukje_Market",
       "category": "food",
       "city": "Busan",
       "coordinates": [35.1009, 129.0302],
@@ -190,6 +213,7 @@
     {
       "name": "BIFF Square",
       "hangul": "BIFF광장",
+      "wiki": "https://en.wikipedia.org/wiki/Busan_International_Film_Festival",
       "category": "food",
       "city": "Busan",
       "coordinates": [35.0990, 129.0297],
@@ -198,6 +222,7 @@
     {
       "name": "Taejongdae Resort Park",
       "hangul": "태종대",
+      "wiki": "https://en.wikipedia.org/wiki/Taejongdae",
       "category": "nature",
       "city": "Busan",
       "coordinates": [35.0540, 129.0830],
@@ -206,6 +231,7 @@
     {
       "name": "Dalmaji Hill",
       "hangul": "달맞이고개",
+      "wiki": "https://en.wikipedia.org/wiki/Haeundae",
       "category": "nature",
       "city": "Busan",
       "coordinates": [35.1649, 129.1827],
@@ -214,6 +240,7 @@
     {
       "name": "Wando Ferry Terminal",
       "hangul": "완도연안여객터미널",
+      "wiki": "https://en.wikipedia.org/wiki/Wando_County",
       "category": "transportation",
       "city": "Wando",
       "coordinates": [34.3115, 126.7551],
@@ -222,6 +249,7 @@
     {
       "name": "Jeju International Airport",
       "hangul": "제주국제공항",
+      "wiki": "https://en.wikipedia.org/wiki/Jeju_International_Airport",
       "category": "transportation",
       "city": "Jeju",
       "coordinates": [33.5066, 126.4929],
@@ -230,6 +258,7 @@
     {
       "name": "Seongsan Ilchulbong (Sunrise Peak)",
       "hangul": "성산일출봉",
+      "wiki": "https://en.wikipedia.org/wiki/Seongsan_Ilchulbong",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.4584, 126.9424],
@@ -238,6 +267,7 @@
     {
       "name": "Manjanggul Lava Tube",
       "hangul": "만장굴",
+      "wiki": "https://en.wikipedia.org/wiki/Manjanggul",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.5295, 126.7717],
@@ -246,6 +276,7 @@
     {
       "name": "Hallasan National Park",
       "hangul": "한라산국립공원",
+      "wiki": "https://en.wikipedia.org/wiki/Hallasan",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.3620, 126.5290],
@@ -254,6 +285,7 @@
     {
       "name": "Jeongbang Waterfall",
       "hangul": "정방폭포",
+      "wiki": "https://en.wikipedia.org/wiki/Jeongbang_Waterfall",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.2449, 126.5720],
@@ -262,6 +294,7 @@
     {
       "name": "Cheonjiyeon Waterfall",
       "hangul": "천지연폭포",
+      "wiki": "https://en.wikipedia.org/wiki/Cheonjiyeon_Waterfall",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.2468, 126.5543],
@@ -270,6 +303,7 @@
     {
       "name": "Cheonjeyeon Falls",
       "hangul": "천제연폭포",
+      "wiki": "https://en.wikipedia.org/wiki/Cheonjeyeon_Waterfalls",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.2544, 126.4187],
@@ -278,6 +312,7 @@
     {
       "name": "Hamdeok Beach",
       "hangul": "함덕해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Jocheon-eup",
       "category": "beach",
       "city": "Jeju",
       "coordinates": [33.5432, 126.6686],
@@ -286,6 +321,7 @@
     {
       "name": "Hyopjae Beach",
       "hangul": "협재해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Hallim-eup",
       "category": "beach",
       "city": "Jeju",
       "coordinates": [33.3941, 126.2396],
@@ -294,6 +330,7 @@
     {
       "name": "Jungmun Saekdal Beach",
       "hangul": "중문색달해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Jungmun_Saekdal_Beach",
       "category": "beach",
       "city": "Jeju",
       "coordinates": [33.2388, 126.4121],
@@ -310,6 +347,7 @@
     {
       "name": "Jusangjeolli Cliffs",
       "hangul": "주상절리",
+      "wiki": "https://en.wikipedia.org/wiki/Jusangjeolli",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.2376, 126.4227],
@@ -318,6 +356,7 @@
     {
       "name": "Teddy Bear Museum",
       "hangul": "테디베어뮤지엄",
+      "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_Museum",
       "category": "kids",
       "city": "Jeju",
       "coordinates": [33.2505, 126.4125],
@@ -326,6 +365,7 @@
     {
       "name": "Jeju Maze Park",
       "hangul": "제주미로공원",
+      "wiki": "https://en.wikipedia.org/wiki/Gimnyeong_Maze_Park",
       "category": "kids",
       "city": "Jeju",
       "coordinates": [33.2866, 126.2385],
@@ -334,6 +374,7 @@
     {
       "name": "Udo Island",
       "hangul": "우도",
+      "wiki": "https://en.wikipedia.org/wiki/Udo_(island)",
       "category": "nature",
       "city": "Jeju",
       "coordinates": [33.5012, 126.9539],
@@ -342,6 +383,7 @@
     {
       "name": "Changdeokgung Palace",
       "hangul": "창덕궁",
+      "wiki": "https://en.wikipedia.org/wiki/Changdeokgung",
       "category": "cultural",
       "city": "Seoul",
       "coordinates": [37.5794, 126.9910],
@@ -350,6 +392,7 @@
     {
       "name": "Seoraksan National Park",
       "hangul": "설악산국립공원",
+      "wiki": "https://en.wikipedia.org/wiki/Seoraksan",
       "category": "nature",
       "city": "Sokcho",
       "coordinates": [38.1197, 128.4655],
@@ -358,6 +401,7 @@
     {
       "name": "Damyang Juknokwon Bamboo Forest",
       "hangul": "담양 죽녹원",
+      "wiki": "https://en.wikipedia.org/wiki/Damyang_County",
       "category": "nature",
       "city": "Damyang",
       "coordinates": [35.3223, 127.0196],
@@ -366,6 +410,7 @@
     {
       "name": "Jeonju Hanok Village",
       "hangul": "전주한옥마을",
+      "wiki": "https://en.wikipedia.org/wiki/Jeonju_Hanok_Village",
       "category": "cultural",
       "city": "Jeonju",
       "coordinates": [35.8153, 127.1530],
@@ -374,6 +419,7 @@
     {
       "name": "Seokchon Lake",
       "hangul": "석촌호수",
+      "wiki": "https://en.wikipedia.org/wiki/Seokchon_Lake",
       "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5106, 127.1028],
@@ -382,6 +428,7 @@
     {
       "name": "Geumjeongsan Mountain",
       "hangul": "금정산",
+      "wiki": "https://en.wikipedia.org/wiki/Geumjeongsan",
       "category": "nature",
       "city": "Busan",
       "coordinates": [35.2520, 129.0926],
@@ -390,6 +437,7 @@
     {
       "name": "Songdo Beach",
       "hangul": "송도해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Songdo_Beach",
       "category": "beach",
       "city": "Busan",
       "coordinates": [35.0755, 129.0181],
@@ -398,6 +446,7 @@
     {
       "name": "Haeundae Blueline Park",
       "hangul": "해운대 블루라인파크",
+      "wiki": "https://en.wikipedia.org/wiki/Haeundae",
       "category": "nature",
       "city": "Busan",
       "coordinates": [35.1730, 129.1604],
@@ -406,6 +455,7 @@
     {
       "name": "Jeongdongjin Beach",
       "hangul": "정동진해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Jeongdongjin",
       "category": "explore",
       "city": "Gangneung",
       "coordinates": [37.6900, 129.0334],
@@ -414,6 +464,7 @@
     {
       "name": "Jeju City",
       "hangul": "제주시",
+      "wiki": "https://en.wikipedia.org/wiki/Jeju_City",
       "category": "explore",
       "city": "Jeju",
       "coordinates": [33.5097, 126.5219],
@@ -422,6 +473,7 @@
     {
       "name": "Seogwipo City",
       "hangul": "서귀포시",
+      "wiki": "https://en.wikipedia.org/wiki/Seogwipo",
       "category": "explore",
       "city": "Jeju",
       "coordinates": [33.2541, 126.5601],
@@ -430,6 +482,7 @@
     {
       "name": "Nampo-dong",
       "hangul": "남포동",
+      "wiki": "https://en.wikipedia.org/wiki/Nampo-dong",
       "category": "explore",
       "city": "Busan",
       "coordinates": [35.0976, 129.0289],
@@ -438,6 +491,7 @@
     {
       "name": "Hongdae",
       "hangul": "홍대",
+      "wiki": "https://en.wikipedia.org/wiki/Hongdae_(area)",
       "category": "explore",
       "city": "Seoul",
       "coordinates": [37.5563, 126.9236],
@@ -446,6 +500,7 @@
     {
       "name": "Gangneung",
       "hangul": "강릉",
+      "wiki": "https://en.wikipedia.org/wiki/Gangneung",
       "category": "explore",
       "city": "Gangneung",
       "coordinates": [37.7519, 128.8761],
@@ -454,6 +509,7 @@
     {
       "name": "Suwon Hwaseong Fortress",
       "hangul": "수원화성",
+      "wiki": "https://en.wikipedia.org/wiki/Hwaseong_Fortress",
       "category": "cultural",
       "city": "Suwon",
       "coordinates": [37.2867, 127.0151],
@@ -462,6 +518,7 @@
     {
       "name": "Incheon Chinatown",
       "hangul": "인천차이나타운",
+      "wiki": "https://en.wikipedia.org/wiki/Incheon_Chinatown",
       "category": "food",
       "city": "Incheon",
       "coordinates": [37.4760, 126.6171],
@@ -470,6 +527,7 @@
     {
       "name": "Songwol-dong Fairy Tale Village",
       "hangul": "송월동동화마을",
+      "wiki": "https://en.wikipedia.org/wiki/Songwol-dong_Fairy_Tale_Village",
       "category": "cultural",
       "city": "Incheon",
       "coordinates": [37.4735, 126.6192],
@@ -478,6 +536,7 @@
     {
       "name": "Wolmi Island",
       "hangul": "월미도",
+      "wiki": "https://en.wikipedia.org/wiki/Wolmido",
       "category": "kids",
       "city": "Incheon",
       "coordinates": [37.4755, 126.5934],
@@ -486,6 +545,7 @@
     {
       "name": "Incheon Grand Park",
       "hangul": "인천대공원",
+      "wiki": "https://en.wikipedia.org/wiki/Incheon_Grand_Park",
       "category": "nature",
       "city": "Incheon",
       "coordinates": [37.3837, 126.6792],
@@ -494,6 +554,7 @@
     {
       "name": "Songdo Central Park",
       "hangul": "송도센트럴파크",
+      "wiki": "https://en.wikipedia.org/wiki/Songdo_Central_Park",
       "category": "nature",
       "city": "Incheon",
       "coordinates": [37.3954, 126.6364],
@@ -502,6 +563,7 @@
     {
       "name": "Ganghwa Island",
       "hangul": "강화도",
+      "wiki": "https://en.wikipedia.org/wiki/Ganghwa_Island",
       "category": "explore",
       "city": "Ganghwa",
       "coordinates": [37.7000, 126.4880],
@@ -510,6 +572,7 @@
     {
       "name": "Oido Island",
       "hangul": "오이도",
+      "wiki": "https://en.wikipedia.org/wiki/Oido",
       "category": "nature",
       "city": "Siheung",
       "coordinates": [37.3460, 126.7180],
@@ -518,6 +581,7 @@
     {
       "name": "Soraepo Fish Market",
       "hangul": "소래포구어시장",
+      "wiki": "https://en.wikipedia.org/wiki/Namdong_District",
       "category": "food",
       "city": "Incheon",
       "coordinates": [37.3878, 126.7342],
@@ -526,6 +590,7 @@
     {
       "name": "Bucheon Aiins World",
       "hangul": "부천아인스월드",
+      "wiki": "https://en.wikipedia.org/wiki/Bucheon",
       "category": "kids",
       "city": "Bucheon",
       "coordinates": [37.4858, 126.7859],
@@ -534,6 +599,7 @@
     {
       "name": "Seongeup Folk Village",
       "hangul": "성읍민속마을",
+      "wiki": "https://en.wikipedia.org/wiki/Seongeup_Folk_Village",
       "category": "cultural",
       "city": "Jeju",
       "coordinates": [33.4086, 126.8080],
