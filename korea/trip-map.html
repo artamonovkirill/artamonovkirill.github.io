@@ -293,6 +293,24 @@
                 // Create marker
                 const marker = L.marker(location.coordinates, { icon: icon });
 
+                const cityHangul = {
+                    'Seoul': '서울',
+                    'Busan': '부산',
+                    'Jeju': '제주',
+                    'Incheon': '인천',
+                    'Gapyeong': '가평',
+                    'Gyeongju': '경주',
+                    'Wando': '완도',
+                    'Sokcho': '속초',
+                    'Damyang': '담양',
+                    'Jeonju': '전주',
+                    'Gangneung': '강릉',
+                    'Suwon': '수원',
+                    'Ganghwa': '강화',
+                    'Siheung': '시흥',
+                    'Bucheon': '부천',
+                };
+
                 // Create popup content
                 const popupContent = `
                     <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
@@ -300,7 +318,7 @@
                         ${category.icon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
-                    ${location.city ? `<div class="popup-city">📍 ${location.city}</div>` : ''}
+                    ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
                 `;
 
                 marker.bindPopup(popupContent);
