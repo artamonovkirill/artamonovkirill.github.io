@@ -199,8 +199,28 @@
         }
 
         .popup-wiki {
-            margin-top: 6px;
+            margin-top: 8px;
             font-size: 12px;
+        }
+
+        .wiki-preview {
+            margin-top: 8px;
+            border-top: 1px solid #eee;
+            padding-top: 8px;
+        }
+
+        .wiki-preview img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
+        .wiki-preview .wiki-loading {
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
         }
 
         .popup-city {
@@ -283,6 +303,24 @@
                 markersByCategory[category] = [];
             });
 
+            const cityHangul = {
+                'Seoul': '서울',
+                'Busan': '부산',
+                'Jeju': '제주',
+                'Incheon': '인천',
+                'Gapyeong': '가평',
+                'Gyeongju': '경주',
+                'Wando': '완도',
+                'Sokcho': '속초',
+                'Damyang': '담양',
+                'Jeonju': '전주',
+                'Gangneung': '강릉',
+                'Suwon': '수원',
+                'Ganghwa': '강화',
+                'Siheung': '시흥',
+                'Bucheon': '부천',
+            };
+
             // Add markers
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
@@ -298,24 +336,6 @@
                 // Create marker
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                const cityHangul = {
-                    'Seoul': '서울',
-                    'Busan': '부산',
-                    'Jeju': '제주',
-                    'Incheon': '인천',
-                    'Gapyeong': '가평',
-                    'Gyeongju': '경주',
-                    'Wando': '완도',
-                    'Sokcho': '속초',
-                    'Damyang': '담양',
-                    'Jeonju': '전주',
-                    'Gangneung': '강릉',
-                    'Suwon': '수원',
-                    'Ganghwa': '강화',
-                    'Siheung': '시흥',
-                    'Bucheon': '부천',
-                };
-
                 // Create popup content
                 const popupContent = `
                     <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
@@ -324,10 +344,40 @@
                     </div>
                     <div class="popup-description">${location.description}</div>
                     ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
-                    ${location.wiki ? `<div class="popup-wiki"><a href="${location.wiki}" target="_blank">Wikipedia</a></div>` : ''}
+                    ${location.wiki ? `<div class="popup-wiki"><a href="${location.wiki}" target="_blank">Wikipedia</a></div><div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
-                marker.bindPopup(popupContent);
+                marker.bindPopup(popupContent, { maxWidth: 300, autoPanPaddingTopLeft: [5, 80] });
+
+                if (location.wiki) {
+                    marker.on('popupopen', function() {
+                        const popup = marker.getPopup();
+                        const container = popup.getElement().querySelector('.wiki-preview');
+                        if (!container || container.dataset.loaded) return;
+                        container.dataset.loaded = '1';
+                        const slug = location.wiki.split('/wiki/')[1];
+                        fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + slug)
+                            .then(function(r) { return r.json(); })
+                            .then(function(summary) {
+                                let wikiHtml = '';
+                                if (summary.thumbnail) {
+                                    wikiHtml += '<img src="' + summary.thumbnail.source + '" alt="' + summary.title + '">';
+                                }
+                                var newContent = popupContent.replace(
+                                    '<span class="wiki-loading">Loading preview...</span>',
+                                    wikiHtml || '<span class="wiki-loading">No preview available</span>'
+                                );
+                                popup.setContent(newContent);
+                                var img = popup.getElement().querySelector('.wiki-preview img');
+                                if (img) {
+                                    img.onload = function() { marker.openPopup(); };
+                                }
+                            })
+                            .catch(function() {
+                                container.innerHTML = '<span class="wiki-loading">Preview unavailable</span>';
+                            });
+                    });
+                }
                 marker.addTo(layerGroups[location.category]);
                 markersByCategory[location.category].push(marker);
             });
