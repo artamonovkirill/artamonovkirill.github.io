@@ -34,7 +34,7 @@
       "name": "Yeouido Park",
       "hangul": "여의도공원",
       "wiki": "https://en.wikipedia.org/wiki/Yeouido_Park",
-      "category": "nature",
+      "category": "parks",
       "city": "Seoul",
       "coordinates": [37.5289, 126.9240],
       "description": "⭐ CHERRY BLOSSOMS - 1,800+ trees, peak early-mid April"
@@ -43,7 +43,7 @@
       "name": "Namsan Park & N Seoul Tower",
       "hangul": "남산공원 & N서울타워",
       "wiki": "https://en.wikipedia.org/wiki/N_Seoul_Tower",
-      "category": "nature",
+      "category": "parks",
       "city": "Seoul",
       "coordinates": [37.5512, 126.9882],
       "description": "Cherry blossoms April 8-15, city views, hiking trails"
@@ -97,7 +97,7 @@
       "name": "Cheonggyecheon Stream",
       "hangul": "청계천",
       "wiki": "https://en.wikipedia.org/wiki/Cheonggyecheon",
-      "category": "nature",
+      "category": "parks",
       "city": "Seoul",
       "coordinates": [37.5691, 126.9780],
       "description": "Urban stream walk, family-friendly"
@@ -160,16 +160,16 @@
       "name": "Busan Citizens Park",
       "hangul": "부산시민공원",
       "wiki": "https://en.wikipedia.org/wiki/Busan_Citizens_Park",
-      "category": "nature",
+      "category": "parks",
       "city": "Busan",
       "coordinates": [35.1683, 129.0567],
-      "description": "⭐ BEST stroller park - flat wide paths, playgrounds, children's library, near Centum City"
+      "description": "⭐ BEST stroller park - flat wide paths, playgrounds, children's library"
     },
     {
       "name": "UN Memorial Cemetery",
       "hangul": "재한유엔기념공원",
       "wiki": "https://en.wikipedia.org/wiki/United_Nations_Memorial_Cemetery",
-      "category": "nature",
+      "category": "cultural",
       "city": "Busan",
       "coordinates": [35.1269, 129.1010],
       "description": "Excellent for strollers - 100% flat, peaceful, free admission, near Daeyeon Station"
@@ -177,7 +177,7 @@
     {
       "name": "APEC Naru Park",
       "hangul": "APEC나루공원",
-      "category": "nature",
+      "category": "parks",
       "city": "Busan",
       "coordinates": [35.1693, 129.1355],
       "description": "Riverside stroller paths, playground, expansive lawns, near Dongbaek Station"
@@ -216,6 +216,59 @@
       "city": "Busan",
       "coordinates": [35.1532, 129.1185],
       "description": "Gwangan Bridge views, 5km walk from Haeundae"
+    },
+    {
+      "name": "Millak Waterside Park",
+      "hangul": "민락수변공원",
+      "wiki": "https://en.wikipedia.org/wiki/Suyeong-gu",
+      "category": "parks",
+      "city": "Busan",
+      "coordinates": [35.1540, 129.1280],
+      "description": "Between Haeundae & Gwangalli, flat paths, picnic spot, kids water area, bridge views"
+    },
+    {
+      "name": "Songjeong Beach",
+      "hangul": "송정해수욕장",
+      "wiki": "https://en.wikipedia.org/wiki/Songjeong_Beach_(Busan)",
+      "category": "beach",
+      "city": "Busan",
+      "coordinates": [35.1788, 129.1998],
+      "description": "Quieter than Haeundae, shallow water, surfers, local vibe"
+    },
+    {
+      "name": "Haedong Yonggungsa Temple",
+      "hangul": "해동용궁사",
+      "wiki": "https://en.wikipedia.org/wiki/Haedong_Yonggungsa",
+      "category": "cultural",
+      "city": "Busan",
+      "coordinates": [35.1884, 129.2231],
+      "description": "⭐ Stunning seaside temple on cliffs, many stairs (use baby carrier), free entry"
+    },
+    {
+      "name": "Korea National Maritime Museum",
+      "hangul": "국립해양박물관",
+      "wiki": "https://en.wikipedia.org/wiki/Korea_National_Maritime_Museum",
+      "category": "cultural",
+      "city": "Busan",
+      "coordinates": [35.0769, 129.0844],
+      "description": "4 floors, rooftop playground, free admission, good rainy day option"
+    },
+    {
+      "name": "Igidae Coastal Walk",
+      "hangul": "이기대",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1180, 129.1230],
+      "description": "5km dramatic cliff trail, proper hike, not for strollers"
+    },
+    {
+      "name": "Busan Museum of Art",
+      "hangul": "부산시립미술관",
+      "wiki": "https://en.wikipedia.org/wiki/Busan_Museum_of_Art",
+      "category": "cultural",
+      "city": "Busan",
+      "coordinates": [35.1692, 129.1266],
+      "description": "Near Centum City, calm, stroller-friendly grounds"
     },
     {
       "name": "SEA LIFE Busan Aquarium",
@@ -284,7 +337,7 @@
       "name": "Dalmaji Hill",
       "hangul": "달맞이고개",
       "wiki": "https://en.wikipedia.org/wiki/Haeundae",
-      "category": "nature",
+      "category": "mountains",
       "city": "Busan",
       "coordinates": [35.1649, 129.1827],
       "description": "Cherry blossoms late March-early April, coastal views"
@@ -329,7 +382,7 @@
       "name": "Hallasan National Park",
       "hangul": "한라산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Hallasan",
-      "category": "nature",
+      "category": "mountains",
       "city": "Jeju",
       "coordinates": [33.3620, 126.5290],
       "description": "Volcanic mountain center of island, various hiking trails for active kids"
@@ -445,7 +498,7 @@
       "name": "Seoraksan National Park",
       "hangul": "설악산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Seoraksan",
-      "category": "nature",
+      "category": "mountains",
       "city": "Sokcho",
       "coordinates": [38.1197, 128.4655],
       "description": "⭐ Majestic mountains, hiking trails, spring wildflowers, 3h from Seoul"
@@ -472,7 +525,7 @@
       "name": "Seokchon Lake",
       "hangul": "석촌호수",
       "wiki": "https://en.wikipedia.org/wiki/Seokchon_Lake",
-      "category": "nature",
+      "category": "parks",
       "city": "Seoul",
       "coordinates": [37.5106, 127.1028],
       "description": "Cherry blossoms April 8-15, lakeside walks, near Lotte World"
@@ -481,7 +534,7 @@
       "name": "Geumjeongsan Mountain",
       "hangul": "금정산",
       "wiki": "https://en.wikipedia.org/wiki/Geumjeongsan",
-      "category": "nature",
+      "category": "mountains",
       "city": "Busan",
       "coordinates": [35.2520, 129.0926],
       "description": "Hiking trails at Beomeosa Temple, wildflowers, city/coast views"
@@ -494,6 +547,68 @@
       "city": "Busan",
       "coordinates": [35.0755, 129.0181],
       "description": "Marine cable car, Songdo Skywalk, beach walks"
+    },
+    {
+      "name": "Oryukdo Islands Cruise",
+      "hangul": "오륙도 유람선",
+      "wiki": "https://en.wikipedia.org/wiki/Oryukdo",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.1586, 129.1650],
+      "description": "1h scenic cruise from Mipo (Haeundae), ₩19,500/person, views of 5-6 rock islands"
+    },
+    {
+      "name": "Gwangalli Yacht Tour",
+      "hangul": "광안리 요트투어",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.1532, 129.1185],
+      "description": "30-60 min yacht tour. Day/sunset/night options. Views of Gwangan Bridge, Marine City. ~₩12,000+/person"
+    },
+    {
+      "name": "Oedo Botania Island",
+      "hangul": "외도 보타니아",
+      "wiki": "https://en.wikipedia.org/wiki/Oedo",
+      "category": "explore",
+      "city": "Geoje",
+      "coordinates": [34.7692, 128.7028],
+      "description": "Botanical garden island. Via Geoje (1.5-2h from Busan) + 1h ferry. Full day trip."
+    },
+    {
+      "name": "Geoje Island",
+      "hangul": "거제도",
+      "wiki": "https://en.wikipedia.org/wiki/Geoje",
+      "category": "explore",
+      "city": "Geoje",
+      "coordinates": [34.8806, 128.6211],
+      "description": "40 min - 1.5h from Busan by car/bus. Windy Hill, beaches, Oedo ferry departure."
+    },
+    {
+      "name": "Tongyeong",
+      "hangul": "통영",
+      "wiki": "https://en.wikipedia.org/wiki/Tongyeong",
+      "category": "explore",
+      "city": "Tongyeong",
+      "coordinates": [34.8544, 128.4331],
+      "description": "1.5h from Busan. Harbor town, longest cable car in Korea, Dongpirang art village, seafood."
+    },
+    {
+      "name": "Ulsan",
+      "hangul": "울산",
+      "wiki": "https://en.wikipedia.org/wiki/Ulsan",
+      "category": "explore",
+      "city": "Ulsan",
+      "coordinates": [35.5384, 129.3114],
+      "description": "1h from Busan. Taehwagang bamboo forest, whale museum."
+    },
+    {
+      "name": "Daegu",
+      "hangul": "대구",
+      "wiki": "https://en.wikipedia.org/wiki/Daegu",
+      "category": "explore",
+      "city": "Daegu",
+      "coordinates": [35.8714, 128.6014],
+      "description": "45 min KTX from Busan. Seomun Market, Apsan Park cable car."
     },
     {
       "name": "Haeundae Blueline Park",
@@ -598,7 +713,7 @@
       "name": "Incheon Grand Park",
       "hangul": "인천대공원",
       "wiki": "https://en.wikipedia.org/wiki/Incheon_Grand_Park",
-      "category": "nature",
+      "category": "parks",
       "city": "Incheon",
       "coordinates": [37.3837, 126.6792],
       "description": "Large park, bike rentals, family walks, relaxing green space"
@@ -607,7 +722,7 @@
       "name": "Songdo Central Park",
       "hangul": "송도센트럴파크",
       "wiki": "https://en.wikipedia.org/wiki/Songdo_Central_Park",
-      "category": "nature",
+      "category": "parks",
       "city": "Incheon",
       "coordinates": [37.3954, 126.6364],
       "description": "Modern urban park, Han River area, appeared on Korean TV shows"
@@ -625,7 +740,7 @@
       "name": "Oido Island",
       "hangul": "오이도",
       "wiki": "https://en.wikipedia.org/wiki/Oido",
-      "category": "nature",
+      "category": "parks",
       "city": "Siheung",
       "coordinates": [37.3460, 126.7180],
       "description": "Prehistoric shell mounds, seafood restaurants, beach walks, 30-40min from Incheon"
@@ -667,12 +782,22 @@
     "cultural": {
       "color": "#9C27B0",
       "icon": "🏛️",
-      "description": "Palaces, Temples, Villages, Museums"
+      "description": "Palaces, Temples, Villages, Museums, Memorials"
     },
-    "nature": {
+    "parks": {
       "color": "#4CAF50",
       "icon": "🌳",
-      "description": "Parks, Mountains, Waterfalls, Hiking"
+      "description": "Parks & Urban Green Spaces"
+    },
+    "mountains": {
+      "color": "#795548",
+      "icon": "⛰️",
+      "description": "Mountains & Hills"
+    },
+    "nature": {
+      "color": "#8BC34A",
+      "icon": "🌿",
+      "description": "Trails, Waterfalls, Scenic Nature"
     },
     "food": {
       "color": "#FF9800",
