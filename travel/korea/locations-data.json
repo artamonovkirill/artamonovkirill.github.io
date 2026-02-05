@@ -157,6 +157,58 @@
       "description": "⭐ Iconic beach, family facilities, beach walks (no swimming in April - 12-17°C water)"
     },
     {
+      "name": "Busan Citizens Park",
+      "hangul": "부산시민공원",
+      "wiki": "https://en.wikipedia.org/wiki/Busan_Citizens_Park",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1683, 129.0567],
+      "description": "⭐ BEST stroller park - flat wide paths, playgrounds, children's library, near Centum City"
+    },
+    {
+      "name": "UN Memorial Cemetery",
+      "hangul": "재한유엔기념공원",
+      "wiki": "https://en.wikipedia.org/wiki/United_Nations_Memorial_Cemetery",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1269, 129.1010],
+      "description": "Excellent for strollers - 100% flat, peaceful, free admission, near Daeyeon Station"
+    },
+    {
+      "name": "APEC Naru Park",
+      "hangul": "APEC나루공원",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1693, 129.1355],
+      "description": "Riverside stroller paths, playground, expansive lawns, near Dongbaek Station"
+    },
+    {
+      "name": "Dongbaekseom Island",
+      "hangul": "동백섬",
+      "wiki": "https://en.wikipedia.org/wiki/Dongbaek_Island",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1534, 129.1508],
+      "description": "Coastal walk - first 450m flat and stroller-friendly, then stairs. Near APEC House."
+    },
+    {
+      "name": "Marine City",
+      "hangul": "마린시티",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.1588, 129.1430],
+      "description": "Quiet residential high-rises, best area for baby. 10 min walk to Haeundae Beach."
+    },
+    {
+      "name": "Centum City",
+      "hangul": "센텀시티",
+      "wiki": "https://en.wikipedia.org/wiki/Centum_City",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.1695, 129.1305],
+      "description": "Near Citizens Park, Shinsegae mall, good family base. More urban, less beach vibe."
+    },
+    {
       "name": "Gwangalli Beach",
       "hangul": "광안리해수욕장",
       "wiki": "https://en.wikipedia.org/wiki/Gwangalli_Beach",
