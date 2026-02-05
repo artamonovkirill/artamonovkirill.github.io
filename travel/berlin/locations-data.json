@@ -129,7 +129,7 @@
       "name": "Pergamon Museum",
       "german": "Pergamonmuseum",
       "wiki": "https://en.wikipedia.org/wiki/Pergamon_Museum",
-      "category": "cultural",
+      "category": "historical",
       "district": "Mitte",
       "coordinates": [52.5212, 13.3969],
       "description": "Ishtar Gate, ancient Greek/Roman/Middle Eastern art, Museum Island"
@@ -138,7 +138,7 @@
       "name": "Neues Museum",
       "german": "Neues Museum",
       "wiki": "https://en.wikipedia.org/wiki/Neues_Museum",
-      "category": "cultural",
+      "category": "historical",
       "district": "Mitte",
       "coordinates": [52.5200, 13.3978],
       "description": "Egyptian collection with Nefertiti bust, prehistoric artifacts"
@@ -147,7 +147,7 @@
       "name": "Altes Museum",
       "german": "Altes Museum",
       "wiki": "https://en.wikipedia.org/wiki/Altes_Museum",
-      "category": "cultural",
+      "category": "historical",
       "district": "Mitte",
       "coordinates": [52.5194, 13.3988],
       "description": "Greek and Roman antiquities, classical sculptures"
