@@ -95,54 +95,69 @@
         }
 
         .stats {
-            background: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
         }
 
         .stats h3 {
             font-size: 14px;
-            color: #6c757d;
+            color: rgba(255,255,255,0.9);
             margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
         }
 
         .stats-value {
             font-size: 32px;
             font-weight: bold;
-            color: #667eea;
-        }
-
-        .location-btn {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .petal {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 12px;
+            background: radial-gradient(ellipse at 30% 40%, #ffd4dc, #f8a4b8);
+            border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+            animation: fall linear infinite;
+            pointer-events: none;
+            box-shadow: inset 0 0 2px rgba(200,80,120,0.2);
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0.9; }
+            25% { transform: translateY(20px) rotate(90deg) translateX(5px); }
+            50% { transform: translateY(40px) rotate(180deg) translateX(-3px); }
+            75% { transform: translateY(60px) rotate(270deg) translateX(4px); }
+            100% { transform: translateY(80px) rotate(360deg) translateX(0); opacity: 0; }
+        }
+
+        .map-control-btn {
+            width: 34px;
+            height: 34px;
+            background: white;
             border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: bold;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #333;
         }
 
-        .location-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .location-btn:active {
-            transform: translateY(0);
-        }
-
-        .location-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
+        .map-control-btn:hover {
+            background: #f4f4f4;
         }
 
         .leaflet-popup-content {
@@ -181,11 +196,6 @@
             color: #666;
         }
 
-        .popup-wiki {
-            margin-top: 8px;
-            font-size: 12px;
-        }
-
         .wiki-preview {
             margin-top: 8px;
             border-top: 1px solid #eee;
@@ -221,6 +231,10 @@
             color: #1a73e8;
         }
 
+        .sidebar-toggle {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             #container {
                 flex-direction: column;
@@ -228,7 +242,50 @@
 
             #sidebar {
                 width: 100%;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .sidebar-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                width: 100%;
+                padding: 12px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .sidebar-toggle::after {
+                content: '▾';
+                transition: transform 0.2s;
+            }
+
+            #sidebar.expanded .sidebar-toggle::after {
+                transform: rotate(180deg);
+            }
+
+            .sidebar-content {
+                display: none;
+            }
+
+            #sidebar.expanded .sidebar-content {
+                display: block;
                 max-height: 200px;
+                overflow-y: auto;
+                padding: 12px 20px;
+            }
+
+            .stats, .legend h3 {
+                display: none;
             }
         }
     </style>
@@ -236,18 +293,17 @@
 <body>
     <div id="container">
         <div id="sidebar">
-            <button class="location-btn" id="find-location-btn">
-                📍 Find My Location
-            </button>
+            <button class="sidebar-toggle" id="sidebar-toggle">Categories</button>
+            <div class="sidebar-content">
+                <div class="stats">
+                    <h3>Total Locations</h3>
+                    <div class="stats-value" id="total-count">0</div>
+                </div>
 
-            <div class="stats">
-                <h3>Total Locations</h3>
-                <div class="stats-value" id="total-count">0</div>
-            </div>
-
-            <div class="legend">
-                <h3>Categories</h3>
-                <div id="legend-items"></div>
+                <div class="legend">
+                    <h3>Categories</h3>
+                    <div id="legend-items"></div>
+                </div>
             </div>
         </div>
 
@@ -407,69 +463,86 @@
                 legendContainer.appendChild(legendItem);
             });
 
-            // Add Find My Location functionality
+            // Map controls
+            const initialCenter = [36.5, 127.8];
+            const initialZoom = 7;
             let userLocationMarker = null;
-            const findLocationBtn = document.getElementById('find-location-btn');
 
-            findLocationBtn.addEventListener('click', () => {
-                if (!navigator.geolocation) {
-                    alert('Geolocation is not supported by your browser');
-                    return;
-                }
+            const controlContainer = L.control({ position: 'bottomright' });
+            controlContainer.onAdd = function() {
+                const div = L.DomUtil.create('div', 'leaflet-bar');
 
-                findLocationBtn.disabled = true;
-                findLocationBtn.textContent = '📍 Finding...';
+                const homeBtn = L.DomUtil.create('button', 'map-control-btn', div);
+                homeBtn.innerHTML = '⌂';
+                homeBtn.title = 'Reset view';
+                homeBtn.addEventListener('click', (e) => {
+                    L.DomEvent.stopPropagation(e);
+                    map.setView(initialCenter, initialZoom);
+                });
 
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const lat = position.coords.latitude;
-                        const lng = position.coords.longitude;
-
-                        // Remove previous user location marker if exists
-                        if (userLocationMarker) {
-                            map.removeLayer(userLocationMarker);
-                        }
-
-                        // Create custom icon for user location
-                        const userIcon = L.divIcon({
-                            html: '<div style="background-color: #4285F4; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 8px rgba(66,133,244,0.6);"></div>',
-                            className: 'user-location-marker',
-                            iconSize: [16, 16],
-                            iconAnchor: [8, 8]
-                        });
-
-                        // Add user location marker
-                        userLocationMarker = L.marker([lat, lng], { icon: userIcon })
-                            .addTo(map)
-                            .bindPopup('<b>📍 You are here</b>')
-                            .openPopup();
-
-                        // Center map on user location
-                        map.setView([lat, lng], 13);
-
-                        findLocationBtn.disabled = false;
-                        findLocationBtn.textContent = '📍 Find My Location';
-                    },
-                    (error) => {
-                        let errorMessage = 'Unable to retrieve your location';
-                        if (error.code === error.PERMISSION_DENIED) {
-                            errorMessage = 'Location access denied. Please enable location permissions.';
-                        } else if (error.code === error.POSITION_UNAVAILABLE) {
-                            errorMessage = 'Location information unavailable.';
-                        } else if (error.code === error.TIMEOUT) {
-                            errorMessage = 'Location request timed out.';
-                        }
-                        alert(errorMessage);
-
-                        findLocationBtn.disabled = false;
-                        findLocationBtn.textContent = '📍 Find My Location';
-                    },
-                    {
-                        enableHighAccuracy: true,
-                        timeout: 10000,
-                        maximumAge: 0
+                const locateBtn = L.DomUtil.create('button', 'map-control-btn', div);
+                locateBtn.innerHTML = '◎';
+                locateBtn.title = 'Find my location';
+                locateBtn.addEventListener('click', (e) => {
+                    L.DomEvent.stopPropagation(e);
+                    if (!navigator.geolocation) {
+                        alert('Geolocation is not supported by your browser');
+                        return;
                     }
-                );
+
+                    locateBtn.style.opacity = '0.5';
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            if (userLocationMarker) map.removeLayer(userLocationMarker);
+                            const userIcon = L.divIcon({
+                                html: '<div style="background-color: #4285F4; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 8px rgba(66,133,244,0.6);"></div>',
+                                className: 'user-location-marker',
+                                iconSize: [16, 16],
+                                iconAnchor: [8, 8]
+                            });
+                            userLocationMarker = L.marker([lat, lng], { icon: userIcon })
+                                .addTo(map)
+                                .bindPopup('<b>You are here</b>')
+                                .openPopup();
+                            map.setView([lat, lng], 13);
+                            locateBtn.style.opacity = '';
+                        },
+                        (error) => {
+                            let msg = 'Unable to retrieve your location';
+                            if (error.code === error.PERMISSION_DENIED) msg = 'Location access denied.';
+                            else if (error.code === error.POSITION_UNAVAILABLE) msg = 'Location unavailable.';
+                            else if (error.code === error.TIMEOUT) msg = 'Location request timed out.';
+                            alert(msg);
+                            locateBtn.style.opacity = '';
+                        },
+                        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+                    );
+                });
+
+                L.DomEvent.disableClickPropagation(div);
+                return div;
+            };
+            controlContainer.addTo(map);
+
+            document.getElementById('sidebar-toggle').addEventListener('click', () => {
+                document.getElementById('sidebar').classList.toggle('expanded');
+            });
+
+            // Add sakura petals to stats and toggle
+            document.querySelectorAll('.stats, .sidebar-toggle').forEach(el => {
+                for (let i = 0; i < 10; i++) {
+                    const petal = document.createElement('div');
+                    petal.className = 'petal';
+                    petal.style.left = Math.random() * 100 + '%';
+                    const size = Math.random() * 5 + 5;
+                    petal.style.width = size + 'px';
+                    petal.style.height = size + 'px';
+                    petal.style.animationDelay = Math.random() * 4 + 's';
+                    petal.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    el.appendChild(petal);
+                }
             });
         }
     </script>

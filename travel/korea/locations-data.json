@@ -790,12 +790,12 @@
       "description": "Parks & Urban Green Spaces"
     },
     "mountains": {
-      "color": "#795548",
+      "color": "#4CAF50",
       "icon": "⛰️",
       "description": "Mountains & Hills"
     },
     "nature": {
-      "color": "#8BC34A",
+      "color": "#4CAF50",
       "icon": "🌿",
       "description": "Trails, Waterfalls, Scenic Nature"
     },
