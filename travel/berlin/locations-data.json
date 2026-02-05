@@ -1,0 +1,215 @@
+{
+  "trip": {
+    "name": "Berlin Trip",
+    "dates": ""
+  },
+  "locations": [
+    {
+      "name": "Zionskirche",
+      "german": "Zionskirche",
+      "wiki": "https://en.wikipedia.org/wiki/Zionskirche_(Berlin)",
+      "category": "cultural",
+      "district": "Mitte",
+      "coordinates": [52.5341, 13.4042],
+      "description": "Historic church, center of East German opposition movement in the 1980s"
+    },
+    {
+      "name": "German Museum of Technology",
+      "german": "Deutsches Technikmuseum",
+      "wiki": "https://en.wikipedia.org/wiki/German_Museum_of_Technology,_Berlin",
+      "category": "science",
+      "district": "Kreuzberg",
+      "coordinates": [52.4989, 13.3796],
+      "description": "Planes, trains, ships, hands-on experiments, rooftop plane"
+    },
+    {
+      "name": "Natural History Museum",
+      "german": "Museum für Naturkunde",
+      "wiki": "https://en.wikipedia.org/wiki/Museum_f%C3%BCr_Naturkunde_(Berlin)",
+      "category": "science",
+      "district": "Mitte",
+      "coordinates": [52.5299, 13.3795],
+      "description": "World's largest mounted dinosaur skeleton, minerals, biodiversity"
+    },
+    {
+      "name": "DDR Museum",
+      "german": "DDR Museum",
+      "wiki": "https://en.wikipedia.org/wiki/DDR_Museum",
+      "category": "historical",
+      "district": "Mitte",
+      "coordinates": [52.5193, 13.4025],
+      "description": "Interactive museum about life in East Germany, hands-on exhibits"
+    },
+    {
+      "name": "German Historical Museum",
+      "german": "Deutsches Historisches Museum",
+      "wiki": "https://en.wikipedia.org/wiki/German_Historical_Museum",
+      "category": "historical",
+      "district": "Mitte",
+      "coordinates": [52.5184, 13.3966],
+      "description": "2000 years of German history, Unter den Linden"
+    },
+    {
+      "name": "Topography of Terror",
+      "german": "Topographie des Terrors",
+      "wiki": "https://en.wikipedia.org/wiki/Topography_of_Terror",
+      "category": "historical",
+      "district": "Kreuzberg",
+      "coordinates": [52.5065, 13.3835],
+      "description": "FREE, Nazi history on site of former Gestapo headquarters"
+    },
+    {
+      "name": "Hotel Oderberger",
+      "german": "Hotel Oderberger",
+      "wiki": "https://en.wikipedia.org/wiki/Oderberger_Stra%C3%9Fe",
+      "category": "accommodation",
+      "district": "Prenzlauer Berg",
+      "coordinates": [52.5401, 13.4109],
+      "description": "Historic hotel in restored 19th-century bathhouse, beautiful swimming pool"
+    },
+    {
+      "name": "Prater Garten",
+      "german": "Prater Garten",
+      "wiki": "https://en.wikipedia.org/wiki/Prater_Garden",
+      "category": "drinks",
+      "district": "Prenzlauer Berg",
+      "coordinates": [52.5399, 13.4205],
+      "description": "Berlin's oldest beer garden (1837), 600 seats under chestnut trees"
+    },
+    {
+      "name": "BRLO Brwhouse",
+      "german": "BRLO Brwhouse",
+      "category": "drinks",
+      "district": "Kreuzberg",
+      "coordinates": [52.4985, 13.3748],
+      "description": "Craft brewery and restaurant at Gleisdreieck, Berlin-brewed beers"
+    },
+    {
+      "name": "Eschenbräu",
+      "german": "Eschenbräu",
+      "category": "drinks",
+      "district": "Wedding",
+      "coordinates": [52.5471, 13.3593],
+      "description": "Microbrewery with beer garden, unfiltered house-brewed beers"
+    },
+    {
+      "name": "Hops & Barley",
+      "german": "Hops & Barley",
+      "category": "drinks",
+      "district": "Friedrichshain",
+      "coordinates": [52.5143, 13.4583],
+      "description": "Brewpub in former butcher shop, beers brewed on-site"
+    },
+    {
+      "name": "Klunkerkranich",
+      "german": "Klunkerkranich",
+      "category": "drinks",
+      "district": "Neukölln",
+      "coordinates": [52.4810, 13.4320],
+      "description": "Rooftop bar on parking garage, sunset views, live music"
+    },
+    {
+      "name": "Berlin Brandenburg Airport",
+      "german": "Flughafen Berlin Brandenburg",
+      "wiki": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "category": "transportation",
+      "coordinates": [52.3667, 13.5033],
+      "description": "Main international airport (BER), FEX train to city center"
+    },
+    {
+      "name": "Gatow Aviation Museum",
+      "german": "Militärhistorisches Museum Flugplatz Berlin-Gatow",
+      "wiki": "https://en.wikipedia.org/wiki/Gatow_Airfield_Museum",
+      "category": "science",
+      "district": "Spandau",
+      "coordinates": [52.4742, 13.1364],
+      "description": "Military aviation museum on former RAF airfield, 200+ aircraft, FREE"
+    },
+    {
+      "name": "Pergamon Museum",
+      "german": "Pergamonmuseum",
+      "wiki": "https://en.wikipedia.org/wiki/Pergamon_Museum",
+      "category": "cultural",
+      "district": "Mitte",
+      "coordinates": [52.5212, 13.3969],
+      "description": "Ishtar Gate, ancient Greek/Roman/Middle Eastern art, Museum Island"
+    },
+    {
+      "name": "Neues Museum",
+      "german": "Neues Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Neues_Museum",
+      "category": "cultural",
+      "district": "Mitte",
+      "coordinates": [52.5200, 13.3978],
+      "description": "Egyptian collection with Nefertiti bust, prehistoric artifacts"
+    },
+    {
+      "name": "Altes Museum",
+      "german": "Altes Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Altes_Museum",
+      "category": "cultural",
+      "district": "Mitte",
+      "coordinates": [52.5194, 13.3988],
+      "description": "Greek and Roman antiquities, classical sculptures"
+    },
+    {
+      "name": "Berlin Wall Memorial",
+      "german": "Gedenkstätte Berliner Mauer",
+      "wiki": "https://en.wikipedia.org/wiki/Berlin_Wall_Memorial",
+      "category": "historical",
+      "district": "Mitte",
+      "coordinates": [52.5351, 13.3904],
+      "description": "Preserved Wall section on Bernauer Straße, FREE, outdoor exhibition"
+    },
+    {
+      "name": "East Side Gallery",
+      "german": "East Side Gallery",
+      "wiki": "https://en.wikipedia.org/wiki/East_Side_Gallery",
+      "category": "historical",
+      "district": "Friedrichshain",
+      "coordinates": [52.5055, 13.4397],
+      "description": "1.3km of Berlin Wall murals, world's largest open-air gallery, FREE"
+    },
+    {
+      "name": "Berlin Cathedral",
+      "german": "Berliner Dom",
+      "wiki": "https://en.wikipedia.org/wiki/Berlin_Cathedral",
+      "category": "cultural",
+      "district": "Mitte",
+      "coordinates": [52.5190, 13.4010],
+      "description": "Largest church in Berlin, dome views, Hohenzollern crypt"
+    }
+  ],
+  "categories": {
+    "transportation": {
+      "color": "#808080",
+      "icon": "✈️",
+      "description": "Airports & Stations"
+    },
+    "accommodation": {
+      "color": "#FF5722",
+      "icon": "🏨",
+      "description": "Hotels & Accommodation"
+    },
+    "cultural": {
+      "color": "#9C27B0",
+      "icon": "⛪",
+      "description": "Churches & Cultural Sites"
+    },
+    "science": {
+      "color": "#2196F3",
+      "icon": "🔬",
+      "description": "Science & Technology Museums"
+    },
+    "historical": {
+      "color": "#795548",
+      "icon": "🏛️",
+      "description": "History Museums"
+    },
+    "drinks": {
+      "color": "#FFC107",
+      "icon": "🍺",
+      "description": "Breweries & Bars"
+    }
+  }
+}
