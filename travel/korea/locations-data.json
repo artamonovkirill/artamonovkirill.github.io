@@ -34,7 +34,8 @@
       "name": "Yeouido Park",
       "hangul": "여의도공원",
       "wiki": "https://en.wikipedia.org/wiki/Yeouido_Park",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5289, 126.9240],
       "description": "⭐ CHERRY BLOSSOMS - 1,800+ trees, peak early-mid April"
@@ -43,7 +44,8 @@
       "name": "Namsan Park & N Seoul Tower",
       "hangul": "남산공원 & N서울타워",
       "wiki": "https://en.wikipedia.org/wiki/N_Seoul_Tower",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5512, 126.9882],
       "description": "Cherry blossoms April 8-15, city views, hiking trails"
@@ -97,7 +99,8 @@
       "name": "Cheonggyecheon Stream",
       "hangul": "청계천",
       "wiki": "https://en.wikipedia.org/wiki/Cheonggyecheon",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5691, 126.9780],
       "description": "Urban stream walk, family-friendly"
@@ -106,7 +109,8 @@
       "name": "Nami Island",
       "hangul": "남이섬",
       "wiki": "https://en.wikipedia.org/wiki/Nami_Island",
-      "category": "explore",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Gapyeong",
       "coordinates": [37.7913, 127.5264],
       "description": "⭐ Romantic tree-lined paths, 1-2h from Seoul, K-drama location"
@@ -115,7 +119,7 @@
       "name": "Petite France",
       "hangul": "쁘띠프랑스",
       "wiki": "https://en.wikipedia.org/wiki/Petite_France_(theme_park)",
-      "category": "explore",
+      "category": "cultural",
       "city": "Gapyeong",
       "coordinates": [37.6878, 127.4364],
       "description": "French-themed village, Little Prince exhibits, near Nami Island"
@@ -124,7 +128,8 @@
       "name": "Garden of Morning Calm",
       "hangul": "아침고요수목원",
       "wiki": "https://en.wikipedia.org/wiki/Garden_of_Morning_Calm",
-      "category": "explore",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Gapyeong",
       "coordinates": [37.7456, 127.3544],
       "description": "Beautiful botanical gardens in spring"
@@ -133,7 +138,8 @@
       "name": "Gyeongju Bomun Lake",
       "hangul": "경주 보문호수",
       "wiki": "https://en.wikipedia.org/wiki/Bomun_Tourist_Complex",
-      "category": "explore",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Gyeongju",
       "coordinates": [35.8291, 129.2850],
       "description": "⭐ Historic city, cherry blossoms, romantic lakeside, 1h from Busan"
@@ -142,7 +148,7 @@
       "name": "Seokguram Grotto",
       "hangul": "석굴암",
       "wiki": "https://en.wikipedia.org/wiki/Seokguram",
-      "category": "explore",
+      "category": "cultural",
       "city": "Gyeongju",
       "coordinates": [35.7985, 129.3487],
       "description": "UNESCO site, near Gyeongju"
@@ -160,7 +166,8 @@
       "name": "Busan Citizens Park",
       "hangul": "부산시민공원",
       "wiki": "https://en.wikipedia.org/wiki/Busan_Citizens_Park",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Busan",
       "coordinates": [35.1683, 129.0567],
       "description": "⭐ BEST stroller park - flat wide paths, playgrounds, children's library"
@@ -177,7 +184,8 @@
     {
       "name": "APEC Naru Park",
       "hangul": "APEC나루공원",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Busan",
       "coordinates": [35.1693, 129.1355],
       "description": "Riverside stroller paths, playground, expansive lawns, near Dongbaek Station"
@@ -194,7 +202,7 @@
     {
       "name": "Marine City",
       "hangul": "마린시티",
-      "category": "explore",
+      "category": "district",
       "city": "Busan",
       "coordinates": [35.1588, 129.1430],
       "description": "Quiet residential high-rises, best area for baby. 10 min walk to Haeundae Beach."
@@ -203,7 +211,7 @@
       "name": "Centum City",
       "hangul": "센텀시티",
       "wiki": "https://en.wikipedia.org/wiki/Centum_City",
-      "category": "explore",
+      "category": "district",
       "city": "Busan",
       "coordinates": [35.1695, 129.1305],
       "description": "Near Citizens Park, Shinsegae mall, good family base. More urban, less beach vibe."
@@ -221,7 +229,8 @@
       "name": "Millak Waterside Park",
       "hangul": "민락수변공원",
       "wiki": "https://en.wikipedia.org/wiki/Suyeong-gu",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Busan",
       "coordinates": [35.1540, 129.1280],
       "description": "Between Haeundae & Gwangalli, flat paths, picnic spot, kids water area, bridge views"
@@ -337,7 +346,8 @@
       "name": "Dalmaji Hill",
       "hangul": "달맞이고개",
       "wiki": "https://en.wikipedia.org/wiki/Haeundae",
-      "category": "mountains",
+      "icon": "🏔️",
+      "category": "nature",
       "city": "Busan",
       "coordinates": [35.1649, 129.1827],
       "description": "Cherry blossoms late March-early April, coastal views"
@@ -346,6 +356,7 @@
       "name": "Wando Ferry Terminal",
       "hangul": "완도연안여객터미널",
       "wiki": "https://en.wikipedia.org/wiki/Wando_County",
+      "icon": "⛴️",
       "category": "transportation",
       "city": "Wando",
       "coordinates": [34.3115, 126.7551],
@@ -382,7 +393,8 @@
       "name": "Hallasan National Park",
       "hangul": "한라산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Hallasan",
-      "category": "mountains",
+      "icon": "🏔️",
+      "category": "nature",
       "city": "Jeju",
       "coordinates": [33.3620, 126.5290],
       "description": "Volcanic mountain center of island, various hiking trails for active kids"
@@ -498,7 +510,8 @@
       "name": "Seoraksan National Park",
       "hangul": "설악산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Seoraksan",
-      "category": "mountains",
+      "icon": "🏔️",
+      "category": "nature",
       "city": "Sokcho",
       "coordinates": [38.1197, 128.4655],
       "description": "⭐ Majestic mountains, hiking trails, spring wildflowers, 3h from Seoul"
@@ -525,7 +538,8 @@
       "name": "Seokchon Lake",
       "hangul": "석촌호수",
       "wiki": "https://en.wikipedia.org/wiki/Seokchon_Lake",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Seoul",
       "coordinates": [37.5106, 127.1028],
       "description": "Cherry blossoms April 8-15, lakeside walks, near Lotte World"
@@ -534,7 +548,8 @@
       "name": "Geumjeongsan Mountain",
       "hangul": "금정산",
       "wiki": "https://en.wikipedia.org/wiki/Geumjeongsan",
-      "category": "mountains",
+      "icon": "🏔️",
+      "category": "nature",
       "city": "Busan",
       "coordinates": [35.2520, 129.0926],
       "description": "Hiking trails at Beomeosa Temple, wildflowers, city/coast views"
@@ -552,6 +567,7 @@
       "name": "Oryukdo Islands Cruise",
       "hangul": "오륙도 유람선",
       "wiki": "https://en.wikipedia.org/wiki/Oryukdo",
+      "icon": "⛴️",
       "category": "explore",
       "city": "Busan",
       "coordinates": [35.1586, 129.1650],
@@ -560,6 +576,7 @@
     {
       "name": "Gwangalli Yacht Tour",
       "hangul": "광안리 요트투어",
+      "icon": "⛴️",
       "category": "explore",
       "city": "Busan",
       "coordinates": [35.1532, 129.1185],
@@ -569,6 +586,7 @@
       "name": "Oedo Botania Island",
       "hangul": "외도 보타니아",
       "wiki": "https://en.wikipedia.org/wiki/Oedo",
+      "icon": "⛴️",
       "category": "explore",
       "city": "Geoje",
       "coordinates": [34.7692, 128.7028],
@@ -578,7 +596,7 @@
       "name": "Geoje Island",
       "hangul": "거제도",
       "wiki": "https://en.wikipedia.org/wiki/Geoje",
-      "category": "explore",
+      "category": "nature",
       "city": "Geoje",
       "coordinates": [34.8806, 128.6211],
       "description": "40 min - 1.5h from Busan by car/bus. Windy Hill, beaches, Oedo ferry departure."
@@ -587,7 +605,7 @@
       "name": "Tongyeong",
       "hangul": "통영",
       "wiki": "https://en.wikipedia.org/wiki/Tongyeong",
-      "category": "explore",
+      "category": "district",
       "city": "Tongyeong",
       "coordinates": [34.8544, 128.4331],
       "description": "1.5h from Busan. Harbor town, longest cable car in Korea, Dongpirang art village, seafood."
@@ -596,7 +614,7 @@
       "name": "Ulsan",
       "hangul": "울산",
       "wiki": "https://en.wikipedia.org/wiki/Ulsan",
-      "category": "explore",
+      "category": "district",
       "city": "Ulsan",
       "coordinates": [35.5384, 129.3114],
       "description": "1h from Busan. Taehwagang bamboo forest, whale museum."
@@ -605,7 +623,7 @@
       "name": "Daegu",
       "hangul": "대구",
       "wiki": "https://en.wikipedia.org/wiki/Daegu",
-      "category": "explore",
+      "category": "district",
       "city": "Daegu",
       "coordinates": [35.8714, 128.6014],
       "description": "45 min KTX from Busan. Seomun Market, Apsan Park cable car."
@@ -614,7 +632,7 @@
       "name": "Haeundae Blueline Park",
       "hangul": "해운대 블루라인파크",
       "wiki": "https://en.wikipedia.org/wiki/Haeundae",
-      "category": "nature",
+      "category": "explore",
       "city": "Busan",
       "coordinates": [35.1730, 129.1604],
       "description": "Scenic coastal train, ocean & mountain views, family activity"
@@ -623,7 +641,7 @@
       "name": "Jeongdongjin Beach",
       "hangul": "정동진해수욕장",
       "wiki": "https://en.wikipedia.org/wiki/Jeongdongjin",
-      "category": "explore",
+      "category": "beach",
       "city": "Gangneung",
       "coordinates": [37.6900, 129.0334],
       "description": "Famous sunrise viewing, East Sea coast"
@@ -632,7 +650,7 @@
       "name": "Jeju City",
       "hangul": "제주시",
       "wiki": "https://en.wikipedia.org/wiki/Jeju_City",
-      "category": "explore",
+      "category": "district",
       "city": "Jeju",
       "coordinates": [33.5097, 126.5219],
       "description": "Northern Jeju hub, accommodation base option, shopping"
@@ -641,7 +659,7 @@
       "name": "Seogwipo City",
       "hangul": "서귀포시",
       "wiki": "https://en.wikipedia.org/wiki/Seogwipo",
-      "category": "explore",
+      "category": "district",
       "city": "Jeju",
       "coordinates": [33.2541, 126.5601],
       "description": "Southern Jeju hub, central for waterfalls and attractions"
@@ -650,7 +668,7 @@
       "name": "Nampo-dong",
       "hangul": "남포동",
       "wiki": "https://en.wikipedia.org/wiki/Nampo-dong",
-      "category": "explore",
+      "category": "district",
       "city": "Busan",
       "coordinates": [35.0976, 129.0289],
       "description": "Walking district (5-7km loop) connecting markets and BIFF Square"
@@ -659,7 +677,7 @@
       "name": "Hongdae",
       "hangul": "홍대",
       "wiki": "https://en.wikipedia.org/wiki/Hongdae_(area)",
-      "category": "explore",
+      "category": "district",
       "city": "Seoul",
       "coordinates": [37.5563, 126.9236],
       "description": "Trendy neighborhood, cooking classes, art, nightlife"
@@ -668,7 +686,7 @@
       "name": "Gangneung",
       "hangul": "강릉",
       "wiki": "https://en.wikipedia.org/wiki/Gangneung",
-      "category": "explore",
+      "category": "district",
       "city": "Gangneung",
       "coordinates": [37.7519, 128.8761],
       "description": "Coastal city, 2.5-3h from Seoul, East Sea coast, fresh seafood"
@@ -695,7 +713,7 @@
       "name": "Songwol-dong Fairy Tale Village",
       "hangul": "송월동동화마을",
       "wiki": "https://en.wikipedia.org/wiki/Songwol-dong_Fairy_Tale_Village",
-      "category": "cultural",
+      "category": "kids",
       "city": "Incheon",
       "coordinates": [37.4735, 126.6192],
       "description": "Street art, cartoon characters, photo spots, near Chinatown"
@@ -713,7 +731,8 @@
       "name": "Incheon Grand Park",
       "hangul": "인천대공원",
       "wiki": "https://en.wikipedia.org/wiki/Incheon_Grand_Park",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Incheon",
       "coordinates": [37.3837, 126.6792],
       "description": "Large park, bike rentals, family walks, relaxing green space"
@@ -722,7 +741,8 @@
       "name": "Songdo Central Park",
       "hangul": "송도센트럴파크",
       "wiki": "https://en.wikipedia.org/wiki/Songdo_Central_Park",
-      "category": "parks",
+      "icon": "🌳",
+      "category": "nature",
       "city": "Incheon",
       "coordinates": [37.3954, 126.6364],
       "description": "Modern urban park, Han River area, appeared on Korean TV shows"
@@ -731,7 +751,7 @@
       "name": "Ganghwa Island",
       "hangul": "강화도",
       "wiki": "https://en.wikipedia.org/wiki/Ganghwa_Island",
-      "category": "explore",
+      "category": "cultural",
       "city": "Ganghwa",
       "coordinates": [37.7000, 126.4880],
       "description": "⭐ Island day trip, UNESCO dolmens, Jeondeungsa Temple, 1h from Incheon"
@@ -740,7 +760,7 @@
       "name": "Oido Island",
       "hangul": "오이도",
       "wiki": "https://en.wikipedia.org/wiki/Oido",
-      "category": "parks",
+      "category": "beach",
       "city": "Siheung",
       "coordinates": [37.3460, 126.7180],
       "description": "Prehistoric shell mounds, seafood restaurants, beach walks, 30-40min from Incheon"
@@ -784,23 +804,13 @@
       "icon": "🏛️",
       "description": "Palaces, Temples, Villages, Museums, Memorials"
     },
-    "parks": {
-      "color": "#4CAF50",
-      "icon": "🌳",
-      "description": "Parks & Urban Green Spaces"
-    },
-    "mountains": {
-      "color": "#4CAF50",
-      "icon": "⛰️",
-      "description": "Mountains & Hills"
-    },
     "nature": {
-      "color": "#4CAF50",
-      "icon": "🌿",
-      "description": "Trails, Waterfalls, Scenic Nature"
+      "color": "#2E7D32",
+      "icon": "🍃",
+      "description": "Nature, Parks & Mountains"
     },
     "food": {
-      "color": "#FF9800",
+      "color": "#FBC02D",
       "icon": "🍜",
       "description": "Markets & Food Experiences"
     },
@@ -813,6 +823,11 @@
       "color": "#2196F3",
       "icon": "🏖️",
       "description": "Beaches & Coastal Areas"
+    },
+    "district": {
+      "color": "#FF9800",
+      "icon": "🌆",
+      "description": "Cities & Districts"
     },
     "explore": {
       "color": "#F44336",

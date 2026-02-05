@@ -369,8 +369,9 @@
                 const category = data.categories[location.category];
 
                 // Create custom icon
+                const markerIcon = location.icon || category.icon;
                 const icon = L.divIcon({
-                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${category.icon}</div>`,
+                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
                     className: 'custom-marker',
                     iconSize: [24, 24],
                     iconAnchor: [12, 12]
@@ -385,7 +386,7 @@
                 const popupContent = `
                     <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
                     <div class="popup-category" style="background-color: ${category.color};">
-                        ${category.icon} ${location.category}
+                        ${markerIcon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
                     ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
@@ -435,11 +436,11 @@
             const legendContainer = document.getElementById('legend-items');
 
             Object.entries(data.categories).forEach(([key, category]) => {
-                const count = markersByCategory[key].length;
+                const count = markersByCategory[key] ? markersByCategory[key].length : 0;
+                if (!count) return;
 
                 const legendItem = document.createElement('div');
                 legendItem.className = 'legend-item active';
-                legendItem.dataset.category = key;
 
                 legendItem.innerHTML = `
                     <div class="legend-icon" style="background-color: ${category.color};">
@@ -449,10 +450,8 @@
                     <div class="legend-count">${count}</div>
                 `;
 
-                // Toggle category visibility
                 legendItem.addEventListener('click', () => {
                     legendItem.classList.toggle('active');
-
                     if (legendItem.classList.contains('active')) {
                         layerGroups[key].addTo(map);
                     } else {
