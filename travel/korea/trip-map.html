@@ -212,6 +212,15 @@
             margin-top: 6px;
         }
 
+        .popup-links {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .popup-links a {
+            color: #1a73e8;
+        }
+
         @media (max-width: 768px) {
             #container {
                 flex-direction: column;
@@ -315,6 +324,8 @@
                 const marker = L.marker(location.coordinates, { icon: icon });
 
                 // Create popup content
+                const naverQuery = encodeURIComponent(location.hangul || location.name);
+                const naverUrl = `nmap://search?query=${naverQuery}&appname=koreatrip`;
                 const popupContent = `
                     <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
                     <div class="popup-category" style="background-color: ${category.color};">
@@ -322,7 +333,8 @@
                     </div>
                     <div class="popup-description">${location.description}</div>
                     ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
-                    ${location.wiki ? `<div class="popup-wiki"><a href="${location.wiki}" target="_blank">Wikipedia</a></div><div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
+                    <div class="popup-links"><a href="${naverUrl}" target="_blank">Naver Map</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
+                    ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
                 marker.bindPopup(popupContent, { maxWidth: 300, autoPanPaddingTopLeft: [5, 80] });
