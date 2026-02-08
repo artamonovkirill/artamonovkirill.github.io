@@ -407,151 +407,6 @@
       "description": "Coastal village with twin lighthouses. Accessible via Blue Line Park from Mipo. Between Haeundae and Songjeong."
     },
     {
-      "name": "Wando Ferry Terminal",
-      "hangul": "완도연안여객터미널",
-      "wiki": "https://en.wikipedia.org/wiki/Wando_County",
-      "icon": "⛴️",
-      "category": "transportation",
-      "city": "Wando",
-      "coordinates": [34.3115, 126.7551],
-      "description": "⚠️ Ferry option to Jeju - 2h 40min ferry vs 1h flight, 2-3h bus from Busan"
-    },
-    {
-      "name": "Jeju International Airport",
-      "hangul": "제주국제공항",
-      "wiki": "https://en.wikipedia.org/wiki/Jeju_International_Airport",
-      "category": "transportation",
-      "city": "Jeju",
-      "coordinates": [33.5066, 126.4929],
-      "description": "Arrival to Jeju Island - Pick up rental car here"
-    },
-    {
-      "name": "Seongsan Ilchulbong (Sunrise Peak)",
-      "hangul": "성산일출봉",
-      "wiki": "https://en.wikipedia.org/wiki/Seongsan_Ilchulbong",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.4584, 126.9424],
-      "description": "⭐ MUST-DO UNESCO crater, 30-min climb, 5,000 won, views of Hallasan & Udo Island"
-    },
-    {
-      "name": "Manjanggul Lava Tube",
-      "hangul": "만장굴",
-      "wiki": "https://en.wikipedia.org/wiki/Manjanggul",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.5295, 126.7717],
-      "description": "UNESCO underground lava tunnels, great for kids"
-    },
-    {
-      "name": "Hallasan National Park",
-      "hangul": "한라산국립공원",
-      "wiki": "https://en.wikipedia.org/wiki/Hallasan",
-      "icon": "🏔️",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.3620, 126.5290],
-      "description": "Volcanic mountain center of island, various hiking trails for active kids"
-    },
-    {
-      "name": "Jeongbang Waterfall",
-      "hangul": "정방폭포",
-      "wiki": "https://en.wikipedia.org/wiki/Jeongbang_Waterfall",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.2449, 126.5720],
-      "description": "⭐ ONLY waterfall in Korea flowing into sea, 23m high, rocky beach"
-    },
-    {
-      "name": "Cheonjiyeon Waterfall",
-      "hangul": "천지연폭포",
-      "wiki": "https://en.wikipedia.org/wiki/Cheonjiyeon_Waterfall",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.2468, 126.5543],
-      "description": "22m tall, nature reserve, 2,000 won adults"
-    },
-    {
-      "name": "Cheonjeyeon Falls",
-      "hangul": "천제연폭포",
-      "wiki": "https://en.wikipedia.org/wiki/Cheonjeyeon_Waterfalls",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.2544, 126.4187],
-      "description": "Three-tier waterfall, largest on Jeju"
-    },
-    {
-      "name": "Hamdeok Beach",
-      "hangul": "함덕해수욕장",
-      "wiki": "https://en.wikipedia.org/wiki/Jocheon-eup",
-      "category": "beach",
-      "city": "Jeju",
-      "coordinates": [33.5432, 126.6686],
-      "description": "⭐ BEST for kids - Shallow waters (no swimming April 12-17°C), beach play, white sand"
-    },
-    {
-      "name": "Hyopjae Beach",
-      "hangul": "협재해수욕장",
-      "wiki": "https://en.wikipedia.org/wiki/Hallim-eup",
-      "category": "beach",
-      "city": "Jeju",
-      "coordinates": [33.3941, 126.2396],
-      "description": "Calm waters, beach activities (no swimming in April), white sand"
-    },
-    {
-      "name": "Jungmun Saekdal Beach",
-      "hangul": "중문색달해수욕장",
-      "wiki": "https://en.wikipedia.org/wiki/Jungmun_Saekdal_Beach",
-      "category": "beach",
-      "city": "Jeju",
-      "coordinates": [33.2388, 126.4121],
-      "description": "500m white sand, beautiful coastal scenery, beach walks"
-    },
-    {
-      "name": "Seopjikoji Cape",
-      "hangul": "섭지코지",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.4239, 126.9294],
-      "description": "⭐ Rocky coast path, lighthouse, canola fields (spring), perfect for 15-20km/day walkers"
-    },
-    {
-      "name": "Jusangjeolli Cliffs",
-      "hangul": "주상절리",
-      "wiki": "https://en.wikipedia.org/wiki/Jusangjeolli",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.2376, 126.4227],
-      "description": "Dramatic coastal rock formations, walking paths"
-    },
-    {
-      "name": "Teddy Bear Museum",
-      "hangul": "테디베어뮤지엄",
-      "wiki": "https://en.wikipedia.org/wiki/Teddy_Bear_Museum",
-      "category": "kids",
-      "city": "Jeju",
-      "coordinates": [33.2505, 126.4125],
-      "description": "⭐ Perfect for kids, interactive, 10,000/9,000 won, near Jungmun"
-    },
-    {
-      "name": "Jeju Maze Park",
-      "hangul": "제주미로공원",
-      "wiki": "https://en.wikipedia.org/wiki/Gimnyeong_Maze_Park",
-      "category": "kids",
-      "city": "Jeju",
-      "coordinates": [33.2866, 126.2385],
-      "description": "Large hedge maze, observation tower, kids burn energy"
-    },
-    {
-      "name": "Udo Island",
-      "hangul": "우도",
-      "wiki": "https://en.wikipedia.org/wiki/Udo_(island)",
-      "category": "nature",
-      "city": "Jeju",
-      "coordinates": [33.5012, 126.9539],
-      "description": "Day trip by ferry, can bike or walk around, perfect for active family"
-    },
-    {
       "name": "Changdeokgung Palace",
       "hangul": "창덕궁",
       "wiki": "https://en.wikipedia.org/wiki/Changdeokgung",
@@ -569,24 +424,6 @@
       "city": "Sokcho",
       "coordinates": [38.1197, 128.4655],
       "description": "⭐ Majestic mountains, hiking trails, spring wildflowers, 3h from Seoul"
-    },
-    {
-      "name": "Damyang Juknokwon Bamboo Forest",
-      "hangul": "담양 죽녹원",
-      "wiki": "https://en.wikipedia.org/wiki/Damyang_County",
-      "category": "nature",
-      "city": "Damyang",
-      "coordinates": [35.3223, 127.0196],
-      "description": "310,000 sqm bamboo forest, 8 walking paths, bamboo cafes"
-    },
-    {
-      "name": "Jeonju Hanok Village",
-      "hangul": "전주한옥마을",
-      "wiki": "https://en.wikipedia.org/wiki/Jeonju_Hanok_Village",
-      "category": "cultural",
-      "city": "Jeonju",
-      "coordinates": [35.8153, 127.1530],
-      "description": "Traditional Korean architecture, famous for bibimbap, hanok cafes"
     },
     {
       "name": "Seokchon Lake",
@@ -740,24 +577,6 @@
       "description": "Famous sunrise viewing, East Sea coast"
     },
     {
-      "name": "Jeju City",
-      "hangul": "제주시",
-      "wiki": "https://en.wikipedia.org/wiki/Jeju_City",
-      "category": "district",
-      "city": "Jeju",
-      "coordinates": [33.5097, 126.5219],
-      "description": "Northern Jeju hub, accommodation base option, shopping"
-    },
-    {
-      "name": "Seogwipo City",
-      "hangul": "서귀포시",
-      "wiki": "https://en.wikipedia.org/wiki/Seogwipo",
-      "category": "district",
-      "city": "Jeju",
-      "coordinates": [33.2541, 126.5601],
-      "description": "Southern Jeju hub, central for waterfalls and attractions"
-    },
-    {
       "name": "Nampo-dong",
       "hangul": "남포동",
       "wiki": "https://en.wikipedia.org/wiki/Nampo-dong",
@@ -875,15 +694,6 @@
       "city": "Bucheon",
       "coordinates": [37.4858, 126.7859],
       "description": "Miniature world, 109 buildings from 25 countries, great for kids, 30-45min from Incheon"
-    },
-    {
-      "name": "Seongeup Folk Village",
-      "hangul": "성읍민속마을",
-      "wiki": "https://en.wikipedia.org/wiki/Seongeup_Folk_Village",
-      "category": "cultural",
-      "city": "Jeju",
-      "coordinates": [33.4086, 126.8080],
-      "description": "⭐ Living traditional village, 600 years old, black lava walls, stone grandfather statues, FREE"
     },
     {
       "name": "Bihaksan Barley Rice & Kalguksu",

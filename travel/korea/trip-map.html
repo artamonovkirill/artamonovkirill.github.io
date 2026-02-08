@@ -382,14 +382,10 @@
             const cityHangul = {
                 'Seoul': '서울',
                 'Busan': '부산',
-                'Jeju': '제주',
                 'Incheon': '인천',
                 'Gapyeong': '가평',
                 'Gyeongju': '경주',
-                'Wando': '완도',
                 'Sokcho': '속초',
-                'Damyang': '담양',
-                'Jeonju': '전주',
                 'Gangneung': '강릉',
                 'Suwon': '수원',
                 'Ganghwa': '강화',
@@ -420,7 +416,6 @@
             const regions = [
                 { key: 'seoul-incheon', label: 'Seoul & Incheon', hangul: '서울 & 인천', cities: ['Seoul', 'Incheon', 'Ganghwa', 'Siheung', 'Bucheon', 'Suwon'] },
                 { key: 'busan', label: 'Busan', hangul: '부산', cities: ['Busan', 'Geoje', 'Tongyeong', 'Ulsan', 'Daegu', 'Gyeongju'] },
-                { key: 'jeju', label: 'Jeju', hangul: '제주', cities: ['Jeju', 'Wando'] },
             ];
             const cityToRegion = {};
             regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
