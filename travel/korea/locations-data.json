@@ -13,6 +13,36 @@
       "description": "Arrival point - Buy T-money cards and KT SIM here"
     },
     {
+      "name": "Seoul Station",
+      "hangul": "서울역",
+      "wiki": "https://en.wikipedia.org/wiki/Seoul_station",
+      "category": "transportation",
+      "city": "Seoul",
+      "icon": "🚄",
+      "coordinates": [37.5547, 126.9707],
+      "description": "KTX departure to Busan (~2.5h). Also AREX from Incheon Airport."
+    },
+    {
+      "name": "Suseo Station (SRT)",
+      "hangul": "수서역",
+      "wiki": "https://en.wikipedia.org/wiki/Suseo_station",
+      "category": "transportation",
+      "city": "Seoul",
+      "icon": "🚄",
+      "coordinates": [37.4546, 127.0714],
+      "description": "SRT high-speed rail to Busan (~2.5h). Alternative to Seoul Station KTX."
+    },
+    {
+      "name": "Busan Station",
+      "hangul": "부산역",
+      "wiki": "https://en.wikipedia.org/wiki/Busan_station",
+      "category": "transportation",
+      "city": "Busan",
+      "icon": "🚄",
+      "coordinates": [35.1152, 129.0413],
+      "description": "KTX/SRT arrival from Seoul. Near Jagalchi Market and Nampo-dong."
+    },
+    {
       "name": "Gyeongbokgung Palace",
       "hangul": "경복궁",
       "wiki": "https://en.wikipedia.org/wiki/Gyeongbokgung",
@@ -353,6 +383,30 @@
       "description": "Cherry blossoms late March-early April, coastal views"
     },
     {
+      "name": "Moontan Road",
+      "hangul": "문탠로드",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1620, 129.1860],
+      "description": "Coastal walking path near Dalmaji Hill with sea views. Easy, scenic stroll."
+    },
+    {
+      "name": "Ahopsan Forest",
+      "hangul": "아홉산 숲",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.2305, 129.1720],
+      "description": "Peaceful bamboo and pine forest. Famous K-drama filming location. Tranquil nature walk. Gijang area."
+    },
+    {
+      "name": "Cheongsapo",
+      "hangul": "청사포",
+      "category": "nature",
+      "city": "Busan",
+      "coordinates": [35.1710, 129.1910],
+      "description": "Coastal village with twin lighthouses. Accessible via Blue Line Park from Mipo. Between Haeundae and Songjeong."
+    },
+    {
       "name": "Wando Ferry Terminal",
       "hangul": "완도연안여객터미널",
       "wiki": "https://en.wikipedia.org/wiki/Wando_County",
@@ -545,14 +599,29 @@
       "description": "Cherry blossoms April 8-15, lakeside walks, near Lotte World"
     },
     {
-      "name": "Geumjeongsan Mountain",
-      "hangul": "금정산",
-      "wiki": "https://en.wikipedia.org/wiki/Geumjeongsan",
-      "icon": "🏔️",
-      "category": "nature",
+      "name": "Geumjeongsan Cable Car",
+      "hangul": "금정산 케이블카",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.2178, 129.0778],
+      "description": "Cable car base at Geumgang Park (near Oncheonjang Station, Line 1). Rides to midpoint of Geumjeongsan. Start point for ridge hike to fortress village or Beomeosa."
+    },
+    {
+      "name": "Geumjeongsanseong Village",
+      "hangul": "금정산성마을",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.2453, 129.0748],
+      "description": "Mountain village inside fortress walls. Famous for Sanseong Makgeolli (rice wine) and tofu dishes (dubu). Great lunch stop on Geumjeongsan hike."
+    },
+    {
+      "name": "Geumjeongsanseong Fortress",
+      "hangul": "금정산성",
+      "wiki": "https://en.wikipedia.org/wiki/Geumjeongsanseong",
+      "category": "cultural",
       "city": "Busan",
       "coordinates": [35.2520, 129.0926],
-      "description": "Hiking trails at Beomeosa Temple, wildflowers, city/coast views"
+      "description": "Korea's largest mountain fortress (17km walls). Ridge walk with panoramic views of Busan. Connect cable car → fortress → village → Beomeosa for a half-day route."
     },
     {
       "name": "Songdo Beach",
@@ -636,6 +705,30 @@
       "city": "Busan",
       "coordinates": [35.1730, 129.1604],
       "description": "Scenic coastal train, ocean & mountain views, family activity"
+    },
+    {
+      "name": "Gunam-ro & Haeundae Market",
+      "hangul": "구남로 & 해운대시장",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.1596, 129.1635],
+      "description": "Lively shopping street + traditional market near Haeundae Beach. Cafes, shops, local specialties, souvenirs."
+    },
+    {
+      "name": "The Bay 101",
+      "hangul": "더베이101",
+      "category": "food",
+      "city": "Busan",
+      "coordinates": [35.1548, 129.1480],
+      "description": "Waterfront dining and cafes next to Dongbaek Island. Famous night view of Marine City skyline."
+    },
+    {
+      "name": "Shinsegae Spa Land",
+      "hangul": "신세계 스파랜드",
+      "category": "explore",
+      "city": "Busan",
+      "coordinates": [35.1693, 129.1316],
+      "description": "Hot spring spa & jjimjilbang in Centum City. Saunas, themed rooms, massages. Inside Shinsegae Dept Store."
     },
     {
       "name": "Jeongdongjin Beach",
@@ -791,6 +884,305 @@
       "city": "Jeju",
       "coordinates": [33.4086, 126.8080],
       "description": "⭐ Living traditional village, 600 years old, black lava walls, stone grandfather statues, FREE"
+    },
+    {
+      "name": "Bihaksan Barley Rice & Kalguksu",
+      "hangul": "비학산 보리밥 칼국수",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1695, 129.1295],
+      "description": "Clean side dishes and rich doenjang jjigae. Light flavors, mostly vegan except the stew."
+    },
+    {
+      "name": "Kongbatgol Soft Tofu",
+      "hangul": "콩밭골 순두부",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.2312, 129.0840],
+      "description": "Rich yet mild sundubu jjigae. Simple, satisfying Korean meal."
+    },
+    {
+      "name": "Badamaru Abalone Porridge",
+      "hangul": "바다마루 전복죽",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1635, 129.1790],
+      "description": "Flavorful abalone porridge with ocean aroma and sesame oil. Special (특) has double abalone. On Dalmaji-gil."
+    },
+    {
+      "name": "Geodae Gomtang",
+      "hangul": "거대곰탕",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1573, 129.1498],
+      "description": "Rich, milky beef bone broth. Very popular — expect weekend waits."
+    },
+    {
+      "name": "Daenam Saengpo Galbi",
+      "hangul": "대남 생포 갈비",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1630, 129.1650],
+      "description": "Korean BBQ — meaty ogyeopsal (five-layer pork belly), great side dishes, stew, and naengmyeon."
+    },
+    {
+      "name": "Songwon Mulhoe",
+      "hangul": "송원물회",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1790, 129.1988],
+      "description": "Pohang-style broth-free mulhoe with chewy raw fish. Free spicy soup side is excellent. Songjeong."
+    },
+    {
+      "name": "Yeongbyeon Raw Fish",
+      "hangul": "영변횟집",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1785, 129.1995],
+      "description": "Famous for inventing finely sliced sekkosi. Fresh, chewy raw fish. Songjeong."
+    },
+    {
+      "name": "Yangsan Gukbap",
+      "hangul": "양산국밥",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1700, 129.1680],
+      "description": "Refreshing, clean pork soup without any odor. Unique twist on pork gukbap."
+    },
+    {
+      "name": "Gukbo Seaweed Soup",
+      "hangul": "국보미역",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.2430, 129.2220],
+      "description": "Milky, thick, rich seaweed soup — considered the best miyeokguk in Busan. Gijang area."
+    },
+    {
+      "name": "Giljo Shabu-Shabu",
+      "hangul": "길조 샤브샤브",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1780, 129.1980],
+      "description": "Fresh ingredients, clean broth. Set includes beef, vegetables, noodles, porridge. Spacious — good for families. Songjeong."
+    },
+    {
+      "name": "Haeundae Milmyeon",
+      "hangul": "해운대밀면",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1625, 129.1660],
+      "description": "Busan's signature chewy noodles in rich broth. Mul (cold broth) and bibim (spicy) options. Try with handmade dumplings."
+    },
+    {
+      "name": "Jjang Tteokbokki",
+      "hangul": "짱떡볶이",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1645, 129.1648],
+      "description": "Busan-style tteokbokki — chewy garaetteok in dark red sweet-and-spicy sauce."
+    },
+    {
+      "name": "Sobok Noodles",
+      "hangul": "소복국수",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1630, 129.1640],
+      "description": "Well-balanced flavors, great value for a satisfying meal."
+    },
+    {
+      "name": "Kitchen Whale",
+      "hangul": "키친웨일",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1640, 129.1780],
+      "description": "Fresh, light sandwiches — try the club sandwich. 1st floor of accommodation building."
+    },
+    {
+      "name": "Burger Shop",
+      "hangul": "버거샵",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1630, 129.1630],
+      "description": "Soft brioche buns, juicy patties. Get the set with crispy curly fries. Near Haeundae Station."
+    },
+    {
+      "name": "Shilla Stay Lunch Buffet",
+      "hangul": "신라스테이 해운대",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1600, 129.1570],
+      "description": "Lunch buffet 12-2pm. ₩30,000 weekdays / ₩36,000 weekends. Best value buffet in Haeundae."
+    },
+    {
+      "name": "Georukaeng Table",
+      "hangul": "거루캥테이블",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1795, 129.1992],
+      "description": "Australian-style brunch with ocean views. Try basil cream pasta, aglio e olio, arancini, hummus. Songjeong."
+    },
+    {
+      "name": "Sabbia",
+      "hangul": "사비아",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1640, 129.1810],
+      "description": "Smooth, delicate pasta. Best: gnocchi with subtle truffle aroma. Also fusion pasta. Dalmaji-gil."
+    },
+    {
+      "name": "Pizzeria Lardo",
+      "hangul": "피제리아 라르도",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1555, 129.1425],
+      "description": "Wood-fired pizza with chewy dough, American-style pasta. Gwangan Bridge views. Marine City."
+    },
+    {
+      "name": "The Barn Coffee",
+      "hangul": "더반커피 부산점",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1630, 129.1830],
+      "description": "Variety of brewed coffees with beautiful ocean views. 5th floor on Dalmaji-gil. 11am-7pm."
+    },
+    {
+      "name": "Fruitary Forest",
+      "hangul": "프루터리 포레스트",
+      "category": "restaurant",
+      "city": "Busan",
+      "coordinates": [35.1680, 129.1900],
+      "description": "Café in the forest near Songjeong. Pets welcome. 11am-9pm."
+    },
+    {
+      "name": "Ulsanbawi Rock",
+      "hangul": "울산바위",
+      "wiki": "https://en.wikipedia.org/wiki/Ulsanbawi",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Sokcho",
+      "coordinates": [38.1570, 128.4950],
+      "description": "⭐ Iconic Seoraksan hike — 7.6km, 3-4h, 808 stairs to panoramic summit views. The signature trail."
+    },
+    {
+      "name": "Biseondae",
+      "hangul": "비선대",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Sokcho",
+      "coordinates": [38.1220, 128.4730],
+      "description": "Romantic riverside walk through granite valley with engraved poetry rocks. 6km, 1.5-2h, easy. Seoraksan."
+    },
+    {
+      "name": "Biryong Falls",
+      "hangul": "비룡폭포",
+      "wiki": "https://en.wikipedia.org/wiki/Biryong_Falls",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Sokcho",
+      "coordinates": [38.1620, 128.5016],
+      "description": "Cascading waterfall trail in Seoraksan. 5km round trip, 1.5-2h, easy-moderate. Good spring snowmelt flow."
+    },
+    {
+      "name": "Seoraksan Cable Car",
+      "hangul": "설악산 케이블카",
+      "category": "explore",
+      "city": "Sokcho",
+      "coordinates": [38.1731, 128.4891],
+      "description": "10-min cable car to Gwongeumseong fortress ruins (700m altitude). Panoramic mountain and sea views."
+    },
+    {
+      "name": "Seorak Waterpia",
+      "hangul": "설악워터피아",
+      "category": "explore",
+      "city": "Sokcho",
+      "coordinates": [38.0983, 128.4786],
+      "description": "Hot spring waterpark/spa with mountain views. Great for unwinding after hiking Seoraksan."
+    },
+    {
+      "name": "Chuncheon",
+      "hangul": "춘천",
+      "wiki": "https://en.wikipedia.org/wiki/Chuncheon",
+      "category": "district",
+      "coordinates": [37.8747, 127.7342],
+      "description": "Lake city 1.5h from Seoul, famous for dakgalbi. 30 min to Gapyeong. Couples getaway overnight option."
+    },
+    {
+      "name": "Chuncheon Dakgalbi Street",
+      "hangul": "춘천 명동 닭갈비골목",
+      "category": "food",
+      "city": "Chuncheon",
+      "coordinates": [37.8808, 127.7280],
+      "description": "Famous alley of dakgalbi (spicy stir-fried chicken) restaurants. Chuncheon's signature dish."
+    },
+    {
+      "name": "Gangchon Rail Park",
+      "hangul": "강촌레일파크",
+      "category": "explore",
+      "city": "Chuncheon",
+      "coordinates": [37.8156, 127.7122],
+      "description": "⭐ 2-seater rail bikes on old train tracks through 'Love Tunnel'. Korea's largest rail bike course. Romantic."
+    },
+    {
+      "name": "Jade Garden",
+      "hangul": "제이드가든",
+      "wiki": "https://en.wikipedia.org/wiki/Jade_Garden",
+      "icon": "🌳",
+      "category": "nature",
+      "city": "Chuncheon",
+      "coordinates": [37.8325, 127.5420],
+      "description": "'Mini Europe' arboretum. Tulips, magnolias in April. K-drama filming location. 26 themed gardens."
+    },
+    {
+      "name": "Soyang Dam",
+      "hangul": "소양강댐",
+      "wiki": "https://en.wikipedia.org/wiki/Soyang_Dam",
+      "category": "nature",
+      "city": "Chuncheon",
+      "coordinates": [37.9507, 127.8131],
+      "description": "Korea's largest dam. Lake boat rides, scenic views. 10km northeast of Chuncheon."
+    },
+    {
+      "name": "Soyanggang Skywalk",
+      "hangul": "소양강 스카이워크",
+      "category": "explore",
+      "city": "Chuncheon",
+      "coordinates": [37.8780, 127.7295],
+      "description": "Glass-bottomed skywalk over the Soyang River. Sunset views. In Chuncheon city center."
+    },
+    {
+      "name": "Yangpyeong",
+      "hangul": "양평",
+      "wiki": "https://en.wikipedia.org/wiki/Yangpyeong_County",
+      "category": "district",
+      "coordinates": [37.4914, 127.4875],
+      "description": "Riverside county 1-1.5h from Seoul. Romantic river scenery, cherry blossoms, pensions. 45-60 min to Gapyeong."
+    },
+    {
+      "name": "Dumulmeori",
+      "hangul": "두물머리",
+      "icon": "🌳",
+      "category": "nature",
+      "city": "Yangpyeong",
+      "coordinates": [37.5320, 127.3100],
+      "description": "⭐ Where two rivers meet. 400-year-old zelkova trees, cherry blossoms, K-drama filming location. Most romantic."
+    },
+    {
+      "name": "Semiwon Garden",
+      "hangul": "세미원",
+      "icon": "🌳",
+      "category": "nature",
+      "city": "Yangpyeong",
+      "coordinates": [37.5285, 127.3070],
+      "description": "Water garden connected to Dumulmeori by 250m pontoon bridge. Lotus flowers, walking paths."
+    },
+    {
+      "name": "Yongmunsa Temple",
+      "hangul": "용문사",
+      "wiki": "https://en.wikipedia.org/wiki/Yongmunsa",
+      "category": "cultural",
+      "city": "Yangpyeong",
+      "coordinates": [37.5501, 127.5711],
+      "description": "Mountain temple with 1,100-year-old ginkgo tree (oldest in Korea). Cherry blossoms in April. 1-2h leisurely hike."
     }
   ],
   "categories": {
@@ -833,6 +1225,12 @@
       "color": "#F44336",
       "icon": "🧭",
       "description": "Explore More"
+    },
+    "restaurant": {
+      "color": "#795548",
+      "icon": "🍽️",
+      "description": "Restaurants & Cafés",
+      "defaultHidden": true
     }
   }
 }
