@@ -125,6 +125,12 @@
             z-index: 1;
         }
 
+        .stats-value .stats-total {
+            font-size: 16px;
+            font-weight: normal;
+            color: rgba(255,255,255,0.7);
+        }
+
         .petal {
             position: absolute;
             top: -10px;
@@ -233,6 +239,24 @@
             color: #1a73e8;
         }
 
+        .sidebar-footer {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #dee2e6;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .sidebar-footer a {
+            color: #1a73e8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .sidebar-footer a:hover {
+            text-decoration: underline;
+        }
+
         .sidebar-toggle {
             display: none;
         }
@@ -306,6 +330,13 @@
                     <h3>Categories</h3>
                     <div id="legend-items"></div>
                 </div>
+
+                <div class="legend" id="regions-section">
+                    <h3>Regions</h3>
+                    <div id="region-items"></div>
+                </div>
+
+                <div class="sidebar-footer" id="sidebar-footer"></div>
             </div>
         </div>
 
@@ -316,6 +347,16 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
+        // Storage helpers
+        const mapId = location.pathname.split('/').filter(Boolean).slice(-2, -1)[0] || 'map';
+        function loadState(key) {
+            try { return JSON.parse(localStorage.getItem('tripmap:' + mapId + ':' + key)); }
+            catch { return null; }
+        }
+        function saveState(key, val) {
+            localStorage.setItem('tripmap:' + mapId + ':' + key, JSON.stringify(val));
+        }
+
         // Load the data
         fetch('locations-data.json')
             .then(response => response.json())
@@ -333,23 +374,10 @@
 
             // Add map tiles with English/Latin labels
             L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '© OpenStreetMap contributors, © CARTO',
+                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
                 maxZoom: 19,
                 subdomains: 'abcd'
             }).addTo(map);
-
-            // Store markers by category
-            const markersByCategory = {};
-            const layerGroups = {};
-
-            // Initialize layer groups for each category
-            Object.keys(data.categories).forEach(category => {
-                layerGroups[category] = L.layerGroup();
-                if (!data.categories[category].defaultHidden) {
-                    layerGroups[category].addTo(map);
-                }
-                markersByCategory[category] = [];
-            });
 
             const cityHangul = {
                 'Seoul': '서울',
@@ -375,12 +403,41 @@
                 'Daegu': '대구',
             };
 
-            // Add markers
+            // Load saved state
+            const savedCategories = loadState('categories') || {};
+            const savedRegions = loadState('regions') || {};
+            // Build state
+            const categoryState = {};
+            Object.keys(data.categories).forEach(key => {
+                if (key in savedCategories) {
+                    categoryState[key] = savedCategories[key];
+                } else {
+                    categoryState[key] = !data.categories[key].defaultHidden;
+                }
+            });
+
+            // Regions: only these are toggleable, rest always visible
+            const regions = [
+                { key: 'seoul-incheon', label: 'Seoul & Incheon', hangul: '서울 & 인천', cities: ['Seoul', 'Incheon', 'Ganghwa', 'Siheung', 'Bucheon', 'Suwon'] },
+                { key: 'busan', label: 'Busan', hangul: '부산', cities: ['Busan', 'Geoje', 'Tongyeong', 'Ulsan', 'Daegu', 'Gyeongju'] },
+                { key: 'jeju', label: 'Jeju', hangul: '제주', cities: ['Jeju', 'Wando'] },
+            ];
+            const cityToRegion = {};
+            regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
+
+            const regionState = {};
+            regions.forEach(r => {
+                regionState[r.key] = r.key in savedRegions ? savedRegions[r.key] : true;
+            });
+
+            // Build all markers
+            const allMarkers = [];
+
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
-
-                // Create custom icon
+                const city = location.city || 'Other';
                 const markerIcon = location.icon || category.icon;
+
                 const icon = L.divIcon({
                     html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
                     className: 'custom-marker',
@@ -388,10 +445,8 @@
                     iconAnchor: [12, 12]
                 });
 
-                // Create marker
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                // Create popup content
                 const naverQuery = encodeURIComponent(location.hangul || location.name);
                 const naverUrl = `nmap://search?query=${naverQuery}&appname=koreatrip`;
                 const popupContent = `
@@ -436,22 +491,42 @@
                             });
                     });
                 }
-                marker.addTo(layerGroups[location.category]);
-                markersByCategory[location.category].push(marker);
+
+                const region = cityToRegion[city] || null;
+                allMarkers.push({ marker, category: location.category, region, name: location.name });
             });
 
-            // Update total count
-            document.getElementById('total-count').textContent = data.locations.length;
+            // Visibility
+            function updateVisibility() {
+                let visibleCount = 0;
+                allMarkers.forEach(m => {
+                    const regionVisible = m.region === null || regionState[m.region];
+                    const visible = categoryState[m.category] && regionVisible;
+                    if (visible) {
+                        if (!map.hasLayer(m.marker)) m.marker.addTo(map);
+                        visibleCount++;
+                    } else {
+                        if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
+                    }
+                });
+                const total = data.locations.length;
+                const countEl = document.getElementById('total-count');
+                if (visibleCount < total) {
+                    countEl.innerHTML = visibleCount + ' <span class="stats-total">/ ' + total + '</span>';
+                } else {
+                    countEl.textContent = total;
+                }
+            }
 
-            // Create legend
+            // Category legend
             const legendContainer = document.getElementById('legend-items');
 
             Object.entries(data.categories).forEach(([key, category]) => {
-                const count = markersByCategory[key] ? markersByCategory[key].length : 0;
+                const count = allMarkers.filter(m => m.category === key).length;
                 if (!count) return;
 
                 const legendItem = document.createElement('div');
-                legendItem.className = data.categories[key].defaultHidden ? 'legend-item' : 'legend-item active';
+                legendItem.className = categoryState[key] ? 'legend-item active' : 'legend-item';
 
                 legendItem.innerHTML = `
                     <div class="legend-icon" style="background-color: ${category.color};">
@@ -462,16 +537,47 @@
                 `;
 
                 legendItem.addEventListener('click', () => {
-                    legendItem.classList.toggle('active');
-                    if (legendItem.classList.contains('active')) {
-                        layerGroups[key].addTo(map);
-                    } else {
-                        map.removeLayer(layerGroups[key]);
-                    }
+                    categoryState[key] = !categoryState[key];
+                    legendItem.classList.toggle('active', categoryState[key]);
+                    saveState('categories', categoryState);
+                    updateVisibility();
                 });
 
                 legendContainer.appendChild(legendItem);
             });
+
+            // Region legend
+            const regionContainer = document.getElementById('region-items');
+
+            regions.forEach(r => {
+                const count = allMarkers.filter(m => m.region === r.key).length;
+                const regionItem = document.createElement('div');
+                regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
+
+                regionItem.innerHTML = `
+                    <div class="legend-text">${r.label} (${r.hangul})</div>
+                    <div class="legend-count">${count}</div>
+                `;
+
+                regionItem.addEventListener('click', () => {
+                    regionState[r.key] = !regionState[r.key];
+                    regionItem.classList.toggle('active', regionState[r.key]);
+                    saveState('regions', regionState);
+                    updateVisibility();
+                });
+
+                regionContainer.appendChild(regionItem);
+            });
+
+            // Sidebar footer
+            document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                localStorage.removeItem('tripmap:' + mapId + ':categories');
+                localStorage.removeItem('tripmap:' + mapId + ':regions');
+                location.reload();
+            });
+
+            updateVisibility();
 
             // Map controls
             const initialCenter = [36.5, 127.8];

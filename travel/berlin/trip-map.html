@@ -125,6 +125,12 @@
             z-index: 1;
         }
 
+        .stats-value .stats-total {
+            font-size: 16px;
+            font-weight: normal;
+            color: rgba(255,255,255,0.7);
+        }
+
         .bubble {
             position: absolute;
             bottom: 0;
@@ -226,6 +232,24 @@
             color: #1a73e8;
         }
 
+        .sidebar-footer {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #dee2e6;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .sidebar-footer a {
+            color: #1a73e8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .sidebar-footer a:hover {
+            text-decoration: underline;
+        }
+
         .sidebar-toggle {
             display: none;
         }
@@ -299,6 +323,8 @@
                     <h3>Categories</h3>
                     <div id="legend-items"></div>
                 </div>
+
+                <div class="sidebar-footer" id="sidebar-footer"></div>
             </div>
         </div>
 
@@ -309,6 +335,16 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
+        // Storage helpers
+        const mapId = location.pathname.split('/').filter(Boolean).slice(-2, -1)[0] || 'map';
+        function loadState(key) {
+            try { return JSON.parse(localStorage.getItem('tripmap:' + mapId + ':' + key)); }
+            catch { return null; }
+        }
+        function saveState(key, val) {
+            localStorage.setItem('tripmap:' + mapId + ':' + key, JSON.stringify(val));
+        }
+
         // Load the data
         fetch('locations-data.json')
             .then(response => response.json())
@@ -326,26 +362,28 @@
 
             // Add map tiles
             L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '© OpenStreetMap contributors, © CARTO',
+                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
                 maxZoom: 19,
                 subdomains: 'abcd'
             }).addTo(map);
 
-            // Store markers by category
-            const markersByCategory = {};
-            const layerGroups = {};
-
-            // Initialize layer groups for each category
-            Object.keys(data.categories).forEach(category => {
-                layerGroups[category] = L.layerGroup().addTo(map);
-                markersByCategory[category] = [];
+            // Load saved state
+            const savedCategories = loadState('categories') || {};
+            const categoryState = {};
+            Object.keys(data.categories).forEach(key => {
+                if (key in savedCategories) {
+                    categoryState[key] = savedCategories[key];
+                } else {
+                    categoryState[key] = !data.categories[key].defaultHidden;
+                }
             });
 
-            // Add markers
+            // Build all markers
+            const allMarkers = [];
+
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
 
-                // Create custom icon
                 const icon = L.divIcon({
                     html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${category.icon}</div>`,
                     className: 'custom-marker',
@@ -353,10 +391,8 @@
                     iconAnchor: [12, 12]
                 });
 
-                // Create marker
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                // Create popup content
                 const mapsQuery = encodeURIComponent((location.german || location.name) + ', Berlin');
                 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
                 const popupContent = `
@@ -404,22 +440,40 @@
                             });
                     });
                 }
-                marker.addTo(layerGroups[location.category]);
-                markersByCategory[location.category].push(marker);
+
+                allMarkers.push({ marker, category: location.category, name: location.name });
             });
 
-            // Update total count
-            document.getElementById('total-count').textContent = data.locations.length;
+            // Visibility
+            function updateVisibility() {
+                let visibleCount = 0;
+                allMarkers.forEach(m => {
+                    const visible = categoryState[m.category];
+                    if (visible) {
+                        if (!map.hasLayer(m.marker)) m.marker.addTo(map);
+                        visibleCount++;
+                    } else {
+                        if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
+                    }
+                });
+                const total = data.locations.length;
+                const countEl = document.getElementById('total-count');
+                if (visibleCount < total) {
+                    countEl.innerHTML = visibleCount + ' <span class="stats-total">/ ' + total + '</span>';
+                } else {
+                    countEl.textContent = total;
+                }
+            }
 
-            // Create legend
+            // Category legend
             const legendContainer = document.getElementById('legend-items');
 
             Object.entries(data.categories).forEach(([key, category]) => {
-                const count = markersByCategory[key].length;
+                const count = allMarkers.filter(m => m.category === key).length;
+                if (!count) return;
 
                 const legendItem = document.createElement('div');
-                legendItem.className = 'legend-item active';
-                legendItem.dataset.category = key;
+                legendItem.className = categoryState[key] ? 'legend-item active' : 'legend-item';
 
                 legendItem.innerHTML = `
                     <div class="legend-icon" style="background-color: ${category.color};">
@@ -429,19 +483,24 @@
                     <div class="legend-count">${count}</div>
                 `;
 
-                // Toggle category visibility
                 legendItem.addEventListener('click', () => {
-                    legendItem.classList.toggle('active');
-
-                    if (legendItem.classList.contains('active')) {
-                        layerGroups[key].addTo(map);
-                    } else {
-                        map.removeLayer(layerGroups[key]);
-                    }
+                    categoryState[key] = !categoryState[key];
+                    legendItem.classList.toggle('active', categoryState[key]);
+                    saveState('categories', categoryState);
+                    updateVisibility();
                 });
 
                 legendContainer.appendChild(legendItem);
             });
+
+            // Sidebar footer
+            document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                localStorage.removeItem('tripmap:' + mapId + ':categories');
+                location.reload();
+            });
+
+            updateVisibility();
 
             // Map controls
             const initialCenter = [52.52, 13.405];

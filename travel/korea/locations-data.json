@@ -1189,12 +1189,12 @@
     "transportation": {
       "color": "#808080",
       "icon": "✈️",
-      "description": "Airports & Ferry Terminals"
+      "description": "Transport"
     },
     "cultural": {
       "color": "#9C27B0",
       "icon": "🏛️",
-      "description": "Palaces, Temples, Villages, Museums, Memorials"
+      "description": "Cultural & Historical"
     },
     "nature": {
       "color": "#2E7D32",
@@ -1209,7 +1209,7 @@
     "kids": {
       "color": "#E91E63",
       "icon": "🎠",
-      "description": "Theme Parks, Aquariums, Kid Activities"
+      "description": "Kids Activities"
     },
     "beach": {
       "color": "#2196F3",
