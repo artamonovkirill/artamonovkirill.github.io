@@ -994,6 +994,79 @@
       "city": "Yangpyeong",
       "coordinates": [37.5501, 127.5711],
       "description": "Mountain temple with 1,100-year-old ginkgo tree (oldest in Korea). Cherry blossoms in April. 1-2h leisurely hike."
+    },
+    {
+      "name": "Bukhansan National Park",
+      "hangul": "북한산국립공원",
+      "wiki": "https://en.wikipedia.org/wiki/Bukhansan",
+      "icon": "⛰️",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.6600, 126.9930],
+      "description": "Korea's most visited national park. Dramatic granite peaks and ridgelines. Baekundae (836m) is the highest peak."
+    },
+    {
+      "name": "Dobongsan",
+      "hangul": "도봉산",
+      "wiki": "https://en.wikipedia.org/wiki/Dobongsan",
+      "icon": "⛰️",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.6987, 127.0186],
+      "description": "Northern section of Bukhansan NP. Granite spires, exposed scrambling. Jaunbong (740m). Subway: Dobongsan stn (Lines 1/7)."
+    },
+    {
+      "name": "Dobongsan Trailhead (Mangwolsa)",
+      "hangul": "망월사 등산로 입구",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.7020, 127.0320],
+      "description": "Start of Madang Ridge → Jaunbong circuit (4-5h). Subway: Mangwolsa stn (Line 1), 15 min walk to trailhead."
+    },
+    {
+      "name": "Dobongsan Trailhead (Dobongsan Stn)",
+      "hangul": "도봉산역 등산로 입구",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.6965, 127.0385],
+      "description": "Dobong Visitor Center area. Access to Jaunbong, Sinseondae. Subway: Dobongsan stn (Lines 1/7), 15 min walk."
+    },
+    {
+      "name": "Bukhansanseong Trailhead",
+      "hangul": "북한산성 탐방지원센터",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.6590, 126.9590],
+      "description": "NW approach to Baekundae via Joseon fortress walls (4-5h). Bus 704 from Gupabal stn (Line 3)."
+    },
+    {
+      "name": "Uiryeong Trail (Ui Entrance)",
+      "hangul": "우이령길 우이 탐방지원센터",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.6610, 127.0150],
+      "description": "East entrance of Uiryeong wildlife corridor (6.8 km, 3h). Reservation required (1,000/day). Bus from Suyu stn (Line 4)."
+    },
+    {
+      "name": "Pocheon Art Valley",
+      "hangul": "포천아트밸리",
+      "wiki": "https://en.wikipedia.org/wiki/Pocheon_Art_Valley",
+      "category": "explore",
+      "city": "Pocheon",
+      "coordinates": [37.9420, 127.1610],
+      "description": "Abandoned granite quarry with turquoise lake (Cheonjuho), sculpture gallery. Open until 21:00. Closed 1st Monday/month."
+    },
+    {
+      "name": "Sanjeonghosu Lake",
+      "hangul": "산정호수",
+      "category": "nature",
+      "city": "Pocheon",
+      "coordinates": [38.0580, 127.1420],
+      "description": "Volcanic crater lake surrounded by forest. Easy lakeside walk (3.2 km loop, ~1h)."
     }
   ],
   "categories": {
