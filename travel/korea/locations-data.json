@@ -48,6 +48,7 @@
       "hangul": "경복궁",
       "wiki": "https://en.wikipedia.org/wiki/Gyeongbokgung",
       "category": "cultural",
+      "icon": "🏯",
       "city": "Seoul",
       "coordinates": [37.5796, 126.9770],
       "description": "Main Joseon palace, FREE last Wednesday or with hanbok, cherry blossoms April 7-14"
@@ -57,6 +58,7 @@
       "hangul": "북촌한옥마을",
       "wiki": "https://en.wikipedia.org/wiki/Bukchon_Hanok_Village",
       "category": "cultural",
+      "icon": "🏘️",
       "city": "Seoul",
       "coordinates": [37.5826, 126.9833],
       "description": "Traditional Korean homes, FREE, 15-20 min walk from Gyeongbokgung"
@@ -151,6 +153,7 @@
       "hangul": "쁘띠프랑스",
       "wiki": "https://en.wikipedia.org/wiki/Petite_France_(theme_park)",
       "category": "cultural",
+      "icon": "🏘️",
       "city": "Gapyeong",
       "coordinates": [37.6878, 127.4364],
       "description": "French-themed village, Little Prince exhibits, near Nami Island"
@@ -208,6 +211,7 @@
       "hangul": "재한유엔기념공원",
       "wiki": "https://en.wikipedia.org/wiki/United_Nations_Memorial_Cemetery",
       "category": "cultural",
+      "icon": "🕊️",
       "city": "Busan",
       "coordinates": [35.1269, 129.1010],
       "description": "Excellent for strollers - 100% flat, peaceful, free admission, near Daeyeon Station"
@@ -280,6 +284,7 @@
       "hangul": "해동용궁사",
       "wiki": "https://en.wikipedia.org/wiki/Haedong_Yonggungsa",
       "category": "cultural",
+      "icon": "⛩️",
       "city": "Busan",
       "coordinates": [35.1884, 129.2231],
       "description": "⭐ Stunning seaside temple on cliffs, many stairs (use baby carrier), free entry"
@@ -289,6 +294,7 @@
       "hangul": "국립해양박물관",
       "wiki": "https://en.wikipedia.org/wiki/Korea_National_Maritime_Museum",
       "category": "cultural",
+      "icon": "🚢",
       "city": "Busan",
       "coordinates": [35.0769, 129.0844],
       "description": "4 floors, rooftop playground, free admission, good rainy day option"
@@ -297,6 +303,7 @@
       "name": "Igidae Coastal Walk",
       "hangul": "이기대",
       "category": "nature",
+      "icon": "🥾",
       "city": "Busan",
       "coordinates": [35.1180, 129.1230],
       "description": "5km dramatic cliff trail, proper hike, not for strollers"
@@ -306,6 +313,7 @@
       "hangul": "부산시립미술관",
       "wiki": "https://en.wikipedia.org/wiki/Busan_Museum_of_Art",
       "category": "cultural",
+      "icon": "🎨",
       "city": "Busan",
       "coordinates": [35.1692, 129.1266],
       "description": "Near Centum City, calm, stroller-friendly grounds"
@@ -315,6 +323,7 @@
       "hangul": "씨라이프 부산아쿠아리움",
       "wiki": "https://en.wikipedia.org/wiki/Busan_Aquarium",
       "category": "kids",
+      "icon": "🐠",
       "city": "Busan",
       "coordinates": [35.1583, 129.1603],
       "description": "⭐ Next to Haeundae Beach, 10,000+ creatures, 80m submarine tunnel, interactive"
@@ -324,6 +333,7 @@
       "hangul": "감천문화마을",
       "wiki": "https://en.wikipedia.org/wiki/Gamcheon_Culture_Village",
       "category": "cultural",
+      "icon": "🎨",
       "city": "Busan",
       "coordinates": [35.0976, 129.0103],
       "description": "⭐ Korean Santorini, colorful hillside houses, art installations, stairs/hills"
@@ -333,6 +343,7 @@
       "hangul": "범어사",
       "wiki": "https://en.wikipedia.org/wiki/Beomeosa",
       "category": "cultural",
+      "icon": "⛩️",
       "city": "Busan",
       "coordinates": [35.2366, 129.0664],
       "description": "Mountain temple, hiking trails (Geumjeongsan), spring wildflowers, great for active kids"
@@ -342,6 +353,7 @@
       "hangul": "자갈치시장",
       "wiki": "https://en.wikipedia.org/wiki/Jagalchi_Market",
       "category": "food",
+      "icon": "🐟",
       "city": "Busan",
       "coordinates": [35.0967, 129.0306],
       "description": "Korea's largest seafood market, pick live seafood, educational for kids"
@@ -360,6 +372,7 @@
       "hangul": "BIFF광장",
       "wiki": "https://en.wikipedia.org/wiki/Busan_International_Film_Festival",
       "category": "food",
+      "icon": "🎬",
       "city": "Busan",
       "coordinates": [35.0990, 129.0297],
       "description": "Movie memorabilia, ssiat hotteok (sweet pancake), street food haven"
@@ -395,6 +408,7 @@
       "name": "Ahopsan Forest",
       "hangul": "아홉산 숲",
       "category": "nature",
+      "icon": "🎋",
       "city": "Busan",
       "coordinates": [35.2305, 129.1720],
       "description": "Peaceful bamboo and pine forest. Famous K-drama filming location. Tranquil nature walk. Gijang area."
@@ -412,6 +426,7 @@
       "hangul": "창덕궁",
       "wiki": "https://en.wikipedia.org/wiki/Changdeokgung",
       "category": "cultural",
+      "icon": "🏯",
       "city": "Seoul",
       "coordinates": [37.5794, 126.9910],
       "description": "Alternative palace visit (closed Tuesday), UNESCO site, Secret Garden"
@@ -440,6 +455,7 @@
       "name": "Geumjeongsan Cable Car",
       "hangul": "금정산 케이블카",
       "category": "explore",
+      "icon": "🚡",
       "city": "Busan",
       "coordinates": [35.2178, 129.0778],
       "description": "Cable car base at Geumgang Park (near Oncheonjang Station, Line 1). Rides to midpoint of Geumjeongsan. Start point for ridge hike to fortress village or Beomeosa."
@@ -448,6 +464,7 @@
       "name": "Geumjeongsanseong Village",
       "hangul": "금정산성마을",
       "category": "food",
+      "icon": "🍶",
       "city": "Busan",
       "coordinates": [35.2453, 129.0748],
       "description": "Mountain village inside fortress walls. Famous for Sanseong Makgeolli (rice wine) and tofu dishes (dubu). Great lunch stop on Geumjeongsan hike."
@@ -457,6 +474,7 @@
       "hangul": "금정산성",
       "wiki": "https://en.wikipedia.org/wiki/Geumjeongsanseong",
       "category": "cultural",
+      "icon": "🏰",
       "city": "Busan",
       "coordinates": [35.2520, 129.0926],
       "description": "Korea's largest mountain fortress (17km walls). Ridge walk with panoramic views of Busan. Connect cable car → fortress → village → Beomeosa for a half-day route."
@@ -540,6 +558,7 @@
       "hangul": "해운대 블루라인파크",
       "wiki": "https://en.wikipedia.org/wiki/Haeundae",
       "category": "explore",
+      "icon": "🚂",
       "city": "Busan",
       "coordinates": [35.1730, 129.1604],
       "description": "Scenic coastal train, ocean & mountain views, family activity"
@@ -556,6 +575,7 @@
       "name": "The Bay 101",
       "hangul": "더베이101",
       "category": "food",
+      "icon": "🌃",
       "city": "Busan",
       "coordinates": [35.1548, 129.1480],
       "description": "Waterfront dining and cafes next to Dongbaek Island. Famous night view of Marine City skyline."
@@ -564,6 +584,7 @@
       "name": "Shinsegae Spa Land",
       "hangul": "신세계 스파랜드",
       "category": "explore",
+      "icon": "♨️",
       "city": "Busan",
       "coordinates": [35.1693, 129.1316],
       "description": "Hot spring spa & jjimjilbang in Centum City. Saunas, themed rooms, massages. Inside Shinsegae Dept Store."
@@ -573,6 +594,7 @@
       "hangul": "정동진해수욕장",
       "wiki": "https://en.wikipedia.org/wiki/Jeongdongjin",
       "category": "beach",
+      "icon": "🌅",
       "city": "Gangneung",
       "coordinates": [37.6900, 129.0334],
       "description": "Famous sunrise viewing, East Sea coast"
@@ -609,6 +631,7 @@
       "hangul": "수원화성",
       "wiki": "https://en.wikipedia.org/wiki/Hwaseong_Fortress",
       "category": "cultural",
+      "icon": "🏰",
       "city": "Suwon",
       "coordinates": [37.2867, 127.0151],
       "description": "⭐ UNESCO fortress, 30-60min from Seoul, walking walls, palace, chicken street"
@@ -618,6 +641,7 @@
       "hangul": "인천차이나타운",
       "wiki": "https://en.wikipedia.org/wiki/Incheon_Chinatown",
       "category": "food",
+      "icon": "🥟",
       "city": "Incheon",
       "coordinates": [37.4760, 126.6171],
       "description": "Famous jajangmyeon, walking distance from Incheon Station, colorful streets"
@@ -636,6 +660,7 @@
       "hangul": "월미도",
       "wiki": "https://en.wikipedia.org/wiki/Wolmido",
       "category": "kids",
+      "icon": "🎡",
       "city": "Incheon",
       "coordinates": [37.4762, 126.5980],
       "description": "⭐ Theme park with 115m Ferris wheel, sea views, cafes, Line 1 to Incheon Station"
@@ -683,6 +708,7 @@
       "hangul": "소래포구어시장",
       "wiki": "https://en.wikipedia.org/wiki/Namdong_District",
       "category": "food",
+      "icon": "🐟",
       "city": "Incheon",
       "coordinates": [37.3878, 126.7342],
       "description": "Fresh seafood market, local atmosphere, grilled fish"
@@ -692,6 +718,7 @@
       "hangul": "부천아인스월드",
       "wiki": "https://en.wikipedia.org/wiki/Bucheon",
       "category": "kids",
+      "icon": "🌍",
       "city": "Bucheon",
       "coordinates": [37.4858, 126.7859],
       "description": "Miniature world, 109 buildings from 25 countries, great for kids, 30-45min from Incheon"
@@ -724,6 +751,7 @@
       "name": "Geodae Gomtang",
       "hangul": "거대곰탕",
       "category": "restaurant",
+      "icon": "🍲",
       "city": "Busan",
       "coordinates": [35.1573, 129.1498],
       "description": "Rich, milky beef bone broth. Very popular — expect weekend waits."
@@ -732,6 +760,7 @@
       "name": "Daenam Saengpo Galbi",
       "hangul": "대남 생포 갈비",
       "category": "restaurant",
+      "icon": "🥩",
       "city": "Busan",
       "coordinates": [35.1630, 129.1650],
       "description": "Korean BBQ — meaty ogyeopsal (five-layer pork belly), great side dishes, stew, and naengmyeon."
@@ -740,6 +769,7 @@
       "name": "Songwon Mulhoe",
       "hangul": "송원물회",
       "category": "restaurant",
+      "icon": "🐟",
       "city": "Busan",
       "coordinates": [35.1790, 129.1988],
       "description": "Pohang-style broth-free mulhoe with chewy raw fish. Free spicy soup side is excellent. Songjeong."
@@ -748,6 +778,7 @@
       "name": "Yeongbyeon Raw Fish",
       "hangul": "영변횟집",
       "category": "restaurant",
+      "icon": "🐟",
       "city": "Busan",
       "coordinates": [35.1785, 129.1995],
       "description": "Famous for inventing finely sliced sekkosi. Fresh, chewy raw fish. Songjeong."
@@ -756,6 +787,7 @@
       "name": "Yangsan Gukbap",
       "hangul": "양산국밥",
       "category": "restaurant",
+      "icon": "🍲",
       "city": "Busan",
       "coordinates": [35.1700, 129.1680],
       "description": "Refreshing, clean pork soup without any odor. Unique twist on pork gukbap."
@@ -764,6 +796,7 @@
       "name": "Gukbo Seaweed Soup",
       "hangul": "국보미역",
       "category": "restaurant",
+      "icon": "🍲",
       "city": "Busan",
       "coordinates": [35.2430, 129.2220],
       "description": "Milky, thick, rich seaweed soup — considered the best miyeokguk in Busan. Gijang area."
@@ -780,6 +813,7 @@
       "name": "Haeundae Milmyeon",
       "hangul": "해운대밀면",
       "category": "restaurant",
+      "icon": "🍜",
       "city": "Busan",
       "coordinates": [35.1625, 129.1660],
       "description": "Busan's signature chewy noodles in rich broth. Mul (cold broth) and bibim (spicy) options. Try with handmade dumplings."
@@ -796,6 +830,7 @@
       "name": "Sobok Noodles",
       "hangul": "소복국수",
       "category": "restaurant",
+      "icon": "🍜",
       "city": "Busan",
       "coordinates": [35.1630, 129.1640],
       "description": "Well-balanced flavors, great value for a satisfying meal."
@@ -804,6 +839,7 @@
       "name": "Kitchen Whale",
       "hangul": "키친웨일",
       "category": "restaurant",
+      "icon": "🥪",
       "city": "Busan",
       "coordinates": [35.1640, 129.1780],
       "description": "Fresh, light sandwiches — try the club sandwich. 1st floor of accommodation building."
@@ -812,6 +848,7 @@
       "name": "Burger Shop",
       "hangul": "버거샵",
       "category": "restaurant",
+      "icon": "🍔",
       "city": "Busan",
       "coordinates": [35.1630, 129.1630],
       "description": "Soft brioche buns, juicy patties. Get the set with crispy curly fries. Near Haeundae Station."
@@ -828,6 +865,7 @@
       "name": "Georukaeng Table",
       "hangul": "거루캥테이블",
       "category": "restaurant",
+      "icon": "🍳",
       "city": "Busan",
       "coordinates": [35.1795, 129.1992],
       "description": "Australian-style brunch with ocean views. Try basil cream pasta, aglio e olio, arancini, hummus. Songjeong."
@@ -836,6 +874,7 @@
       "name": "Sabbia",
       "hangul": "사비아",
       "category": "restaurant",
+      "icon": "🍝",
       "city": "Busan",
       "coordinates": [35.1640, 129.1810],
       "description": "Smooth, delicate pasta. Best: gnocchi with subtle truffle aroma. Also fusion pasta. Dalmaji-gil."
@@ -844,6 +883,7 @@
       "name": "Pizzeria Lardo",
       "hangul": "피제리아 라르도",
       "category": "restaurant",
+      "icon": "🍕",
       "city": "Busan",
       "coordinates": [35.1555, 129.1425],
       "description": "Wood-fired pizza with chewy dough, American-style pasta. Gwangan Bridge views. Marine City."
@@ -852,6 +892,7 @@
       "name": "The Barn Coffee",
       "hangul": "더반커피 부산점",
       "category": "restaurant",
+      "icon": "☕",
       "city": "Busan",
       "coordinates": [35.1630, 129.1830],
       "description": "Variety of brewed coffees with beautiful ocean views. 5th floor on Dalmaji-gil. 11am-7pm."
@@ -860,6 +901,7 @@
       "name": "Fruitary Forest",
       "hangul": "프루터리 포레스트",
       "category": "restaurant",
+      "icon": "☕",
       "city": "Busan",
       "coordinates": [35.1680, 129.1900],
       "description": "Café in the forest near Songjeong. Pets welcome. 11am-9pm."
@@ -897,6 +939,7 @@
       "name": "Seoraksan Cable Car",
       "hangul": "설악산 케이블카",
       "category": "explore",
+      "icon": "🚡",
       "city": "Sokcho",
       "coordinates": [38.1731, 128.4891],
       "description": "10-min cable car to Gwongeumseong fortress ruins (700m altitude). Panoramic mountain and sea views."
@@ -921,6 +964,7 @@
       "name": "Chuncheon Dakgalbi Street",
       "hangul": "춘천 명동 닭갈비골목",
       "category": "food",
+      "icon": "🍗",
       "city": "Chuncheon",
       "coordinates": [37.8808, 127.7280],
       "description": "Famous alley of dakgalbi (spicy stir-fried chicken) restaurants. Chuncheon's signature dish."
@@ -929,6 +973,7 @@
       "name": "Gangchon Rail Park",
       "hangul": "강촌레일파크",
       "category": "explore",
+      "icon": "🚲",
       "city": "Chuncheon",
       "coordinates": [37.8156, 127.7122],
       "description": "⭐ 2-seater rail bikes on old train tracks through 'Love Tunnel'. Korea's largest rail bike course. Romantic."
@@ -956,6 +1001,7 @@
       "name": "Soyanggang Skywalk",
       "hangul": "소양강 스카이워크",
       "category": "explore",
+      "icon": "🌉",
       "city": "Chuncheon",
       "coordinates": [37.8780, 127.7295],
       "description": "Glass-bottomed skywalk over the Soyang River. Sunset views. In Chuncheon city center."
@@ -991,6 +1037,7 @@
       "hangul": "용문사",
       "wiki": "https://en.wikipedia.org/wiki/Yongmunsa",
       "category": "cultural",
+      "icon": "⛩️",
       "city": "Yangpyeong",
       "coordinates": [37.5501, 127.5711],
       "description": "Mountain temple with 1,100-year-old ginkgo tree (oldest in Korea). Cherry blossoms in April. 1-2h leisurely hike."
@@ -1056,6 +1103,7 @@
       "hangul": "포천아트밸리",
       "wiki": "https://en.wikipedia.org/wiki/Pocheon_Art_Valley",
       "category": "explore",
+      "icon": "🏞️",
       "city": "Pocheon",
       "coordinates": [37.9420, 127.1610],
       "description": "Abandoned granite quarry with turquoise lake (Cheonjuho), sculpture gallery. Open until 21:00. Closed 1st Monday/month."
@@ -1067,6 +1115,249 @@
       "city": "Pocheon",
       "coordinates": [38.0580, 127.1420],
       "description": "Volcanic crater lake surrounded by forest. Easy lakeside walk (3.2 km loop, ~1h)."
+    },
+    {
+      "name": "Cheonsang Gaok",
+      "hangul": "천상가옥",
+      "category": "restaurant",
+      "icon": "🍰",
+      "city": "Seoul",
+      "coordinates": [37.5411, 127.0566],
+      "description": "Botanical garden rooftop bakery cafe at Seongsu Yeonbang, 3F - Instagram-worthy greenhouse setting"
+    },
+    {
+      "name": "Cafe Onion Seongsu",
+      "hangul": "카페 어니언 성수",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.5447, 127.0582],
+      "description": "Industrial-chic cafe in converted 1970s factory, famous for signature pastries and pandoro bread"
+    },
+    {
+      "name": "Daelim Changgo",
+      "hangul": "대림창고",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.5418, 127.0565],
+      "description": "1970s rice warehouse turned cafe & gallery, one of the first viral Seongsu cafes, rooftop terrace"
+    },
+    {
+      "name": "Hitcoffee Roasters",
+      "hangul": "힛커피 로스터스",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.5553, 126.9184],
+      "description": "Specialty roastery in Hongdae with shutter-wall facade that opens to the street, filter coffee focus"
+    },
+    {
+      "name": "Compile",
+      "hangul": "콤파일",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.554, 126.9164],
+      "description": "Specialty coffee shop in Hongdae/Yeonnam area"
+    },
+    {
+      "name": "Anthracite Coffee Seogyo",
+      "hangul": "앤트러사이트 서교",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.5554, 126.9126],
+      "description": "3-floor converted shoe factory with zen garden, specialty roastery near Mangwon Station"
+    },
+    {
+      "name": "TREMOR Coffee Works",
+      "hangul": "트레모 커피 웍스",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.555, 126.928],
+      "description": "Basement specialty roastery in Hongdae, known for single-origin filter coffee and wholesale blends"
+    },
+    {
+      "name": "Komfortabel Coffee Namsan",
+      "hangul": "콤포타블 남산",
+      "category": "restaurant",
+      "icon": "☕",
+      "city": "Seoul",
+      "coordinates": [37.5492, 126.9834],
+      "description": "4F rooftop cafe with panoramic Namsan views, Yongsan/Huam-dong area"
+    },
+    {
+      "name": "Théâtre des Lumières",
+      "hangul": "빛의 극장",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.566, 127.0308],
+      "description": "Immersive digital art exhibition in Seongsu, large-scale projections of classic masterworks"
+    },
+    {
+      "name": "Starfield Library",
+      "hangul": "별마당 도서관",
+      "category": "cultural",
+      "icon": "📚",
+      "city": "Seoul",
+      "coordinates": [37.5116, 127.0593],
+      "description": "Stunning open library with 13m bookshelves inside COEX Mall, Gangnam, free entry"
+    },
+    {
+      "name": "Umyeonsan Observatory",
+      "hangul": "우면산 전망대",
+      "category": "nature",
+      "icon": "🔭",
+      "city": "Seoul",
+      "coordinates": [37.4705, 127.0091],
+      "description": "Hilltop observation deck (Somang Tower) with panoramic Seoul views, easy hike in southern Seoul"
+    },
+    {
+      "name": "Ikseon-dong Hanok Village",
+      "hangul": "익선동 한옥마을",
+      "category": "cultural",
+      "icon": "🏘️",
+      "city": "Seoul",
+      "coordinates": [37.5744, 126.9896],
+      "description": "Trendy hanok alley with cafes, boutiques and restaurants in renovated 1920s Korean houses, near Jongno 3-ga"
+    },
+    {
+      "name": "MMCA Deoksugung",
+      "hangul": "국립현대미술관 덕수궁",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.5662, 126.9752],
+      "description": "Modern art museum in restored 1938 building next to Deoksugung Palace, rotating exhibitions"
+    },
+    {
+      "name": "Piknic",
+      "hangul": "피크닉",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.5389, 127.0025],
+      "description": "Immersive art and culture space in Itaewon/Hannam, rotating large-scale exhibitions"
+    },
+    {
+      "name": "Seoullo 7017",
+      "hangul": "서울로 7017",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Seoul",
+      "coordinates": [37.5567, 126.9714],
+      "description": "Elevated park on former highway overpass near Seoul Station, 983m walkway with gardens and city views"
+    },
+    {
+      "name": "Culture Station Seoul 284",
+      "hangul": "문화역서울 284",
+      "category": "cultural",
+      "icon": "🎭",
+      "city": "Seoul",
+      "coordinates": [37.556, 126.9715],
+      "description": "Former Seoul Station building (1925), now a cultural space with exhibitions and events, next to Seoullo 7017"
+    },
+    {
+      "name": "Bar 81",
+      "hangul": "바 81",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5135, 127.1035],
+      "description": "81st floor of Lotte World Tower (Signiel Seoul), Asia's largest champagne collection, panoramic city views"
+    },
+    {
+      "name": "Alice Cheongdam",
+      "hangul": "앨리스 청담",
+      "category": "restaurant",
+      "icon": "🍸",
+      "city": "Seoul",
+      "coordinates": [37.5267, 127.041],
+      "description": "Upscale cocktail bar in Cheongdam-dong, Gangnam"
+    },
+    {
+      "name": "ZEST SEOUL",
+      "hangul": "제스트 서울",
+      "category": "restaurant",
+      "icon": "🍸",
+      "city": "Seoul",
+      "coordinates": [37.5252, 127.0406],
+      "description": "Asia's #2 bar (50 Best Bars 2025), basement cocktail bar in Apgujeong near Rodeo Station"
+    },
+    {
+      "name": "Gebangsikdang",
+      "hangul": "게방식당",
+      "category": "restaurant",
+      "icon": "🦀",
+      "city": "Seoul",
+      "coordinates": [37.5176, 127.0399],
+      "description": "Michelin Bib Gourmand ganjang gejang (soy-marinated crab), Gangnam location"
+    },
+    {
+      "name": "Bar Cham",
+      "hangul": "바 참",
+      "category": "restaurant",
+      "icon": "🍸",
+      "city": "Seoul",
+      "coordinates": [37.5792, 126.9702],
+      "description": "Asia's #6 bar (50 Best 2025), hanok cocktail bar in Seochon using traditional Korean spirits and ingredients"
+    },
+    {
+      "name": "Gallery Hyundai",
+      "hangul": "갤러리현대",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.5826, 126.982],
+      "description": "Korea's oldest commercial gallery (1970), contemporary art in Samcheong-dong near Gyeongbokgung"
+    },
+    {
+      "name": "Kukje Gallery",
+      "hangul": "국제갤러리",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.5808, 126.9805],
+      "description": "Leading international gallery in Samcheong-dong, Korean and global contemporary artists, free entry"
+    },
+    {
+      "name": "Natural High",
+      "hangul": "내추럴 하이",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5384, 126.992],
+      "description": "Natural wine bar near Noksapyeong Station, Haebangchon area"
+    },
+    {
+      "name": "Wild Duck & Canteen",
+      "hangul": "와일드덕 앤 칸틴",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5447, 126.9835],
+      "description": "Natural wine bar with seasonal organic food in Haebangchon, opened by fashion industry friends"
+    },
+    {
+      "name": "Leeum Museum of Art",
+      "hangul": "리움미술관",
+      "category": "cultural",
+      "icon": "🎨",
+      "city": "Seoul",
+      "coordinates": [37.5389, 126.9994],
+      "description": "Samsung Foundation art museum in Hannam-dong with traditional Korean and contemporary art collections"
+    },
+    {
+      "name": "Deepin Oksu",
+      "hangul": "디핀 옥수",
+      "category": "restaurant",
+      "icon": "🍝",
+      "city": "Seoul",
+      "coordinates": [37.5427, 127.0126],
+      "description": "Italian/fusion pasta restaurant by Chef Yoon Nam-no in Oksu-dong"
     }
   ],
   "categories": {
