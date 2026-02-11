@@ -1358,6 +1358,83 @@
       "city": "Seoul",
       "coordinates": [37.5427, 127.0126],
       "description": "Italian/fusion pasta restaurant by Chef Yoon Nam-no in Oksu-dong"
+    },
+    {
+      "name": "Big Lights",
+      "hangul": "빅라이츠",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5352, 127.0107],
+      "description": "Natural wine bar in Hannam-dong"
+    },
+    {
+      "name": "Mirror",
+      "hangul": "미러",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.4799, 126.9939],
+      "description": "Wine bar in Bangbae-dong, Seocho District"
+    },
+    {
+      "name": "tas",
+      "hangul": "타스",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5591, 126.9259],
+      "description": "Wine bar in Seogyo-dong, Mapo District"
+    },
+    {
+      "name": "곱창전골",
+      "category": "restaurant",
+      "icon": "🍲",
+      "city": "Seoul",
+      "coordinates": [37.5547, 126.9295],
+      "description": "Gopchang jeongol (tripe hot pot) pub near Hongdae, Mapo District"
+    },
+    {
+      "name": "MOWa",
+      "hangul": "모와",
+      "category": "restaurant",
+      "icon": "🍽️",
+      "city": "Seoul",
+      "coordinates": [37.5613, 126.9833],
+      "description": "Restaurant in Myeongdong, Jung District"
+    },
+    {
+      "name": "파브 (Fav)",
+      "hangul": "파브",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5334, 126.9716],
+      "description": "Wine bar near Sookmyung Women's University, Yongsan District"
+    },
+    {
+      "name": "TYMM",
+      "category": "restaurant",
+      "icon": "🍸",
+      "city": "Seoul",
+      "coordinates": [37.5423, 126.9873],
+      "description": "Bar in Yongsan District"
+    },
+    {
+      "name": "Pompette Selection",
+      "category": "restaurant",
+      "icon": "🍸",
+      "city": "Seoul",
+      "coordinates": [37.5444, 127.0248],
+      "description": "Bar in Geumho-dong, Seongdong District"
+    },
+    {
+      "name": "BLUE NUDE",
+      "category": "restaurant",
+      "icon": "🍷",
+      "city": "Seoul",
+      "coordinates": [37.5358, 126.9998],
+      "description": "Wine bar in Hannam-dong, Yongsan District"
     }
   ],
   "categories": {
