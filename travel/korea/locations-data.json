@@ -117,7 +117,7 @@
       "category": "kids",
       "city": "Seoul",
       "coordinates": [37.5111, 127.0982],
-      "description": "⭐ World's largest indoor theme park, $43 adults/$33 kids, 10am-9pm, Jamsil Station"
+      "description": "World's largest indoor theme park, $43 adults/$33 kids, 10am-9pm, Jamsil Station"
     },
     {
       "name": "National Museum of Korea",
@@ -137,36 +137,6 @@
       "city": "Seoul",
       "coordinates": [37.5691, 126.9780],
       "description": "Urban stream walk, family-friendly"
-    },
-    {
-      "name": "Nami Island",
-      "hangul": "남이섬",
-      "wiki": "https://en.wikipedia.org/wiki/Nami_Island",
-      "icon": "🌳",
-      "category": "nature",
-      "city": "Gapyeong",
-      "coordinates": [37.7913, 127.5264],
-      "description": "⭐ Romantic tree-lined paths, 1-2h from Seoul, K-drama location"
-    },
-    {
-      "name": "Petite France",
-      "hangul": "쁘띠프랑스",
-      "wiki": "https://en.wikipedia.org/wiki/Petite_France_(theme_park)",
-      "category": "cultural",
-      "icon": "🏘️",
-      "city": "Gapyeong",
-      "coordinates": [37.6878, 127.4364],
-      "description": "French-themed village, Little Prince exhibits, near Nami Island"
-    },
-    {
-      "name": "Garden of Morning Calm",
-      "hangul": "아침고요수목원",
-      "wiki": "https://en.wikipedia.org/wiki/Garden_of_Morning_Calm",
-      "icon": "🌳",
-      "category": "nature",
-      "city": "Gapyeong",
-      "coordinates": [37.7456, 127.3544],
-      "description": "Beautiful botanical gardens in spring"
     },
     {
       "name": "Gyeongju Bomun Lake",
@@ -432,16 +402,6 @@
       "description": "Alternative palace visit (closed Tuesday), UNESCO site, Secret Garden"
     },
     {
-      "name": "Seoraksan National Park",
-      "hangul": "설악산국립공원",
-      "wiki": "https://en.wikipedia.org/wiki/Seoraksan",
-      "icon": "🏔️",
-      "category": "nature",
-      "city": "Sokcho",
-      "coordinates": [38.1197, 128.4655],
-      "description": "⭐ Majestic mountains, hiking trails, spring wildflowers, 3h from Seoul"
-    },
-    {
       "name": "Seokchon Lake",
       "hangul": "석촌호수",
       "wiki": "https://en.wikipedia.org/wiki/Seokchon_Lake",
@@ -508,52 +468,6 @@
       "description": "30-60 min yacht tour. Day/sunset/night options. Views of Gwangan Bridge, Marine City. ~₩12,000+/person"
     },
     {
-      "name": "Oedo Botania Island",
-      "hangul": "외도 보타니아",
-      "wiki": "https://en.wikipedia.org/wiki/Oedo",
-      "icon": "⛴️",
-      "category": "explore",
-      "city": "Geoje",
-      "coordinates": [34.7692, 128.7028],
-      "description": "Botanical garden island. Via Geoje (1.5-2h from Busan) + 1h ferry. Full day trip."
-    },
-    {
-      "name": "Geoje Island",
-      "hangul": "거제도",
-      "wiki": "https://en.wikipedia.org/wiki/Geoje",
-      "category": "nature",
-      "city": "Geoje",
-      "coordinates": [34.8806, 128.6211],
-      "description": "40 min - 1.5h from Busan by car/bus. Windy Hill, beaches, Oedo ferry departure."
-    },
-    {
-      "name": "Tongyeong",
-      "hangul": "통영",
-      "wiki": "https://en.wikipedia.org/wiki/Tongyeong",
-      "category": "district",
-      "city": "Tongyeong",
-      "coordinates": [34.8544, 128.4331],
-      "description": "1.5h from Busan. Harbor town, longest cable car in Korea, Dongpirang art village, seafood."
-    },
-    {
-      "name": "Ulsan",
-      "hangul": "울산",
-      "wiki": "https://en.wikipedia.org/wiki/Ulsan",
-      "category": "district",
-      "city": "Ulsan",
-      "coordinates": [35.5384, 129.3114],
-      "description": "1h from Busan. Taehwagang bamboo forest, whale museum."
-    },
-    {
-      "name": "Daegu",
-      "hangul": "대구",
-      "wiki": "https://en.wikipedia.org/wiki/Daegu",
-      "category": "district",
-      "city": "Daegu",
-      "coordinates": [35.8714, 128.6014],
-      "description": "45 min KTX from Busan. Seomun Market, Apsan Park cable car."
-    },
-    {
       "name": "Haeundae Blueline Park",
       "hangul": "해운대 블루라인파크",
       "wiki": "https://en.wikipedia.org/wiki/Haeundae",
@@ -590,16 +504,6 @@
       "description": "Hot spring spa & jjimjilbang in Centum City. Saunas, themed rooms, massages. Inside Shinsegae Dept Store."
     },
     {
-      "name": "Jeongdongjin Beach",
-      "hangul": "정동진해수욕장",
-      "wiki": "https://en.wikipedia.org/wiki/Jeongdongjin",
-      "category": "beach",
-      "icon": "🌅",
-      "city": "Gangneung",
-      "coordinates": [37.6900, 129.0334],
-      "description": "Famous sunrise viewing, East Sea coast"
-    },
-    {
       "name": "Nampo-dong",
       "hangul": "남포동",
       "wiki": "https://en.wikipedia.org/wiki/Nampo-dong",
@@ -616,15 +520,6 @@
       "city": "Seoul",
       "coordinates": [37.5563, 126.9236],
       "description": "Trendy neighborhood, cooking classes, art, nightlife"
-    },
-    {
-      "name": "Gangneung",
-      "hangul": "강릉",
-      "wiki": "https://en.wikipedia.org/wiki/Gangneung",
-      "category": "district",
-      "city": "Gangneung",
-      "coordinates": [37.7519, 128.8761],
-      "description": "Coastal city, 2.5-3h from Seoul, East Sea coast, fresh seafood"
     },
     {
       "name": "Suwon Hwaseong Fortress",
@@ -663,7 +558,7 @@
       "icon": "🎡",
       "city": "Incheon",
       "coordinates": [37.4762, 126.5980],
-      "description": "⭐ Theme park with 115m Ferris wheel, sea views, cafes, Line 1 to Incheon Station"
+      "description": "Theme park with 115m Ferris wheel, sea views, cafes, Line 1 to Incheon Station"
     },
     {
       "name": "Incheon Grand Park",
@@ -907,142 +802,6 @@
       "description": "Café in the forest near Songjeong. Pets welcome. 11am-9pm."
     },
     {
-      "name": "Ulsanbawi Rock",
-      "hangul": "울산바위",
-      "wiki": "https://en.wikipedia.org/wiki/Ulsanbawi",
-      "icon": "🥾",
-      "category": "nature",
-      "city": "Sokcho",
-      "coordinates": [38.1570, 128.4950],
-      "description": "⭐ Iconic Seoraksan hike — 7.6km, 3-4h, 808 stairs to panoramic summit views. The signature trail."
-    },
-    {
-      "name": "Biseondae",
-      "hangul": "비선대",
-      "icon": "🥾",
-      "category": "nature",
-      "city": "Sokcho",
-      "coordinates": [38.1220, 128.4730],
-      "description": "Romantic riverside walk through granite valley with engraved poetry rocks. 6km, 1.5-2h, easy. Seoraksan."
-    },
-    {
-      "name": "Biryong Falls",
-      "hangul": "비룡폭포",
-      "wiki": "https://en.wikipedia.org/wiki/Biryong_Falls",
-      "icon": "🥾",
-      "category": "nature",
-      "city": "Sokcho",
-      "coordinates": [38.1620, 128.5016],
-      "description": "Cascading waterfall trail in Seoraksan. 5km round trip, 1.5-2h, easy-moderate. Good spring snowmelt flow."
-    },
-    {
-      "name": "Seoraksan Cable Car",
-      "hangul": "설악산 케이블카",
-      "category": "explore",
-      "icon": "🚡",
-      "city": "Sokcho",
-      "coordinates": [38.1731, 128.4891],
-      "description": "10-min cable car to Gwongeumseong fortress ruins (700m altitude). Panoramic mountain and sea views."
-    },
-    {
-      "name": "Seorak Waterpia",
-      "hangul": "설악워터피아",
-      "category": "explore",
-      "city": "Sokcho",
-      "coordinates": [38.0983, 128.4786],
-      "description": "Hot spring waterpark/spa with mountain views. Great for unwinding after hiking Seoraksan."
-    },
-    {
-      "name": "Chuncheon",
-      "hangul": "춘천",
-      "wiki": "https://en.wikipedia.org/wiki/Chuncheon",
-      "category": "district",
-      "coordinates": [37.8747, 127.7342],
-      "description": "Lake city 1.5h from Seoul, famous for dakgalbi. 30 min to Gapyeong. Couples getaway overnight option."
-    },
-    {
-      "name": "Chuncheon Dakgalbi Street",
-      "hangul": "춘천 명동 닭갈비골목",
-      "category": "food",
-      "icon": "🍗",
-      "city": "Chuncheon",
-      "coordinates": [37.8808, 127.7280],
-      "description": "Famous alley of dakgalbi (spicy stir-fried chicken) restaurants. Chuncheon's signature dish."
-    },
-    {
-      "name": "Gangchon Rail Park",
-      "hangul": "강촌레일파크",
-      "category": "explore",
-      "icon": "🚲",
-      "city": "Chuncheon",
-      "coordinates": [37.8156, 127.7122],
-      "description": "⭐ 2-seater rail bikes on old train tracks through 'Love Tunnel'. Korea's largest rail bike course. Romantic."
-    },
-    {
-      "name": "Jade Garden",
-      "hangul": "제이드가든",
-      "wiki": "https://en.wikipedia.org/wiki/Jade_Garden",
-      "icon": "🌳",
-      "category": "nature",
-      "city": "Chuncheon",
-      "coordinates": [37.8325, 127.5420],
-      "description": "'Mini Europe' arboretum. Tulips, magnolias in April. K-drama filming location. 26 themed gardens."
-    },
-    {
-      "name": "Soyang Dam",
-      "hangul": "소양강댐",
-      "wiki": "https://en.wikipedia.org/wiki/Soyang_Dam",
-      "category": "nature",
-      "city": "Chuncheon",
-      "coordinates": [37.9507, 127.8131],
-      "description": "Korea's largest dam. Lake boat rides, scenic views. 10km northeast of Chuncheon."
-    },
-    {
-      "name": "Soyanggang Skywalk",
-      "hangul": "소양강 스카이워크",
-      "category": "explore",
-      "icon": "🌉",
-      "city": "Chuncheon",
-      "coordinates": [37.8780, 127.7295],
-      "description": "Glass-bottomed skywalk over the Soyang River. Sunset views. In Chuncheon city center."
-    },
-    {
-      "name": "Yangpyeong",
-      "hangul": "양평",
-      "wiki": "https://en.wikipedia.org/wiki/Yangpyeong_County",
-      "category": "district",
-      "coordinates": [37.4914, 127.4875],
-      "description": "Riverside county 1-1.5h from Seoul. Romantic river scenery, cherry blossoms, pensions. 45-60 min to Gapyeong."
-    },
-    {
-      "name": "Dumulmeori",
-      "hangul": "두물머리",
-      "icon": "🌳",
-      "category": "nature",
-      "city": "Yangpyeong",
-      "coordinates": [37.5320, 127.3100],
-      "description": "⭐ Where two rivers meet. 400-year-old zelkova trees, cherry blossoms, K-drama filming location. Most romantic."
-    },
-    {
-      "name": "Semiwon Garden",
-      "hangul": "세미원",
-      "icon": "🌳",
-      "category": "nature",
-      "city": "Yangpyeong",
-      "coordinates": [37.5285, 127.3070],
-      "description": "Water garden connected to Dumulmeori by 250m pontoon bridge. Lotus flowers, walking paths."
-    },
-    {
-      "name": "Yongmunsa Temple",
-      "hangul": "용문사",
-      "wiki": "https://en.wikipedia.org/wiki/Yongmunsa",
-      "category": "cultural",
-      "icon": "⛩️",
-      "city": "Yangpyeong",
-      "coordinates": [37.5501, 127.5711],
-      "description": "Mountain temple with 1,100-year-old ginkgo tree (oldest in Korea). Cherry blossoms in April. 1-2h leisurely hike."
-    },
-    {
       "name": "Bukhansan National Park",
       "hangul": "북한산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Bukhansan",
@@ -1097,24 +856,6 @@
       "city": "Seoul",
       "coordinates": [37.6610, 127.0150],
       "description": "East entrance of Uiryeong wildlife corridor (6.8 km, 3h). Reservation required (1,000/day). Bus from Suyu stn (Line 4)."
-    },
-    {
-      "name": "Pocheon Art Valley",
-      "hangul": "포천아트밸리",
-      "wiki": "https://en.wikipedia.org/wiki/Pocheon_Art_Valley",
-      "category": "explore",
-      "icon": "🏞️",
-      "city": "Pocheon",
-      "coordinates": [37.9420, 127.1610],
-      "description": "Abandoned granite quarry with turquoise lake (Cheonjuho), sculpture gallery. Open until 21:00. Closed 1st Monday/month."
-    },
-    {
-      "name": "Sanjeonghosu Lake",
-      "hangul": "산정호수",
-      "category": "nature",
-      "city": "Pocheon",
-      "coordinates": [38.0580, 127.1420],
-      "description": "Volcanic crater lake surrounded by forest. Easy lakeside walk (3.2 km loop, ~1h)."
     },
     {
       "name": "Cheonsang Gaok",
