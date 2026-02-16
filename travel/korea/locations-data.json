@@ -402,6 +402,104 @@
       "description": "Alternative palace visit (closed Tuesday), UNESCO site, Secret Garden"
     },
     {
+      "name": "Insadong",
+      "hangul": "인사동",
+      "wiki": "https://en.wikipedia.org/wiki/Insadong",
+      "category": "cultural",
+      "icon": "🏘️",
+      "city": "Seoul",
+      "coordinates": [37.5718, 126.9857],
+      "description": "Cultural street with traditional crafts, antique galleries, and tea houses. 5 min walk from Anguk Station."
+    },
+    {
+      "name": "Jogyesa Temple",
+      "hangul": "조계사",
+      "wiki": "https://en.wikipedia.org/wiki/Jogyesa",
+      "category": "cultural",
+      "icon": "⛩️",
+      "city": "Seoul",
+      "coordinates": [37.5728, 126.9833],
+      "description": "Main temple of Korean Zen Buddhism. Peaceful city-center temple, 10 min walk from Anguk Station."
+    },
+    {
+      "name": "Jongmyo Shrine",
+      "hangul": "종묘",
+      "wiki": "https://en.wikipedia.org/wiki/Jongmyo",
+      "category": "cultural",
+      "icon": "🏛️",
+      "city": "Seoul",
+      "coordinates": [37.5743, 126.9941],
+      "description": "UNESCO World Heritage. Joseon royal ancestral shrine. Guided tours only (Korean, English audio guide). 10 min walk from Anguk."
+    },
+    {
+      "name": "Changgyeonggung Palace",
+      "hangul": "창경궁",
+      "wiki": "https://en.wikipedia.org/wiki/Changgyeonggung",
+      "category": "cultural",
+      "icon": "🏯",
+      "city": "Seoul",
+      "coordinates": [37.5789, 126.9946],
+      "description": "Connected to Changdeokgung, quieter and less crowded. Botanical garden on grounds. 10 min walk from Anguk."
+    },
+    {
+      "name": "Deoksugung Palace",
+      "hangul": "덕수궁",
+      "wiki": "https://en.wikipedia.org/wiki/Deoksugung",
+      "category": "cultural",
+      "icon": "🏯",
+      "city": "Seoul",
+      "coordinates": [37.5659, 126.9751],
+      "description": "Joseon palace with Western-style buildings. Famous stone wall road (Doldam-gil). Near City Hall. 20 min walk from Anguk."
+    },
+    {
+      "name": "Dongmyo Flea Market",
+      "hangul": "동묘벼룩시장",
+      "wiki": "https://en.wikipedia.org/wiki/Dongmyo_Shrine",
+      "category": "food",
+      "icon": "🛍️",
+      "city": "Seoul",
+      "coordinates": [37.5714, 127.0155],
+      "description": "Vintage clothing, antiques, retro finds. Great for unique souvenirs. Dongmyo Station (Lines 1/6). 20 min from Anguk."
+    },
+    {
+      "name": "Hwanghakdong Antique Market",
+      "hangul": "황학동벼룩시장",
+      "category": "food",
+      "icon": "🛍️",
+      "city": "Seoul",
+      "coordinates": [37.5680, 127.0180],
+      "description": "Korea's largest antique market. Furniture, ceramics, old records, vintage goods. Near Dongmyo. Good souvenir hunting."
+    },
+    {
+      "name": "Suseong-dong Valley",
+      "hangul": "수성동계곡",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Seoul",
+      "coordinates": [37.5816, 126.9688],
+      "description": "Tranquil valley next to Gyeongbokgung. Joseon-era scholars' retreat. Quiet Seochon alleys. 20 min walk from Anguk."
+    },
+    {
+      "name": "Hanyangdoseong Fortress Wall Trail",
+      "hangul": "한양도성",
+      "wiki": "https://en.wikipedia.org/wiki/Fortress_Wall_of_Seoul",
+      "category": "nature",
+      "icon": "🥾",
+      "city": "Seoul",
+      "coordinates": [37.5801, 127.0069],
+      "description": "14th-century city wall ridge walk with Seoul skyline views. Naksan section is the easiest. 20 min walk from Anguk."
+    },
+    {
+      "name": "Inwangsan Trail",
+      "hangul": "인왕산",
+      "wiki": "https://en.wikipedia.org/wiki/Inwangsan",
+      "category": "nature",
+      "icon": "🥾",
+      "city": "Seoul",
+      "coordinates": [37.5838, 126.9588],
+      "description": "Panoramic sunset hike over Seoul. Beombawi Rock viewpoint ~30-40 min from trailhead. Start ~18:15 for sunset (19:05 in April)."
+    },
+    {
       "name": "Seokchon Lake",
       "hangul": "석촌호수",
       "wiki": "https://en.wikipedia.org/wiki/Seokchon_Lake",
