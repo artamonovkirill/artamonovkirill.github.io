@@ -34,6 +34,16 @@
       "description": "SRT high-speed rail to Busan (~2.5h). Alternative to Seoul Station KTX."
     },
     {
+      "name": "Gwangmyeong Station",
+      "hangul": "광명역",
+      "wiki": "https://en.wikipedia.org/wiki/Gwangmyeong_station",
+      "category": "transportation",
+      "city": "Gwangmyeong",
+      "icon": "🚄",
+      "coordinates": [37.4233, 126.8652],
+      "description": "KTX station closer to Incheon than Seoul Station. Alternative departure point for Busan."
+    },
+    {
       "name": "Busan Station",
       "hangul": "부산역",
       "wiki": "https://en.wikipedia.org/wiki/Busan_station",
