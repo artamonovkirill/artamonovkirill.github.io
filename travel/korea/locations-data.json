@@ -1284,6 +1284,41 @@
       "city": "Seoul",
       "coordinates": [37.5358, 126.9998],
       "description": "Wine bar in Hannam-dong, Yongsan District"
+    },
+    {
+      "name": "thisisneverthat",
+      "hangul": "디스이즈네버댓",
+      "category": "shopping",
+      "icon": "👕",
+      "city": "Seoul",
+      "coordinates": [37.556145, 126.918440],
+      "description": "Graphic tees with unexpected collabs (Grateful Dead, Pokémon, Wasted Youth). Streetwear, not tourist-y. 8 Hongik-ro 3-gil, Hongdae — Mon–Thu 12–23h, Fri–Sun 11–23h"
+    },
+    {
+      "name": "TeenyTiger ⭐",
+      "hangul": "티니타이거",
+      "category": "shopping",
+      "icon": "👕",
+      "city": "Seoul",
+      "coordinates": [37.578033, 126.979926],
+      "description": "Traditional Korean cultural references with lightness — Hahoetal masks, gat hats, cranes, Hangul typography. Some dry humor. 64 Sagan-dong, Jongno-gu"
+    },
+    {
+      "name": "Human Made",
+      "category": "shopping",
+      "icon": "👕",
+      "city": "Seoul",
+      "coordinates": [37.542751, 127.053282],
+      "description": "Japanese brand (NIGO) — vintage duck, heart, tiger graphics, cute without cheesy. Seoul-exclusive Jindo dog tee. Pricey but quality. 39 Seongsui-ro 7-gil, Seongsu — 11:00–20:00"
+    },
+    {
+      "name": "SOUND SHOP Balansa ⭐",
+      "hangul": "발란사",
+      "category": "shopping",
+      "icon": "👕",
+      "city": "Busan",
+      "coordinates": [35.159263, 129.063291],
+      "description": "Busan's OG select shop since 2008. Original screen-printed tees, hoodies, caps + vintage records. Artists and stylists shop here — anti-tourist. 2F, 37 Jeonpo-daero 255beon-gil, Seomyeon — 12:00–19:00"
     }
   ],
   "categories": {
@@ -1332,6 +1367,11 @@
       "icon": "🍽️",
       "description": "Restaurants & Cafés",
       "defaultHidden": true
+    },
+    "shopping": {
+      "color": "#00897B",
+      "icon": "🛍️",
+      "description": "Shopping"
     }
   }
 }
