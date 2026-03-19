@@ -935,7 +935,7 @@
       "icon": "🥾",
       "category": "nature",
       "city": "Seoul",
-      "coordinates": [37.7020, 127.0320],
+      "coordinates": [37.707659, 127.034898],
       "description": "Start of Madang Ridge → Jaunbong circuit (4-5h). Subway: Mangwolsa stn (Line 1), 15 min walk to trailhead."
     },
     {
@@ -944,7 +944,7 @@
       "icon": "🥾",
       "category": "nature",
       "city": "Seoul",
-      "coordinates": [37.6965, 127.0385],
+      "coordinates": [37.686163, 127.036374],
       "description": "Dobong Visitor Center area. Access to Jaunbong, Sinseondae. Subway: Dobongsan stn (Lines 1/7), 15 min walk."
     },
     {
@@ -953,7 +953,7 @@
       "icon": "🥾",
       "category": "nature",
       "city": "Seoul",
-      "coordinates": [37.6590, 126.9590],
+      "coordinates": [37.655352, 126.949660],
       "description": "NW approach to Baekundae via Joseon fortress walls (4-5h). Bus 704 from Gupabal stn (Line 3)."
     },
     {
@@ -962,8 +962,17 @@
       "icon": "🥾",
       "category": "nature",
       "city": "Seoul",
-      "coordinates": [37.6610, 127.0150],
-      "description": "East entrance of Uiryeong wildlife corridor (6.8 km, 3h). Reservation required (1,000/day). Bus from Suyu stn (Line 4)."
+      "coordinates": [37.677949, 127.003293],
+      "description": "East entrance of Uiryeong wildlife corridor (6.8 km, 3h). Bus from Suyu stn (Line 4)."
+    },
+    {
+      "name": "Uiryeong Trail (Gyohyeon Entrance)",
+      "hangul": "우이령길 교현 탐방지원센터",
+      "icon": "🥾",
+      "category": "nature",
+      "city": "Seoul",
+      "coordinates": [37.699429, 126.975260],
+      "description": "West entrance of Uiryeong wildlife corridor (6.8 km, 3h). Bus 704 or 34 from Gupabal stn (Line 3)."
     },
     {
       "name": "Cheonsang Gaok",
