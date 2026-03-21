@@ -99,7 +99,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Gwangjang_Market",
       "category": "food",
       "city": "Seoul",
-      "coordinates": [37.5708, 127.0097],
+      "coordinates": [37.570227, 127.000043],
       "description": "⭐ Seoul's oldest market (1905), bindaetteok, mayak gimbap, most authentic"
     },
     {
@@ -276,7 +276,7 @@
       "category": "cultural",
       "icon": "🚢",
       "city": "Busan",
-      "coordinates": [35.0769, 129.0844],
+      "coordinates": [35.078536, 129.079803],
       "description": "4 floors, rooftop playground, free admission, good rainy day option"
     },
     {
@@ -363,7 +363,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Taejongdae",
       "category": "nature",
       "city": "Busan",
-      "coordinates": [35.0540, 129.0830],
+      "coordinates": [35.053243, 129.087250],
       "description": "Stunning coastal cliffs, forest trails, picnic areas"
     },
     {
@@ -390,7 +390,7 @@
       "category": "nature",
       "icon": "🎋",
       "city": "Busan",
-      "coordinates": [35.2305, 129.1720],
+      "coordinates": [35.287316, 129.171463],
       "description": "Peaceful bamboo and pine forest. Famous K-drama filming location. Tranquil nature walk. Gijang area."
     },
     {
@@ -506,7 +506,7 @@
       "category": "nature",
       "icon": "🥾",
       "city": "Seoul",
-      "coordinates": [37.575025, 126.963640],
+      "coordinates": [37.582352, 126.957790],
       "description": "Panoramic sunset hike over Seoul. Beombawi Rock viewpoint ~30-40 min from trailhead. Start ~18:15 for sunset (19:05 in April)."
     },
     {
@@ -553,7 +553,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Songdo_Beach",
       "category": "beach",
       "city": "Busan",
-      "coordinates": [35.0755, 129.0181],
+      "coordinates": [35.077138, 129.016761],
       "description": "Marine cable car, Songdo Skywalk, beach walks"
     },
     {
@@ -636,7 +636,7 @@
       "category": "cultural",
       "icon": "🏰",
       "city": "Suwon",
-      "coordinates": [37.2867, 127.0151],
+      "coordinates": [37.287265, 127.011884],
       "description": "⭐ UNESCO fortress, 30-60min from Seoul, walking walls, palace, chicken street"
     },
     {
@@ -713,7 +713,7 @@
       "category": "food",
       "icon": "🐟",
       "city": "Incheon",
-      "coordinates": [37.3878, 126.7342],
+      "coordinates": [37.398596, 126.73944],
       "description": "Fresh seafood market, local atmosphere, grilled fish"
     },
     {
