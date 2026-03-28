@@ -910,6 +910,24 @@
       "description": "Café in the forest near Songjeong. Pets welcome. 11am-9pm."
     },
     {
+      "name": "Haeundae Dachi",
+      "hangul": "해운대다찌",
+      "category": "restaurant",
+      "icon": "🦞",
+      "city": "Busan",
+      "coordinates": [35.160303, 129.154027],
+      "description": "Multi-course chef's-choice seafood (dachi style). Sashimi, grilled, steamed, stew, abalone porridge finish. Course A ₩55K, Course B ₩80K/person. 11:30am–11pm, break 2–4pm."
+    },
+    {
+      "name": "Miryang Sundae Gukbap Haeundae",
+      "hangul": "밀양순대돼지국밥 해운대점",
+      "category": "restaurant",
+      "icon": "🍲",
+      "city": "Busan",
+      "coordinates": [35.161775, 129.160813],
+      "description": "Busan's signature pork soup. Clean deep broth, no artificial seasoning — customize with shrimp paste, chives, salt at the table. ~₩8,500/bowl. Open 24h."
+    },
+    {
       "name": "Bukhansan National Park",
       "hangul": "북한산국립공원",
       "wiki": "https://en.wikipedia.org/wiki/Bukhansan",
