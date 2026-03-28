@@ -95,6 +95,8 @@
             border-radius: 12px;
             font-size: 11px;
             font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .stats {
@@ -130,6 +132,11 @@
             font-size: 16px;
             font-weight: normal;
             color: rgba(255,255,255,0.7);
+        }
+
+        .legend-count-total {
+            font-weight: normal;
+            opacity: 0.55;
         }
 
         .petal {
@@ -483,19 +490,35 @@
                 allMarkers.push({ marker, category: location.category, region, name: location.name });
             });
 
+            // Count element references populated during legend creation
+            const categoryCountEls = {};
+            const regionCountEls = {};
+
             // Visibility
             function updateVisibility() {
                 let visibleCount = 0;
+                const catCounts = {};
+                const regionCounts = {};
                 allMarkers.forEach(m => {
                     const regionVisible = m.region === null || regionState[m.region];
-                    const visible = categoryState[m.category] && regionVisible;
+                    const categoryVisible = categoryState[m.category];
+                    const visible = categoryVisible && regionVisible;
                     if (visible) {
                         if (!map.hasLayer(m.marker)) m.marker.addTo(map);
                         visibleCount++;
                     } else {
                         if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
                     }
+                    // Category count: filtered by region
+                    if (regionVisible) {
+                        catCounts[m.category] = (catCounts[m.category] || 0) + 1;
+                    }
+                    // Region count: filtered by category
+                    if (categoryVisible && m.region !== null) {
+                        regionCounts[m.region] = (regionCounts[m.region] || 0) + 1;
+                    }
                 });
+
                 const total = data.locations.length;
                 const countEl = document.getElementById('total-count');
                 if (visibleCount < total) {
@@ -503,6 +526,20 @@
                 } else {
                     countEl.textContent = total;
                 }
+
+                Object.entries(categoryCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = catCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
+
+                Object.entries(regionCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = regionCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
             }
 
             // Category legend
@@ -522,6 +559,7 @@
                     <div class="legend-text">${category.description}</div>
                     <div class="legend-count">${count}</div>
                 `;
+                categoryCountEls[key] = { el: legendItem.querySelector('.legend-count'), total: count };
 
                 legendItem.addEventListener('click', () => {
                     categoryState[key] = !categoryState[key];
@@ -545,6 +583,7 @@
                     <div class="legend-text">${r.label} (${r.hangul})</div>
                     <div class="legend-count">${count}</div>
                 `;
+                regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
 
                 regionItem.addEventListener('click', () => {
                     regionState[r.key] = !regionState[r.key];
