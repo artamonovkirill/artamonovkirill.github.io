@@ -787,12 +787,12 @@
       "description": "Famous for inventing finely sliced sekkosi. Fresh, chewy raw fish. Songjeong."
     },
     {
-      "name": "Yangsan Gukbap",
-      "hangul": "양산국밥",
+      "name": "Yangsan Gukbap Haeundae",
+      "hangul": "양산국밥 해운대본점",
       "category": "restaurant",
       "icon": "🍲",
       "city": "Busan",
-      "coordinates": [35.1700, 129.1680],
+      "coordinates": [35.172961, 129.172275],
       "description": "Refreshing, clean pork soup without any odor. Unique twist on pork gukbap."
     },
     {
@@ -926,6 +926,42 @@
       "city": "Busan",
       "coordinates": [35.161775, 129.160813],
       "description": "Busan's signature pork soup. Clean deep broth, no artificial seasoning — customize with shrimp paste, chives, salt at the table. ~₩8,500/bowl. Open 24h."
+    },
+    {
+      "name": "Haeundae Wonjo Halme Gukbap",
+      "hangul": "해운대원조할매국밥",
+      "category": "restaurant",
+      "icon": "🍲",
+      "city": "Busan",
+      "coordinates": [35.163319, 129.161231],
+      "description": "Legendary beef gukbap since 1962. Beef or seonji (clotted ox blood) soup. ~₩7–9K/bowl. Open 24h. Can get busy — two adjoining rooms."
+    },
+    {
+      "name": "Obaltan Haeundae",
+      "hangul": "오발탄 부산해운대점",
+      "category": "restaurant",
+      "icon": "🔥",
+      "city": "Busan",
+      "coordinates": [35.160578, 129.155158],
+      "description": "Premium grilled offal — 특양 (beef abomasum) and 대창 (large intestine). Staff-managed charcoal grill. One of Korea's top yang-gupchang chains. ~₩30–45K/person. 11:30am–10pm."
+    },
+    {
+      "name": "Haeundae Somunnan Samgyetang",
+      "hangul": "해운대소문난삼계탕",
+      "category": "restaurant",
+      "icon": "🍗",
+      "city": "Busan",
+      "coordinates": [35.162865, 129.165395],
+      "description": "Whole chicken simmered in broth with glutinous rice, ginseng, garlic, jujubes. Several variants: herbal, red ginseng, abalone. ₩17–22K. 10:30am–9pm, break 3–5pm."
+    },
+    {
+      "name": "Daege Manchan",
+      "hangul": "대게만찬",
+      "category": "restaurant",
+      "icon": "🦀",
+      "city": "Busan",
+      "coordinates": [35.198365, 129.224192],
+      "description": "Korea's largest snow crab restaurant (732 seats). Steamed 대게 at market rate (~₩75K/kg), crab courses ₩95–150K. 4th floor, The East In Busan. Near Lotte World Adventure Busan. 11am–9:30pm."
     },
     {
       "name": "Bukhansan National Park",
