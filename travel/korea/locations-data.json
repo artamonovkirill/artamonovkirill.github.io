@@ -919,6 +919,15 @@
       "description": "Multi-course chef's-choice seafood (dachi style). Sashimi, grilled, steamed, stew, abalone porridge finish. Course A ₩55K, Course B ₩80K/person. 11:30am–11pm, break 2–4pm."
     },
     {
+      "name": "Yeije Galbi",
+      "hangul": "예이제갈비",
+      "category": "restaurant",
+      "icon": "🥩",
+      "city": "Busan",
+      "coordinates": [35.160388, 129.166554],
+      "description": "Premium 한우 charcoal BBQ — kkotsal, skirt, ribeye cap, tenderloin, short rib. Blue Ribbon awarded. Expensive: ~₩54–75K per cut. B1F of 팔레드시즈 building. 12pm–10pm, break 3–5:30pm."
+    },
+    {
       "name": "Miryang Sundae Gukbap Haeundae",
       "hangul": "밀양순대돼지국밥 해운대점",
       "category": "restaurant",
