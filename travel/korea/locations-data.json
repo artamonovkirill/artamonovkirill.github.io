@@ -1391,6 +1391,105 @@
       "city": "Busan",
       "coordinates": [35.159263, 129.063291],
       "description": "Busan's OG select shop since 2008. Original screen-printed tees, hoodies, caps + vintage records. Artists and stylists shop here — anti-tourist. 2F, 37 Jeonpo-daero 255beon-gil, Seomyeon — 12:00–19:00"
+    },
+    {
+      "name": "Magpie Brewing Co.",
+      "hangul": "맥파이 브루잉",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Seoul",
+      "coordinates": [37.5394, 126.9875],
+      "description": "One of Seoul's founding craft breweries (2012), Gyeongnidan. ~10 house beers on tap. Magpie Pale Ale, seasonal IPAs and sours. Also has Euljiro 4F location."
+    },
+    {
+      "name": "Seoul Brewery",
+      "hangul": "서울브루어리",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Seoul",
+      "coordinates": [37.5459, 126.9146],
+      "description": "#1 rated Korean brewery on Untappd. Hapjeong taproom — sleek, brewing equipment on display. Salinger Rye IPA, Choco Loco Porter, Night Bloom Gose. Also has Seongsu branch."
+    },
+    {
+      "name": "Euljiro Brewing",
+      "hangul": "을지맥옥",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Seoul",
+      "coordinates": [37.5655, 126.9907],
+      "description": "Icon of Seoul's retro-industrial 'Hipjiro' scene. Two taprooms across from each other — main (15:30+) and annex (19:30+). 6 house beers: Pink Chambray Saison, Glen Check Amber Lager, Selvage Porter."
+    },
+    {
+      "name": "The Booth Brewing",
+      "hangul": "더부스",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Seoul",
+      "coordinates": [37.5394, 126.9877],
+      "description": "Gyeongnidan craft brewpub. Known for Kukmin IPA and Mikkeller collab (Taedonggang Pale Ale). Punchy hop-forward styles."
+    },
+    {
+      "name": "Craft Root (Sokcho Beer)",
+      "hangul": "크래프트루트",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Seoul",
+      "coordinates": [37.5730, 126.9895],
+      "description": "Sokcho Beer's Seoul taproom in historic Ikseon-dong hanok alley. ~10 taps themed around Sokcho's coast: Sokcho IPA, Daepo Port Stout, Abai Weizen, Gaetbae Pilsner."
+    },
+    {
+      "name": "Wildcat Brewing",
+      "hangul": "와일드캣 브루잉",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Busan",
+      "coordinates": [35.1508, 129.0586],
+      "description": "Seomyeon brewpub — guests look directly into the brewing vats. Inventive Korean twists: Tiger Paw hoddeok sour, yuzu lager. Tasting trays available."
+    },
+    {
+      "name": "Naked Ape",
+      "hangul": "네이키드 에이프",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Busan",
+      "coordinates": [35.1542, 129.1270],
+      "description": "Gorilla Brewing's concept bar inside Millac The Market, Gwangalli seafront. Bay windows with ocean/port views. Exclusive beers: Millac Pilsner, Millac IPA, Millac DIPA."
+    },
+    {
+      "name": "Galmegi Brewing Haeundae",
+      "hangul": "갈매기 브루잉 해운대",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Busan",
+      "coordinates": [35.1603, 129.1608],
+      "description": "Busan's original craft brewpub (2014), Haeundae branch. 2F ocean views, open until 3am Fri/Sat. Galmegi IPA, Busan As F*** DIPA, Moonrise Pale Ale, Yuma Gose, Espresso Vanilla Stout."
+    },
+    {
+      "name": "Gorilla Brewing Haeundae",
+      "hangul": "고릴라브루잉 해운대",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Busan",
+      "coordinates": [35.1597, 129.1590],
+      "description": "British-founded brewery steps from Haeundae Beach. 20 rotating house taps: Tiramisu Stout, Hop Bomb DIPA, White IPA, Popsicle IPA, seasonal sours."
+    },
+    {
+      "name": "Incheon Brewery",
+      "hangul": "인천맥주",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Incheon",
+      "coordinates": [37.4716, 126.6222],
+      "description": "Incheon's only city brewpub, Sinpo-dong (Gaehangro heritage district). Gaehangro Lager — Korea's first vegan-certified craft beer. Also: Sabjak IPA, Mongyubyeong DIPA, fruit ales."
+    },
+    {
+      "name": "Playground Brewery Songdo",
+      "hangul": "플레이그라운드 브루어리",
+      "category": "food",
+      "icon": "🍺",
+      "city": "Incheon",
+      "coordinates": [37.3962, 126.6492],
+      "description": "Asia Beer Championship gold medals (lager + NE IPA). Gastropub format with Le Cordon Bleu-trained chef. Gentleman Lager, Hunchback Hazy IPA, Monk IPA. Mon–Fri 15:00–24:00, Sat–Sun 12:00–."
     }
   ],
   "categories": {
