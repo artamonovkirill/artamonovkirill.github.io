@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>UK Trip Map</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎡</text></svg>">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+
+        #container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        #sidebar {
+            width: 300px;
+            background: #f8f9fa;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #dee2e6;
+        }
+
+        #map {
+            flex: 1;
+        }
+
+        .legend {
+            margin-bottom: 25px;
+        }
+
+        .legend h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .legend-item:hover {
+            background: #e9ecef;
+        }
+
+        .legend-item.active {
+            background: #e7f3ff;
+            border-left: 3px solid #0066cc;
+        }
+
+        .legend-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            font-size: 13px;
+            color: #495057;
+        }
+
+        .legend-count {
+            margin-left: auto;
+            background: #6c757d;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .stats {
+            background:
+                radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
+                linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats h3 {
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-value .stats-total {
+            font-size: 16px;
+            font-weight: normal;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .legend-count-total {
+            font-weight: normal;
+            opacity: 0.55;
+        }
+
+        .raindrop {
+            position: absolute;
+            top: -12px;
+            width: 2px;
+            height: 12px;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.6));
+            border-radius: 1px;
+            animation: rain linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes rain {
+            0% { transform: translateY(0); opacity: 0.7; }
+            100% { transform: translateY(90px); opacity: 0; }
+        }
+
+        .sky-dark {
+            position: absolute;
+            inset: 0;
+            background: #0a1526;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+            animation: sky 16s ease-in-out infinite;
+        }
+
+        @keyframes sky {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 0.65; }
+        }
+
+        @keyframes bolt {
+            0%, 92%, 100% { opacity: 0; }
+            93% { opacity: 1; }
+            94% { opacity: 0.2; }
+            96% { opacity: 0.9; }
+            98% { opacity: 0; }
+        }
+
+        .map-control-btn {
+            width: 34px;
+            height: 34px;
+            background: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .map-control-btn:hover {
+            background: #f4f4f4;
+        }
+
+        .leaflet-popup-content {
+            margin: 12px;
+            min-width: 200px;
+        }
+
+        .popup-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .popup-category {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .popup-description {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .wiki-preview {
+            margin-top: 8px;
+            border-top: 1px solid #eee;
+            padding-top: 8px;
+        }
+
+        .wiki-preview img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
+        .wiki-preview .wiki-loading {
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
+        }
+
+        .popup-city {
+            font-size: 12px;
+            color: #999;
+            margin-top: 6px;
+        }
+
+        .popup-links {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .popup-links a {
+            color: #1a73e8;
+        }
+
+        .sidebar-footer {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid #dee2e6;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .sidebar-footer a {
+            color: #1a73e8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .sidebar-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            #container {
+                flex-direction: column;
+            }
+
+            #sidebar {
+                width: 100%;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .sidebar-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                width: 100%;
+                padding: 12px;
+                background:
+                    radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
+                    linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .sidebar-toggle::after {
+                content: '▾';
+                transition: transform 0.2s;
+            }
+
+            #sidebar.expanded .sidebar-toggle::after {
+                transform: rotate(180deg);
+            }
+
+            .sidebar-content {
+                display: none;
+            }
+
+            #sidebar.expanded .sidebar-content {
+                display: block;
+                max-height: 200px;
+                overflow-y: auto;
+                padding: 12px 20px;
+            }
+
+            .stats, .legend h3 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <button class="sidebar-toggle" id="sidebar-toggle">Categories</button>
+            <div class="sidebar-content">
+                <div class="stats">
+                    <h3>Total Locations</h3>
+                    <div class="stats-value" id="total-count">0</div>
+                </div>
+
+                <div class="legend">
+                    <h3>Categories</h3>
+                    <div id="legend-items"></div>
+                </div>
+
+                <div class="legend" id="regions-section">
+                    <h3>Regions</h3>
+                    <div id="region-items"></div>
+                </div>
+
+                <div class="sidebar-footer" id="sidebar-footer"></div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Storage helpers
+        const mapId = location.pathname.split('/').filter(Boolean).slice(-2, -1)[0] || 'map';
+        function loadState(key) {
+            try { return JSON.parse(localStorage.getItem('tripmap:' + mapId + ':' + key)); }
+            catch { return null; }
+        }
+        function saveState(key, val) {
+            localStorage.setItem('tripmap:' + mapId + ':' + key, JSON.stringify(val));
+        }
+
+        // Load the data
+        fetch('locations-data.json')
+            .then(response => response.json())
+            .then(data => {
+                initMap(data);
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                alert('Error loading location data. Make sure locations-data.json is in the same directory.');
+            });
+
+        function initMap(data) {
+            // Initialize map centered on London
+            const map = L.map('map').setView([51.509, -0.126], 11);
+
+            // Add map tiles
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
+                maxZoom: 19,
+                subdomains: 'abcd'
+            }).addTo(map);
+
+            // Load saved state
+            const savedCategories = loadState('categories') || {};
+            const savedRegions = loadState('regions') || {};
+            // Build state
+            const categoryState = {};
+            Object.keys(data.categories).forEach(key => {
+                if (key in savedCategories) {
+                    categoryState[key] = savedCategories[key];
+                } else {
+                    categoryState[key] = !data.categories[key].defaultHidden;
+                }
+            });
+
+            // Regions: only these are toggleable, rest always visible
+            const regions = [
+                { key: 'london', label: 'London', cities: ['London'] },
+                { key: 'south-west', label: 'South & South West', cities: ['Bath', 'Bristol', 'Cotswolds', 'Portsmouth', 'Windsor', 'Salisbury', 'New Forest', 'Dorset', 'Bridgwater'] },
+                { key: 'south-east', label: 'South East (Kent & Sussex)', cities: ['Canterbury', 'Eastbourne', 'Leeds Castle', 'Edenbridge', 'Maidstone', 'Waltham Abbey'] },
+                { key: 'central', label: 'Central & Midlands', cities: ['Oxford', 'Cambridge', 'Stratford-upon-Avon', 'Kenilworth', 'Belvoir'] },
+                { key: 'north', label: 'North (York)', cities: ['York'] },
+            ];
+            const cityToRegion = {};
+            regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
+
+            const regionState = {};
+            regions.forEach(r => {
+                regionState[r.key] = r.key in savedRegions ? savedRegions[r.key] : true;
+            });
+
+            // Build all markers
+            const allMarkers = [];
+
+            data.locations.forEach(location => {
+                const category = data.categories[location.category];
+                const city = location.city || 'Other';
+                const markerIcon = location.icon || category.icon;
+
+                const icon = L.divIcon({
+                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
+                    className: 'custom-marker',
+                    iconSize: [24, 24],
+                    iconAnchor: [12, 12]
+                });
+
+                const marker = L.marker(location.coordinates, { icon: icon });
+
+                const mapsQuery = encodeURIComponent(location.name + (location.city ? ', ' + location.city : '') + ', UK');
+                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+                const popupContent = `
+                    <div class="popup-title">${location.name}</div>
+                    <div class="popup-category" style="background-color: ${category.color};">
+                        ${markerIcon} ${location.category}
+                    </div>
+                    <div class="popup-description">${location.description}</div>
+                    ${location.city ? `<div class="popup-city">📍 ${location.city}</div>` : ''}
+                    <div class="popup-links"><a href="${mapsUrl}" target="_blank">Google Maps</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
+                    ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
+                `;
+
+                marker.bindPopup(popupContent, { maxWidth: 300, autoPanPaddingTopLeft: [5, 80] });
+
+                if (location.wiki) {
+                    marker.on('popupopen', function() {
+                        const popup = marker.getPopup();
+                        const container = popup.getElement().querySelector('.wiki-preview');
+                        if (!container || container.dataset.loaded) return;
+                        container.dataset.loaded = '1';
+                        const slug = location.wiki.split('/wiki/')[1];
+                        fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + slug)
+                            .then(function(r) { return r.json(); })
+                            .then(function(summary) {
+                                let wikiHtml = '';
+                                if (summary.thumbnail) {
+                                    wikiHtml += '<img src="' + summary.thumbnail.source + '" alt="' + summary.title + '">';
+                                }
+                                var newContent = popupContent.replace(
+                                    '<span class="wiki-loading">Loading preview...</span>',
+                                    wikiHtml || '<span class="wiki-loading">No preview available</span>'
+                                );
+                                popup.setContent(newContent);
+                                var img = popup.getElement().querySelector('.wiki-preview img');
+                                if (img) {
+                                    img.onload = function() { marker.openPopup(); };
+                                }
+                            })
+                            .catch(function() {
+                                container.innerHTML = '<span class="wiki-loading">Preview unavailable</span>';
+                            });
+                    });
+                }
+
+                const region = cityToRegion[city] || null;
+                allMarkers.push({ marker, category: location.category, region, name: location.name });
+            });
+
+            // Count element references populated during legend creation
+            const categoryCountEls = {};
+            const regionCountEls = {};
+
+            // Visibility
+            function updateVisibility() {
+                let visibleCount = 0;
+                const catCounts = {};
+                const regionCounts = {};
+                allMarkers.forEach(m => {
+                    const regionVisible = m.region === null || regionState[m.region];
+                    const categoryVisible = categoryState[m.category];
+                    const visible = categoryVisible && regionVisible;
+                    if (visible) {
+                        if (!map.hasLayer(m.marker)) m.marker.addTo(map);
+                        visibleCount++;
+                    } else {
+                        if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
+                    }
+                    // Category count: filtered by region
+                    if (regionVisible) {
+                        catCounts[m.category] = (catCounts[m.category] || 0) + 1;
+                    }
+                    // Region count: filtered by category
+                    if (categoryVisible && m.region !== null) {
+                        regionCounts[m.region] = (regionCounts[m.region] || 0) + 1;
+                    }
+                });
+
+                const total = data.locations.length;
+                const countEl = document.getElementById('total-count');
+                if (visibleCount < total) {
+                    countEl.innerHTML = visibleCount + ' <span class="stats-total">/ ' + total + '</span>';
+                } else {
+                    countEl.textContent = total;
+                }
+
+                Object.entries(categoryCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = catCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
+
+                Object.entries(regionCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = regionCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
+            }
+
+            // Category legend
+            const legendContainer = document.getElementById('legend-items');
+
+            Object.entries(data.categories).forEach(([key, category]) => {
+                const count = allMarkers.filter(m => m.category === key).length;
+                if (!count) return;
+
+                const legendItem = document.createElement('div');
+                legendItem.className = categoryState[key] ? 'legend-item active' : 'legend-item';
+
+                legendItem.innerHTML = `
+                    <div class="legend-icon" style="background-color: ${category.color};">
+                        <div style="text-align: center; line-height: 20px; font-size: 14px;">${category.icon}</div>
+                    </div>
+                    <div class="legend-text">${category.description}</div>
+                    <div class="legend-count">${count}</div>
+                `;
+                categoryCountEls[key] = { el: legendItem.querySelector('.legend-count'), total: count };
+
+                legendItem.addEventListener('click', () => {
+                    categoryState[key] = !categoryState[key];
+                    legendItem.classList.toggle('active', categoryState[key]);
+                    saveState('categories', categoryState);
+                    updateVisibility();
+                });
+
+                legendContainer.appendChild(legendItem);
+            });
+
+            // Region legend
+            const regionContainer = document.getElementById('region-items');
+
+            regions.forEach(r => {
+                const count = allMarkers.filter(m => m.region === r.key).length;
+                if (!count) return;
+                const regionItem = document.createElement('div');
+                regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
+
+                regionItem.innerHTML = `
+                    <div class="legend-text">${r.label}</div>
+                    <div class="legend-count">${count}</div>
+                `;
+                regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
+
+                regionItem.addEventListener('click', () => {
+                    regionState[r.key] = !regionState[r.key];
+                    regionItem.classList.toggle('active', regionState[r.key]);
+                    saveState('regions', regionState);
+                    updateVisibility();
+                });
+
+                regionContainer.appendChild(regionItem);
+            });
+
+            // Sidebar footer
+            document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
+            document.getElementById('reset-btn').addEventListener('click', () => {
+                localStorage.removeItem('tripmap:' + mapId + ':categories');
+                localStorage.removeItem('tripmap:' + mapId + ':regions');
+                location.reload();
+            });
+
+            updateVisibility();
+
+            // Map controls
+            const initialCenter = [51.509, -0.126];
+            const initialZoom = 11;
+            let userLocationMarker = null;
+
+            const controlContainer = L.control({ position: 'bottomright' });
+            controlContainer.onAdd = function() {
+                const div = L.DomUtil.create('div', 'leaflet-bar');
+
+                const homeBtn = L.DomUtil.create('button', 'map-control-btn', div);
+                homeBtn.innerHTML = '⌂';
+                homeBtn.title = 'Reset view';
+                homeBtn.addEventListener('click', (e) => {
+                    L.DomEvent.stopPropagation(e);
+                    map.setView(initialCenter, initialZoom);
+                });
+
+                const locateBtn = L.DomUtil.create('button', 'map-control-btn', div);
+                locateBtn.innerHTML = '◎';
+                locateBtn.title = 'Find my location';
+                locateBtn.addEventListener('click', (e) => {
+                    L.DomEvent.stopPropagation(e);
+                    if (!navigator.geolocation) {
+                        alert('Geolocation is not supported by your browser');
+                        return;
+                    }
+
+                    locateBtn.style.opacity = '0.5';
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            if (userLocationMarker) map.removeLayer(userLocationMarker);
+                            const userIcon = L.divIcon({
+                                html: '<div style="background-color: #4285F4; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 8px rgba(66,133,244,0.6);"></div>',
+                                className: 'user-location-marker',
+                                iconSize: [16, 16],
+                                iconAnchor: [8, 8]
+                            });
+                            userLocationMarker = L.marker([lat, lng], { icon: userIcon })
+                                .addTo(map)
+                                .bindPopup('<b>You are here</b>')
+                                .openPopup();
+                            map.setView([lat, lng], 13);
+                            locateBtn.style.opacity = '';
+                        },
+                        (error) => {
+                            let msg = 'Unable to retrieve your location';
+                            if (error.code === error.PERMISSION_DENIED) msg = 'Location access denied.';
+                            else if (error.code === error.POSITION_UNAVAILABLE) msg = 'Location unavailable.';
+                            else if (error.code === error.TIMEOUT) msg = 'Location request timed out.';
+                            alert(msg);
+                            locateBtn.style.opacity = '';
+                        },
+                        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+                    );
+                });
+
+                L.DomEvent.disableClickPropagation(div);
+                return div;
+            };
+            controlContainer.addTo(map);
+
+            document.getElementById('sidebar-toggle').addEventListener('click', () => {
+                document.getElementById('sidebar').classList.toggle('expanded');
+            });
+
+            // Add raindrops + slow bright/dark sky to stats and toggle
+            document.querySelectorAll('.stats, .sidebar-toggle').forEach(el => {
+                for (let i = 0; i < 14; i++) {
+                    const drop = document.createElement('div');
+                    drop.className = 'raindrop';
+                    drop.style.left = Math.random() * 100 + '%';
+                    drop.style.animationDelay = Math.random() * 1.2 + 's';
+                    drop.style.animationDuration = (Math.random() * 0.5 + 0.6) + 's';
+                    el.appendChild(drop);
+                }
+                const sky = document.createElement('div');
+                sky.className = 'sky-dark';
+                el.appendChild(sky);
+            });
+        }
+    </script>
+</body>
+</html>

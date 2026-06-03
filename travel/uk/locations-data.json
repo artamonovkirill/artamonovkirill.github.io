@@ -1,0 +1,392 @@
+{
+  "trip": {
+    "name": "UK Trip",
+    "dates": "Oct 31 – Nov 8, 2026"
+  },
+  "locations": [
+    {
+      "name": "Natural History Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+      "category": "museum",
+      "city": "London",
+      "coordinates": [51.4967, -0.1764],
+      "description": "Dinosaurs, blue whale, great for kids. FREE"
+    },
+    {
+      "name": "Science Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Science_Museum,_London",
+      "category": "museum",
+      "city": "London",
+      "coordinates": [51.4978, -0.1745],
+      "description": "Interactive exhibits, space, tech, very kid-friendly. FREE"
+    },
+    {
+      "name": "British Museum",
+      "wiki": "https://en.wikipedia.org/wiki/British_Museum",
+      "category": "museum",
+      "city": "London",
+      "coordinates": [51.5194, -0.1270],
+      "description": "World history, Egypt, Greece, Rosetta Stone. FREE"
+    },
+    {
+      "name": "Victoria and Albert Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum",
+      "category": "museum",
+      "city": "London",
+      "coordinates": [51.4966, -0.1722],
+      "description": "Decorative arts: fashion, furniture, ceramics. FREE"
+    },
+    {
+      "name": "Cutty Sark",
+      "wiki": "https://en.wikipedia.org/wiki/Cutty_Sark",
+      "category": "maritime",
+      "city": "London",
+      "coordinates": [51.4827, -0.0096],
+      "description": "Greenwich. Victorian tea clipper, climb masts. £22 adult / £11 child"
+    },
+    {
+      "name": "National Maritime Museum",
+      "wiki": "https://en.wikipedia.org/wiki/National_Maritime_Museum",
+      "category": "maritime",
+      "city": "London",
+      "coordinates": [51.4807, -0.0053],
+      "description": "Greenwich. FREE, AHOY! interactive gallery for kids 6-12"
+    },
+    {
+      "name": "London Eye",
+      "wiki": "https://en.wikipedia.org/wiki/London_Eye",
+      "category": "landmark",
+      "city": "London",
+      "coordinates": [51.5033, -0.1196],
+      "description": "Views over city, paid"
+    },
+    {
+      "name": "Wicked (Apollo Victoria)",
+      "wiki": "https://en.wikipedia.org/wiki/Wicked_(musical)",
+      "category": "show",
+      "city": "London",
+      "coordinates": [51.4955, -0.1437],
+      "description": "West End musical, Apollo Victoria Theatre, from £25, book ahead"
+    },
+    {
+      "name": "Tower Bridge",
+      "wiki": "https://en.wikipedia.org/wiki/Tower_Bridge",
+      "category": "landmark",
+      "city": "London",
+      "coordinates": [51.5055, -0.0754],
+      "description": "Walk across free; glass floor walkway paid"
+    },
+    {
+      "name": "Westminster & Big Ben",
+      "wiki": "https://en.wikipedia.org/wiki/Big_Ben",
+      "category": "landmark",
+      "city": "London",
+      "coordinates": [51.4995, -0.1248],
+      "description": "Houses of Parliament, Big Ben"
+    },
+    {
+      "name": "Buckingham Palace",
+      "wiki": "https://en.wikipedia.org/wiki/Buckingham_Palace",
+      "category": "landmark",
+      "city": "London",
+      "coordinates": [51.5014, -0.1419],
+      "description": "Palace area, Changing of the Guard"
+    },
+    {
+      "name": "London to Brighton Veteran Car Run",
+      "wiki": "https://en.wikipedia.org/wiki/London_to_Brighton_Veteran_Car_Run",
+      "category": "event",
+      "city": "London",
+      "coordinates": [51.5074, -0.1657],
+      "description": "Nov 1. Vintage cars run from Hyde Park to Brighton, free to watch. Commemorates 1896 Emancipation Run"
+    },
+    {
+      "name": "Alexandra Palace Fireworks & Drone Festival",
+      "wiki": "https://en.wikipedia.org/wiki/Alexandra_Palace",
+      "category": "fireworks",
+      "city": "London",
+      "coordinates": [51.5940, -0.1300],
+      "description": "Halloween-themed, drones + fireworks, funfair. ⚠️ 2026 date not yet announced"
+    },
+    {
+      "name": "Bath",
+      "wiki": "https://en.wikipedia.org/wiki/Bath,_Somerset",
+      "category": "town",
+      "city": "Bath",
+      "coordinates": [51.3811, -2.3590],
+      "description": "1.5h train. Historic, walkable, kid-friendly. Roman baths, Georgian architecture"
+    },
+    {
+      "name": "Bristol (Clifton Suspension Bridge)",
+      "wiki": "https://en.wikipedia.org/wiki/Clifton_Suspension_Bridge",
+      "category": "town",
+      "city": "Bristol",
+      "coordinates": [51.4549, -2.6278],
+      "description": "1h45 train (Paddington). Suspension bridge, street art, harbourside. Combines with Bath"
+    },
+    {
+      "name": "Cotswolds",
+      "wiki": "https://en.wikipedia.org/wiki/Cotswolds",
+      "category": "nature",
+      "city": "Cotswolds",
+      "coordinates": [51.8330, -1.8433],
+      "description": "Best by car. Villages + countryside walks"
+    },
+    {
+      "name": "Portsmouth Historic Dockyard",
+      "wiki": "https://en.wikipedia.org/wiki/Portsmouth_Historic_Dockyard",
+      "category": "maritime",
+      "city": "Portsmouth",
+      "coordinates": [50.8000, -1.1090],
+      "description": "HMS Victory, Mary Rose, HMS Warrior. Full day. £51 adult / £36 child, book ahead"
+    },
+    {
+      "name": "Spinnaker Tower",
+      "wiki": "https://en.wikipedia.org/wiki/Spinnaker_Tower",
+      "category": "landmark",
+      "city": "Portsmouth",
+      "coordinates": [50.7956, -1.1085],
+      "description": "170m views, glass floor"
+    },
+    {
+      "name": "Gunwharf Quays",
+      "wiki": "https://en.wikipedia.org/wiki/Gunwharf_Quays",
+      "category": "town",
+      "city": "Portsmouth",
+      "coordinates": [50.7950, -1.1050],
+      "description": "Waterfront area, food + shops"
+    },
+    {
+      "name": "Southsea Common Fireworks",
+      "category": "fireworks",
+      "city": "Portsmouth",
+      "coordinates": [50.7820, -1.0890],
+      "description": "Free, large display. ⚠️ Portsmouth does theirs ~Nov 4 (2025 date, 2026 TBC)"
+    },
+    {
+      "name": "Windsor Castle",
+      "wiki": "https://en.wikipedia.org/wiki/Windsor_Castle",
+      "category": "castle",
+      "city": "Windsor",
+      "coordinates": [51.4839, -0.6044],
+      "description": "35min train (Waterloo). Largest occupied castle in world, State Rooms, Changing of Guard"
+    },
+    {
+      "name": "Windsor Great Park",
+      "wiki": "https://en.wikipedia.org/wiki/Windsor_Great_Park",
+      "category": "nature",
+      "city": "Windsor",
+      "coordinates": [51.4400, -0.6000],
+      "description": "Long Walk, big open space"
+    },
+    {
+      "name": "Stonehenge",
+      "wiki": "https://en.wikipedia.org/wiki/Stonehenge",
+      "category": "historic",
+      "city": "Salisbury",
+      "coordinates": [51.1789, -1.8262],
+      "description": "1.5h train to Salisbury (Waterloo), then tour bus. Iconic monument, book ahead"
+    },
+    {
+      "name": "Salisbury Cathedral",
+      "wiki": "https://en.wikipedia.org/wiki/Salisbury_Cathedral",
+      "category": "landmark",
+      "city": "Salisbury",
+      "coordinates": [51.0648, -1.7977],
+      "description": "Medieval cathedral, tallest spire in UK. Combines with Stonehenge"
+    },
+    {
+      "name": "New Forest (Brockenhurst)",
+      "wiki": "https://en.wikipedia.org/wiki/New_Forest",
+      "category": "nature",
+      "city": "New Forest",
+      "coordinates": [50.8200, -1.5730],
+      "description": "1.5h train to Brockenhurst (Waterloo). Wild ponies, forest walks, very family-friendly"
+    },
+    {
+      "name": "Jurassic Coast (Durdle Door)",
+      "wiki": "https://en.wikipedia.org/wiki/Durdle_Door",
+      "category": "nature",
+      "city": "Dorset",
+      "coordinates": [50.6213, -2.2766],
+      "description": "2h train. Fossils + Durdle Door arch. Weather risk in Nov"
+    },
+    {
+      "name": "Bridgwater Fireworks",
+      "wiki": "https://en.wikipedia.org/wiki/Bridgwater_Guy_Fawkes_Carnival",
+      "category": "fireworks",
+      "city": "Bridgwater",
+      "coordinates": [51.1280, -2.9970],
+      "description": "Nov 6. Grand display at St Matthew's Field. Somerset (45min from Bath)"
+    },
+    {
+      "name": "Bridgwater Guy Fawkes Carnival",
+      "wiki": "https://en.wikipedia.org/wiki/Bridgwater_Guy_Fawkes_Carnival",
+      "category": "event",
+      "city": "Bridgwater",
+      "coordinates": [51.1280, -2.9930],
+      "description": "Nov 7, 6pm. Largest illuminated carnival in Europe. Squibbing finale. Somerset (45min from Bath)"
+    },
+    {
+      "name": "Oxford",
+      "wiki": "https://en.wikipedia.org/wiki/Oxford",
+      "category": "town",
+      "city": "Oxford",
+      "coordinates": [51.7520, -1.2577],
+      "description": "1h train. University city, good for overnight"
+    },
+    {
+      "name": "Cambridge",
+      "wiki": "https://en.wikipedia.org/wiki/Cambridge",
+      "category": "town",
+      "city": "Cambridge",
+      "coordinates": [52.2053, 0.1218],
+      "description": "45min train. University city, similar to Oxford. Punting on the Cam"
+    },
+    {
+      "name": "Stratford-upon-Avon",
+      "wiki": "https://en.wikipedia.org/wiki/Stratford-upon-Avon",
+      "category": "town",
+      "city": "Stratford-upon-Avon",
+      "coordinates": [52.1923, -1.7070],
+      "description": "2h train (Marylebone). Shakespeare's birthplace, Tudor buildings, RSC theatre"
+    },
+    {
+      "name": "Kenilworth Castle Fireworks",
+      "wiki": "https://en.wikipedia.org/wiki/Kenilworth_Castle",
+      "category": "fireworks",
+      "city": "Kenilworth",
+      "coordinates": [52.3483, -1.5950],
+      "description": "Nov 7. Medieval castle ruins + fireworks. Gates 5:30pm, fireworks 7pm. Warwickshire, 1.5h by car"
+    },
+    {
+      "name": "Belvoir Castle Bonfire Night",
+      "wiki": "https://en.wikipedia.org/wiki/Belvoir_Castle",
+      "category": "fireworks",
+      "city": "Belvoir",
+      "coordinates": [52.8940, -0.7830],
+      "description": "~Nov 7. Castle setting, fireworks. Leicestershire, 2h by car. ⚠️ 2026 event not yet listed"
+    },
+    {
+      "name": "York (The Shambles)",
+      "wiki": "https://en.wikipedia.org/wiki/The_Shambles",
+      "category": "town",
+      "city": "York",
+      "coordinates": [53.9590, -1.0815],
+      "description": "1h45-2h train (King's Cross). Medieval walled city, The Shambles. Best medieval experience for kids"
+    },
+    {
+      "name": "Jorvik Viking Centre",
+      "wiki": "https://en.wikipedia.org/wiki/Jorvik_Viking_Centre",
+      "category": "museum",
+      "city": "York",
+      "coordinates": [53.9565, -1.0805],
+      "description": "Reconstructed Viking-age streets, ride through 10th-century York"
+    },
+    {
+      "name": "Aesthetica Short Film Festival",
+      "category": "event",
+      "city": "York",
+      "coordinates": [53.9600, -1.0810],
+      "description": "Nov 4-8. Film festival across 15 venues in York city centre. Good combo with York away trip"
+    },
+    {
+      "name": "Canterbury Cathedral",
+      "wiki": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+      "category": "town",
+      "city": "Canterbury",
+      "coordinates": [51.2798, 1.0830],
+      "description": "1h train (St Pancras, high-speed). Medieval cathedral, UNESCO, pilgrimage city"
+    },
+    {
+      "name": "Seven Sisters",
+      "wiki": "https://en.wikipedia.org/wiki/Seven_Sisters,_Sussex",
+      "category": "nature",
+      "city": "Eastbourne",
+      "coordinates": [50.7370, 0.1530],
+      "description": "1.5h train. White chalk cliffs, near Eastbourne/Brighton"
+    },
+    {
+      "name": "Leeds Castle Fireworks Spectacular",
+      "wiki": "https://en.wikipedia.org/wiki/Leeds_Castle",
+      "category": "castle",
+      "city": "Leeds Castle",
+      "coordinates": [51.2486, 0.6306],
+      "description": "Nov 7-8. Fireworks choreographed to music. Grounds open 10am, last entry 3pm. Kent, 1h. Maze + play areas"
+    },
+    {
+      "name": "Edenbridge Bonfire",
+      "wiki": "https://en.wikipedia.org/wiki/Edenbridge,_Kent",
+      "category": "fireworks",
+      "city": "Edenbridge",
+      "coordinates": [51.1970, 0.0640],
+      "description": "Nov 7. Torchlit procession 6:30pm + fireworks 8:30pm. Celebrity effigies. Kent, 1h. 30min from Leeds Castle"
+    },
+    {
+      "name": "Kent Life Fireworks",
+      "category": "fireworks",
+      "city": "Maidstone",
+      "coordinates": [51.2900, 0.5200],
+      "description": "Nov 6-7. Heritage open-air farm museum + fireworks. Maidstone, Kent, 1h. ⚠️ Year not confirmed"
+    },
+    {
+      "name": "Royal Gunpowder Mills Fireworks",
+      "category": "fireworks",
+      "city": "Waltham Abbey",
+      "coordinates": [51.6890, 0.0040],
+      "description": "Nov 7, 4pm-8:30pm. Fireworks at historic gunpowder mill. Waltham Abbey, Essex, 40min from London"
+    }
+  ],
+  "categories": {
+    "museum": {
+      "color": "#795548",
+      "icon": "🏛️",
+      "description": "Museums"
+    },
+    "maritime": {
+      "color": "#0277BD",
+      "icon": "⚓",
+      "description": "Ships & Maritime"
+    },
+    "landmark": {
+      "color": "#C2185B",
+      "icon": "🗼",
+      "description": "Landmarks"
+    },
+    "castle": {
+      "color": "#455A64",
+      "icon": "🏰",
+      "description": "Castles"
+    },
+    "town": {
+      "color": "#00897B",
+      "icon": "🏙️",
+      "description": "Towns & Day Trips"
+    },
+    "nature": {
+      "color": "#2E7D32",
+      "icon": "🌲",
+      "description": "Nature & Countryside"
+    },
+    "historic": {
+      "color": "#757575",
+      "icon": "🗿",
+      "description": "Historic Sites"
+    },
+    "show": {
+      "color": "#6A1B9A",
+      "icon": "🎭",
+      "description": "Shows"
+    },
+    "fireworks": {
+      "color": "#E65100",
+      "icon": "🎆",
+      "description": "Fireworks (Bonfire Night)"
+    },
+    "event": {
+      "color": "#F9A825",
+      "icon": "🎪",
+      "description": "Events"
+    }
+  }
+}
