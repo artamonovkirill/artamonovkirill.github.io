@@ -8,8 +8,7 @@
   :root { color-scheme: light dark; }
   body {
     font-family: system-ui, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
+    margin: 0;
     padding: 1rem;
   }
   h1 { font-size: 1.3rem; margin: 0 0 0.75rem; }
@@ -40,31 +39,109 @@
     font-weight: 600;
   }
   #status { color: gray; font-size: 0.9rem; }
-  ul#event-list { list-style: none; margin: 0; padding: 0; }
-  li.event {
+
+  #gantt-wrap {
+    overflow: auto;
+    max-height: calc(100vh - 7rem);
+    border: 1px solid #8883;
+    position: relative;
+  }
+  #gantt {
+    position: relative;
+    display: grid;
+    grid-template-columns: 160px max-content;
+  }
+  .loc-header, .time-header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: Canvas;
+    border-bottom: 1px solid #8886;
+  }
+  .loc-header {
+    left: 0;
+    z-index: 4;
+  }
+  .time-header {
+    height: 28px;
+  }
+  .time-mark {
+    position: absolute;
+    top: 0;
+    bottom: 0;
     display: flex;
-    gap: 0.75rem;
-    padding: 0.5rem 0;
+    align-items: center;
+    border-left: 1px solid #8883;
+    font-size: 0.7rem;
+    color: #666;
+    padding-left: 3px;
+    white-space: nowrap;
+  }
+  .time-mark.hour { border-left: 1px solid #8888; font-weight: 600; }
+  .loc-cell {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: Canvas;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #8883;
+    border-right: 1px solid #8886;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .loc-cell a {
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .loc-cell a:hover { text-decoration: underline; }
+  .row-track {
+    position: relative;
     border-bottom: 1px solid #8883;
   }
-  .time { flex: 0 0 90px; color: #666; font-variant-numeric: tabular-nums; }
-  .info { flex: 1; min-width: 0; }
-  .title { font-weight: 600; }
-  .title a { color: inherit; text-decoration: none; }
-  .title a:hover { text-decoration: underline; }
-  .venue { color: #666; font-size: 0.9rem; }
-  .price { color: #666; font-size: 0.9rem; }
+  .grid-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #8882;
+  }
+  .grid-line.hour { border-left: 1px solid #8886; }
+  .event-block {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    background: #4a7;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 4px;
+    font-size: 0.72rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    display: block;
+  }
+  .event-block:hover { outline: 2px solid #285; z-index: 1; }
 </style>
 </head>
 <body>
 <h1>Gentse Feesten</h1>
 <div id="day-tabs"></div>
 <div id="status"></div>
-<ul id="event-list"></ul>
+<div id="gantt-wrap"><div id="gantt"></div></div>
 
 <script>
 const MAX_DATE = "2026-07-26"; // Sunday, last day of the fest
 const WEEKDAYS = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+const PX_PER_MIN = 2;
+const ROW_H = 28;
+const DEFAULT_DURATION = 60; // minutes, used when an event has no known end
 
 const CATEGORY_EMOJI = {
   "Bals/Dans": "💃",
@@ -80,7 +157,7 @@ const CATEGORY_EMOJI = {
   "Markten": "🛒",
   "Puppetbuskersfestival": "🎭",
   "Spel, sport en recreatie": "⚽",
-  "Tentoonstellingen en geleide bezoeken": "🖼️",
+  "Tentoonstellingen en geleide bezoeken": "🚶",
   "Theater": "🎭",
   "Varia": "✨",
   "Vertellingen/lezingen/poëzie": "📖",
@@ -88,17 +165,20 @@ const CATEGORY_EMOJI = {
 };
 
 function categoryEmojis(categories) {
-  const emojis = new Set();
   for (const c of categories || []) {
-    if (CATEGORY_EMOJI[c]) emojis.add(CATEGORY_EMOJI[c]);
+    if (CATEGORY_EMOJI[c]) return CATEGORY_EMOJI[c];
   }
-  return [...emojis].join(" ");
+  return "";
 }
 
-let allData = {}; // date -> events, from data.json (pre-sorted, pre-filtered)
+let allDays = {};    // date -> events
+let allLocations = {}; // venue name -> gmaps link or null
+
 async function loadData() {
   const res = await fetch("data.json");
-  allData = await res.json();
+  const data = await res.json();
+  allDays = data.days;
+  allLocations = data.locations;
 }
 
 function toISO(d) {
@@ -112,9 +192,18 @@ function festDayISO() {
   return toISO(now);
 }
 
+// Convert "HH:MM" to minutes-since-midnight, rolled so times before 07:00
+// come out after 24:00 (matches the fest-day numbering used elsewhere).
+function toFestMinutes(hhmm) {
+  const [h, m] = hhmm.split(":").map(Number);
+  let mins = h * 60 + m;
+  if (mins < 7 * 60) mins += 24 * 60;
+  return mins;
+}
+
 const dayTabsEl = document.getElementById("day-tabs");
 const statusEl = document.getElementById("status");
-const listEl = document.getElementById("event-list");
+const ganttEl = document.getElementById("gantt");
 
 function buildDayTabs() {
   const start = new Date(festDayISO() + "T00:00:00");
@@ -154,67 +243,148 @@ const urlDate = new URLSearchParams(location.search).get("date");
 const validDates = [...dayTabsEl.children].map((btn) => btn.dataset.date);
 const initialDay = validDates.includes(urlDate) ? urlDate : defaultDay;
 
+// Assign each event a lane within its venue row so overlapping events stack
+// instead of collide. Greedy: reuse the first lane whose last event ends
+// before this one starts.
+function assignLanes(events) {
+  const lanes = []; // lanes[i] = end-minutes of last event placed in lane i
+  for (const e of events) {
+    let lane = lanes.findIndex((endMin) => endMin <= e._start);
+    if (lane === -1) {
+      lane = lanes.length;
+      lanes.push(0);
+    }
+    lanes[lane] = e._end;
+    e._lane = lane;
+  }
+  return lanes.length;
+}
+
 function loadDay(date) {
-  listEl.innerHTML = "";
-  const dayEvents = allData[date];
+  ganttEl.innerHTML = "";
+  const dayEvents = allDays[date];
   if (!dayEvents) {
     statusEl.textContent = `No data file for ${date} yet (run fetch_day.py ${date}).`;
     return;
   }
-  let events = [...dayEvents];
+  let events = dayEvents
+    .filter((e) => e.start)
+    .map((e) => {
+      const start = toFestMinutes(e.start);
+      const end = e.end ? toFestMinutes(e.end) : start + DEFAULT_DURATION;
+      return { ...e, _start: start, _end: Math.max(end, start + 15) };
+    });
+
   if (date === festDayISO()) {
     const now = new Date();
     let nowMinutes = now.getHours() * 60 + now.getMinutes();
-    if (nowMinutes < 7 * 60) nowMinutes += 24 * 60; // still last night, per fest-day numbering
-    events = events.filter((e) => {
-      if (!e.end) return true; // unknown end, assume still on
-      const [h, m] = e.end.split(":").map(Number);
-      let endMinutes = h * 60 + m;
-      if (endMinutes < 7 * 60) endMinutes += 24 * 60;
-      return endMinutes >= nowMinutes;
-    });
+    if (nowMinutes < 7 * 60) nowMinutes += 24 * 60;
+    events = events.filter((e) => e._end >= nowMinutes);
   }
+
   if (events.length === 0) {
     statusEl.textContent = "No events found for this date.";
     return;
   }
   statusEl.textContent = "";
+
+  // Group by venue, sorted by each venue's earliest event.
+  const byVenue = new Map();
   for (const e of events) {
-    const li = document.createElement("li");
-    li.className = "event";
+    if (!byVenue.has(e.venue)) byVenue.set(e.venue, []);
+    byVenue.get(e.venue).push(e);
+  }
+  const venues = [...byVenue.keys()].sort((a, b) => {
+    const aMin = Math.min(...byVenue.get(a).map((e) => e._start));
+    const bMin = Math.min(...byVenue.get(b).map((e) => e._start));
+    return aMin - bMin || a.localeCompare(b);
+  });
 
-    const time = document.createElement("div");
-    time.className = "time";
-    time.textContent = e.start ? `${e.start}${e.end ? "–" + e.end : ""}` : "";
+  const minMinutes = Math.floor(Math.min(...events.map((e) => e._start)) / 30) * 30;
+  const maxMinutes = Math.ceil(Math.max(...events.map((e) => e._end)) / 30) * 30;
+  const timelineWidth = (maxMinutes - minMinutes) * PX_PER_MIN;
 
-    const info = document.createElement("div");
-    info.className = "info";
+  // Row lanes per venue (some venues have overlapping events -> multi-row height).
+  const laneCounts = new Map();
+  for (const v of venues) {
+    byVenue.get(v).sort((a, b) => a._start - b._start);
+    laneCounts.set(v, assignLanes(byVenue.get(v)));
+  }
 
-    const title = document.createElement("div");
-    title.className = "title";
-    const a = document.createElement("a");
-    a.href = e.link;
-    a.target = "_blank";
-    a.rel = "noopener";
-    const emojis = categoryEmojis(e.categories);
-    a.textContent = emojis ? `${emojis} ${e.title}` : e.title;
-    title.appendChild(a);
+  ganttEl.style.gridTemplateColumns = `160px ${timelineWidth}px`;
 
-    const venue = document.createElement("div");
-    venue.className = "venue";
-    venue.textContent = e.venue || "";
-    if (e.price) {
-      const price = document.createElement("span");
-      price.className = "price";
-      price.textContent = ` · €${e.price}`;
-      venue.appendChild(price);
+  // Corner + time header
+  const corner = document.createElement("div");
+  corner.className = "loc-header";
+  ganttEl.appendChild(corner);
+
+  const timeHeader = document.createElement("div");
+  timeHeader.className = "time-header";
+  timeHeader.style.width = timelineWidth + "px";
+  for (let m = minMinutes; m <= maxMinutes; m += 30) {
+    const mark = document.createElement("div");
+    const isHour = m % 60 === 0;
+    mark.className = "time-mark" + (isHour ? " hour" : "");
+    mark.style.left = (m - minMinutes) * PX_PER_MIN + "px";
+    const h = Math.floor(m / 60) % 24;
+    const mm = m % 60;
+    mark.textContent = `${String(h).padStart(2, "0")}:${String(mm).padStart(2, "0")}`;
+    timeHeader.appendChild(mark);
+  }
+  ganttEl.appendChild(timeHeader);
+
+  // Rows
+  for (const v of venues) {
+    const rowH = ROW_H * laneCounts.get(v);
+
+    const locCell = document.createElement("div");
+    locCell.className = "loc-cell";
+    locCell.style.height = rowH + "px";
+    const link = allLocations[v];
+    if (link) {
+      const a = document.createElement("a");
+      a.href = link;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = v;
+      a.title = v;
+      locCell.appendChild(a);
+    } else {
+      locCell.textContent = v;
+      locCell.title = v;
+    }
+    ganttEl.appendChild(locCell);
+
+    const track = document.createElement("div");
+    track.className = "row-track";
+    track.style.height = rowH + "px";
+    track.style.width = timelineWidth + "px";
+
+    for (let m = minMinutes; m <= maxMinutes; m += 30) {
+      const line = document.createElement("div");
+      line.className = "grid-line" + (m % 60 === 0 ? " hour" : "");
+      line.style.left = (m - minMinutes) * PX_PER_MIN + "px";
+      track.appendChild(line);
     }
 
-    info.appendChild(title);
-    info.appendChild(venue);
-    li.appendChild(time);
-    li.appendChild(info);
-    listEl.appendChild(li);
+    for (const e of byVenue.get(v)) {
+      const a = document.createElement("a");
+      a.className = "event-block";
+      a.href = e.link;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.style.left = (e._start - minMinutes) * PX_PER_MIN + "px";
+      a.style.width = (e._end - e._start) * PX_PER_MIN - 2 + "px";
+      a.style.top = e._lane * ROW_H + 2 + "px";
+      a.style.height = ROW_H - 4 + "px";
+      a.style.lineHeight = (ROW_H - 4) + "px";
+      const emojis = categoryEmojis(e.categories);
+      a.textContent = emojis ? `${emojis} ${e.title}` : e.title;
+      a.title = `${e.title}\n${e.start}${e.end ? "–" + e.end : ""}${e.price ? " · €" + e.price : ""}`;
+      track.appendChild(a);
+    }
+
+    ganttEl.appendChild(track);
   }
 }
 
