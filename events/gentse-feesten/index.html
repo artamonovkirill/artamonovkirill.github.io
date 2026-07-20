@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gentse Feesten</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 0.75rem; }
+  #day-tabs {
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #8883;
+  }
+  .day-tab {
+    flex: 0 0 auto;
+    font: inherit;
+    font-size: 0.85rem;
+    color: inherit;
+    background: none;
+    border: 1px solid #8886;
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .day-tab.active {
+    background: #4a7;
+    border-color: #4a7;
+    color: #fff;
+    font-weight: 600;
+  }
+  #status { color: gray; font-size: 0.9rem; }
+  ul#event-list { list-style: none; margin: 0; padding: 0; }
+  li.event {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #8883;
+  }
+  .time { flex: 0 0 90px; color: #666; font-variant-numeric: tabular-nums; }
+  .info { flex: 1; min-width: 0; }
+  .title { font-weight: 600; }
+  .title a { color: inherit; text-decoration: none; }
+  .title a:hover { text-decoration: underline; }
+  .venue { color: #666; font-size: 0.9rem; }
+  .price { color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Gentse Feesten</h1>
+<div id="day-tabs"></div>
+<div id="status"></div>
+<ul id="event-list"></ul>
+
+<script>
+const MAX_DATE = "2026-07-26"; // Sunday, last day of the fest
+const WEEKDAYS = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+
+const CATEGORY_EMOJI = {
+  "Bals/Dans": "💃",
+  "Boottochten": "🚤",
+  "Circus": "🎪",
+  "Miramiro": "🎪",
+  "Comedy": "😂",
+  "Concerten > divers": "🎵",
+  "Concerten > jazz": "🎷",
+  "Concerten > klassiek": "🎻",
+  "Concerten > rock-pop-techno-blues-folk-world music": "🎸",
+  "Kinder- en jeugdprogramma's": "🧒",
+  "Markten": "🛒",
+  "Puppetbuskersfestival": "🎭",
+  "Spel, sport en recreatie": "⚽",
+  "Tentoonstellingen en geleide bezoeken": "🖼️",
+  "Theater": "🎭",
+  "Varia": "✨",
+  "Vertellingen/lezingen/poëzie": "📖",
+  "Wandelingen": "🚶",
+};
+
+function categoryEmojis(categories) {
+  const emojis = new Set();
+  for (const c of categories || []) {
+    if (CATEGORY_EMOJI[c]) emojis.add(CATEGORY_EMOJI[c]);
+  }
+  return [...emojis].join(" ");
+}
+
+let allData = {}; // date -> events, from data.json (pre-sorted, pre-filtered)
+async function loadData() {
+  const res = await fetch("data.json");
+  allData = await res.json();
+}
+
+function toISO(d) {
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+// Fest day rolls over at 7am, not midnight: 01:00 still counts as "yesterday".
+function festDayISO() {
+  const now = new Date();
+  if (now.getHours() < 7) now.setDate(now.getDate() - 1);
+  return toISO(now);
+}
+
+const dayTabsEl = document.getElementById("day-tabs");
+const statusEl = document.getElementById("status");
+const listEl = document.getElementById("event-list");
+
+function buildDayTabs() {
+  const start = new Date(festDayISO() + "T00:00:00");
+  const end = new Date(MAX_DATE + "T00:00:00");
+  const dates = [];
+  for (let d = start; d <= end; d.setDate(d.getDate() + 1)) {
+    dates.push(new Date(d));
+  }
+  if (dates.length === 0) dates.push(end); // today is past MAX_DATE: still show last day
+
+  for (const d of dates) {
+    const iso = toISO(d);
+    const btn = document.createElement("button");
+    btn.className = "day-tab";
+    btn.textContent = `${WEEKDAYS[d.getDay()]} ${d.getDate()} jul`;
+    btn.dataset.date = iso;
+    btn.addEventListener("click", () => selectDay(iso));
+    dayTabsEl.appendChild(btn);
+  }
+  return toISO(dates[0]);
+}
+
+function selectDay(iso, updateUrl = true) {
+  for (const btn of dayTabsEl.children) {
+    btn.classList.toggle("active", btn.dataset.date === iso);
+  }
+  loadDay(iso);
+  if (updateUrl) {
+    const url = new URL(location.href);
+    url.searchParams.set("date", iso);
+    history.replaceState(null, "", url);
+  }
+}
+
+const defaultDay = buildDayTabs();
+const urlDate = new URLSearchParams(location.search).get("date");
+const validDates = [...dayTabsEl.children].map((btn) => btn.dataset.date);
+const initialDay = validDates.includes(urlDate) ? urlDate : defaultDay;
+
+function loadDay(date) {
+  listEl.innerHTML = "";
+  const dayEvents = allData[date];
+  if (!dayEvents) {
+    statusEl.textContent = `No data file for ${date} yet (run fetch_day.py ${date}).`;
+    return;
+  }
+  let events = [...dayEvents];
+  if (date === festDayISO()) {
+    const now = new Date();
+    let nowMinutes = now.getHours() * 60 + now.getMinutes();
+    if (nowMinutes < 7 * 60) nowMinutes += 24 * 60; // still last night, per fest-day numbering
+    events = events.filter((e) => {
+      if (!e.end) return true; // unknown end, assume still on
+      const [h, m] = e.end.split(":").map(Number);
+      let endMinutes = h * 60 + m;
+      if (endMinutes < 7 * 60) endMinutes += 24 * 60;
+      return endMinutes >= nowMinutes;
+    });
+  }
+  if (events.length === 0) {
+    statusEl.textContent = "No events found for this date.";
+    return;
+  }
+  statusEl.textContent = "";
+  for (const e of events) {
+    const li = document.createElement("li");
+    li.className = "event";
+
+    const time = document.createElement("div");
+    time.className = "time";
+    time.textContent = e.start ? `${e.start}${e.end ? "–" + e.end : ""}` : "";
+
+    const info = document.createElement("div");
+    info.className = "info";
+
+    const title = document.createElement("div");
+    title.className = "title";
+    const a = document.createElement("a");
+    a.href = e.link;
+    a.target = "_blank";
+    a.rel = "noopener";
+    const emojis = categoryEmojis(e.categories);
+    a.textContent = emojis ? `${emojis} ${e.title}` : e.title;
+    title.appendChild(a);
+
+    const venue = document.createElement("div");
+    venue.className = "venue";
+    venue.textContent = e.venue || "";
+    if (e.price) {
+      const price = document.createElement("span");
+      price.className = "price";
+      price.textContent = ` · €${e.price}`;
+      venue.appendChild(price);
+    }
+
+    info.appendChild(title);
+    info.appendChild(venue);
+    li.appendChild(time);
+    li.appendChild(info);
+    listEl.appendChild(li);
+  }
+}
+
+loadData().then(() => {
+  selectDay(initialDay);
+});
+
+window.addEventListener("popstate", () => {
+  const iso = new URLSearchParams(location.search).get("date");
+  if (validDates.includes(iso)) selectDay(iso, false);
+});
+</script>
+</body>
+</html>
