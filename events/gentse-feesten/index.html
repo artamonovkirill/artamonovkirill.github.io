@@ -357,6 +357,12 @@ function loadDay(date) {
       if (!hardStartTitles.has(e.title)) return true;
       return nowMinutes < e._start + hardStartGraceMinutes;
     });
+    // Clip already-passed portion of in-progress events so the timeline
+    // (and their bars) starts at the current half-hour, not their real start.
+    const nowFloor = Math.floor(nowMinutes / 30) * 30;
+    for (const e of events) {
+      if (e._start < nowFloor) e._start = nowFloor;
+    }
   }
 
   if (events.length === 0) {
