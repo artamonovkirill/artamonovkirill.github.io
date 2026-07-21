@@ -111,7 +111,7 @@
     position: absolute;
     top: 2px;
     bottom: 2px;
-    background: #4a7;
+    background: #6b7280;
     color: #fff;
     border-radius: 4px;
     padding: 0 4px;
@@ -122,7 +122,13 @@
     text-decoration: none;
     display: block;
   }
-  .event-block:hover { outline: 2px solid #285; z-index: 1; }
+  .event-block:hover { outline: 2px solid #454b54; z-index: 1; }
+  .event-block.est-end { background: linear-gradient(to right, #6b7280 65%, rgba(107,114,128,0.35) 100%); }
+  .event-block.starred {
+    background: #4a7;
+  }
+  .event-block.starred.est-end { background: linear-gradient(to right, #4a7 65%, rgba(68,170,119,0.35) 100%); }
+  .event-block.starred:hover { outline: 2px solid #285; }
 
   #filters {
     display: flex;
@@ -184,7 +190,7 @@
   <label class="switch">
     <input type="checkbox" id="hide-paid">
     <span class="switch-track"></span>
-    Paid events (💰)
+    💰 Paid
   </label>
 </div>
 <div id="status"></div>
@@ -233,7 +239,6 @@ function categoryEmojis(categories) {
 
 let allDays = {};    // date -> events
 let allLocations = {}; // venue name -> gmaps link or null
-let hardStartTitles = new Set(); // titles with strict door times
 let hardStartGraceMinutes = 10;
 
 async function loadData() {
@@ -241,7 +246,6 @@ async function loadData() {
   const data = await res.json();
   allDays = data.days;
   allLocations = data.locations;
-  hardStartTitles = new Set(data.hardStart?.events || []);
   hardStartGraceMinutes = data.hardStart?.graceMinutes ?? 10;
 }
 
@@ -346,7 +350,7 @@ function loadDay(date) {
     .map((e) => {
       const start = toFestMinutes(e.start);
       const end = e.end ? toFestMinutes(e.end) : start + DEFAULT_DURATION;
-      return { ...e, _start: start, _end: Math.max(end, start + 15) };
+      return { ...e, _start: start, _end: Math.max(end, start + 15), _estEnd: !e.end };
     });
 
   if (date === festDayISO()) {
@@ -354,7 +358,7 @@ function loadDay(date) {
     const nowMinutes = toFestMinutes(`${now.getHours()}:${now.getMinutes()}`);
     events = events.filter((e) => e._end >= nowMinutes);
     events = events.filter((e) => {
-      if (!hardStartTitles.has(e.title)) return true;
+      if (!e.hardStart) return true;
       return nowMinutes < e._start + hardStartGraceMinutes;
     });
     // Clip already-passed portion of in-progress events so the timeline
@@ -462,7 +466,7 @@ function loadDay(date) {
 
     for (const e of byVenue.get(v)) {
       const a = document.createElement("a");
-      a.className = "event-block";
+      a.className = "event-block" + (e._estEnd ? " est-end" : "") + (e.starred ? " starred" : "");
       a.href = e.link;
       a.target = "_blank";
       a.rel = "noopener";
@@ -474,7 +478,7 @@ function loadDay(date) {
       const prefix = categoryEmojis(e.categories) + (e.price != null ? "💰" : "");
       if (prefix) a.appendChild(document.createTextNode(prefix + " "));
       a.appendChild(document.createTextNode(e.title));
-      a.title = `${e.title}\n${e.start}${e.end ? "–" + e.end : ""}${e.price ? " · €" + e.price : ""}`;
+      a.title = `${e.title}\n${e.start}${e.end ? "–" + e.end : " (end time unknown, est. 1h)"}${e.price ? " · €" + e.price : ""}`;
       track.appendChild(a);
     }
 
