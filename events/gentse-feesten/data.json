@@ -21,7 +21,6 @@
   "Sint-Jacobskerk": "https://maps.app.goo.gl/jyfsJGNTDzHCC6Wp7",
   "Zuidpark": "https://maps.app.goo.gl/PskpGKd2Hvh7P2SL7",
   "KANTL": "https://maps.app.goo.gl/ug1sXqtDTz6CSfRJ6",
-  "Rigakaai, bezoekerscentrum": "https://maps.app.goo.gl/Xx98uppDoeYzjDo76",
   "Huis van Alijn": "https://maps.app.goo.gl/Hazz8B415uPrV6Lg9",
   "zaal \"Achter de Bibliotheek\"": "https://maps.app.goo.gl/5iTUMMrd8uy5J6NbA",
   "Quatre Mains": "https://maps.app.goo.gl/GaJvVXpKzahwrhCYA",
@@ -31,1409 +30,16 @@
   "amai comedy club": "https://maps.app.goo.gl/Q4kKMwHL8wufvMTQ9",
   "Brabantdamkerk": "https://maps.app.goo.gl/xuE6wJQo84qZBKon7",
   "Gentse ambassade": "https://maps.app.goo.gl/JcPPZS3DtwR7GXtz5",
-  "Karmelietenklooster": "https://maps.app.goo.gl/CNuwiS3u5XqRuwbUA",
   "Café de Loge": "https://maps.app.goo.gl/Dit3XsYrwRzw1GyWA",
   "Sint-Stefanuskerk": "https://maps.app.goo.gl/CTGykEKyfufBBifv6",
   "MIRY concertzaal": "https://maps.app.goo.gl/oXbAmBU9RfxZasnPA",
-  "De Kazematten": "https://maps.app.goo.gl/exJbG4yMkspt7J7o7",
   "Sint-Niklaaskerk": "https://maps.app.goo.gl/tRNYjJiYxosoF2jX9",
   "BlinkHuis": "https://maps.app.goo.gl/oroy4NAnHobDpBiH9",
   "François Laurentinstituut": "https://maps.app.goo.gl/8zhnb8dKJc2jY4Rz8",
   "Lakenmetershuis": "https://maps.app.goo.gl/CD9oC6gm62P1og9p7",
-  "Sint-Baafskathedraal": "https://maps.app.goo.gl/Eir8Ms7giUg9Gudk6",
-  "Stadhuis": "https://maps.app.goo.gl/aunXTeWqXXCoQLv19"
+  "Sint-Baafskathedraal": "https://maps.app.goo.gl/Eir8Ms7giUg9Gudk6"
  },
  "days": {
-  "2026-07-22": [
-   {
-    "venue": "Politiecommissariaat Gent Centrum",
-    "title": "Gentse Flikkenwandeling",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/gentse-flikkenwandeling-80401",
-    "start": "10:30",
-    "end": "12:30",
-    "categories": [
-     "Wandelingen"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/rondvaarten-north-sea-port-71710",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "De Kazematten",
-    "title": "BRIES",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bries-80956",
-    "start": "11:00",
-    "end": "12:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
-    "venue": "Sint-Jacobskerk",
-    "title": "Concert Nicolas Margarit, piano",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/concert-nicolas-margarit-piano-81841",
-    "start": "11:00",
-    "end": "12:00",
-    "categories": [
-     "Concerten > klassiek",
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Niklaaskerk",
-    "title": "Orgeldemonstratie Sint-Niklaaskerk",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/orgeldemonstratie-sint-niklaaskerk-74812",
-    "start": "12:00",
-    "end": "13:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Emile Braunplein",
-    "title": "The Flying Spirit",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/flying-spirit-82513",
-    "start": "12:00",
-    "end": "13:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "folk"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Zuidpark",
-    "title": "Familienamiddagen",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/familienamiddagen-67642",
-    "start": "13:00",
-    "end": "19:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "VIERNULVIER",
-    "title": "Rondleiding De Vooruit - Gentse Feesten editie",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/rondleiding-de-vooruit-gentse-feesten-editie-74407",
-    "start": "13:00",
-    "end": "14:30",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": 10.0,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/rondvaarten-north-sea-port-71713",
-    "start": "13:30",
-    "end": "15:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Anna Amigo (SP)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/anna-amigo-sp-72613",
-    "start": "14:00",
-    "end": "15:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "folk"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Bouwspeelplaats",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bouwspeelplaats-81925",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Arca Theater",
-    "title": "BRODER - Papillon (6+)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/broder-papillon-6-68866",
-    "start": "14:00",
-    "end": "15:30",
-    "categories": [
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 19.0
-   },
-   {
-    "venue": "Sint-Veerleplein",
-    "title": "Die Verdammte Spielerei",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/die-verdammte-spielerei-80338",
-    "start": "14:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Emile Braunplein",
-    "title": "E.R.I.N.",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/erin-82504",
-    "start": "14:00",
-    "end": "15:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "François Laurentinstituut",
-    "title": "Fijnbesnaard & Compagnie in Gent",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/fijnbesnaard-compagnie-gent-82429",
-    "start": "14:00",
-    "end": "15:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Concerten > divers",
-     "Theater"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Theater De Wolk",
-    "title": "Grasland",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/grasland-69883",
-    "start": "14:00",
-    "end": "14:45",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 12.5
-   },
-   {
-    "venue": "Huis van Alijn",
-    "title": "Pierke van Alijn: De kleine tovenaar",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pierke-van-alijn-de-kleine-tovenaar-70822",
-    "start": "14:00",
-    "end": "15:30",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 9.0
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "TalGent - talenten 2026",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/talgent-talenten-2026-79204",
-    "start": "14:00",
-    "end": "15:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Stadhuis",
-    "title": "Evocatie van dans, zang en woord",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/evocatie-van-dans-zang-en-woord-71539",
-    "start": "14:15",
-    "end": "14:45",
-    "categories": [
-     "Bals/Dans"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null
-   },
-   {
-    "venue": "zaal Madonna",
-    "title": "Annchanté duo - Popdiva's uit de sixties",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/annchante-duo-popdivas-uit-de-sixties-68128",
-    "start": "14:30",
-    "end": "15:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": 18.0
-   },
-   {
-    "venue": "KANTL",
-    "title": "Luisterende oortjes in het Gents (en andere dialecten)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/luisterende-oortjes-het-gents-en-andere-dialecten-74110",
-    "start": "14:30",
-    "end": "16:30",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Karmelietenklooster",
-    "title": "Rondleiding in het Karmelietenklooster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/rondleiding-het-karmelietenklooster-67282",
-    "start": "14:30",
-    "end": "16:30",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken"
-    ],
-    "music_genre": [],
-    "price": 18.0,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Schroapt ulder kele! - smART to SiNG",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/schroapt-ulder-kele-smart-sing-82498",
-    "start": "14:30",
-    "end": "15:30",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > jazz",
-     "Concerten > klassiek",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "zaal \"Achter de Bibliotheek\"",
-    "title": "\"Pierke gaat trouwen\" - poppentheater met Pierke",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pierke-gaat-trouwen-poppentheater-met-pierke-68572",
-    "start": "15:00",
-    "end": "16:30",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 7.5
-   },
-   {
-    "venue": "De Kazematten",
-    "title": "BRIES",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bries-80959",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
-    "venue": "Quatre Mains",
-    "title": "Classical afternoon with Shapovalov vzw",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/classical-afternoon-shapovalov-vzw-80983",
-    "start": "15:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "MIRY concertzaal",
-    "title": "Elise Marmad & Florian Sharpe",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/elise-marmad-florian-sharpe-76597",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Irish Roots Ensemble",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/irish-roots-ensemble-75247",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Sint-Michielskerk",
-    "title": "OKRA Promenadeorkest Gent",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/okra-promenadeorkest-gent-80488",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Koninklijk Poppentoneel Festival Moriaanstraat 65 9050 Ledeberg",
-    "title": "Pierke en de Gelukster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pierke-en-de-gelukster-67783",
-    "start": "15:00",
-    "end": "16:45",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 8.0
-   },
-   {
-    "venue": "Basisschool de Speurneus",
-    "title": "Pinokkio",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pinokkio-67972",
-    "start": "15:00",
-    "end": "16:30",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 6.0
-   },
-   {
-    "venue": "Sint-Baafsplein",
-    "title": "Popcollege Gent",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/popcollege-gent-69220",
-    "start": "15:00",
-    "end": "18:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Circusatelier Woesh: Koer/Jardin",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/circusatelier-woesh-koerjardin-77836",
-    "start": "15:15",
-    "end": "16:15",
-    "categories": [
-     "Circus"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/rondvaarten-north-sea-port-71716",
-    "start": "15:30",
-    "end": "17:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "François Laurentinstituut",
-    "title": "Fijnbesnaard & Compagnie in Gent",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/fijnbesnaard-compagnie-gent-82432",
-    "start": "15:45",
-    "end": "16:45",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Concerten > divers",
-     "Theater"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Away! Away!",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/away-away-75253",
-    "start": "16:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Titannick Site (Nieuw Gent)",
-    "title": "Bathyal Zone - Cul de Bas Productions (BE)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bathyal-zone-cul-de-bas-productions-be-81037",
-    "start": "16:00",
-    "end": "16:30",
-    "categories": [
-     "Miramiro"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "Battle of the Seventies",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/battle-seventies-73735",
-    "start": "16:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "rock"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Crochet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/gentse-crochet-77650",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Comedy",
-     "Circus"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Emile Braunplein",
-    "title": "Eddie y Los Grasosos (MEX) en Adam Hall (AUS)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/mardi-gras-live-internationale-aperitief-concerten-eddie-y-los-grasosos-mex-en-adam-hall-aus",
-    "start": "16:00",
-    "end": "18:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Stefanuskerk",
-    "title": "Orgelrecital door Florian Padler",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/orgelrecital-door-florian-padler-74545",
-    "start": "16:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 15.0
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "De Neven van Jan: Symphony Syndrome",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/de-neven-van-jan-symphony-syndrome-77386",
-    "start": "16:30",
-    "end": "17:30",
-    "categories": [
-     "Circus"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "bellowbow",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bellowbow-75259",
-    "start": "17:00",
-    "end": "18:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Arca Theater",
-    "title": "BRODER - Papillon (6+)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/broder-papillon-6-68869",
-    "start": "17:00",
-    "end": "18:30",
-    "categories": [
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 19.0
-   },
-   {
-    "venue": "Brabantdamkerk",
-    "title": "Open Mic",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/open-mic-75814",
-    "start": "17:00",
-    "end": "18:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music",
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "KANTL",
-    "title": "Pierrette COffrée & Kimme Tigra en hun literaire rariteitenkabinet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pierrette-coffree-kimme-tigra-en-hun-literaire-rariteitenkabinet-74113",
-    "start": "17:00",
-    "end": "18:00",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Sint-Veerleplein",
-    "title": "Wilma",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/wilma-80209",
-    "start": "17:20",
-    "end": "18:20",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "covers"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Huis van Alijn",
-    "title": "Alice George Perez & Band",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/avondconcert-alice-george-perez-band-71263",
-    "start": "17:30",
-    "end": "18:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "BlinkHuis",
-    "title": "Jouw ervaring telt - Over welkom voelen en mee-feesten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/jouw-ervaring-telt-over-welkom-voelen-en-mee-feesten-79774",
-    "start": null,
-    "end": null,
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Zandberg 6",
-    "title": "Belgisch, Bubbels, Bites en Beethoven",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/belgisch-bubbels-bites-en-beethoven-67714",
-    "start": "18:00",
-    "end": "19:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Jonge Wolven: Mona Mio",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/jonge-wolven-mona-mio-79915",
-    "start": "18:00",
-    "end": "18:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Kouter",
-    "title": "Knives",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/knives-70966",
-    "start": "18:00",
-    "end": "18:45",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "punk"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "LinCoil park",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/lincoil-park-73741",
-    "start": "18:00",
-    "end": "19:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "metal"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Café de Loge",
-    "title": "Reena Riot || Luminous Fest",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/reena-riot-luminous-fest-74074",
-    "start": "18:30",
-    "end": "19:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music",
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Speelmakers: hoolahoop for dummies",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/speelmakers-hoolahoop-dummies-78160",
-    "start": "18:30",
-    "end": "19:30",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Sint-Baafsplein",
-    "title": "Howlin' Roaddogs",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/howlin-roaddogs-81295",
-    "start": "18:45",
-    "end": "20:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "urban"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Baafsplein",
-    "title": "Spotlight",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/spotlight-69661",
-    "start": "18:45",
-    "end": "20:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Galine",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/galine-70276",
-    "start": "19:00",
-    "end": "19:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "singer songwriter"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Veerleplein",
-    "title": "U.S.E.",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/use-80242",
-    "start": "19:00",
-    "end": "20:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "covers"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Groentenmarkt",
-    "title": "Kurt Burgelman",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/kurt-burgelman-71227",
-    "start": "19:20",
-    "end": "20:45",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Zangstonde",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/gentse-zangstonde-72940",
-    "start": "19:30",
-    "end": "19:45",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Kouter",
-    "title": "HotWax",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/hotwax-76588",
-    "start": "19:30",
-    "end": "20:15",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music",
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "punk"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Jonge Wolven: Kiki Abels",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/jonge-wolven-kiki-abels-79921",
-    "start": "19:30",
-    "end": "20:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "De Oude Beestenmarkt",
-    "title": "MI Alma",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/mi-alma-82780",
-    "start": "19:30",
-    "end": "21:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Sint Coletakerk",
-    "title": "Barokconcert met muziek van o.a. Bach, Telemann en anderen.",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/barokconcert-met-muziek-van-oa-bach-telemann-en-anderen-73375",
-    "start": "20:00",
-    "end": "22:00",
-    "categories": [
-     "Concerten > klassiek",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 18.0
-   },
-   {
-    "venue": "MIRY concertzaal",
-    "title": "Eldarova",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/eldarova-76594",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Het klinkende dok",
-    "title": "Ellington, Bach & Bowie – Jazz, Klassiek & Meer",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/ellington-bach-bowie-jazz-klassiek-meer-81301",
-    "start": "20:00",
-    "end": "22:00",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > jazz"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": 20.0
-   },
-   {
-    "venue": "Muzikantenhuis vzw",
-    "title": "FlanFraise",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/flanfraise-73063",
-    "start": "20:00",
-    "end": "22:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music",
-     "Concerten > jazz"
-    ],
-    "music_genre": [
-     "chanson"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Kinky Star",
-    "title": "Ineptitude",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/ineptitude-76066",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "metal"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "Let's get Loud",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/lets-get-loud-79813",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Maya Sapera Dance Company: Silk Road Fantasy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/maya-sapera-dance-company-silk-road-fantasy-77416",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Bals/Dans"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Jerry Spin",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/jerry-spin-70282",
-    "start": "20:15",
-    "end": "21:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "indie"
-    ],
-    "price": null
-   },
-   {
-    "venue": "House of Mysteries",
-    "title": "\"DO YOU TRUST ME WITH THIS?\" - met Tim Oelbrandt",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/do-you-trust-me-met-tim-oelbrandt-77287",
-    "start": "20:30",
-    "end": "21:30",
-    "categories": [
-     "Circus",
-     "Comedy",
-     "Kinder- en jeugdprogramma's",
-     "Miramiro",
-     "Spel, sport en recreatie",
-     "Theater",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": 28.0
-   },
-   {
-    "venue": "Boomtown (Ha Concerts)",
-    "title": "Haroun & Helena's Heartbreak Hotel",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/haroun-helenas-heartbreak-hotel-72799",
-    "start": "20:30",
-    "end": "22:00",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "jazz"
-    ],
-    "price": null
-   },
-   {
-    "venue": "De Salopette",
-    "title": "Marieke Schenk",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/marieke-schenk-81583",
-    "start": "20:30",
-    "end": "21:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music",
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Baafsplein",
-    "title": "Six Blade Knife",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/six-blade-knife-69226",
-    "start": "20:30",
-    "end": "22:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "world"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Beverhoutplein/Place Musette",
-    "title": "Derek & Yves Meersschaert",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/derek-yves-meersschaert-70876",
-    "start": "21:00",
-    "end": "21:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Kouter",
-    "title": "Doodseskader",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/doodseskader-70972",
-    "start": "21:00",
-    "end": "22:00",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "punk"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Missy Sippy Blues & Roots Club",
-    "title": "Missy Sippy All Stars Muddy Sippy Session",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/missy-sippy-all-stars-muddy-sippy-session-missy-sippy-blues-roots-festival-gentse-feesten-26",
-    "start": "21:00",
-    "end": "23:30",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "blues"
-    ],
-    "price": null,
-    "starred": true
-   },
-   {
-    "venue": "Theater De Wolk",
-    "title": "The Lunatics Improcomedy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/lunatics-improcomedy-69736",
-    "start": "21:00",
-    "end": "22:15",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
-    "venue": "Sint-Veerleplein",
-    "title": "The Wizards",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/wizards-80215",
-    "start": "21:15",
-    "end": "22:45",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "covers"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Ciska Ciska",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/ciska-ciska-70288",
-    "start": "21:30",
-    "end": "22:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "indie"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Groentenmarkt",
-    "title": "The Pick Hardo Bros",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/pick-hardo-bros-71359",
-    "start": "21:30",
-    "end": "23:35",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "De Oude Beestenmarkt",
-    "title": "Woodface Stripped (Woensdag 22 juli  21.30  De oude Beestenmarkt Unplugged)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/woodface-stripped-woensdag-22-juli-2130-de-oude-beestenmarkt-unplugged-82789",
-    "start": "21:30",
-    "end": "22:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "House of Mysteries",
-    "title": "'Séance Mystique' - Het Kabinet der Geesten van de Davenports.",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/seance-mystique-het-kabinet-der-geesten-van-de-davenports-76771",
-    "start": "22:00",
-    "end": "23:00",
-    "categories": [
-     "Theater",
-     "Circus",
-     "Comedy",
-     "Kinder- en jeugdprogramma's",
-     "Miramiro",
-     "Spel, sport en recreatie",
-     "Varia",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": 21.0
-   },
-   {
-    "venue": "Kinky Star",
-    "title": "Kerfstok",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/kerfstok-76075",
-    "start": "22:00",
-    "end": "23:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "metal"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Beverhoutplein/Place Musette",
-    "title": "Les Zazous du Musette",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/les-zazous-du-musette-70882",
-    "start": "22:15",
-    "end": "01:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Ça Sent Le Roussi: LED There Be Light",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/ca-sent-le-roussi-led-there-be-light-78895",
-    "start": "22:30",
-    "end": "23:00",
-    "categories": [
-     "Circus"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "Gert & James",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/gert-james-73747",
-    "start": "22:30",
-    "end": "23:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Bashar Murad (PAL)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/bashar-murad-pal-73168",
-    "start": "22:40",
-    "end": "23:35",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Kouter",
-    "title": "Ronker",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/ronker-71011",
-    "start": "22:45",
-    "end": "00:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "rock"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Flow jam light",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/flow-jam-light-79087",
-    "start": "23:00",
-    "end": "00:00",
-    "categories": [
-     "Circus"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Sint-Baafsplein",
-    "title": "Les Truttes, The 30th Anniversary Tour",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/les-truttes-30th-anniversary-tour-69655",
-    "start": "23:00",
-    "end": "01:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "rock"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Missy Sippy Blues & Roots Club",
-    "title": "Buckle Up Burnd",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/buckle-burnd-missy-sippy-blues-roots-festival-gentse-feesten-26-77008",
-    "start": "23:30",
-    "end": "02:00",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "country"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Sint-Veerleplein",
-    "title": "Lajos & The Gang",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/lajos-gang-80221",
-    "start": "23:30",
-    "end": "01:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "covers"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Luqman (AUS)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/luqman-aus-77344",
-    "start": "23:30",
-    "end": "00:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "urban"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Luisterplein",
-    "title": "Sam Bettens",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/sam-bettens-70294",
-    "start": "23:30",
-    "end": "01:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "country"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "MariJah & The Roots Sense + Saimn-I & Dhazed",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/marijah-roots-sense-saimn-i-dhazed-71803",
-    "start": "00:00",
-    "end": "02:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Kinky Star",
-    "title": "Muziekvereniging De Clingse Bossen",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/muziekvereniging-de-clingse-bossen-76084",
-    "start": "00:00",
-    "end": "01:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Groentenmarkt",
-    "title": "Still Crazy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/still-crazy-71257",
-    "start": "00:20",
-    "end": "02:30",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "pop"
-    ],
-    "price": null
-   },
-   {
-    "venue": "Kinky Star",
-    "title": "Hannah Louve Benedum",
-    "link": "https://gentsefeesten.stad.gent/nl/day/22/hannah-louve-benedum-76099",
-    "start": "02:00",
-    "end": "03:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "metal"
-    ],
-    "price": null
-   }
-  ],
   "2026-07-23": [
    {
     "venue": "'t Braemhof",
@@ -1465,20 +71,6 @@
     "price": 5.0
    },
    {
-    "venue": "Karmelietenklooster",
-    "title": "Rondleiding in het Karmelietenklooster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rondleiding-het-karmelietenklooster-67285",
-    "start": "10:00",
-    "end": "12:00",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken"
-    ],
-    "music_genre": [],
-    "price": 18.0,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Politiecommissariaat Gent Centrum",
     "title": "Gentse Flikkenwandeling",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/gentse-flikkenwandeling-80404",
@@ -1486,21 +78,6 @@
     "end": "12:30",
     "categories": [
      "Wandelingen"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rondvaarten-north-sea-port-71719",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
     ],
     "music_genre": [],
     "price": null,
@@ -1520,7 +97,8 @@
     "music_genre": [
      "jazz"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "BlinkHuis",
@@ -1633,21 +211,6 @@
     "price": 8.0
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rondvaarten-north-sea-port-71722",
-    "start": "13:30",
-    "end": "15:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Puppetbuskers - Willem de Beersteeg",
     "title": "Theater Tique (NL) - Konijn!",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/theater-tique-nl-konijn-81340",
@@ -1682,18 +245,6 @@
     ],
     "music_genre": [],
     "price": 19.0
-   },
-   {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Compagnie de la Mitaine (FR) - Atelier ZIM",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/compagnie-de-la-mitaine-fr-atelier-zim-81496",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
    },
    {
     "venue": "Sint-Veerleplein",
@@ -1766,32 +317,6 @@
     "price": null
    },
    {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Matt Porter (IRL) - The Great Bamboozle",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/matt-porter-irl-great-bamboozle-81472",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Lokaal Dienstencentrum De Mantel",
-    "title": "Ne Gentschen achternoene met P&D",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/ne-gentschen-achternoene-met-pd-75358",
-    "start": "14:00",
-    "end": "16:00",
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": null
-   },
-   {
     "venue": "Korenmarkt",
     "title": "Painted Scars",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/painted-scars-74107",
@@ -1803,7 +328,8 @@
     "music_genre": [
      "rock"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Huis van Alijn",
@@ -1816,19 +342,6 @@
     ],
     "music_genre": [],
     "price": 9.0
-   },
-   {
-    "venue": "Campo, Nieuwpoort 35, Gent",
-    "title": "Pushbacks in Europa’ en de Belgische migratie aanpak: tussen recht en realiteit",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/pushbacks-europa-en-de-belgische-migratie-aanpak-tussen-recht-en-realiteit-78169",
-    "start": "14:00",
-    "end": "17:00",
-    "categories": [
-     "Vertellingen/lezingen/poëzie",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null
    },
    {
     "venue": "Theater De Wolk",
@@ -1890,7 +403,8 @@
      "Concerten > divers"
     ],
     "music_genre": [],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "MIRY concertzaal",
@@ -1989,18 +503,6 @@
     "price": 25.0
    },
    {
-    "venue": "KANTL",
-    "title": "Kleine geïllustreerde encyclopedie van een leven dat het mijne kon zijn - Ielde Vermeir",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/kleine-geillustreerde-encyclopedie-van-een-leven-dat-het-mijne-kon-zijn-ielde-vermeir-74116",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
     "venue": "BlinkHuis",
     "title": "Panelgesprek \"Ge zijt niet alleen die nood heeft aan vertraging\"",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/panelgesprek-ge-zijt-niet-alleen-die-nood-heeft-aan-vertraging-77548",
@@ -2059,19 +561,8 @@
      "Concerten > divers"
     ],
     "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "YART - Geraard de Duivelstraat 1",
-    "title": "YART programs break / bass",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/yart-programs-break-bass-78331",
-    "start": "15:00",
-    "end": "03:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Baudelopark",
@@ -2084,21 +575,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rondvaarten-north-sea-port-71725",
-    "start": "15:30",
-    "end": "17:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
    },
    {
     "venue": "François Laurentinstituut",
@@ -2140,7 +616,8 @@
     "music_genre": [
      "metal"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Puppetbuskers - Kalandeberg",
@@ -2162,19 +639,6 @@
     "end": "17:00",
     "categories": [
      "Concerten > divers"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Crochet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/gentse-crochet-77653",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Comedy",
-     "Circus"
     ],
     "music_genre": [],
     "price": null
@@ -2219,7 +683,8 @@
     "music_genre": [
      "urban"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Puppetbuskers - Willem de Beersteeg",
@@ -2261,18 +726,6 @@
     ],
     "music_genre": [],
     "price": 19.0
-   },
-   {
-    "venue": "KANTL",
-    "title": "Moeder, waarom lezen wij?",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/moeder-waarom-lezen-wij-74119",
-    "start": "17:00",
-    "end": "18:00",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": null
    },
    {
     "venue": "Theater Box",
@@ -2361,33 +814,6 @@
     "price": null
    },
    {
-    "venue": "BlinkHuis",
-    "title": "Jouw ervaring telt - Over welkom voelen en mee-feesten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/jouw-ervaring-telt-over-welkom-voelen-en-mee-feesten-79777",
-    "start": null,
-    "end": null,
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Onder de luifel van Sint- Pietersstation",
-    "title": "'Reuzen T'Jenne de strop en stationschef onder de luifel van Sint- Pietersstatie'",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/reuzen-tjenne-de-strop-en-stationschef-onder-de-luifel-van-sint-pietersstatie-67045",
-    "start": "18:00",
-    "end": "20:00",
-    "categories": [
-     "Varia",
-     "Comedy"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": null
-   },
-   {
     "venue": "Zandberg 6",
     "title": "Belgisch, Bubbels, Bites en Beethoven",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/belgisch-bubbels-bites-en-beethoven-67717",
@@ -2425,7 +851,8 @@
     "music_genre": [
      "metal"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Café de Loge",
@@ -2484,18 +911,6 @@
     "price": 13.0
    },
    {
-    "venue": "Baudelopark",
-    "title": "Speelmakers: 90S Hits Stoelendans",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/speelmakers-90s-hits-stoelendans-78187",
-    "start": "18:30",
-    "end": "19:30",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
     "venue": "Protestantse Rabotkerk",
     "title": "Concert Bart Roose: Sol de Mayo",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/concert-bart-roose-sol-de-mayo-74842",
@@ -2518,7 +933,8 @@
      "Concerten > divers"
     ],
     "music_genre": [],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Sint-Veerleplein",
@@ -2639,18 +1055,6 @@
     "price": null
    },
    {
-    "venue": "Walter De Buckplein",
-    "title": "Uitreiking Gentse Klimaatprijs",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/uitreiking-gentse-klimaatprijs-78787",
-    "start": "19:45",
-    "end": "20:00",
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
     "venue": "Baudelopark",
     "title": "CircRodini: IMPROBABILE",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/circrodini-improbabile-77461",
@@ -2699,46 +1103,6 @@
     "price": null
    },
    {
-    "venue": "Afkikker",
-    "title": "Klassiek piano concert",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/klassiek-piano-concert-73195",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": null
-   },
-   {
-    "venue": "rokko",
-    "title": "Rokko's queer quiz",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rokkos-queer-quiz-69481",
-    "start": "20:00",
-    "end": "21:30",
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Baudelopark",
-    "title": "Rust (SYR/LIB)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/rust-syrlib-77263",
-    "start": "20:00",
-    "end": "21:00",
-    "categories": [
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "electronica"
-    ],
-    "price": null
-   },
-   {
     "venue": "Muzikantenhuis vzw",
     "title": "The Rusty Zippers",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/rusty-zippers-72421",
@@ -2751,7 +1115,8 @@
     "music_genre": [
      "blues"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Luisterplein",
@@ -2765,7 +1130,8 @@
     "music_genre": [
      "blues"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Walter De Buckplein",
@@ -2852,7 +1218,8 @@
     "music_genre": [
      "rock"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Puppetbuskers - Willem de Beersteeg",
@@ -2867,20 +1234,6 @@
     "price": null
    },
    {
-    "venue": "Baudelopark",
-    "title": "Inclusieve salsa voor mensen met en zonder beperking door DanceOrientation",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/inclusieve-salsa-voor-mensen-met-en-zonder-beperking-door-danceorientation-78208",
-    "start": "21:00",
-    "end": "22:00",
-    "categories": [
-     "Bals/Dans"
-    ],
-    "music_genre": [
-     "world"
-    ],
-    "price": null
-   },
-   {
     "venue": "Beverhoutplein/Place Musette",
     "title": "Leander Vertriest",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/leander-vertriest-70816",
@@ -2890,20 +1243,6 @@
      "Concerten > divers"
     ],
     "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Korenmarkt",
-    "title": "Millie Vanillie loves the 90's met Yves Segers",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/millie-vanillie-loves-90s-met-yves-segers-73969",
-    "start": "21:00",
-    "end": "22:00",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
     "price": null
    },
    {
@@ -3014,7 +1353,8 @@
     "music_genre": [
      "blues"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "House of Mysteries",
@@ -3074,20 +1414,6 @@
     "price": null
    },
    {
-    "venue": "Korenmarkt",
-    "title": "Millie Vanillie loves the 90's met Bart Kaëll",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/millie-vanillie-loves-90s-met-bart-kaell-73975",
-    "start": "22:30",
-    "end": "23:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
-    "price": null
-   },
-   {
     "venue": "Baudelopark",
     "title": "Poolidor (FR)",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/poolidor-fr-71818",
@@ -3126,21 +1452,6 @@
     "price": null
    },
    {
-    "venue": "Missy Sippy Blues & Roots Club",
-    "title": "Boom Boom Cactus (Missy Mondial)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/boom-boom-cactus-missy-mondial-missy-sippy-blues-roots-festival-gentse-feesten-26-77029",
-    "start": "23:30",
-    "end": "02:00",
-    "categories": [
-     "Concerten > divers",
-     "Concerten > rock-pop-techno-blues-folk-world music"
-    ],
-    "music_genre": [
-     "world"
-    ],
-    "price": null
-   },
-   {
     "venue": "Luisterplein",
     "title": "Guy Verlinde",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/guy-verlinde-70324",
@@ -3152,7 +1463,8 @@
     "music_genre": [
      "blues"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Sint-Veerleplein",
@@ -3181,20 +1493,6 @@
     "price": null
    },
    {
-    "venue": "Korenmarkt",
-    "title": "Millie Vanillie loves the 90's met Kate Ryan",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/millie-vanillie-loves-90s-met-kate-ryan-73981",
-    "start": "23:45",
-    "end": "00:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": null
-   },
-   {
     "venue": "Walter De Buckplein",
     "title": "Puerto Candelaria (COL)",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/puerto-candelaria-col-72991",
@@ -3206,7 +1504,8 @@
     "music_genre": [
      "world"
     ],
-    "price": null
+    "price": null,
+    "starred": true
    },
    {
     "venue": "Baudelopark",
@@ -3258,21 +1557,6 @@
     "end": "12:30",
     "categories": [
      "Wandelingen"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/rondvaarten-north-sea-port-71728",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
     ],
     "music_genre": [],
     "price": null,
@@ -3376,21 +1660,6 @@
     "price": null
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/rondvaarten-north-sea-port-71731",
-    "start": "13:30",
-    "end": "15:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Campo, Nieuwpoort 35, Gent",
     "title": "'Om ter luidst?'",
     "link": "https://gentsefeesten.stad.gent/nl/day/24/om-ter-luidst-78172",
@@ -3431,18 +1700,6 @@
     "price": null
    },
    {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Compagnie de la Mitaine (FR) - Atelier ZIM",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/compagnie-de-la-mitaine-fr-atelier-zim-81499",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
     "venue": "Arca Theater",
     "title": "De Machienerie - Scarabée: spektakel op zes pootjes (5+)",
     "link": "https://gentsefeesten.stad.gent/nl/day/24/de-machienerie-scarabee-spektakel-op-zes-pootjes-5-69538",
@@ -3468,18 +1725,6 @@
     ],
     "price": null,
     "starred": true
-   },
-   {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Matt Porter (IRL) - The Great Bamboozle",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/matt-porter-irl-great-bamboozle-81475",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
    },
    {
     "venue": "Huis van Alijn",
@@ -3566,20 +1811,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Karmelietenklooster",
-    "title": "Rondleiding in het Karmelietenklooster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/rondleiding-het-karmelietenklooster-67288",
-    "start": "14:30",
-    "end": "16:30",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken"
-    ],
-    "music_genre": [],
-    "price": 18.0,
-    "hardStart": true,
-    "starred": true
    },
    {
     "venue": "Walter De Buckplein",
@@ -3739,21 +1970,6 @@
     "price": 12.0
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/rondvaarten-north-sea-port-71734",
-    "start": "15:30",
-    "end": "17:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Puppetbuskers - Willem de Beersteeg",
     "title": "Agné Muralyté (LT)- UMAMA",
     "link": "https://gentsefeesten.stad.gent/nl/day/24/agne-muralyte-lt-umama-81361",
@@ -3813,19 +2029,6 @@
     "end": "16:30",
     "categories": [
      "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Crochet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/gentse-crochet-77656",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Comedy",
-     "Circus"
     ],
     "music_genre": [],
     "price": null
@@ -4062,18 +2265,6 @@
     "music_genre": [
      "urban"
     ],
-    "price": null
-   },
-   {
-    "venue": "BlinkHuis",
-    "title": "Jouw ervaring telt - Over welkom voelen en mee-feesten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/jouw-ervaring-telt-over-welkom-voelen-en-mee-feesten-79780",
-    "start": null,
-    "end": null,
-    "categories": [
-     "Varia"
-    ],
-    "music_genre": [],
     "price": null
    },
    {
@@ -5031,21 +3222,6 @@
     "price": 39.0
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/rondvaarten-north-sea-port-71737",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Basisschool de Speurneus",
     "title": "Magic Michael it's magic",
     "link": "https://gentsefeesten.stad.gent/nl/day/25/magic-michael-its-magic-68005",
@@ -5171,21 +3347,6 @@
     "price": null
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/rondvaarten-north-sea-port-71740",
-    "start": "13:30",
-    "end": "15:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Campo, Nieuwpoort 35, Gent",
     "title": "‘Energie en maatschappelijke omwenteling’. Hoe wordt energie betaalbaar en ecologisch ?",
     "link": "https://gentsefeesten.stad.gent/nl/day/25/energie-en-maatschappelijke-omwenteling-hoe-wordt-energie-betaalbaar-en-ecologisch-78181",
@@ -5206,18 +3367,6 @@
     "end": "18:00",
     "categories": [
      "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Compagnie de la Mitaine (FR) - Atelier ZIM",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/compagnie-de-la-mitaine-fr-atelier-zim-81502",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
     ],
     "music_genre": [],
     "price": null
@@ -5250,18 +3399,6 @@
     ],
     "price": null,
     "starred": true
-   },
-   {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Matt Porter (IRL) - The Great Bamboozle",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/matt-porter-irl-great-bamboozle-81478",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
    },
    {
     "venue": "Huis van Alijn",
@@ -5355,20 +3492,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Karmelietenklooster",
-    "title": "Rondleiding in het Karmelietenklooster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/rondleiding-het-karmelietenklooster-67291",
-    "start": "14:30",
-    "end": "16:30",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken"
-    ],
-    "music_genre": [],
-    "price": 18.0,
-    "hardStart": true,
-    "starred": true
    },
    {
     "venue": "Walter De Buckplein",
@@ -5573,21 +3696,6 @@
     "price": null
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/rondvaarten-north-sea-port-71743",
-    "start": "15:30",
-    "end": "17:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Korenmarkt",
     "title": "ASAP",
     "link": "https://gentsefeesten.stad.gent/nl/day/25/asap-78742",
@@ -5607,19 +3715,6 @@
     "end": "16:25",
     "categories": [
      "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Crochet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/gentse-crochet-77659",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Comedy",
-     "Circus"
     ],
     "music_genre": [],
     "price": null
@@ -6856,21 +4951,6 @@
     "price": null
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/rondvaarten-north-sea-port-71746",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Topacademie Sifu Walter Toch",
     "title": "Wing Chun Kung-Fu",
     "link": "https://gentsefeesten.stad.gent/nl/day/26/wing-chun-kung-fu-68089",
@@ -6965,21 +5045,6 @@
     "price": 8.0
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/rondvaarten-north-sea-port-71749",
-    "start": "13:30",
-    "end": "15:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Puppetbuskers - Willem de Beersteeg",
     "title": "Théâtre du vent (FR) - Bas les mains",
     "link": "https://gentsefeesten.stad.gent/nl/day/26/theatre-du-vent-fr-bas-les-mains-81406",
@@ -7026,18 +5091,6 @@
     "end": "18:00",
     "categories": [
      "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Compagnie de la Mitaine (FR) - Atelier ZIM",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/compagnie-de-la-mitaine-fr-atelier-zim-81505",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
     ],
     "music_genre": [],
     "price": null
@@ -7096,18 +5149,6 @@
     "price": null
    },
    {
-    "venue": "Puppetbuskers - Willem de Beersteeg",
-    "title": "Matt Porter (IRL) - The Great Bamboozle",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/matt-porter-irl-great-bamboozle-81481",
-    "start": "14:00",
-    "end": "18:00",
-    "categories": [
-     "Puppetbuskersfestival"
-    ],
-    "music_genre": [],
-    "price": null
-   },
-   {
     "venue": "Huis van Alijn",
     "title": "Pierke van Alijn: Rammenas, die nieuwsgierig was",
     "link": "https://gentsefeesten.stad.gent/nl/day/26/pierke-van-alijn-rammenas-die-nieuwsgierig-was-70864",
@@ -7156,20 +5197,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Karmelietenklooster",
-    "title": "Rondleiding in het Karmelietenklooster",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/rondleiding-het-karmelietenklooster-67294",
-    "start": "14:30",
-    "end": "16:30",
-    "categories": [
-     "Tentoonstellingen en geleide bezoeken"
-    ],
-    "music_genre": [],
-    "price": 18.0,
-    "hardStart": true,
-    "starred": true
    },
    {
     "venue": "Walter De Buckplein",
@@ -7386,21 +5413,6 @@
     "price": null
    },
    {
-    "venue": "Rigakaai, bezoekerscentrum",
-    "title": "Rondvaarten in North Sea Port",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/rondvaarten-north-sea-port-71752",
-    "start": "15:30",
-    "end": "17:00",
-    "categories": [
-     "Boottochten",
-     "Varia"
-    ],
-    "music_genre": [],
-    "price": null,
-    "hardStart": true,
-    "starred": true
-   },
-   {
     "venue": "Muzikantenhuis vzw",
     "title": "Flo",
     "link": "https://gentsefeesten.stad.gent/nl/day/26/flo-73105",
@@ -7413,19 +5425,6 @@
     "music_genre": [
      "folk"
     ],
-    "price": null
-   },
-   {
-    "venue": "Walter De Buckplein",
-    "title": "Gentse Crochet",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/gentse-crochet-77662",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Comedy",
-     "Circus"
-    ],
-    "music_genre": [],
     "price": null
    },
    {
