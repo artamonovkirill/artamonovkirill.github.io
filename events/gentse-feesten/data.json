@@ -42,35 +42,6 @@
  "days": {
   "2026-07-23": [
    {
-    "venue": "'t Braemhof",
-    "title": "Café Concert Gentsche Fieste in 't Braemhof",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/cafe-concert-gentsche-fieste-t-braemhof-73465",
-    "start": "09:00",
-    "end": "12:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": 39.0
-   },
-   {
-    "venue": "Sint Coletakerk",
-    "title": "Lezing en demonstraties rond het verschil tussen Barok en Hedendaagse instrumenten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/lezing-en-demonstraties-rond-het-verschil-tussen-barok-en-hedendaagse-instrumenten-75742",
-    "start": "10:00",
-    "end": "12:00",
-    "categories": [
-     "Concerten > klassiek",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 5.0
-   },
-   {
     "venue": "Politiecommissariaat Gent Centrum",
     "title": "Gentse Flikkenwandeling",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/gentse-flikkenwandeling-80404",
@@ -115,19 +86,6 @@
     "price": 10.0
    },
    {
-    "venue": "NTGent",
-    "title": "Ik werd als eerste wakker",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/ik-werd-als-eerste-wakker-73849",
-    "start": "11:00",
-    "end": "11:40",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 12.0
-   },
-   {
     "venue": "Sint-Niklaaskerk",
     "title": "Orgeldemonstratie Sint-Niklaaskerk",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/orgeldemonstratie-sint-niklaaskerk-74815",
@@ -168,7 +126,8 @@
     "music_genre": [
      "klassiek"
     ],
-    "price": 15.0
+    "price": 15.0,
+    "starred": true
    },
    {
     "venue": "Zuidpark",
@@ -208,7 +167,8 @@
      "Vertellingen/lezingen/poëzie"
     ],
     "music_genre": [],
-    "price": 8.0
+    "price": 8.0,
+    "starred": true
    },
    {
     "venue": "Puppetbuskers - Willem de Beersteeg",
@@ -278,31 +238,6 @@
     "price": null
    },
    {
-    "venue": "NTGent",
-    "title": "Ik werd als eerste wakker",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/ik-werd-als-eerste-wakker-73852",
-    "start": "14:00",
-    "end": "14:40",
-    "categories": [
-     "Kinder- en jeugdprogramma's",
-     "Theater"
-    ],
-    "music_genre": [],
-    "price": 12.0
-   },
-   {
-    "venue": "Vlierefluiter",
-    "title": "Knuffelgevecht",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/knuffelgevecht-70180",
-    "start": "14:00",
-    "end": "17:00",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 8.0
-   },
-   {
     "venue": "Emile Braunplein",
     "title": "Loïs Grant",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/lois-grant-75442",
@@ -342,18 +277,6 @@
     ],
     "music_genre": [],
     "price": 9.0
-   },
-   {
-    "venue": "Theater De Wolk",
-    "title": "Stekelknuffel",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/stekelknuffel-71245",
-    "start": "14:00",
-    "end": "14:40",
-    "categories": [
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 12.5
    },
    {
     "venue": "Baudelopark",
@@ -432,21 +355,6 @@
     "price": 7.5
    },
    {
-    "venue": "Sint Coletakerk",
-    "title": "Barokconcert met muziek van o.a. Bach, Telemann en anderen.",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/barokconcert-met-muziek-van-oa-bach-telemann-en-anderen-73378",
-    "start": "15:00",
-    "end": "17:00",
-    "categories": [
-     "Concerten > klassiek",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 18.0
-   },
-   {
     "venue": "Luisterplein",
     "title": "Blue Room",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/blue-room-75265",
@@ -482,34 +390,6 @@
     "categories": [
      "Comedy",
      "Theater"
-    ],
-    "music_genre": [],
-    "price": 10.0
-   },
-   {
-    "venue": "Van Crombrugghe's Genootschap",
-    "title": "J3 (Johan Peeters) & Pedro De Bruyckere (pedagoog) op de sofa",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/j3-johan-peeters-pedro-de-bruyckere-pedagoog-op-de-sofa-77230",
-    "start": "15:00",
-    "end": "16:00",
-    "categories": [
-     "Concerten > divers",
-     "Varia",
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [
-     "andere"
-    ],
-    "price": 25.0
-   },
-   {
-    "venue": "BlinkHuis",
-    "title": "Panelgesprek \"Ge zijt niet alleen die nood heeft aan vertraging\"",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/panelgesprek-ge-zijt-niet-alleen-die-nood-heeft-aan-vertraging-77548",
-    "start": "15:00",
-    "end": "17:00",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
     ],
     "music_genre": [],
     "price": 10.0
@@ -672,6 +552,19 @@
     "price": 15.0
    },
    {
+    "venue": "Que Club",
+    "title": "Que Club • Pink Madness: Barbie and Ken",
+    "link": "https://gentsefeesten.stad.gent/nl/day/23/que-club-pink-madness-barbie-and-ken-79756",
+    "start": "16:00",
+    "end": "17:00",
+    "categories": [
+     "Varia",
+     "Bals/Dans"
+    ],
+    "music_genre": [],
+    "price": null
+   },
+   {
     "venue": "Sint-Baafsplein",
     "title": "'t Mouvement",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/t-mouvement-69571",
@@ -726,18 +619,6 @@
     ],
     "music_genre": [],
     "price": 19.0
-   },
-   {
-    "venue": "Theater Box",
-    "title": "Ode aan videogames: Gentse boekvoorstelling van 'Historie, schoonheid en invloed van videogames'",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/ode-aan-videogames-gentse-boekvoorstelling-van-historie-schoonheid-en-invloed-van-videogames",
-    "start": "17:00",
-    "end": "17:50",
-    "categories": [
-     "Vertellingen/lezingen/poëzie"
-    ],
-    "music_genre": [],
-    "price": 5.0
    },
    {
     "venue": "Luisterplein",
@@ -870,20 +751,6 @@
     "price": null
    },
    {
-    "venue": "Erasmus Hotel",
-    "title": "Opera, operette en belcanto in een reis rond de wereld in 60 minuten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/opera-operette-en-belcanto-een-reis-rond-de-wereld-60-minuten-69829",
-    "start": "18:00",
-    "end": "20:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 39.0
-   },
-   {
     "venue": "amai comedy club",
     "title": "Tegen Peter Weten - Comedy - Peter Kluppels (NL)",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/tegen-peter-weten-comedy-peter-kluppels-nl-73531",
@@ -895,20 +762,6 @@
     ],
     "music_genre": [],
     "price": 9.0
-   },
-   {
-    "venue": "BlinkHuis",
-    "title": "ERLiNE - Ademstorm",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/erline-ademstorm-77422",
-    "start": "18:30",
-    "end": "19:45",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Nederlandstalig"
-    ],
-    "price": 13.0
    },
    {
     "venue": "Protestantse Rabotkerk",
@@ -951,32 +804,6 @@
     "price": null
    },
    {
-    "venue": "'t Braemhof",
-    "title": "The Julians",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/julians-73474",
-    "start": "19:00",
-    "end": "23:00",
-    "categories": [
-     "Concerten > jazz"
-    ],
-    "music_genre": [
-     "jazz"
-    ],
-    "price": 45.0
-   },
-   {
-    "venue": "Topacademie Sifu Walter Toch",
-    "title": "Wing Chun Kung-Fu",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/wing-chun-kung-fu-68086",
-    "start": "19:00",
-    "end": "20:30",
-    "categories": [
-     "Spel, sport en recreatie"
-    ],
-    "music_genre": [],
-    "price": 15.0
-   },
-   {
     "venue": "Groentenmarkt",
     "title": "Jens & live band",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/jens-live-band-71335",
@@ -989,32 +816,6 @@
      "pop"
     ],
     "price": null
-   },
-   {
-    "venue": "amai comedy club",
-    "title": "Comedy Lineup",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/comedy-lineup-73426",
-    "start": "19:30",
-    "end": "20:30",
-    "categories": [
-     "Comedy",
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 9.0
-   },
-   {
-    "venue": "amai comedy club",
-    "title": "De rudies - improvisatietheater",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/de-rudies-improvisatietheater-80884",
-    "start": "19:30",
-    "end": "20:30",
-    "categories": [
-     "Comedy",
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 5.0
    },
    {
     "venue": "Walter De Buckplein",
@@ -1065,18 +866,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Theater Box",
-    "title": "Comedy from the far West(-Vlaanderen)",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/comedy-far-west-vlaanderen-71368",
-    "start": "20:00",
-    "end": "21:20",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 13.0
    },
    {
     "venue": "Gentse ambassade",
@@ -1193,19 +982,6 @@
     "price": null
    },
    {
-    "venue": "amai comedy club",
-    "title": "Amai Improcomedy Legends (NL) - Oei/pas op getrouwd",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/amai-improcomedy-legends-nl-oeipas-op-getrouwd-73534",
-    "start": "21:00",
-    "end": "22:00",
-    "categories": [
-     "Comedy",
-     "Kinder- en jeugdprogramma's"
-    ],
-    "music_genre": [],
-    "price": 9.0
-   },
-   {
     "venue": "Missy Sippy Blues & Roots Club",
     "title": "Caligari",
     "link": "https://gentsefeesten.stad.gent/nl/day/23/caligari-missy-sippy-blues-roots-festival-gentse-feesten-26-77017",
@@ -1258,18 +1034,6 @@
      "punk"
     ],
     "price": 25.0
-   },
-   {
-    "venue": "Theater De Wolk",
-    "title": "The Lunatics Improcomedy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/23/lunatics-improcomedy-69739",
-    "start": "21:00",
-    "end": "22:15",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 14.0
    },
    {
     "venue": "Sint-Baafsplein",
@@ -1630,7 +1394,8 @@
      "Vertellingen/lezingen/poëzie"
     ],
     "music_genre": [],
-    "price": 8.0
+    "price": 8.0,
+    "starred": true
    },
    {
     "venue": "VIERNULVIER",
@@ -2060,20 +1825,6 @@
     "price": null
    },
    {
-    "venue": "Erasmus Hotel",
-    "title": "Opera, operette en belcanto in een reis rond de wereld in 60 minuten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/opera-operette-en-belcanto-een-reis-rond-de-wereld-60-minuten-69832",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 39.0
-   },
-   {
     "venue": "Sint-Stefanuskerk",
     "title": "Orgelrecital door Giuseppe Lucaccioni",
     "link": "https://gentsefeesten.stad.gent/nl/day/24/orgelrecital-door-giuseppe-lucaccioni-74563",
@@ -2086,6 +1837,19 @@
      "klassiek"
     ],
     "price": 15.0
+   },
+   {
+    "venue": "Que Club",
+    "title": "Que Club • Que-Bordelle",
+    "link": "https://gentsefeesten.stad.gent/nl/day/24/que-club-que-bordelle-79759",
+    "start": "16:00",
+    "end": "17:00",
+    "categories": [
+     "Varia",
+     "Bals/Dans"
+    ],
+    "music_genre": [],
+    "price": null
    },
    {
     "venue": "amai comedy club",
@@ -2838,18 +2602,6 @@
     "price": null
    },
    {
-    "venue": "Theater De Wolk",
-    "title": "The Lunatics Improcomedy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/24/lunatics-improcomedy-69742",
-    "start": "21:00",
-    "end": "22:15",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
     "venue": "amai comedy club",
     "title": "To The Rescue - Comedy - Rogier Bak (ENG)",
     "link": "https://gentsefeesten.stad.gent/nl/day/24/rescue-comedy-rogier-bak-eng-73546",
@@ -3207,20 +2959,6 @@
    }
   ],
   "2026-07-25": [
-   {
-    "venue": "'t Braemhof",
-    "title": "Café Concert Gentsche Fieste in 't Braemhof",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/cafe-concert-gentsche-fieste-t-braemhof-73468",
-    "start": "09:00",
-    "end": "12:30",
-    "categories": [
-     "Concerten > divers"
-    ],
-    "music_genre": [
-     "Gents"
-    ],
-    "price": 39.0
-   },
    {
     "venue": "Basisschool de Speurneus",
     "title": "Magic Michael it's magic",
@@ -3759,20 +3497,6 @@
     "price": null
    },
    {
-    "venue": "Erasmus Hotel",
-    "title": "Opera, operette en belcanto in een reis rond de wereld in 60 minuten",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/opera-operette-en-belcanto-een-reis-rond-de-wereld-60-minuten-69835",
-    "start": "16:00",
-    "end": "18:00",
-    "categories": [
-     "Concerten > klassiek"
-    ],
-    "music_genre": [
-     "klassiek"
-    ],
-    "price": 39.0
-   },
-   {
     "venue": "Sint-Stefanuskerk",
     "title": "Orgelrecital door Enzo Pedretti",
     "link": "https://gentsefeesten.stad.gent/nl/day/25/orgelrecital-door-enzo-pedretti-74569",
@@ -3785,6 +3509,19 @@
      "klassiek"
     ],
     "price": 15.0
+   },
+   {
+    "venue": "Que Club",
+    "title": "Que Club • Jungle Fever",
+    "link": "https://gentsefeesten.stad.gent/nl/day/25/que-club-jungle-fever-79762",
+    "start": "16:00",
+    "end": "17:00",
+    "categories": [
+     "Varia",
+     "Bals/Dans"
+    ],
+    "music_genre": [],
+    "price": null
    },
    {
     "venue": "KANTL",
@@ -4469,18 +4206,6 @@
     "price": null
    },
    {
-    "venue": "Theater De Wolk",
-    "title": "The Lunatics Improcomedy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/25/lunatics-improcomedy-69745",
-    "start": "21:00",
-    "end": "22:15",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
     "venue": "Baudelopark",
     "title": "C-Rhyms",
     "link": "https://gentsefeesten.stad.gent/nl/day/25/c-rhyms-77455",
@@ -4936,7 +4661,8 @@
      "Vertellingen/lezingen/poëzie"
     ],
     "music_genre": [],
-    "price": 8.0
+    "price": 8.0,
+    "starred": true
    },
    {
     "venue": "Huis van Alijn",
@@ -4949,18 +4675,6 @@
     ],
     "music_genre": [],
     "price": null
-   },
-   {
-    "venue": "Topacademie Sifu Walter Toch",
-    "title": "Wing Chun Kung-Fu",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/wing-chun-kung-fu-68089",
-    "start": "10:30",
-    "end": "12:00",
-    "categories": [
-     "Spel, sport en recreatie"
-    ],
-    "music_genre": [],
-    "price": 15.0
    },
    {
     "venue": "Puppetbuskers - Willem de Beersteeg",
@@ -5377,18 +5091,6 @@
     "price": 25.0
    },
    {
-    "venue": "Theater De Wolk",
-    "title": "The Lunatics Improcomedy",
-    "link": "https://gentsefeesten.stad.gent/nl/day/26/lunatics-improcomedy-69748",
-    "start": "15:00",
-    "end": "16:30",
-    "categories": [
-     "Comedy"
-    ],
-    "music_genre": [],
-    "price": 14.0
-   },
-   {
     "venue": "YART - Geraard de Duivelstraat 1",
     "title": "YART programs latin",
     "link": "https://gentsefeesten.stad.gent/nl/day/26/yart-programs-latin-78361",
@@ -5480,6 +5182,19 @@
      "klassiek"
     ],
     "price": 15.0
+   },
+   {
+    "venue": "Que Club",
+    "title": "Que Club • A tale of Fairies, Knights and Queens",
+    "link": "https://gentsefeesten.stad.gent/nl/day/26/que-club-tale-fairies-knights-and-queens-79765",
+    "start": "16:00",
+    "end": "17:00",
+    "categories": [
+     "Varia",
+     "Bals/Dans"
+    ],
+    "music_genre": [],
+    "price": null
    },
    {
     "venue": "Korenmarkt",
