@@ -192,6 +192,11 @@
     <span class="switch-track"></span>
     💰 Paid
   </label>
+  <label class="switch">
+    <input type="checkbox" id="starred-only">
+    <span class="switch-track"></span>
+    ⭐ Starred only
+  </label>
 </div>
 <div id="status"></div>
 <div id="gantt-wrap"><div id="gantt"></div></div>
@@ -273,11 +278,17 @@ const dayTabsEl = document.getElementById("day-tabs");
 const statusEl = document.getElementById("status");
 const ganttEl = document.getElementById("gantt");
 const hidePaidEl = document.getElementById("hide-paid");
+const starredOnlyEl = document.getElementById("starred-only");
 
 let currentDay = null;
 hidePaidEl.checked = localStorage.getItem("showPaid") !== "0";
 hidePaidEl.addEventListener("change", () => {
   localStorage.setItem("showPaid", hidePaidEl.checked ? "1" : "0");
+  if (currentDay) loadDay(currentDay);
+});
+starredOnlyEl.checked = localStorage.getItem("starredOnly") === "1";
+starredOnlyEl.addEventListener("change", () => {
+  localStorage.setItem("starredOnly", starredOnlyEl.checked ? "1" : "0");
   if (currentDay) loadDay(currentDay);
 });
 
@@ -347,6 +358,7 @@ function loadDay(date) {
   let events = dayEvents
     .filter((e) => e.start)
     .filter((e) => hidePaidEl.checked || e.price == null)
+    .filter((e) => !starredOnlyEl.checked || e.starred)
     .map((e) => {
       const start = toFestMinutes(e.start);
       const end = e.end ? toFestMinutes(e.end) : start + DEFAULT_DURATION;
