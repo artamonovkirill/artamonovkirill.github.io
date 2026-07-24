@@ -1,0 +1,52 @@
+{
+  "trip": {
+    "name": "Gent",
+    "dates": ""
+  },
+  "locations": [
+    {
+      "name": "Stroom Brewery",
+      "name_ru": "Пивоварня Stroom",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/e47aJmVG4uHyxxbr5",
+      "coordinates": [51.04774559063376, 3.7403270978832843],
+      "description": "Craft brewery.",
+      "description_ru": "Крафтовая пивоварня."
+    },
+    {
+      "name": "Ice Ice Amy",
+      "name_ru": "Ice Ice Amy",
+      "category": "food",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/igDz7vEcLsWRGgcN9",
+      "coordinates": [51.051065596086374, 3.7236559091685733],
+      "description": "Ice cream in fresh waffle cones and cups.",
+      "description_ru": "Мороженое в свежих вафельных рожках и пиалках."
+    },
+    {
+      "name": "De Kleine Kunst",
+      "name_ru": "De Kleine Kunst",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/A4Am3TyZJqubS7E2A",
+      "coordinates": [51.0477208704755, 3.7393423518494453],
+      "description": "Cozy local bar.",
+      "description_ru": "Уютный местный бар."
+    }
+  ],
+  "categories": {
+    "beer": {
+      "color": "#B8860B",
+      "icon": "🍺",
+      "description": "Breweries & Bars",
+      "description_ru": "Пивоварни и бары"
+    },
+    "food": {
+      "color": "#EF6C00",
+      "icon": "🍦",
+      "description": "Food & Sweets",
+      "description_ru": "Еда и сладости"
+    }
+  }
+}
