@@ -18,6 +18,7 @@
       "name": "Ice Ice Amy",
       "name_ru": "Ice Ice Amy",
       "category": "food",
+      "icon": "🍦",
       "city": "Gent",
       "maps": "https://maps.app.goo.gl/igDz7vEcLsWRGgcN9",
       "coordinates": [51.051065596086374, 3.7236559091685733],
@@ -33,6 +34,180 @@
       "coordinates": [51.0477208704755, 3.7393423518494453],
       "description": "Cozy local bar.",
       "description_ru": "Уютный местный бар."
+    },
+    {
+      "name": "Klimzaal Bleau",
+      "name_ru": "Klimzaal Bleau",
+      "category": "activity",
+      "icon": "🏔️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/b1Tp3bHYfkikSocZA",
+      "coordinates": [51.04965592017446, 3.681323153702686],
+      "description": "Climbing gym.",
+      "description_ru": "Скалодром."
+    },
+    {
+      "name": "De Waterkant",
+      "name_ru": "De Waterkant",
+      "category": "food",
+      "icon": "🏞️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/cnrnfd8gX5FC6YRdA",
+      "coordinates": [51.04210406990351, 3.690906365340483],
+      "description": "Panorama café with terrace, with a playground.",
+      "description_ru": "Панорамное кафе с террасой, с детской площадкой."
+    },
+    {
+      "name": "Blaarmeersen strand",
+      "name_ru": "Пляж Блармерсен",
+      "category": "activity",
+      "icon": "🏖️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/GSoBc8WgRDLWea8j8",
+      "coordinates": [51.044242759336164, 3.685638506818047],
+      "description": "Lake beach at Blaarmeersen recreation park.",
+      "description_ru": "Пляж на озере в парке Блармерсен."
+    },
+    {
+      "name": "Otomat Gent",
+      "name_ru": "Otomat Gent",
+      "category": "food",
+      "icon": "🍕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/fdSvRb35sHcM6Bmr5",
+      "coordinates": [51.05652590684352, 3.7217081843925115],
+      "description": "Pizzeria with Duvel yeast in the dough, on the Leie riverside.",
+      "description_ru": "Пиццерия с дрожжами Duvel в тесте, на берегу реки Лейе."
+    },
+    {
+      "name": "Gravensteen",
+      "name_ru": "Замок графов Фландрии",
+      "category": "landmark",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/5G9uDSQQNRg3QU7o7",
+      "coordinates": [51.057595017097064, 3.720636664240948],
+      "description": "Medieval castle of the Counts of Flanders.",
+      "description_ru": "Средневековый замок графов Фландрии."
+    },
+    {
+      "name": "Bowlingpaleis Lochristi",
+      "name_ru": "Bowlingpaleis Lochristi",
+      "category": "activity",
+      "icon": "🎳",
+      "city": "Lochristi",
+      "maps": "https://maps.app.goo.gl/ozk1HQqyKbgSqCZt5",
+      "coordinates": [51.09169067776136, 3.8065128162332127],
+      "description": "Bowling alley.",
+      "description_ru": "Боулинг."
+    },
+    {
+      "name": "Sint-Baafsabdij",
+      "name_ru": "Аббатство Синт-Баво",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/mtz36RBKoLKR7byaA",
+      "coordinates": [51.05456790921942, 3.736359578606658],
+      "description": "Ruins of a medieval Benedictine abbey.",
+      "description_ru": "Руины средневекового бенедиктинского аббатства."
+    },
+    {
+      "name": "Belfort",
+      "name_ru": "Беффруа",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/wrzrgkaZViLMZZvS8",
+      "coordinates": [51.05390942607364, 3.724827636448279],
+      "description": "Medieval belfry tower, UNESCO World Heritage.",
+      "description_ru": "Средневековая колокольня-беффруа, объект Всемирного наследия ЮНЕСКО."
+    },
+    {
+      "name": "Bavet",
+      "name_ru": "Bavet",
+      "category": "food",
+      "icon": "🍝",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/hruuqhVaJEWHbkKm9",
+      "coordinates": [51.04207674803722, 3.729473698388772],
+      "description": "Build your own pasta.",
+      "description_ru": "Cобери свою пасту сам."
+    },
+    {
+      "name": "Bavet",
+      "name_ru": "Bavet",
+      "category": "food",
+      "icon": "🍝",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/nKWgV1WzH2eXN57F8",
+      "coordinates": [51.05570872773267, 3.721527663462101],
+      "description": "Build your own pasta.",
+      "description_ru": "Cобери свою пасту сам."
+    },
+    {
+      "name": "Tush",
+      "name_ru": "Tush",
+      "category": "food",
+      "icon": "🍔",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/WaumkguQiiK3KLNj6",
+      "coordinates": [51.055204654306834, 3.7239933200979665],
+      "description": "Tasty beef and chicken burgers.",
+      "description_ru": "Вкусные говяжие и куриные бургеры."
+    },
+    {
+      "name": "Full Circle",
+      "name_ru": "Full Circle",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Dsp8R9f8ascbHr9Q8",
+      "coordinates": [51.04907993227177, 3.733228767194177],
+      "description": "Vegan specialty coffee bar and roastery.",
+      "description_ru": "Веганская кофейня со своей обжаркой."
+    },
+    {
+      "name": "Kouter",
+      "name_ru": "Каутер",
+      "category": "landmark",
+      "icon": "💐",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/r1MsDGh1nRfe2eYU9",
+      "coordinates": [51.0499600935593, 3.7238173997561876],
+      "description": "Elegant square with a Sunday flower market and 1878 music kiosk.",
+      "description_ru": "Элегантная площадь с воскресным цветочным рынком и музыкальным киоском 1878 года."
+    },
+    {
+      "name": "Dok Brewing Company & RØK Barbecue",
+      "name_ru": "Dok Brewing Company & RØK Barbecue",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/t33zT7cq8HpiDhga7",
+      "coordinates": [51.06576166784637, 3.7318877960317614],
+      "description": "Brewery taproom sharing the space with a barbecue kitchen.",
+      "description_ru": "Пивоварня с барбекю-кухней в том же помещении."
+    },
+    {
+      "name": "Peaberry",
+      "name_ru": "Peaberry",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/CfucuLuVJtGjauJp6",
+      "coordinates": [51.05240457817684, 3.7275754825390996],
+      "description": "Coffee, cheezy croissants and desserts.",
+      "description_ru": "Кофе, сырные круассаны и десерты."
+    },
+    {
+      "name": "Lousbergmarkt",
+      "name_ru": "Lousbergmarkt",
+      "category": "food",
+      "icon": "🧺",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/scs5QBpomGnh37HfA",
+      "coordinates": [51.05022128486603, 3.7378510113750787],
+      "description": "Indoor artisanal food market: bakery, cheese, produce, café.",
+      "description_ru": "Крытый рынок фермерских продуктов: пекарня, сыр, овощи, кафе."
     }
   ],
   "categories": {
@@ -42,11 +217,23 @@
       "description": "Breweries & Bars",
       "description_ru": "Пивоварни и бары"
     },
+    "landmark": {
+      "color": "#5E35B1",
+      "icon": "🏰",
+      "description": "Landmarks",
+      "description_ru": "Достопримечательности"
+    },
     "food": {
       "color": "#EF6C00",
-      "icon": "🍦",
+      "icon": "🍽️",
       "description": "Food & Sweets",
       "description_ru": "Еда и сладости"
+    },
+    "activity": {
+      "color": "#2E7D32",
+      "icon": "🏃",
+      "description": "Activities & Sports",
+      "description_ru": "Активности и спорт"
     }
   }
 }
