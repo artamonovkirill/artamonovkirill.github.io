@@ -55,7 +55,7 @@
       "maps": "https://maps.app.goo.gl/cnrnfd8gX5FC6YRdA",
       "coordinates": [51.04210406990351, 3.690906365340483],
       "description": "Panorama café with terrace, with a playground.",
-      "description_ru": "Панорамное кафе с террасой, с детской площадкой."
+      "description_ru": "Панорамное кафе с террасой и детской площадкой."
     },
     {
       "name": "Blaarmeersen strand",
@@ -102,7 +102,7 @@
     },
     {
       "name": "Sint-Baafsabdij",
-      "name_ru": "Аббатство Синт-Баво",
+      "name_ru": "Аббатство Святого Бавона",
       "category": "landmark",
       "icon": "🏰",
       "city": "Gent",
@@ -131,7 +131,7 @@
       "maps": "https://maps.app.goo.gl/hruuqhVaJEWHbkKm9",
       "coordinates": [51.04207674803722, 3.729473698388772],
       "description": "Build your own pasta.",
-      "description_ru": "Cобери свою пасту сам."
+      "description_ru": "Собери свою пасту сам."
     },
     {
       "name": "Bavet",
@@ -142,7 +142,7 @@
       "maps": "https://maps.app.goo.gl/nKWgV1WzH2eXN57F8",
       "coordinates": [51.05570872773267, 3.721527663462101],
       "description": "Build your own pasta.",
-      "description_ru": "Cобери свою пасту сам."
+      "description_ru": "Собери свою пасту сам."
     },
     {
       "name": "Tush",
@@ -153,7 +153,7 @@
       "maps": "https://maps.app.goo.gl/WaumkguQiiK3KLNj6",
       "coordinates": [51.055204654306834, 3.7239933200979665],
       "description": "Tasty beef and chicken burgers.",
-      "description_ru": "Вкусные говяжие и куриные бургеры."
+      "description_ru": "Вкусные говяжьи и куриные бургеры."
     },
     {
       "name": "Full Circle",
@@ -178,8 +178,8 @@
       "description_ru": "Элегантная площадь с воскресным цветочным рынком и музыкальным киоском 1878 года."
     },
     {
-      "name": "Dok Brewing Company & RØK Barbecue",
-      "name_ru": "Dok Brewing Company & RØK Barbecue",
+      "name": "Dok Brewing Co. & RØK Barbecue",
+      "name_ru": "Dok Brewing Co. & RØK Barbecue",
       "category": "beer",
       "city": "Gent",
       "maps": "https://maps.app.goo.gl/t33zT7cq8HpiDhga7",
@@ -199,15 +199,649 @@
       "description_ru": "Кофе, сырные круассаны и десерты."
     },
     {
+      "name": "Bourgoyen-Ossemeersen",
+      "name_ru": "Bourgoyen-Ossemeersen",
+      "category": "nature",
+      "icon": "🦆",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Gr68yZpmhgE7EMcA8",
+      "coordinates": [51.062344985368554, 3.674174124867667],
+      "description": "Nature reserve with marshes and meadows. Use one of the 4 entrance markers nearby to access it.",
+      "description_ru": "Природный заповедник с болотами и лугами. Поблизости расположены 4 маркера входа — используйте любой из них."
+    },
+    {
+      "name": "Bourgoyen-Ossemeersen (Sporthal entrance)",
+      "name_ru": "Bourgoyen-Ossemeersen (вход у Sporthal)",
+      "category": "nature",
+      "icon": "🦆",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/o5s7PTFR9uGG2Vk98",
+      "coordinates": [51.06697973956608, 3.6825197460873285],
+      "description": "Nature reserve entrance near the sports hall.",
+      "description_ru": "Вход в природный заповедник у спортзала."
+    },
+    {
+      "name": "Bourgoyen-Ossemeersen (Bunderweg entrance)",
+      "name_ru": "Bourgoyen-Ossemeersen (вход Bunderweg)",
+      "category": "nature",
+      "icon": "🦆",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/1bMcxaeDqKzaXHgNA",
+      "coordinates": [51.05416472292502, 3.6741932866200813],
+      "description": "Nature reserve entrance on Bunderweg.",
+      "description_ru": "Вход в природный заповедник со стороны Bunderweg."
+    },
+    {
+      "name": "Bourgoyen-Ossemeersen (North entrance)",
+      "name_ru": "Bourgoyen-Ossemeersen (северный вход)",
+      "category": "nature",
+      "icon": "🦆",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/RYEKwViQ4Q3RQnZL7",
+      "coordinates": [51.06731906134263, 3.6663721824899933],
+      "description": "Nature reserve entrance on the north side.",
+      "description_ru": "Вход в природный заповедник с северной стороны."
+    },
+    {
+      "name": "Bourgoyen-Ossemeersen (Hoosmolen entrance)",
+      "name_ru": "Bourgoyen-Ossemeersen (вход Hoosmolen)",
+      "category": "nature",
+      "icon": "🦆",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/5zo5yvdwzyPoaEW29",
+      "coordinates": [51.05792560950862, 3.6865716935001536],
+      "description": "Nature reserve entrance near Hoosmolen.",
+      "description_ru": "Вход в природный заповедник у Hoosmolen."
+    },
+    {
+      "name": "LAGO Rozebroeken",
+      "name_ru": "LAGO Rozebroeken",
+      "category": "activity",
+      "icon": "🏊",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/mH2YBZX4fkAdtr3v9",
+      "coordinates": [51.05968213563877, 3.7610429960312293],
+      "description": "Aquapark and spa.",
+      "description_ru": "Аквапарк и спа."
+    },
+    {
+      "name": "Clouds in my Coffee",
+      "name_ru": "Clouds in my Coffee",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Ux9EPDcberXYoEVEA",
+      "coordinates": [51.05492038855213, 3.7429379518500596],
+      "description": "Coffee bar.",
+      "description_ru": "Кофейня."
+    },
+    {
+      "name": "WAY",
+      "name_ru": "WAY",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/prvkiQdyKbXz4sTD7",
+      "coordinates": [51.04128961863844, 3.7405782825381464],
+      "description": "Specialty coffee and bakery.",
+      "description_ru": "Кофейня со своей обжаркой и пекарней."
+    },
+    {
+      "name": "WAY",
+      "name_ru": "WAY",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/qGK9U5TgxHJ5kPR88",
+      "coordinates": [51.05277042479149, 3.7202696336730194],
+      "description": "Specialty coffee bar.",
+      "description_ru": "Кофейня."
+    },
+    {
+      "name": "WAY",
+      "name_ru": "WAY",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/yHJoefuQU7xxS8jLA",
+      "coordinates": [51.06733559074704, 3.7303976549992814],
+      "description": "Specialty coffee roastery.",
+      "description_ru": "Кофейня со своей обжаркой."
+    },
+    {
+      "name": "ENTR",
+      "name_ru": "ENTR",
+      "category": "food",
+      "icon": "🍽️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/C3orbm6EbviQxCkj7",
+      "coordinates": [51.06092316110415, 3.733810169048281],
+      "description": "Café-restaurant at De Centrale with world cuisine, tapas, and Belgian classics.",
+      "description_ru": "Кафе-ресторан при De Centrale с кухней со всего мира, тапас и бельгийской классикой."
+    },
+    {
+      "name": "Trappistenhuis",
+      "name_ru": "Trappistenhuis",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/YAWVzZVXVVZxTPdi8",
+      "coordinates": [51.04950480996891, 3.733041167194206],
+      "description": "Cozy brown beer café with over 170 Belgian specialty and Trappist beers.",
+      "description_ru": "Уютный пивной бар с более чем 170 бельгийскими и траппистскими сортами пива."
+    },
+    {
+      "name": "Holy Guacamoly",
+      "name_ru": "Holy Guacamoly",
+      "category": "food",
+      "icon": "🌯",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/PsLWVkKx66ZUPRep9",
+      "coordinates": [51.04904448760772, 3.7312006230134043],
+      "description": "Mexican/California-style burritos, tacos, nachos and bowls.",
+      "description_ru": "Мексиканско-калифорнийские буррито, тако, начос и боулы."
+    },
+    {
+      "name": "Sint-Baafskathedraal",
+      "name_ru": "Собор Святого Бавона",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/9mcM9BB4fTk2Bt7w7",
+      "coordinates": [51.0536699337683, 3.726516274973661],
+      "description": "Gothic cathedral housing the Ghent Altarpiece (Van Eyck).",
+      "description_ru": "Готический собор с Гентским алтарём (Ван Эйк)."
+    },
+    {
+      "name": "Valeir",
+      "name_ru": "Valeir",
+      "category": "food",
+      "icon": "🍦",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/DiXZuW5maddPEFUW9",
+      "coordinates": [51.05635664532459, 3.732688536505571],
+      "description": "Breakfast bar and ice cream parlour on Portus Ganda.",
+      "description_ru": "Завтраки и мороженое на набережной Portus Ganda."
+    },
+    {
+      "name": "Patrick Foley's",
+      "name_ru": "Patrick Foley's",
+      "category": "food",
+      "icon": "🍀",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/z6JbSMdQjWKZbn9r8",
+      "coordinates": [51.050192997044256, 3.7195296383581167],
+      "description": "Irish pub since 1997 with Irish/Belgian food, Guinness and Belgian beers.",
+      "description_ru": "Ирландский паб с 1997 года: ирландско-бельгийская кухня, Guinness и бельгийское пиво."
+    },
+    {
+      "name": "Sint-Pietersabdij & kerk",
+      "name_ru": "Аббатство и церковь Святого Петра",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/aTnPKpvVMo2rWRSH7",
+      "coordinates": [51.04209845411627, 3.7266183605140863],
+      "description": "Former Benedictine abbey with baroque church, museum, and abbey garden.",
+      "description_ru": "Бывшее бенедиктинское аббатство с барочной церковью, музеем и садом."
+    },
+    {
+      "name": "Gruut",
+      "name_ru": "Gruut",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/VhP4a29HeVGTTDxm9",
+      "coordinates": [51.057607887057046, 3.730236558252499],
+      "description": "City brewery using gruit (herb mix) instead of hops, with tours and tasting bar.",
+      "description_ru": "Городская пивоварня, использующая грюйт (травяную смесь) вместо хмеля, с экскурсиями и дегустационным баром."
+    },
+    {
+      "name": "Baudelopark",
+      "name_ru": "Парк Бадело",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/iuAqzS6RG7MWycYT6",
+      "coordinates": [51.05844046212263, 3.730352162503608],
+      "description": "City park with a playground.",
+      "description_ru": "Городской парк с детской площадкой."
+    },
+    {
+      "name": "Vrijdagmarkt",
+      "name_ru": "Пятничный рынок",
+      "category": "landmark",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/pbx6EGfvEAXU64KUA",
+      "coordinates": [51.05713879168956, 3.726340724867183],
+      "description": "Historic square with weekly Friday and Sunday markets, statue of Jacob van Artevelde, surrounded by bars.",
+      "description_ru": "Историческая площадь с рынком по пятницам и воскресеньям, статуей Якоба ван Артевелде, окружена барами."
+    },
+    {
+      "name": "Hey Joo",
+      "name_ru": "Hey Joo",
+      "category": "food",
+      "icon": "🍜",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/vbFTkC1ENJ7fKVEU8",
+      "coordinates": [51.05811509676925, 3.724077267194963],
+      "description": "Korean street-food restaurant.",
+      "description_ru": "Кафе корейской уличной кухни."
+    },
+    {
+      "name": "Sint-Jacobskerk",
+      "name_ru": "Церковь Святого Якова",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/EzwCiQNvUFoVCPCQ9",
+      "coordinates": [51.05683677608031, 3.7272275926255056],
+      "description": "Romanesque-Gothic church, one of Ghent's oldest parish churches.",
+      "description_ru": "Романско-готическая церковь, одна из старейших приходских церквей Гента."
+    },
+    {
+      "name": "Graslei",
+      "name_ru": "Граслей",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/nbeaFUkjgo7QNbZd8",
+      "coordinates": [51.05481802642035, 3.7207830418386694],
+      "description": "Historic quay with guild houses along the Leie, one of Ghent's most photographed spots.",
+      "description_ru": "Историческая набережная с гильдейскими домами вдоль реки Лейе, одно из самых фотографируемых мест Гента."
+    },
+    {
+      "name": "De Krook",
+      "name_ru": "De Krook",
+      "category": "landmark",
+      "icon": "📚",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/H9Neqd1ozFAXcu66A",
+      "coordinates": [51.0487602660689, 3.728791205039358],
+      "description": "Public library on a bend of the Scheldt, with a riverside promenade.",
+      "description_ru": "Библиотека на изгибе реки Шельды, с набережной для прогулок."
+    },
+    {
+      "name": "Industrymuseum",
+      "name_ru": "Industrymuseum",
+      "category": "landmark",
+      "icon": "🏭",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/mSAjygZnNTCco3Lo6",
+      "coordinates": [51.059578819846635, 3.729254951850488],
+      "description": "Museum on textile industry and daily life in the industrial era.",
+      "description_ru": "Музей текстильной промышленности и повседневной жизни индустриальной эпохи."
+    },
+    {
+      "name": "Goya",
+      "name_ru": "Goya",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/wxqcNAfzj4irv4sS6",
+      "coordinates": [51.04650468376905, 3.7216897537024343],
+      "description": "Argentinian specialty coffee bar with homemade pastries like chipas and alfajores.",
+      "description_ru": "Аргентинская кофейня со своей обжаркой, домашняя выпечка: чипас, алфахорес."
+    },
+    {
+      "name": "Studio Skoop",
+      "name_ru": "Studio Skoop",
+      "category": "activity",
+      "icon": "🎬",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/wv6LU45pGBXMnxXC9",
+      "coordinates": [51.048916311768366, 3.733727223013379],
+      "description": "Arthouse cinema with a cozy café-bar.",
+      "description_ru": "Артхаусный кинотеатр с уютным кафе-баром."
+    },
+    {
+      "name": "Viva la Puglia",
+      "name_ru": "Viva la Puglia",
+      "category": "food",
+      "icon": "🍝",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/W4YBwawAF66kUQ8MA",
+      "coordinates": [51.041489747223444, 3.736366882538171],
+      "description": "Family-run Italian restaurant with generous portions, seafood pizza and homemade desserts.",
+      "description_ru": "Семейный итальянский ресторан: щедрые порции, пицца с морепродуктами, домашние десерты."
+    },
+    {
+      "name": "Muinkpark",
+      "name_ru": "Парк Мюнк",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/k73FsTpcjX9bC9EM6",
+      "coordinates": [51.042718094293406, 3.7307803249320886],
+      "description": "City park with a playground, on the site of a former zoo.",
+      "description_ru": "Городской парк с детской площадкой, на месте бывшего зоопарка."
+    },
+    {
+      "name": "Julie's House",
+      "name_ru": "Julie's House",
+      "category": "food",
+      "icon": "🧁",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/q3ssqRJSGHNTp4ur6",
+      "coordinates": [51.057534245027774, 3.721781773118917],
+      "description": "Pastry house with tasty cakes and cupcakes.",
+      "description_ru": "Кондитерская с вкусными тортами и кексами."
+    },
+    {
+      "name": "Gentbrugse Meersen",
+      "name_ru": "Gentbrugse Meersen",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Mopuv6RTg76jzqxB6",
+      "coordinates": [51.03712420133288, 3.7707774941762353],
+      "description": "Nature park with meadows and a kids' playground.",
+      "description_ru": "Природный парк с лугами и детской площадкой."
+    },
+    {
+      "name": "Brouwerij Haeseveld",
+      "name_ru": "Brouwerij Haeseveld",
+      "category": "beer",
+      "icon": "🍺",
+      "city": "Oostakker",
+      "maps": "https://maps.app.goo.gl/fQSBHHsnNAeiGKmf6",
+      "coordinates": [51.06947682495036, 3.7979543690490387],
+      "description": "Microbrewery with a beer hall, terrace, food and a kids' playground on 3.5 hectares of greenery.",
+      "description_ru": "Микропивоварня с пивным залом, террасой, едой и детской площадкой на 3,5 га зелени."
+    },
+    {
+      "name": "Boat Tour",
+      "name_ru": "Экскурсия на лодке",
+      "category": "activity",
+      "icon": "🚤",
+      "city": "Gent",
+      "maps": "https://www.google.com/maps/search/?api=1&query=boat+tour+gent",
+      "coordinates": [51.05552766882058, 3.7204885675680726],
+      "description": "Boat tours along the Leie and Scheldt, several operators along Graslei/Korenlei.",
+      "description_ru": "Экскурсии на лодке по рекам Лея и Шельда, несколько операторов на Граслей/Коренлей."
+    },
+    {
+      "name": "Madam Bakster",
+      "name_ru": "Madam Bakster",
+      "category": "food",
+      "icon": "🍰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/KVWza3yuTpinR2WQ8",
+      "coordinates": [51.049765787783265, 3.7323048113750357],
+      "description": "Plant-based bakery and coffee bar with sugar-free, vegan cakes and desserts.",
+      "description_ru": "Веганская пекарня и кофейня с десертами без рафинированного сахара."
+    },
+    {
+      "name": "Portus Ganda",
+      "name_ru": "Portus Ganda",
+      "category": "landmark",
+      "icon": "⚓",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/FheFN3DJCpv1zj6a6",
+      "coordinates": [51.054025245942185, 3.733984369735095],
+      "description": "Marina at the historic confluence of the Leie and Scheldt, near the city center.",
+      "description_ru": "Гавань на историческом слиянии рек Лейе и Шельда, рядом с центром города."
+    },
+    {
+      "name": "'t Dreupelkot",
+      "name_ru": "'t Dreupelkot",
+      "category": "beer",
+      "icon": "🥃",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Ebt84kSeGXWkAohW9",
+      "coordinates": [51.056451207126365, 3.7223887113756],
+      "description": "Tiny jenever bar with over 200 varieties.",
+      "description_ru": "Крошечный бар женевера с более чем 200 видами."
+    },
+    {
+      "name": "Chocolatier Deduytschaever",
+      "name_ru": "Chocolatier Deduytschaever",
+      "category": "food",
+      "icon": "🍫",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/LAbYKUYCMQW7Xpdn8",
+      "coordinates": [51.05348076510316, 3.724411105855442],
+      "description": "Chocolatier.",
+      "description_ru": "Шоколатье."
+    },
+    {
+      "name": "Soup'r",
+      "name_ru": "Soup'r",
+      "category": "food",
+      "icon": "🍲",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Ywzd5AE6iavHzvcx8",
+      "coordinates": [51.053570669815834, 3.7233086941685265],
+      "description": "Soup bar with rotating daily soups.",
+      "description_ru": "Суп-бар с ежедневными сменяющимися супами."
+    },
+    {
+      "name": "Bar Bassie",
+      "name_ru": "Bar Bassie",
+      "category": "beer",
+      "icon": "🍹",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/7iGzaUTmNKWzqg928",
+      "coordinates": [51.04828138442813, 3.728050915344623],
+      "description": "Rooftop bar atop the Wintercircus with cocktails, beer and views over Ghent.",
+      "description_ru": "Бар на крыше Wintercircus: коктейли, пиво и вид на Гент."
+    },
+    {
+      "name": "Bakker Klaas",
+      "name_ru": "Bakker Klaas",
+      "category": "food",
+      "icon": "🥐",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/K2Dy5qExiUsRC7VP6",
+      "coordinates": [51.04815373987725, 3.728021975219458],
+      "description": "Sourdough bakery and a café inside the former circus.",
+      "description_ru": "Пекарня на закваске и кафе внутри бывшего цирка."
+    },
+    {
+      "name": "Pain Perdu",
+      "name_ru": "Pain Perdu",
+      "category": "food",
+      "icon": "🍞",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/oCEzPQ6ykYY7VCH79",
+      "coordinates": [51.04920820289761, 3.7271285091200324],
+      "description": "Cozy brunch café with a garden.",
+      "description_ru": "Уютное кафе для бранча с садом."
+    },
+    {
+      "name": "STAM",
+      "name_ru": "STAM",
+      "category": "landmark",
+      "icon": "🏛️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/aPtkbyMGJXPbpm97A",
+      "coordinates": [51.04438785118632, 3.7171921362042126],
+      "description": "Ghent city history museum in the former Bijloke abbey, with a giant walkable aerial photo of the city.",
+      "description_ru": "Городской исторический музей Гента в бывшем аббатстве Бейлоке, с гигантской аэрофотографией города, по которой можно ходить."
+    },
+    {
+      "name": "Citadelpark",
+      "name_ru": "Парк Цитадель",
+      "category": "nature",
+      "icon": "🌳",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/dV5z1thehPax73NR6",
+      "coordinates": [51.03682104875129, 3.7189260671931232],
+      "description": "Ghent's largest park, built on a former citadel, with a grotto, rose garden and kids' playground.",
+      "description_ru": "Крупнейший парк Гента на месте бывшей цитадели: грот, розарий и детская площадка."
+    },
+    {
+      "name": "Universiteit Plantentuin",
+      "name_ru": "Ботанический сад университета",
+      "category": "nature",
+      "icon": "🌿",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/DspJRGsz76MF5hLr6",
+      "coordinates": [51.036256727978596, 3.7224629448589086],
+      "description": "Ghent University's botanical garden with 10,000 plant species and greenhouses, including a giant water lily.",
+      "description_ru": "Ботанический сад университета Гента: 10 000 видов растений и оранжереи, включая гигантскую Викторию регию."
+    },
+    {
+      "name": "Frituur Botermarkt",
+      "name_ru": "Frituur Botermarkt",
+      "category": "food",
+      "icon": "🍟",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/pJCaVBtsKdMWuKiQ7",
+      "coordinates": [51.03337285337163, 3.741677796028987],
+      "description": "Classic Belgian frituur for fries and snacks.",
+      "description_ru": "Классическая бельгийская фритюрница: картофель фри и закуски."
+    },
+    {
+      "name": "De Planck",
+      "name_ru": "De Planck",
+      "category": "beer",
+      "icon": "🍺",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/6T9eLWsfBc7ozW649",
+      "coordinates": [51.04067779869755, 3.7294885943280898],
+      "description": "Bar on a barge with over 200 beers.",
+      "description_ru": "Бар на барже с более чем 200 сортами пива."
+    },
+    {
+      "name": "Molotov",
+      "name_ru": "Molotov",
+      "category": "beer",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/4j9eoLp3LMMfP8588",
+      "coordinates": [51.04074236659988, 3.7265397248657814],
+      "description": "Alternative bar with garden terrace and cheap beer.",
+      "description_ru": "Альтернативный бар с садовой террасой и недорогим пивом."
+    },
+    {
+      "name": "Mayana Chocoladebar",
+      "name_ru": "Mayana Chocoladebar",
+      "category": "food",
+      "icon": "🍫",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/39i5tFsuiBoNtFGU7",
+      "coordinates": [51.044724706134424, 3.726291394176873],
+      "description": "Chocolate bar with cocoa drinks and milkshakes in dark, milk or white chocolate.",
+      "description_ru": "Шоколадный бар с какао-напитками и молочными коктейлями из тёмного, молочного или белого шоколада."
+    },
+    {
+      "name": "Take Five",
+      "name_ru": "Take Five",
+      "category": "food",
+      "icon": "☕",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/6rC3GQ5iM3zqs3M38",
+      "coordinates": [51.05234217914424, 3.724201159971536],
+      "description": "Cozy espresso bar with inventive coffee, tea, homemade lemonade and vegan sweets.",
+      "description_ru": "Уютная кофейня с оригинальным кофе, чаем, домашним лимонадом и веганскими сладостями."
+    },
+    {
+      "name": "Stadhuis",
+      "name_ru": "Ратуша Гента",
+      "category": "landmark",
+      "icon": "🏰",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/4vLiVWbfHrK4KwbT7",
+      "coordinates": [51.054559360055244, 3.725299286982894],
+      "description": "City hall combining late Gothic Flamboyant and Renaissance architecture in two wings.",
+      "description_ru": "Ратуша, сочетающая в двух крыльях позднюю пламенеющую готику и ренессанс."
+    },
+    {
+      "name": "MSK",
+      "name_ru": "MSK",
+      "category": "landmark",
+      "icon": "🎨",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/si1vCzG5gBkvoa4s6",
+      "coordinates": [51.039148634895476, 3.7241901249289255],
+      "description": "Museum of Fine Arts, works from medieval to early 20th century, including Bosch.",
+      "description_ru": "Музей изящных искусств: от Средневековья до начала XX века, включая работы Босха."
+    },
+    {
+      "name": "SMAK",
+      "name_ru": "SMAK",
+      "category": "landmark",
+      "icon": "🎨",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/3WkucaxBwrhpAEVs9",
+      "coordinates": [51.03835599774617, 3.7223944960293966],
+      "description": "Municipal museum of contemporary art.",
+      "description_ru": "Городской музей современного искусства."
+    },
+    {
+      "name": "Gent-Dampoort",
+      "name_ru": "Гент-Дампорт",
+      "category": "transport",
+      "icon": "🚂",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/uCso7A45R1SBbuz1A",
+      "coordinates": [51.05646567499929, 3.740282396030953],
+      "description": "Railway station with adjacent intercity bus stop.",
+      "description_ru": "Железнодорожный вокзал и остановка междугородних автобусов."
+    },
+    {
+      "name": "Gent-Sint-Pieters",
+      "name_ru": "Гент-Синт-Питерс",
+      "category": "transport",
+      "icon": "🚂",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/SM5eaZCT39r1RZ4r7",
+      "coordinates": [51.03611317170996, 3.7106889923230626],
+      "description": "Ghent's main railway station.",
+      "description_ru": "Главный железнодорожный вокзал Гента."
+    },
+    {
+      "name": "Flibco Stop",
+      "name_ru": "Остановка Flibco",
+      "category": "transport",
+      "icon": "🚌",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/CaRfCQPXSo2k3umv6",
+      "coordinates": [51.035214134302166, 3.708564467192971],
+      "description": "Flibco airport shuttle bus stop.",
+      "description_ru": "Остановка автобуса-шаттла Flibco до аэропорта."
+    },
+    {
+      "name": "Gent Zuid",
+      "name_ru": "Гент Зюйд",
+      "category": "transport",
+      "icon": "🚌",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/tfXWzYCVSZLLuUkN7",
+      "coordinates": [51.04800439764616, 3.7316887514612005],
+      "description": "Major transport hub in the city center, many bus lines pass through.",
+      "description_ru": "Крупный транспортный узел в центре города, через него проходит много автобусных линий."
+    },
+    {
       "name": "Lousbergmarkt",
       "name_ru": "Lousbergmarkt",
       "category": "food",
-      "icon": "🧺",
+      "icon": "🧀",
       "city": "Gent",
       "maps": "https://maps.app.goo.gl/scs5QBpomGnh37HfA",
       "coordinates": [51.05022128486603, 3.7378510113750787],
       "description": "Indoor artisanal food market: bakery, cheese, produce, café.",
       "description_ru": "Крытый рынок фермерских продуктов: пекарня, сыр, овощи, кафе."
+    },
+    {
+      "name": "Graffitistraat",
+      "name_ru": "Улица граффити",
+      "category": "landmark",
+      "icon": "🎨",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/7Rws5mgKFFpHCrw18",
+      "coordinates": [51.055595072345604, 3.7246550537032053],
+      "description": "Alley officially sanctioned for graffiti, repainted year-round by local and international artists.",
+      "description_ru": "Переулок, где официально разрешено расписывать стены граффити — художники обновляют рисунки круглый год."
+    },
+    {
+      "name": "De Abt",
+      "name_ru": "De Abt",
+      "category": "food",
+      "icon": "🍽️",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/j1hnhZFXWRGSuPQY6",
+      "coordinates": [51.05296995518837, 3.7258387825391264],
+      "description": "Flanders' only Orval brasserie: traditional Belgian dishes, six built around Orval Trappist beer, plus rare abbey beers like Westvleteren XII.",
+      "description_ru": "Единственная во Фландрии брассери Orval: традиционные бельгийские блюда, шесть из них — на основе траппистского пива Orval, плюс редкие аббатские сорта вроде Westvleteren XII."
     }
   ],
   "categories": {
@@ -230,10 +864,22 @@
       "description_ru": "Еда и сладости"
     },
     "activity": {
-      "color": "#2E7D32",
+      "color": "#1E88E5",
       "icon": "🏃",
       "description": "Activities & Sports",
       "description_ru": "Активности и спорт"
+    },
+    "nature": {
+      "color": "#2E7D32",
+      "icon": "🌿",
+      "description": "Nature",
+      "description_ru": "Природа"
+    },
+    "transport": {
+      "color": "#607D8B",
+      "icon": "🚂",
+      "description": "Transport",
+      "description_ru": "Транспорт"
     }
   }
 }
