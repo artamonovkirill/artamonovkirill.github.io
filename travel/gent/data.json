@@ -833,6 +833,50 @@
       "description_ru": "Переулок, где официально разрешено расписывать стены граффити — художники обновляют рисунки круглый год."
     },
     {
+      "name": "Kim's Kitchen",
+      "name_ru": "Kim's Kitchen",
+      "category": "food",
+      "icon": "🍜",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/Hzqkj53mz9zytEME6",
+      "coordinates": [51.05858395210749, 3.724132967195022],
+      "description": "Authentic Korean restaurant and Korean BBQ.",
+      "description_ru": "Аутентичный корейский ресторан с корейским барбекю."
+    },
+    {
+      "name": "De Slegte",
+      "name_ru": "De Slegte",
+      "category": "shopping",
+      "icon": "📚",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/fUzQNkxVArJpMLJC8",
+      "coordinates": [51.05335987940778, 3.723831356956478],
+      "description": "Bookshop over five floors: discounted new books, antiquarian and second-hand books.",
+      "description_ru": "Книжный магазин на пяти этажах: уценённые новые книги, антикварные и букинистические издания."
+    },
+    {
+      "name": "De Blauwe Kiosk",
+      "name_ru": "De Blauwe Kiosk",
+      "category": "beer",
+      "icon": "🦪",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/XuN5MGwWKHDumbWFA",
+      "coordinates": [51.05411802303172, 3.7305376544965068],
+      "description": "Oyster and aperitif bar with wine, bubbles and homemade croquettes.",
+      "description_ru": "Устричный бар с вином, игристым и домашними крокетами."
+    },
+    {
+      "name": "helen b & vrienden",
+      "name_ru": "helen b & vrienden",
+      "category": "shopping",
+      "icon": "🎁",
+      "city": "Gent",
+      "maps": "https://maps.app.goo.gl/rzVLHn2a3NCntt6P8",
+      "coordinates": [51.0515847555905, 3.719508017629347],
+      "description": "Design and gift shop with work from 40+ creatives: jewellery, ceramics, illustrations, cards.",
+      "description_ru": "Магазин дизайна и подарков с работами более 40 авторов: украшения, керамика, иллюстрации, открытки."
+    },
+    {
       "name": "De Abt",
       "name_ru": "De Abt",
       "category": "food",
@@ -880,6 +924,12 @@
       "icon": "🚂",
       "description": "Transport",
       "description_ru": "Транспорт"
+    },
+    "shopping": {
+      "color": "#AD1457",
+      "icon": "🛍️",
+      "description": "Shopping",
+      "description_ru": "Магазины"
     }
   }
 }

@@ -129,6 +129,19 @@
   }
   .event-block.starred.est-end { background: linear-gradient(to right, #4a7 65%, rgba(68,170,119,0.35) 100%); }
   .event-block.starred:hover { outline: 2px solid #285; }
+  .event-block.very-starred {
+    background: #4a7;
+    color: #fff;
+    font-weight: 700;
+    outline: 3px solid #e8b400;
+    outline-offset: -1px;
+  }
+  .event-block.very-starred.est-end { background: linear-gradient(to right, #4a7 65%, rgba(68,170,119,0.35) 100%); }
+  .event-block.very-starred:hover { outline: 3px solid #a67c03; }
+  .event-block.very-starred::before {
+    content: "\2605 ";
+    color: #ffd94a;
+  }
 
   #filters {
     display: flex;
@@ -478,7 +491,7 @@ function loadDay(date) {
 
     for (const e of byVenue.get(v)) {
       const a = document.createElement("a");
-      a.className = "event-block" + (e._estEnd ? " est-end" : "") + (e.starred ? " starred" : "");
+      a.className = "event-block" + (e._estEnd ? " est-end" : "") + (e.starred ? " starred" : "") + (e.veryStarred ? " very-starred" : "");
       a.href = e.link;
       a.target = "_blank";
       a.rel = "noopener";
