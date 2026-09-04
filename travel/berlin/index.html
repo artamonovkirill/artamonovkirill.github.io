@@ -361,18 +361,23 @@
 
             const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
+            const voyager = L.tileLayer(`https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_2x8i_1_cf260cf37c8c5b14a9fc00cc`, {
+                attribution: osmAttr + ', &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                maxZoom: 19
+            }).addTo(map);
+
             const humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
                 attribution: osmAttr + ', tiles by <a href="https://www.hotosm.org/">HOT</a>',
                 maxZoom: 19,
                 subdomains: 'abc'
-            }).addTo(map);
+            });
 
             const transport = L.tileLayer(`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=188877bd54f540998cff93859204f9a9`, {
                 attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, ' + osmAttr,
                 maxZoom: 22
             });
 
-            L.control.layers({ 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
+            L.control.layers({ 'Voyager': voyager, 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
 
             // Load saved state
             const savedCategories = loadState('categories') || {};
