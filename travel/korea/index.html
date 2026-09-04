@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Berlin Trip Map</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
+    <title>Korea Trip Map</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -95,10 +95,12 @@
             border-radius: 12px;
             font-size: 11px;
             font-weight: bold;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .stats {
-            background: linear-gradient(135deg, #1a1a2e 0%, #D4872A 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 15px;
             border-radius: 8px;
@@ -132,17 +134,29 @@
             color: rgba(255,255,255,0.7);
         }
 
-        .bubble {
-            position: absolute;
-            bottom: 0;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            animation: rise 3s infinite ease-in;
+        .legend-count-total {
+            font-weight: normal;
+            opacity: 0.55;
         }
 
-        @keyframes rise {
-            0% { transform: translateY(0) scale(1); opacity: 0.5; }
-            100% { transform: translateY(-70px) scale(0.3); opacity: 0; }
+        .petal {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 12px;
+            background: radial-gradient(ellipse at 30% 40%, #ffd4dc, #f8a4b8);
+            border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+            animation: fall linear infinite;
+            pointer-events: none;
+            box-shadow: inset 0 0 2px rgba(200,80,120,0.2);
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0.9; }
+            25% { transform: translateY(20px) rotate(90deg) translateX(5px); }
+            50% { transform: translateY(40px) rotate(180deg) translateX(-3px); }
+            75% { transform: translateY(60px) rotate(270deg) translateX(4px); }
+            100% { transform: translateY(80px) rotate(360deg) translateX(0); opacity: 0; }
         }
 
         .map-control-btn {
@@ -174,7 +188,7 @@
             color: #333;
         }
 
-        .popup-german {
+        .popup-hangul {
             display: block;
             font-weight: normal;
             font-size: 13px;
@@ -218,7 +232,7 @@
             font-style: italic;
         }
 
-        .popup-district {
+        .popup-city {
             font-size: 12px;
             color: #999;
             margin-top: 6px;
@@ -273,7 +287,7 @@
                 gap: 6px;
                 width: 100%;
                 padding: 12px;
-                background: linear-gradient(135deg, #1a1a2e 0%, #D4872A 100%);
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
                 border: none;
                 font-size: 14px;
                 font-weight: bold;
@@ -325,6 +339,11 @@
                     <div id="legend-items"></div>
                 </div>
 
+                <div class="legend" id="regions-section">
+                    <h3>Regions</h3>
+                    <div id="region-items"></div>
+                </div>
+
                 <div class="sidebar-footer" id="sidebar-footer"></div>
             </div>
         </div>
@@ -358,18 +377,39 @@
             });
 
         function initMap(data) {
-            // Initialize map centered on Berlin
-            const map = L.map('map').setView([52.52, 13.405], 12);
+            // Initialize map centered on South Korea
+            const map = L.map('map').setView([36.5, 127.8], 7);
 
-            // Add map tiles
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
+            const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                attribution: osmAttr + ', tiles by <a href="https://www.hotosm.org/">HOT</a>',
                 maxZoom: 19,
-                subdomains: 'abcd'
+                subdomains: 'abc'
             }).addTo(map);
+
+            const transport = L.tileLayer(`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=188877bd54f540998cff93859204f9a9`, {
+                attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, ' + osmAttr,
+                maxZoom: 22
+            });
+
+            L.control.layers({ 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
+
+            const cityHangul = {
+                'Seoul': '서울',
+                'Busan': '부산',
+                'Incheon': '인천',
+                'Gyeongju': '경주',
+                'Suwon': '수원',
+                'Ganghwa': '강화',
+                'Siheung': '시흥',
+                'Bucheon': '부천',
+            };
 
             // Load saved state
             const savedCategories = loadState('categories') || {};
+            const savedRegions = loadState('regions') || {};
+            // Build state
             const categoryState = {};
             Object.keys(data.categories).forEach(key => {
                 if (key in savedCategories) {
@@ -379,14 +419,29 @@
                 }
             });
 
+            // Regions: only these are toggleable, rest always visible
+            const regions = [
+                { key: 'seoul-incheon', label: 'Seoul & Incheon', hangul: '서울 & 인천', cities: ['Seoul', 'Incheon', 'Ganghwa', 'Siheung', 'Bucheon', 'Suwon'] },
+                { key: 'busan', label: 'Busan & Gyeongju', hangul: '부산 & 경주', cities: ['Busan', 'Gyeongju'] },
+            ];
+            const cityToRegion = {};
+            regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
+
+            const regionState = {};
+            regions.forEach(r => {
+                regionState[r.key] = r.key in savedRegions ? savedRegions[r.key] : true;
+            });
+
             // Build all markers
             const allMarkers = [];
 
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
+                const city = location.city || 'Other';
+                const markerIcon = location.icon || category.icon;
 
                 const icon = L.divIcon({
-                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${category.icon}</div>`,
+                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
                     className: 'custom-marker',
                     iconSize: [24, 24],
                     iconAnchor: [12, 12]
@@ -394,19 +449,16 @@
 
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                const mapsQuery = encodeURIComponent((location.german || location.name) + ', Berlin');
-                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+                const naverQuery = encodeURIComponent(location.hangul || location.name);
+                const naverUrl = `nmap://search?query=${naverQuery}&appname=koreatrip`;
                 const popupContent = `
-                    <div class="popup-title">${location.name}${location.german && location.german !== location.name ? ` <span class="popup-german">${location.german}</span>` : ''}</div>
+                    <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
                     <div class="popup-category" style="background-color: ${category.color};">
-                        ${category.icon} ${location.category}
+                        ${markerIcon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
-                    ${location.district ? `<div class="popup-district">📍 ${location.district}</div>` : ''}
-                    <div class="popup-links">
-                        <a href="${mapsUrl}" target="_blank">Google Maps</a>
-                        ${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}
-                    </div>
+                    ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
+                    <div class="popup-links"><a href="${naverUrl}" target="_blank">Naver Map</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
                     ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
@@ -442,21 +494,39 @@
                     });
                 }
 
-                allMarkers.push({ marker, category: location.category, name: location.name });
+                const region = cityToRegion[city] || null;
+                allMarkers.push({ marker, category: location.category, region, name: location.name });
             });
+
+            // Count element references populated during legend creation
+            const categoryCountEls = {};
+            const regionCountEls = {};
 
             // Visibility
             function updateVisibility() {
                 let visibleCount = 0;
+                const catCounts = {};
+                const regionCounts = {};
                 allMarkers.forEach(m => {
-                    const visible = categoryState[m.category];
+                    const regionVisible = m.region === null || regionState[m.region];
+                    const categoryVisible = categoryState[m.category];
+                    const visible = categoryVisible && regionVisible;
                     if (visible) {
                         if (!map.hasLayer(m.marker)) m.marker.addTo(map);
                         visibleCount++;
                     } else {
                         if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
                     }
+                    // Category count: filtered by region
+                    if (regionVisible) {
+                        catCounts[m.category] = (catCounts[m.category] || 0) + 1;
+                    }
+                    // Region count: filtered by category
+                    if (categoryVisible && m.region !== null) {
+                        regionCounts[m.region] = (regionCounts[m.region] || 0) + 1;
+                    }
                 });
+
                 const total = data.locations.length;
                 const countEl = document.getElementById('total-count');
                 if (visibleCount < total) {
@@ -464,6 +534,20 @@
                 } else {
                     countEl.textContent = total;
                 }
+
+                Object.entries(categoryCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = catCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
+
+                Object.entries(regionCountEls).forEach(([key, { el, total: t }]) => {
+                    const filtered = regionCounts[key] || 0;
+                    el.innerHTML = filtered < t
+                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
+                        : t;
+                });
             }
 
             // Category legend
@@ -483,6 +567,7 @@
                     <div class="legend-text">${category.description}</div>
                     <div class="legend-count">${count}</div>
                 `;
+                categoryCountEls[key] = { el: legendItem.querySelector('.legend-count'), total: count };
 
                 legendItem.addEventListener('click', () => {
                     categoryState[key] = !categoryState[key];
@@ -494,18 +579,43 @@
                 legendContainer.appendChild(legendItem);
             });
 
+            // Region legend
+            const regionContainer = document.getElementById('region-items');
+
+            regions.forEach(r => {
+                const count = allMarkers.filter(m => m.region === r.key).length;
+                const regionItem = document.createElement('div');
+                regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
+
+                regionItem.innerHTML = `
+                    <div class="legend-text">${r.label} (${r.hangul})</div>
+                    <div class="legend-count">${count}</div>
+                `;
+                regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
+
+                regionItem.addEventListener('click', () => {
+                    regionState[r.key] = !regionState[r.key];
+                    regionItem.classList.toggle('active', regionState[r.key]);
+                    saveState('regions', regionState);
+                    updateVisibility();
+                });
+
+                regionContainer.appendChild(regionItem);
+            });
+
             // Sidebar footer
             document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
             document.getElementById('reset-btn').addEventListener('click', () => {
                 localStorage.removeItem('tripmap:' + mapId + ':categories');
+                localStorage.removeItem('tripmap:' + mapId + ':regions');
                 location.reload();
             });
 
             updateVisibility();
 
             // Map controls
-            const initialCenter = [52.52, 13.405];
-            const initialZoom = 12;
+            const initialCenter = [36.5, 127.8];
+            const initialZoom = 7;
             let userLocationMarker = null;
 
             const controlContainer = L.control({ position: 'bottomright' });
@@ -570,16 +680,18 @@
                 document.getElementById('sidebar').classList.toggle('expanded');
             });
 
-            // Add bubbles to stats and toggle
+            // Add sakura petals to stats and toggle
             document.querySelectorAll('.stats, .sidebar-toggle').forEach(el => {
                 for (let i = 0; i < 10; i++) {
-                    const bubble = document.createElement('div');
-                    bubble.className = 'bubble';
-                    bubble.style.left = Math.random() * 100 + '%';
-                    bubble.style.width = bubble.style.height = (Math.random() * 6 + 3) + 'px';
-                    bubble.style.animationDelay = Math.random() * 3 + 's';
-                    bubble.style.animationDuration = (Math.random() * 2 + 2) + 's';
-                    el.appendChild(bubble);
+                    const petal = document.createElement('div');
+                    petal.className = 'petal';
+                    petal.style.left = Math.random() * 100 + '%';
+                    const size = Math.random() * 5 + 5;
+                    petal.style.width = size + 'px';
+                    petal.style.height = size + 'px';
+                    petal.style.animationDelay = Math.random() * 4 + 's';
+                    petal.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    el.appendChild(petal);
                 }
             });
         }

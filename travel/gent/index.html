@@ -457,12 +457,20 @@
             // Initialize map centered on Gent
             const map = L.map('map').setView([51.0543, 3.7174], 13);
 
-            // Add map tiles
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
+            const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                attribution: osmAttr + ', tiles by <a href="https://www.hotosm.org/">HOT</a>',
                 maxZoom: 19,
-                subdomains: 'abcd'
+                subdomains: 'abc'
             }).addTo(map);
+
+            const transport = L.tileLayer(`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=188877bd54f540998cff93859204f9a9`, {
+                attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, ' + osmAttr,
+                maxZoom: 22
+            });
+
+            L.control.layers({ 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
 
             const cityRu = {
                 'Gent': 'Гент',

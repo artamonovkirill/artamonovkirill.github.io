@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Korea Trip Map</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    <title>UK Trip Map</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎡</text></svg>">
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -100,7 +100,9 @@
         }
 
         .stats {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:
+                radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
+                linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
             color: white;
             padding: 15px;
             border-radius: 8px;
@@ -139,24 +141,43 @@
             opacity: 0.55;
         }
 
-        .petal {
+        .raindrop {
             position: absolute;
-            top: -10px;
-            width: 10px;
+            top: -12px;
+            width: 2px;
             height: 12px;
-            background: radial-gradient(ellipse at 30% 40%, #ffd4dc, #f8a4b8);
-            border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-            animation: fall linear infinite;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.6));
+            border-radius: 1px;
+            animation: rain linear infinite;
             pointer-events: none;
-            box-shadow: inset 0 0 2px rgba(200,80,120,0.2);
         }
 
-        @keyframes fall {
-            0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0.9; }
-            25% { transform: translateY(20px) rotate(90deg) translateX(5px); }
-            50% { transform: translateY(40px) rotate(180deg) translateX(-3px); }
-            75% { transform: translateY(60px) rotate(270deg) translateX(4px); }
-            100% { transform: translateY(80px) rotate(360deg) translateX(0); opacity: 0; }
+        @keyframes rain {
+            0% { transform: translateY(0); opacity: 0.7; }
+            100% { transform: translateY(90px); opacity: 0; }
+        }
+
+        .sky-dark {
+            position: absolute;
+            inset: 0;
+            background: #0a1526;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+            animation: sky 16s ease-in-out infinite;
+        }
+
+        @keyframes sky {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 0.65; }
+        }
+
+        @keyframes bolt {
+            0%, 92%, 100% { opacity: 0; }
+            93% { opacity: 1; }
+            94% { opacity: 0.2; }
+            96% { opacity: 0.9; }
+            98% { opacity: 0; }
         }
 
         .map-control-btn {
@@ -186,13 +207,6 @@
             font-weight: bold;
             margin-bottom: 8px;
             color: #333;
-        }
-
-        .popup-hangul {
-            display: block;
-            font-weight: normal;
-            font-size: 13px;
-            color: #888;
         }
 
         .popup-category {
@@ -287,7 +301,9 @@
                 gap: 6px;
                 width: 100%;
                 padding: 12px;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background:
+                    radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
+                    linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
                 border: none;
                 font-size: 14px;
                 font-weight: bold;
@@ -377,26 +393,23 @@
             });
 
         function initMap(data) {
-            // Initialize map centered on South Korea
-            const map = L.map('map').setView([36.5, 127.8], 7);
+            // Initialize map centered on London
+            const map = L.map('map').setView([51.509, -0.126], 11);
 
-            // Add map tiles with English/Latin labels
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
+            const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                attribution: osmAttr + ', tiles by <a href="https://www.hotosm.org/">HOT</a>',
                 maxZoom: 19,
-                subdomains: 'abcd'
+                subdomains: 'abc'
             }).addTo(map);
 
-            const cityHangul = {
-                'Seoul': '서울',
-                'Busan': '부산',
-                'Incheon': '인천',
-                'Gyeongju': '경주',
-                'Suwon': '수원',
-                'Ganghwa': '강화',
-                'Siheung': '시흥',
-                'Bucheon': '부천',
-            };
+            const transport = L.tileLayer(`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=188877bd54f540998cff93859204f9a9`, {
+                attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, ' + osmAttr,
+                maxZoom: 22
+            });
+
+            L.control.layers({ 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
 
             // Load saved state
             const savedCategories = loadState('categories') || {};
@@ -413,8 +426,11 @@
 
             // Regions: only these are toggleable, rest always visible
             const regions = [
-                { key: 'seoul-incheon', label: 'Seoul & Incheon', hangul: '서울 & 인천', cities: ['Seoul', 'Incheon', 'Ganghwa', 'Siheung', 'Bucheon', 'Suwon'] },
-                { key: 'busan', label: 'Busan & Gyeongju', hangul: '부산 & 경주', cities: ['Busan', 'Gyeongju'] },
+                { key: 'london', label: 'London', cities: ['London'] },
+                { key: 'south-west', label: 'South & South West', cities: ['Bath', 'Bristol', 'Cotswolds', 'Portsmouth', 'Windsor', 'Salisbury', 'New Forest', 'Dorset', 'Bridgwater'] },
+                { key: 'south-east', label: 'South East (Kent & Sussex)', cities: ['Canterbury', 'Eastbourne', 'Leeds Castle', 'Edenbridge', 'Maidstone', 'Waltham Abbey'] },
+                { key: 'central', label: 'Central & Midlands', cities: ['Oxford', 'Cambridge', 'Stratford-upon-Avon', 'Kenilworth', 'Belvoir'] },
+                { key: 'north', label: 'North (York)', cities: ['York'] },
             ];
             const cityToRegion = {};
             regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
@@ -441,16 +457,16 @@
 
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                const naverQuery = encodeURIComponent(location.hangul || location.name);
-                const naverUrl = `nmap://search?query=${naverQuery}&appname=koreatrip`;
+                const mapsQuery = encodeURIComponent(location.name + (location.city ? ', ' + location.city : '') + ', UK');
+                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
                 const popupContent = `
-                    <div class="popup-title">${location.name}${location.hangul ? ` <span class="popup-hangul">${location.hangul}</span>` : ''}</div>
+                    <div class="popup-title">${location.name}</div>
                     <div class="popup-category" style="background-color: ${category.color};">
                         ${markerIcon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
-                    ${location.city ? `<div class="popup-city">📍 ${location.city}${cityHangul[location.city] ? ` (${cityHangul[location.city]})` : ''}</div>` : ''}
-                    <div class="popup-links"><a href="${naverUrl}" target="_blank">Naver Map</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
+                    ${location.city ? `<div class="popup-city">📍 ${location.city}</div>` : ''}
+                    <div class="popup-links"><a href="${mapsUrl}" target="_blank">Google Maps</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
                     ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
@@ -576,11 +592,12 @@
 
             regions.forEach(r => {
                 const count = allMarkers.filter(m => m.region === r.key).length;
+                if (!count) return;
                 const regionItem = document.createElement('div');
                 regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
 
                 regionItem.innerHTML = `
-                    <div class="legend-text">${r.label} (${r.hangul})</div>
+                    <div class="legend-text">${r.label}</div>
                     <div class="legend-count">${count}</div>
                 `;
                 regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
@@ -606,8 +623,8 @@
             updateVisibility();
 
             // Map controls
-            const initialCenter = [36.5, 127.8];
-            const initialZoom = 7;
+            const initialCenter = [51.509, -0.126];
+            const initialZoom = 11;
             let userLocationMarker = null;
 
             const controlContainer = L.control({ position: 'bottomright' });
@@ -672,19 +689,19 @@
                 document.getElementById('sidebar').classList.toggle('expanded');
             });
 
-            // Add sakura petals to stats and toggle
+            // Add raindrops + slow bright/dark sky to stats and toggle
             document.querySelectorAll('.stats, .sidebar-toggle').forEach(el => {
-                for (let i = 0; i < 10; i++) {
-                    const petal = document.createElement('div');
-                    petal.className = 'petal';
-                    petal.style.left = Math.random() * 100 + '%';
-                    const size = Math.random() * 5 + 5;
-                    petal.style.width = size + 'px';
-                    petal.style.height = size + 'px';
-                    petal.style.animationDelay = Math.random() * 4 + 's';
-                    petal.style.animationDuration = (Math.random() * 2 + 3) + 's';
-                    el.appendChild(petal);
+                for (let i = 0; i < 14; i++) {
+                    const drop = document.createElement('div');
+                    drop.className = 'raindrop';
+                    drop.style.left = Math.random() * 100 + '%';
+                    drop.style.animationDelay = Math.random() * 1.2 + 's';
+                    drop.style.animationDuration = (Math.random() * 0.5 + 0.6) + 's';
+                    el.appendChild(drop);
                 }
+                const sky = document.createElement('div');
+                sky.className = 'sky-dark';
+                el.appendChild(sky);
             });
         }
     </script>

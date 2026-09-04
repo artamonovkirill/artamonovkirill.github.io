@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>UK Trip Map</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎡</text></svg>">
+    <title>Berlin Trip Map</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
 
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
     <style>
@@ -95,14 +94,10 @@
             border-radius: 12px;
             font-size: 11px;
             font-weight: bold;
-            white-space: nowrap;
-            flex-shrink: 0;
         }
 
         .stats {
-            background:
-                radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
-                linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #D4872A 100%);
             color: white;
             padding: 15px;
             border-radius: 8px;
@@ -136,48 +131,17 @@
             color: rgba(255,255,255,0.7);
         }
 
-        .legend-count-total {
-            font-weight: normal;
-            opacity: 0.55;
-        }
-
-        .raindrop {
+        .bubble {
             position: absolute;
-            top: -12px;
-            width: 2px;
-            height: 12px;
-            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.6));
-            border-radius: 1px;
-            animation: rain linear infinite;
-            pointer-events: none;
+            bottom: 0;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            animation: rise 3s infinite ease-in;
         }
 
-        @keyframes rain {
-            0% { transform: translateY(0); opacity: 0.7; }
-            100% { transform: translateY(90px); opacity: 0; }
-        }
-
-        .sky-dark {
-            position: absolute;
-            inset: 0;
-            background: #0a1526;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 0;
-            animation: sky 16s ease-in-out infinite;
-        }
-
-        @keyframes sky {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 0.65; }
-        }
-
-        @keyframes bolt {
-            0%, 92%, 100% { opacity: 0; }
-            93% { opacity: 1; }
-            94% { opacity: 0.2; }
-            96% { opacity: 0.9; }
-            98% { opacity: 0; }
+        @keyframes rise {
+            0% { transform: translateY(0) scale(1); opacity: 0.5; }
+            100% { transform: translateY(-70px) scale(0.3); opacity: 0; }
         }
 
         .map-control-btn {
@@ -207,6 +171,13 @@
             font-weight: bold;
             margin-bottom: 8px;
             color: #333;
+        }
+
+        .popup-german {
+            display: block;
+            font-weight: normal;
+            font-size: 13px;
+            color: #888;
         }
 
         .popup-category {
@@ -246,7 +217,7 @@
             font-style: italic;
         }
 
-        .popup-city {
+        .popup-district {
             font-size: 12px;
             color: #999;
             margin-top: 6px;
@@ -301,9 +272,7 @@
                 gap: 6px;
                 width: 100%;
                 padding: 12px;
-                background:
-                    radial-gradient(circle at top right, rgba(255,241,191,0.95) 0%, rgba(255,241,191,0) 45%),
-                    linear-gradient(160deg, #4a76b8 0%, #6f9fd4 55%, #a9c7e8 100%);
+                background: linear-gradient(135deg, #1a1a2e 0%, #D4872A 100%);
                 border: none;
                 font-size: 14px;
                 font-weight: bold;
@@ -355,11 +324,6 @@
                     <div id="legend-items"></div>
                 </div>
 
-                <div class="legend" id="regions-section">
-                    <h3>Regions</h3>
-                    <div id="region-items"></div>
-                </div>
-
                 <div class="sidebar-footer" id="sidebar-footer"></div>
             </div>
         </div>
@@ -367,7 +331,6 @@
         <div id="map"></div>
     </div>
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
@@ -393,20 +356,26 @@
             });
 
         function initMap(data) {
-            // Initialize map centered on London
-            const map = L.map('map').setView([51.509, -0.126], 11);
+            // Initialize map centered on Berlin
+            const map = L.map('map').setView([52.52, 13.405], 12);
 
-            // Add map tiles
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
+            const osmAttr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+            const humanitarian = L.tileLayer('https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                attribution: osmAttr + ', tiles by <a href="https://www.hotosm.org/">HOT</a>',
                 maxZoom: 19,
-                subdomains: 'abcd'
+                subdomains: 'abc'
             }).addTo(map);
+
+            const transport = L.tileLayer(`https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=188877bd54f540998cff93859204f9a9`, {
+                attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, ' + osmAttr,
+                maxZoom: 22
+            });
+
+            L.control.layers({ 'Humanitarian': humanitarian, 'Transport': transport }).addTo(map);
 
             // Load saved state
             const savedCategories = loadState('categories') || {};
-            const savedRegions = loadState('regions') || {};
-            // Build state
             const categoryState = {};
             Object.keys(data.categories).forEach(key => {
                 if (key in savedCategories) {
@@ -416,32 +385,14 @@
                 }
             });
 
-            // Regions: only these are toggleable, rest always visible
-            const regions = [
-                { key: 'london', label: 'London', cities: ['London'] },
-                { key: 'south-west', label: 'South & South West', cities: ['Bath', 'Bristol', 'Cotswolds', 'Portsmouth', 'Windsor', 'Salisbury', 'New Forest', 'Dorset', 'Bridgwater'] },
-                { key: 'south-east', label: 'South East (Kent & Sussex)', cities: ['Canterbury', 'Eastbourne', 'Leeds Castle', 'Edenbridge', 'Maidstone', 'Waltham Abbey'] },
-                { key: 'central', label: 'Central & Midlands', cities: ['Oxford', 'Cambridge', 'Stratford-upon-Avon', 'Kenilworth', 'Belvoir'] },
-                { key: 'north', label: 'North (York)', cities: ['York'] },
-            ];
-            const cityToRegion = {};
-            regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
-
-            const regionState = {};
-            regions.forEach(r => {
-                regionState[r.key] = r.key in savedRegions ? savedRegions[r.key] : true;
-            });
-
             // Build all markers
             const allMarkers = [];
 
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
-                const city = location.city || 'Other';
-                const markerIcon = location.icon || category.icon;
 
                 const icon = L.divIcon({
-                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
+                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${category.icon}</div>`,
                     className: 'custom-marker',
                     iconSize: [24, 24],
                     iconAnchor: [12, 12]
@@ -449,16 +400,19 @@
 
                 const marker = L.marker(location.coordinates, { icon: icon });
 
-                const mapsQuery = encodeURIComponent(location.name + (location.city ? ', ' + location.city : '') + ', UK');
+                const mapsQuery = encodeURIComponent((location.german || location.name) + ', Berlin');
                 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
                 const popupContent = `
-                    <div class="popup-title">${location.name}</div>
+                    <div class="popup-title">${location.name}${location.german && location.german !== location.name ? ` <span class="popup-german">${location.german}</span>` : ''}</div>
                     <div class="popup-category" style="background-color: ${category.color};">
-                        ${markerIcon} ${location.category}
+                        ${category.icon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
-                    ${location.city ? `<div class="popup-city">📍 ${location.city}</div>` : ''}
-                    <div class="popup-links"><a href="${mapsUrl}" target="_blank">Google Maps</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
+                    ${location.district ? `<div class="popup-district">📍 ${location.district}</div>` : ''}
+                    <div class="popup-links">
+                        <a href="${mapsUrl}" target="_blank">Google Maps</a>
+                        ${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}
+                    </div>
                     ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
@@ -494,39 +448,21 @@
                     });
                 }
 
-                const region = cityToRegion[city] || null;
-                allMarkers.push({ marker, category: location.category, region, name: location.name });
+                allMarkers.push({ marker, category: location.category, name: location.name });
             });
-
-            // Count element references populated during legend creation
-            const categoryCountEls = {};
-            const regionCountEls = {};
 
             // Visibility
             function updateVisibility() {
                 let visibleCount = 0;
-                const catCounts = {};
-                const regionCounts = {};
                 allMarkers.forEach(m => {
-                    const regionVisible = m.region === null || regionState[m.region];
-                    const categoryVisible = categoryState[m.category];
-                    const visible = categoryVisible && regionVisible;
+                    const visible = categoryState[m.category];
                     if (visible) {
                         if (!map.hasLayer(m.marker)) m.marker.addTo(map);
                         visibleCount++;
                     } else {
                         if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
                     }
-                    // Category count: filtered by region
-                    if (regionVisible) {
-                        catCounts[m.category] = (catCounts[m.category] || 0) + 1;
-                    }
-                    // Region count: filtered by category
-                    if (categoryVisible && m.region !== null) {
-                        regionCounts[m.region] = (regionCounts[m.region] || 0) + 1;
-                    }
                 });
-
                 const total = data.locations.length;
                 const countEl = document.getElementById('total-count');
                 if (visibleCount < total) {
@@ -534,20 +470,6 @@
                 } else {
                     countEl.textContent = total;
                 }
-
-                Object.entries(categoryCountEls).forEach(([key, { el, total: t }]) => {
-                    const filtered = catCounts[key] || 0;
-                    el.innerHTML = filtered < t
-                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
-                        : t;
-                });
-
-                Object.entries(regionCountEls).forEach(([key, { el, total: t }]) => {
-                    const filtered = regionCounts[key] || 0;
-                    el.innerHTML = filtered < t
-                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
-                        : t;
-                });
             }
 
             // Category legend
@@ -567,7 +489,6 @@
                     <div class="legend-text">${category.description}</div>
                     <div class="legend-count">${count}</div>
                 `;
-                categoryCountEls[key] = { el: legendItem.querySelector('.legend-count'), total: count };
 
                 legendItem.addEventListener('click', () => {
                     categoryState[key] = !categoryState[key];
@@ -579,44 +500,18 @@
                 legendContainer.appendChild(legendItem);
             });
 
-            // Region legend
-            const regionContainer = document.getElementById('region-items');
-
-            regions.forEach(r => {
-                const count = allMarkers.filter(m => m.region === r.key).length;
-                if (!count) return;
-                const regionItem = document.createElement('div');
-                regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
-
-                regionItem.innerHTML = `
-                    <div class="legend-text">${r.label}</div>
-                    <div class="legend-count">${count}</div>
-                `;
-                regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
-
-                regionItem.addEventListener('click', () => {
-                    regionState[r.key] = !regionState[r.key];
-                    regionItem.classList.toggle('active', regionState[r.key]);
-                    saveState('regions', regionState);
-                    updateVisibility();
-                });
-
-                regionContainer.appendChild(regionItem);
-            });
-
             // Sidebar footer
             document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
             document.getElementById('reset-btn').addEventListener('click', () => {
                 localStorage.removeItem('tripmap:' + mapId + ':categories');
-                localStorage.removeItem('tripmap:' + mapId + ':regions');
                 location.reload();
             });
 
             updateVisibility();
 
             // Map controls
-            const initialCenter = [51.509, -0.126];
-            const initialZoom = 11;
+            const initialCenter = [52.52, 13.405];
+            const initialZoom = 12;
             let userLocationMarker = null;
 
             const controlContainer = L.control({ position: 'bottomright' });
@@ -681,19 +576,17 @@
                 document.getElementById('sidebar').classList.toggle('expanded');
             });
 
-            // Add raindrops + slow bright/dark sky to stats and toggle
+            // Add bubbles to stats and toggle
             document.querySelectorAll('.stats, .sidebar-toggle').forEach(el => {
-                for (let i = 0; i < 14; i++) {
-                    const drop = document.createElement('div');
-                    drop.className = 'raindrop';
-                    drop.style.left = Math.random() * 100 + '%';
-                    drop.style.animationDelay = Math.random() * 1.2 + 's';
-                    drop.style.animationDuration = (Math.random() * 0.5 + 0.6) + 's';
-                    el.appendChild(drop);
+                for (let i = 0; i < 10; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.className = 'bubble';
+                    bubble.style.left = Math.random() * 100 + '%';
+                    bubble.style.width = bubble.style.height = (Math.random() * 6 + 3) + 'px';
+                    bubble.style.animationDelay = Math.random() * 3 + 's';
+                    bubble.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    el.appendChild(bubble);
                 }
-                const sky = document.createElement('div');
-                sky.className = 'sky-dark';
-                el.appendChild(sky);
             });
         }
     </script>
