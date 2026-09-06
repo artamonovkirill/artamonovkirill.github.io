@@ -157,16 +157,16 @@
             100% { transform: translateY(90px); opacity: 0; }
         }
 
-        .scone {
+        .treat {
             position: absolute;
             top: -20px;
             font-size: 14px;
             line-height: 1;
-            animation: scone-fall linear forwards;
+            animation: treat-fall linear both;
             pointer-events: none;
         }
 
-        @keyframes scone-fall {
+        @keyframes treat-fall {
             0% { transform: translateY(0) rotate(0deg); opacity: 0; }
             15% { opacity: 1; }
             80% { opacity: 1; }
@@ -724,18 +724,39 @@
                 sky.className = 'sky-dark';
                 el.appendChild(sky);
 
-                // Occasionally a scone falls instead of a raindrop
-                function dropScone() {
-                    const scone = document.createElement('div');
-                    scone.className = 'scone';
-                    scone.textContent = '🧁';
-                    scone.style.left = (Math.random() * 85 + 5) + '%';
-                    scone.style.animationDuration = (Math.random() * 0.7 + 1.3) + 's';
-                    scone.addEventListener('animationend', () => scone.remove());
-                    el.appendChild(scone);
-                    setTimeout(dropScone, Math.random() * 5000 + 3000);
+                // Occasionally something British falls instead of a raindrop
+                const treats = ['🧁', '🫖', '🎩'];
+
+                function makeTreat(delay) {
+                    const treat = document.createElement('div');
+                    treat.className = 'treat';
+                    treat.textContent = treats[Math.floor(Math.random() * treats.length)];
+                    treat.style.left = (Math.random() * 85 + 5) + '%';
+                    const duration = Math.random() * 0.7 + 1.3;
+                    treat.style.animationDuration = duration + 's';
+                    treat.style.animationDelay = delay + 's';
+                    treat.addEventListener('animationend', () => treat.remove());
+                    // Timers continue in a hidden tab. This removes a treat
+                    // that the tab hid in mid-fall.
+                    setTimeout(() => treat.remove(), (delay + duration + 1) * 1000);
+                    el.appendChild(treat);
                 }
-                setTimeout(dropScone, Math.random() * 3000 + 1000);
+
+                function dropTreat() {
+                    setTimeout(dropTreat, Math.random() * 5000 + 3000);
+
+                    // A hidden tab does not advance the animation, so
+                    // 'animationend' does not occur. Do not make treats that
+                    // nothing can remove.
+                    if (document.hidden) return;
+
+                    // Usually one falls alone. Sometimes a small group falls,
+                    // loosely spaced so it does not look like a row.
+                    const roll = Math.random();
+                    const count = roll < 0.7 ? 1 : roll < 0.92 ? 2 : 3;
+                    for (let i = 0; i < count; i++) makeTreat(Math.random() * 0.5);
+                }
+                setTimeout(dropTreat, Math.random() * 3000 + 1000);
             });
         }
     </script>
