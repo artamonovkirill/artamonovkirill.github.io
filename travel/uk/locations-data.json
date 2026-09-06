@@ -1,7 +1,7 @@
 {
   "trip": {
     "name": "UK Trip",
-    "dates": "Oct 31 – Nov 8, 2026"
+    "dates": "Oct 31 – Nov 7, 2026"
   },
   "locations": [
     {
@@ -9,7 +9,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
       "category": "museum",
       "city": "London",
-      "coordinates": [51.4967, -0.1764],
+      "coordinates": [51.534317514104984, -0.18460694026845315],
       "description": "Dinosaurs, blue whale, great for kids. FREE"
     },
     {
@@ -17,15 +17,15 @@
       "wiki": "https://en.wikipedia.org/wiki/Science_Museum,_London",
       "category": "museum",
       "city": "London",
-      "coordinates": [51.4978, -0.1745],
+      "coordinates": [51.4973484776601, -0.17674976160315403],
       "description": "Interactive exhibits, space, tech, very kid-friendly. FREE"
     },
     {
-      "name": "British Museum",
+      "name": "The British Museum",
       "wiki": "https://en.wikipedia.org/wiki/British_Museum",
       "category": "museum",
       "city": "London",
-      "coordinates": [51.5194, -0.1270],
+      "coordinates": [51.519560172027695, -0.12697805767231113],
       "description": "World history, Egypt, Greece, Rosetta Stone. FREE"
     },
     {
@@ -33,7 +33,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum",
       "category": "museum",
       "city": "London",
-      "coordinates": [51.4966, -0.1722],
+      "coordinates": [51.49677943794204, -0.17216927509475077],
       "description": "Decorative arts: fashion, furniture, ceramics. FREE"
     },
     {
@@ -41,7 +41,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Cutty_Sark",
       "category": "maritime",
       "city": "London",
-      "coordinates": [51.4827, -0.0096],
+      "coordinates": [51.48301824301703, -0.009634619276714471],
       "description": "Greenwich. Victorian tea clipper, climb masts. £22 adult / £11 child"
     },
     {
@@ -49,7 +49,7 @@
       "wiki": "https://en.wikipedia.org/wiki/National_Maritime_Museum",
       "category": "maritime",
       "city": "London",
-      "coordinates": [51.4807, -0.0053],
+      "coordinates": [51.48117284070685, -0.005215471140776467],
       "description": "Greenwich. FREE, AHOY! interactive gallery for kids 6-12"
     },
     {
@@ -57,7 +57,7 @@
       "wiki": "https://en.wikipedia.org/wiki/London_Eye",
       "category": "landmark",
       "city": "London",
-      "coordinates": [51.5033, -0.1196],
+      "coordinates": [51.50334665289979, -0.11956211927499164],
       "description": "Views over city, paid"
     },
     {
@@ -65,15 +65,15 @@
       "wiki": "https://en.wikipedia.org/wiki/Wicked_(musical)",
       "category": "show",
       "city": "London",
-      "coordinates": [51.4955, -0.1437],
-      "description": "West End musical, Apollo Victoria Theatre, from £25, book ahead"
+      "coordinates": [51.49582462551178, -0.1427769192756371],
+      "description": "West End musical"
     },
     {
       "name": "Tower Bridge",
       "wiki": "https://en.wikipedia.org/wiki/Tower_Bridge",
       "category": "landmark",
       "city": "London",
-      "coordinates": [51.5055, -0.0754],
+      "coordinates": [51.50557657669312, -0.07533504625785593],
       "description": "Walk across free; glass floor walkway paid"
     },
     {
@@ -81,15 +81,15 @@
       "wiki": "https://en.wikipedia.org/wiki/Big_Ben",
       "category": "landmark",
       "city": "London",
-      "coordinates": [51.4995, -0.1248],
-      "description": "Houses of Parliament, Big Ben"
+      "coordinates": [51.50088278281426, -0.12460394625823211],
+      "description": "Houses of Parliament"
     },
     {
       "name": "Buckingham Palace",
       "wiki": "https://en.wikipedia.org/wiki/Buckingham_Palace",
       "category": "landmark",
       "city": "London",
-      "coordinates": [51.5014, -0.1419],
+      "coordinates": [51.50153761657521, -0.14194364811129165],
       "description": "Palace area, Changing of the Guard"
     },
     {
@@ -97,47 +97,23 @@
       "wiki": "https://en.wikipedia.org/wiki/London_to_Brighton_Veteran_Car_Run",
       "category": "event",
       "city": "London",
-      "coordinates": [51.5074, -0.1657],
+      "coordinates": [51.508611, -0.163611],
       "description": "Nov 1. Vintage cars run from Hyde Park to Brighton, free to watch. Commemorates 1896 Emancipation Run"
-    },
-    {
-      "name": "Alexandra Palace Fireworks & Drone Festival",
-      "wiki": "https://en.wikipedia.org/wiki/Alexandra_Palace",
-      "category": "fireworks",
-      "city": "London",
-      "coordinates": [51.5940, -0.1300],
-      "description": "Halloween-themed, drones + fireworks, funfair. ⚠️ 2026 date not yet announced"
     },
     {
       "name": "Bath",
       "wiki": "https://en.wikipedia.org/wiki/Bath,_Somerset",
       "category": "town",
       "city": "Bath",
-      "coordinates": [51.3811, -2.3590],
+      "coordinates": [51.37731176172016, -2.3611008084078984],
       "description": "1.5h train. Historic, walkable, kid-friendly. Roman baths, Georgian architecture"
-    },
-    {
-      "name": "Bristol (Clifton Suspension Bridge)",
-      "wiki": "https://en.wikipedia.org/wiki/Clifton_Suspension_Bridge",
-      "category": "town",
-      "city": "Bristol",
-      "coordinates": [51.4549, -2.6278],
-      "description": "1h45 train (Paddington). Suspension bridge, street art, harbourside. Combines with Bath"
-    },
-    {
-      "name": "Cotswolds",
-      "wiki": "https://en.wikipedia.org/wiki/Cotswolds",
-      "category": "nature",
-      "city": "Cotswolds",
-      "coordinates": [51.8330, -1.8433],
-      "description": "Best by car. Villages + countryside walks"
     },
     {
       "name": "Portsmouth Historic Dockyard",
       "wiki": "https://en.wikipedia.org/wiki/Portsmouth_Historic_Dockyard",
       "category": "maritime",
       "city": "Portsmouth",
-      "coordinates": [50.8000, -1.1090],
+      "coordinates": [50.79903548795056, -1.1076095193358102],
       "description": "HMS Victory, Mary Rose, HMS Warrior. Full day. £51 adult / £36 child, book ahead"
     },
     {
@@ -145,94 +121,47 @@
       "wiki": "https://en.wikipedia.org/wiki/Spinnaker_Tower",
       "category": "landmark",
       "city": "Portsmouth",
-      "coordinates": [50.7956, -1.1085],
+      "coordinates": [50.795690458389984, -1.1085063751553696],
       "description": "170m views, glass floor"
     },
     {
       "name": "Gunwharf Quays",
       "wiki": "https://en.wikipedia.org/wiki/Gunwharf_Quays",
-      "category": "town",
+      "category": "shopping",
       "city": "Portsmouth",
-      "coordinates": [50.7950, -1.1050],
+      "coordinates": [50.79626714596748, -1.105626859810615],
       "description": "Waterfront area, food + shops"
-    },
-    {
-      "name": "Southsea Common Fireworks",
-      "category": "fireworks",
-      "city": "Portsmouth",
-      "coordinates": [50.7820, -1.0890],
-      "description": "Free, large display. ⚠️ Portsmouth does theirs ~Nov 4 (2025 date, 2026 TBC)"
     },
     {
       "name": "Windsor Castle",
       "wiki": "https://en.wikipedia.org/wiki/Windsor_Castle",
       "category": "castle",
       "city": "Windsor",
-      "coordinates": [51.4839, -0.6044],
-      "description": "35min train (Waterloo). Largest occupied castle in world, State Rooms, Changing of Guard"
+      "coordinates": [51.48404763954835, -0.604402703932033],
+      "description": "55min train (Waterloo). Largest occupied castle in world, State Rooms + winter-only Semi-State Rooms. ⚠️ Closed Tue/Wed. Last admission 15:00, closes 16:15. Changing of Guard Thu/Sat 11am. £32 adult / £16 child advance"
     },
     {
       "name": "Windsor Great Park",
       "wiki": "https://en.wikipedia.org/wiki/Windsor_Great_Park",
       "category": "nature",
       "city": "Windsor",
-      "coordinates": [51.4400, -0.6000],
+      "coordinates": [51.424276930839014, -0.6176028751010648],
       "description": "Long Walk, big open space"
-    },
-    {
-      "name": "Stonehenge",
-      "wiki": "https://en.wikipedia.org/wiki/Stonehenge",
-      "category": "historic",
-      "city": "Salisbury",
-      "coordinates": [51.1789, -1.8262],
-      "description": "1.5h train to Salisbury (Waterloo), then tour bus. Iconic monument, book ahead"
-    },
-    {
-      "name": "Salisbury Cathedral",
-      "wiki": "https://en.wikipedia.org/wiki/Salisbury_Cathedral",
-      "category": "landmark",
-      "city": "Salisbury",
-      "coordinates": [51.0648, -1.7977],
-      "description": "Medieval cathedral, tallest spire in UK. Combines with Stonehenge"
     },
     {
       "name": "New Forest (Brockenhurst)",
       "wiki": "https://en.wikipedia.org/wiki/New_Forest",
       "category": "nature",
       "city": "New Forest",
-      "coordinates": [50.8200, -1.5730],
+      "coordinates": [50.81952044020254, -1.575516533444962],
       "description": "1.5h train to Brockenhurst (Waterloo). Wild ponies, forest walks, very family-friendly"
-    },
-    {
-      "name": "Jurassic Coast (Durdle Door)",
-      "wiki": "https://en.wikipedia.org/wiki/Durdle_Door",
-      "category": "nature",
-      "city": "Dorset",
-      "coordinates": [50.6213, -2.2766],
-      "description": "2h train. Fossils + Durdle Door arch. Weather risk in Nov"
-    },
-    {
-      "name": "Bridgwater Fireworks",
-      "wiki": "https://en.wikipedia.org/wiki/Bridgwater_Guy_Fawkes_Carnival",
-      "category": "fireworks",
-      "city": "Bridgwater",
-      "coordinates": [51.1280, -2.9970],
-      "description": "Nov 6. Grand display at St Matthew's Field. Somerset (45min from Bath)"
-    },
-    {
-      "name": "Bridgwater Guy Fawkes Carnival",
-      "wiki": "https://en.wikipedia.org/wiki/Bridgwater_Guy_Fawkes_Carnival",
-      "category": "event",
-      "city": "Bridgwater",
-      "coordinates": [51.1280, -2.9930],
-      "description": "Nov 7, 6pm. Largest illuminated carnival in Europe. Squibbing finale. Somerset (45min from Bath)"
     },
     {
       "name": "Oxford",
       "wiki": "https://en.wikipedia.org/wiki/Oxford",
       "category": "town",
       "city": "Oxford",
-      "coordinates": [51.7520, -1.2577],
+      "coordinates": [51.75123767255958, -1.2544583076449862],
       "description": "1h train. University city, good for overnight"
     },
     {
@@ -240,62 +169,15 @@
       "wiki": "https://en.wikipedia.org/wiki/Cambridge",
       "category": "town",
       "city": "Cambridge",
-      "coordinates": [52.2053, 0.1218],
+      "coordinates": [52.20449466527746, 0.12066983376669582],
       "description": "45min train. University city, similar to Oxford. Punting on the Cam"
-    },
-    {
-      "name": "Stratford-upon-Avon",
-      "wiki": "https://en.wikipedia.org/wiki/Stratford-upon-Avon",
-      "category": "town",
-      "city": "Stratford-upon-Avon",
-      "coordinates": [52.1923, -1.7070],
-      "description": "2h train (Marylebone). Shakespeare's birthplace, Tudor buildings, RSC theatre"
-    },
-    {
-      "name": "Kenilworth Castle Fireworks",
-      "wiki": "https://en.wikipedia.org/wiki/Kenilworth_Castle",
-      "category": "fireworks",
-      "city": "Kenilworth",
-      "coordinates": [52.3483, -1.5950],
-      "description": "Nov 7. Medieval castle ruins + fireworks. Gates 5:30pm, fireworks 7pm. Warwickshire, 1.5h by car"
-    },
-    {
-      "name": "Belvoir Castle Bonfire Night",
-      "wiki": "https://en.wikipedia.org/wiki/Belvoir_Castle",
-      "category": "fireworks",
-      "city": "Belvoir",
-      "coordinates": [52.8940, -0.7830],
-      "description": "~Nov 7. Castle setting, fireworks. Leicestershire, 2h by car. ⚠️ 2026 event not yet listed"
-    },
-    {
-      "name": "York (The Shambles)",
-      "wiki": "https://en.wikipedia.org/wiki/The_Shambles",
-      "category": "town",
-      "city": "York",
-      "coordinates": [53.9590, -1.0815],
-      "description": "1h45-2h train (King's Cross). Medieval walled city, The Shambles. Best medieval experience for kids"
-    },
-    {
-      "name": "Jorvik Viking Centre",
-      "wiki": "https://en.wikipedia.org/wiki/Jorvik_Viking_Centre",
-      "category": "museum",
-      "city": "York",
-      "coordinates": [53.9565, -1.0805],
-      "description": "Reconstructed Viking-age streets, ride through 10th-century York"
-    },
-    {
-      "name": "Aesthetica Short Film Festival",
-      "category": "event",
-      "city": "York",
-      "coordinates": [53.9600, -1.0810],
-      "description": "Nov 4-8. Film festival across 15 venues in York city centre. Good combo with York away trip"
     },
     {
       "name": "Canterbury Cathedral",
       "wiki": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
       "category": "town",
       "city": "Canterbury",
-      "coordinates": [51.2798, 1.0830],
+      "coordinates": [51.27993800418073, 1.0828534402310594],
       "description": "1h train (St Pancras, high-speed). Medieval cathedral, UNESCO, pilgrimage city"
     },
     {
@@ -303,38 +185,105 @@
       "wiki": "https://en.wikipedia.org/wiki/Seven_Sisters,_Sussex",
       "category": "nature",
       "city": "Eastbourne",
-      "coordinates": [50.7370, 0.1530],
+      "coordinates": [50.750386791733845, 0.1897571284136067],
       "description": "1.5h train. White chalk cliffs, near Eastbourne/Brighton"
     },
     {
-      "name": "Leeds Castle Fireworks Spectacular",
-      "wiki": "https://en.wikipedia.org/wiki/Leeds_Castle",
-      "category": "castle",
-      "city": "Leeds Castle",
-      "coordinates": [51.2486, 0.6306],
-      "description": "Nov 7-8. Fireworks choreographed to music. Grounds open 10am, last entry 3pm. Kent, 1h. Maze + play areas"
+      "name": "Coram's Fields Fireworks",
+      "wiki": "https://en.wikipedia.org/wiki/Coram%27s_Fields",
+      "link": "https://coramsfields.org/event/fireworks-night-2026/",
+      "category": "fireworks",
+      "city": "London",
+      "coordinates": [51.524554078301335, -0.11961275974771195],
+      "description": "Nov 5 (Bonfire Night itself). Gates 3:30pm, performances by local children, 18-min display 6pm, closes 7pm. FREE, no booking; Fast-Track tickets sold separately. Adults only with a child"
     },
     {
-      "name": "Edenbridge Bonfire",
-      "wiki": "https://en.wikipedia.org/wiki/Edenbridge,_Kent",
+      "name": "Stow Firework Spectacular",
+      "link": "https://www.stowfireworkspectacular.co.uk/",
       "category": "fireworks",
-      "city": "Edenbridge",
-      "coordinates": [51.1970, 0.0640],
-      "description": "Nov 7. Torchlit procession 6:30pm + fireworks 8:30pm. Celebrity effigies. Kent, 1h. 30min from Leeds Castle"
+      "city": "London",
+      "coordinates": [51.58907, -0.01118],
+      "description": "Nov 5, 6 and 7. Gates 4pm, quiet twilight display 6pm for younger kids, full display 8pm; one ticket covers both. Funfair, food, bar. From £9.50 adult / £0.50 child. Online only, no gate sales, sells out every year"
     },
     {
       "name": "Kent Life Fireworks",
+      "link": "https://kentlife.org.uk/events/",
       "category": "fireworks",
       "city": "Maidstone",
-      "coordinates": [51.2900, 0.5200],
-      "description": "Nov 6-7. Heritage open-air farm museum + fireworks. Maidstone, Kent, 1h. ⚠️ Year not confirmed"
+      "coordinates": [51.29696600041449, 0.5075817825602125],
+      "description": "Nov 6, gates 4pm, last entry 7:30pm, fireworks 8:30pm. Heritage open-air farm museum + musical fireworks. £18 adult / £15 child (2-15)"
     },
     {
-      "name": "Royal Gunpowder Mills Fireworks",
-      "category": "fireworks",
-      "city": "Waltham Abbey",
-      "coordinates": [51.6890, 0.0040],
-      "description": "Nov 7, 4pm-8:30pm. Fireworks at historic gunpowder mill. Waltham Abbey, Essex, 40min from London"
+      "name": "The Fortnum's Bar & Restaurant at Royal Exchange",
+      "wiki": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
+      "category": "food",
+      "city": "London",
+      "coordinates": [51.513623862985526, -0.08726035974868834],
+      "description": "In the courtyard of the 1571 Royal Exchange (Thomas Gresham). Afternoon tea"
+    },
+    {
+      "name": "Bad Moon Café",
+      "category": "food",
+      "city": "London",
+      "icon": "☕",
+      "coordinates": [51.49682163991246, -0.08839025327579911],
+      "description": "Board game café: board games, TCG, wargaming. Book a table and play. Good espresso"
+    },
+    {
+      "name": "The Roebuck",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.49829041387674, -0.09062260290065086],
+      "description": "Grade II listed Victorian corner pub (1892), independent. Dutch gables and green dome. 3 real ales + cider"
+    },
+    {
+      "name": "Presse Books",
+      "category": "food",
+      "city": "London",
+      "icon": "☕",
+      "coordinates": [51.49540286375106, -0.086242253966133],
+      "description": "Arts bookshop + speciality coffee, run by Forma. Artist publications and editions. In converted 1960s garages, with the Peveril Gardens roof garden above"
+    },
+    {
+      "name": "The Royal Oak",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.50024066593429, -0.09131517138826913],
+      "description": "Harvey's of Lewes first London pub, restored to 1850s style. 8 handpumps. CAMRA SE London Pub of the Year 2023 + 2025"
+    },
+    {
+      "name": "WatchHouse Bermondsey",
+      "category": "food",
+      "city": "London",
+      "icon": "☕",
+      "coordinates": [51.49819758759646, -0.08130424811156196],
+      "description": "The original branch (2014), in the old St Mary Magdalen churchyard watch house. Own-roasted coffee, pour-over with rotating guest roaster. Only 10 seats"
+    },
+    {
+      "name": "The Mayfair Chippy",
+      "category": "food",
+      "city": "London",
+      "icon": "🐟",
+      "coordinates": [51.51328430761835, -0.15324104232768884],
+      "description": "Sit-down chip shop. Classic fish & chips, plus pies and battered sausage. Small room, book ahead"
+    },
+    {
+      "name": "Fred Bakery Oxford Circus",
+      "category": "food",
+      "city": "London",
+      "icon": "🥐",
+      "coordinates": [51.51663615789826, -0.14149362883615554],
+      "description": "Opened Dec 2025, second site after the 2021 Holborn original. Laminated pastries — signature pistachio roll with pistachio cream and berry compote, tiramisu roll, savoury cruffin. Sourdough and ciabatta baked in-house daily, focaccia pizzas, Italian sandwiches. Two floors of seating"
+    },
+    {
+      "name": "Simon the Tanner",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.49842527020798, -0.08293818858614684],
+      "description": "Grade II listed free house, named for Bermondsey's tanning trade. 3 rotating ales from small breweries, pizza, Sunday roast. No outdoor space"
     }
   ],
   "categories": {
@@ -363,15 +312,15 @@
       "icon": "🏙️",
       "description": "Towns & Day Trips"
     },
+    "shopping": {
+      "color": "#3949AB",
+      "icon": "🛍️",
+      "description": "Shopping"
+    },
     "nature": {
       "color": "#2E7D32",
       "icon": "🌲",
       "description": "Nature & Countryside"
-    },
-    "historic": {
-      "color": "#757575",
-      "icon": "🗿",
-      "description": "Historic Sites"
     },
     "show": {
       "color": "#6A1B9A",
@@ -387,6 +336,11 @@
       "color": "#F9A825",
       "icon": "🎪",
       "description": "Events"
+    },
+    "food": {
+      "color": "#D84315",
+      "icon": "🍽",
+      "description": "Food & Drink"
     }
   }
 }

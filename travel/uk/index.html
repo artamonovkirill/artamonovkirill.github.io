@@ -157,6 +157,22 @@
             100% { transform: translateY(90px); opacity: 0; }
         }
 
+        .scone {
+            position: absolute;
+            top: -20px;
+            font-size: 14px;
+            line-height: 1;
+            animation: scone-fall linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes scone-fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            15% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateY(110px) rotate(240deg); opacity: 0; }
+        }
+
         .sky-dark {
             position: absolute;
             inset: 0;
@@ -471,7 +487,7 @@
                     </div>
                     <div class="popup-description">${location.description}</div>
                     ${location.city ? `<div class="popup-city">📍 ${location.city}</div>` : ''}
-                    <div class="popup-links"><a href="${mapsUrl}" target="_blank">Google Maps</a>${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
+                    <div class="popup-links"><a href="${mapsUrl}" target="_blank">Google Maps</a>${location.link ? ` · <a href="${location.link}" target="_blank">Event page</a>` : ''}${location.wiki ? ` · <a href="${location.wiki}" target="_blank">Wikipedia</a>` : ''}</div>
                     ${location.wiki ? `<div class="wiki-preview"><span class="wiki-loading">Loading preview...</span></div>` : ''}
                 `;
 
@@ -707,6 +723,19 @@
                 const sky = document.createElement('div');
                 sky.className = 'sky-dark';
                 el.appendChild(sky);
+
+                // Occasionally a scone falls instead of a raindrop
+                function dropScone() {
+                    const scone = document.createElement('div');
+                    scone.className = 'scone';
+                    scone.textContent = '🧁';
+                    scone.style.left = (Math.random() * 85 + 5) + '%';
+                    scone.style.animationDuration = (Math.random() * 0.7 + 1.3) + 's';
+                    scone.addEventListener('animationend', () => scone.remove());
+                    el.appendChild(scone);
+                    setTimeout(dropScone, Math.random() * 5000 + 3000);
+                }
+                setTimeout(dropScone, Math.random() * 3000 + 1000);
             });
         }
     </script>
