@@ -1,15 +1,12 @@
 {
-  "trip": {
-    "name": "UK Trip",
-    "dates": "Oct 31 – Nov 7, 2026"
-  },
   "locations": [
     {
       "name": "Natural History Museum",
       "wiki": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
       "category": "museum",
       "city": "London",
-      "coordinates": [51.534317514104984, -0.18460694026845315],
+      "icon": "🦖",
+      "coordinates": [51.49684855839012, -0.17641011927552763],
       "description": "Dinosaurs, blue whale, great for kids. FREE"
     },
     {
@@ -17,6 +14,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Science_Museum,_London",
       "category": "museum",
       "city": "London",
+      "icon": "🚀",
       "coordinates": [51.4973484776601, -0.17674976160315403],
       "description": "Interactive exhibits, space, tech, very kid-friendly. FREE"
     },
@@ -25,6 +23,7 @@
       "wiki": "https://en.wikipedia.org/wiki/British_Museum",
       "category": "museum",
       "city": "London",
+      "icon": "🗿",
       "coordinates": [51.519560172027695, -0.12697805767231113],
       "description": "World history, Egypt, Greece, Rosetta Stone. FREE"
     },
@@ -33,6 +32,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum",
       "category": "museum",
       "city": "London",
+      "icon": "👗",
       "coordinates": [51.49677943794204, -0.17216927509475077],
       "description": "Decorative arts: fashion, furniture, ceramics. FREE"
     },
@@ -41,6 +41,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Cutty_Sark",
       "category": "maritime",
       "city": "London",
+      "icon": "⛵",
       "coordinates": [51.48301824301703, -0.009634619276714471],
       "description": "Greenwich. Victorian tea clipper, climb masts. £22 adult / £11 child"
     },
@@ -49,6 +50,7 @@
       "wiki": "https://en.wikipedia.org/wiki/National_Maritime_Museum",
       "category": "maritime",
       "city": "London",
+      "icon": "🧭",
       "coordinates": [51.48117284070685, -0.005215471140776467],
       "description": "Greenwich. FREE, AHOY! interactive gallery for kids 6-12"
     },
@@ -57,6 +59,7 @@
       "wiki": "https://en.wikipedia.org/wiki/London_Eye",
       "category": "landmark",
       "city": "London",
+      "icon": "🎡",
       "coordinates": [51.50334665289979, -0.11956211927499164],
       "description": "Views over city, paid"
     },
@@ -73,6 +76,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Tower_Bridge",
       "category": "landmark",
       "city": "London",
+      "icon": "🌉",
       "coordinates": [51.50557657669312, -0.07533504625785593],
       "description": "Walk across free; glass floor walkway paid"
     },
@@ -81,6 +85,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Big_Ben",
       "category": "landmark",
       "city": "London",
+      "icon": "🕰️",
       "coordinates": [51.50088278281426, -0.12460394625823211],
       "description": "Houses of Parliament"
     },
@@ -89,14 +94,16 @@
       "wiki": "https://en.wikipedia.org/wiki/Buckingham_Palace",
       "category": "landmark",
       "city": "London",
+      "icon": "👑",
       "coordinates": [51.50153761657521, -0.14194364811129165],
-      "description": "Palace area, Changing of the Guard"
+      "description": "Changing the Guard Mon/Wed/Fri 11:00 (from 10:45, ~45min)"
     },
     {
       "name": "London to Brighton Veteran Car Run",
       "wiki": "https://en.wikipedia.org/wiki/London_to_Brighton_Veteran_Car_Run",
       "category": "event",
       "city": "London",
+      "icon": "🚗",
       "coordinates": [51.508611, -0.163611],
       "description": "Nov 1. Vintage cars run from Hyde Park to Brighton, free to watch. Commemorates 1896 Emancipation Run"
     },
@@ -105,6 +112,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Bath,_Somerset",
       "category": "town",
       "city": "Bath",
+      "icon": "♨️",
       "coordinates": [51.37731176172016, -2.3611008084078984],
       "description": "1.5h train. Historic, walkable, kid-friendly. Roman baths, Georgian architecture"
     },
@@ -113,6 +121,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Portsmouth_Historic_Dockyard",
       "category": "maritime",
       "city": "Portsmouth",
+      "icon": "⚓",
       "coordinates": [50.79903548795056, -1.1076095193358102],
       "description": "HMS Victory, Mary Rose, HMS Warrior. Full day. £51 adult / £36 child, book ahead"
     },
@@ -130,7 +139,7 @@
       "category": "shopping",
       "city": "Portsmouth",
       "coordinates": [50.79626714596748, -1.105626859810615],
-      "description": "Waterfront area, food + shops"
+      "description": "Waterfront outlet centre, food + shops"
     },
     {
       "name": "Windsor Castle",
@@ -138,13 +147,14 @@
       "category": "castle",
       "city": "Windsor",
       "coordinates": [51.48404763954835, -0.604402703932033],
-      "description": "55min train (Waterloo). Largest occupied castle in world, State Rooms + winter-only Semi-State Rooms. ⚠️ Closed Tue/Wed. Last admission 15:00, closes 16:15. Changing of Guard Thu/Sat 11am. £32 adult / £16 child advance"
+      "description": "55min train (Waterloo). Largest occupied castle in world, State Rooms + winter-only Semi-State Rooms. Closed Tue/Wed. Last admission 15:00, closes 16:15. Changing of Guard Thu/Sat 11am. £32 adult / £16 child advance"
     },
     {
       "name": "Windsor Great Park",
       "wiki": "https://en.wikipedia.org/wiki/Windsor_Great_Park",
       "category": "nature",
       "city": "Windsor",
+      "icon": "🦌",
       "coordinates": [51.424276930839014, -0.6176028751010648],
       "description": "Long Walk, big open space"
     },
@@ -153,22 +163,25 @@
       "wiki": "https://en.wikipedia.org/wiki/New_Forest",
       "category": "nature",
       "city": "New Forest",
+      "icon": "🐴",
       "coordinates": [50.81952044020254, -1.575516533444962],
-      "description": "1.5h train to Brockenhurst (Waterloo). Wild ponies, forest walks, very family-friendly"
+      "description": "1.5h train (Waterloo). Wild ponies, forest walks, very family-friendly"
     },
     {
       "name": "Oxford",
       "wiki": "https://en.wikipedia.org/wiki/Oxford",
       "category": "town",
       "city": "Oxford",
+      "icon": "🎓",
       "coordinates": [51.75123767255958, -1.2544583076449862],
-      "description": "1h train. University city, good for overnight"
+      "description": "1h train. University city"
     },
     {
       "name": "Cambridge",
       "wiki": "https://en.wikipedia.org/wiki/Cambridge",
       "category": "town",
       "city": "Cambridge",
+      "icon": "🎓",
       "coordinates": [52.20449466527746, 0.12066983376669582],
       "description": "45min train. University city, similar to Oxford. Punting on the Cam"
     },
@@ -177,6 +190,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
       "category": "town",
       "city": "Canterbury",
+      "icon": "⛪",
       "coordinates": [51.27993800418073, 1.0828534402310594],
       "description": "1h train (St Pancras, high-speed). Medieval cathedral, UNESCO, pilgrimage city"
     },
@@ -185,6 +199,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Seven_Sisters,_Sussex",
       "category": "nature",
       "city": "Eastbourne",
+      "icon": "🌊",
       "coordinates": [50.750386791733845, 0.1897571284136067],
       "description": "1.5h train. White chalk cliffs, near Eastbourne/Brighton"
     },
@@ -206,6 +221,15 @@
       "description": "Nov 5, 6 and 7. Gates 4pm, quiet twilight display 6pm for younger kids, full display 8pm; one ticket covers both. Funfair, food, bar. From £9.50 adult / £0.50 child. Online only, no gate sales, sells out every year"
     },
     {
+      "name": "Fireworks in the Park (Wimbledon Park)",
+      "wiki": "https://en.wikipedia.org/wiki/Wimbledon_Park",
+      "link": "https://www.merton.gov.uk/fireworks",
+      "category": "fireworks",
+      "city": "London",
+      "coordinates": [51.43831812984787, -0.2092113309190555],
+      "description": "Nov 5. Merton Council event. Gates 5:15pm, first show 6:45pm (suits young children), gates reopen 7:15pm, second show 8:30pm, funfair closes 10pm. Sells out"
+    },
+    {
       "name": "Kent Life Fireworks",
       "link": "https://kentlife.org.uk/events/",
       "category": "fireworks",
@@ -218,6 +242,7 @@
       "wiki": "https://en.wikipedia.org/wiki/Royal_Exchange,_London",
       "category": "food",
       "city": "London",
+      "icon": "🫖",
       "coordinates": [51.513623862985526, -0.08726035974868834],
       "description": "In the courtyard of the 1571 Royal Exchange (Thomas Gresham). Afternoon tea"
     },
@@ -227,7 +252,7 @@
       "city": "London",
       "icon": "☕",
       "coordinates": [51.49682163991246, -0.08839025327579911],
-      "description": "Board game café: board games, TCG, wargaming. Book a table and play. Good espresso"
+      "description": "Board games, TCG, wargaming. Book a table and play. Good espresso"
     },
     {
       "name": "The Roebuck",
@@ -284,61 +309,237 @@
       "icon": "🍺",
       "coordinates": [51.49842527020798, -0.08293818858614684],
       "description": "Grade II listed free house, named for Bermondsey's tanning trade. 3 rotating ales from small breweries, pizza, Sunday roast. No outdoor space"
+    },
+    {
+      "name": "Sandwich Sandwich",
+      "category": "food",
+      "city": "London",
+      "icon": "🥪",
+      "coordinates": [51.51845414212852, -0.1322828306892447],
+      "description": "Bristol family business since 2010, in London since 2024. Big, heavily filled sandwiches; signature scotch egg is a soft-boiled egg wrapped in pork with a secret crumb"
+    },
+    {
+      "name": "The George Inn",
+      "wiki": "https://en.wikipedia.org/wiki/The_George_Inn,_Southwark",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.5041817, -0.0899994],
+      "description": "The last galleried coaching inn in London, built 1677 after the Southwark fire. Grade I listed, and the only pub the National Trust owns. Dickens used the Middle Bar. Big courtyard. Book ahead"
+    },
+    {
+      "name": "Monday Jubilee Antiques Market",
+      "wiki": "https://en.wikipedia.org/wiki/Jubilee_Market",
+      "category": "shopping",
+      "city": "London",
+      "icon": "🏺",
+      "coordinates": [51.511803531549596, -0.12231115767231117],
+      "description": "Mondays only. Central London's only weekly antiques market. 100+ stalls in a Grade II listed 1904 hall: Georgian to Art Deco, jewellery, silver, antiquarian books, posters, vintage comics. From £1 upward. Bring cash. Apple Market runs antiques on Mondays too"
+    },
+    {
+      "name": "Terry's Cafe",
+      "category": "food",
+      "city": "London",
+      "icon": "🍳",
+      "coordinates": [51.50083951923492, -0.09845929043901382],
+      "description": "Traditional English caff, opened 1982 by a Smithfield meat trader, now run by his son. Famous fry-up; lunch specials like toad in the hole and roast dinners. Meat from Smithfield, coffee from Monmouth. Breakfast and lunch only, closed 2 days a week. Expect a queue"
+    },
+    {
+      "name": "Middle Temple Hall",
+      "wiki": "https://en.wikipedia.org/wiki/Middle_Temple_Hall",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🎭",
+      "coordinates": [51.512466726061916, -0.11117893068924467],
+      "description": "Elizabethan hall, double hammerbeam roof finished 1573. First recorded performance of Twelfth Night, 1602. 29ft oak High Table, reputedly a gift from Elizabeth I. No walk-ins. Tours Fridays only, min 10 people, booked with lunch, £16.80pp; or lunch in Hall Tue-Fri with smart dress. Grounds free to walk"
+    },
+    {
+      "name": "Horizon 22",
+      "wiki": "https://en.wikipedia.org/wiki/22_Bishopsgate",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🔭",
+      "coordinates": [51.514683664480685, -0.08299255767231117],
+      "description": "London's highest free viewing platform — 254m up on the 58th floor, 300-degree views. FREE, but tickets are released 10am each Monday for dates 14 days out and go fast. Some walk-in capacity via the QR code at the entrance"
+    },
+    {
+      "name": "Old Operating Theatre Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Old_Operating_Theatre_Museum_and_Herb_Garret",
+      "category": "museum",
+      "city": "London",
+      "icon": "🩺",
+      "coordinates": [51.50505, -0.08852],
+      "description": "Oldest surviving operating theatre in Europe, 1822, in the roof of St Thomas's Church. Pre-anaesthetic surgery + herb garret. £10 adult / £6.50 child 6-16, family £22"
+    },
+    {
+      "name": "Sky Garden",
+      "wiki": "https://en.wikipedia.org/wiki/20_Fenchurch_Street",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🪴",
+      "coordinates": [51.51136906680805, -0.0834956558192221],
+      "description": "Enclosed glass dome with planted terraces, so it still works in bad weather. FREE with a timed ticket, released Mondays three weeks ahead; sunset and weekend slots go within minutes. 1h limit, and children over 5 need their own booking. Paid walk-in from £11.50 if slots are gone"
+    },
+    {
+      "name": "Golden Hinde",
+      "wiki": "https://en.wikipedia.org/wiki/Golden_Hind",
+      "category": "maritime",
+      "city": "London",
+      "icon": "⛵",
+      "coordinates": [51.50689, -0.09033],
+      "description": "Full-size replica of Drake's galleon (1577-80 circumnavigation), moored at St Mary Overie Dock. Four decks to explore, cannons, crew quarters. Kids' activity packs. Relaxed opening last Sunday of the month. Closes some dates for private hire"
+    },
+    {
+      "name": "Borough Market",
+      "wiki": "https://en.wikipedia.org/wiki/Borough_Market",
+      "category": "shopping",
+      "city": "London",
+      "icon": "🥖",
+      "coordinates": [51.50572281042061, -0.09047007509400794],
+      "description": "London's oldest food market, trading here since 1014. Abolished by Parliament in 1754 for causing congestion; locals raised £6,000 to reopen it in 1756 on The Triangle, still its centre. FREE to walk through. Full market Wed-Sun; Mon-Tue few traders. Quietest Tue-Wed"
+    },
+    {
+      "name": "Painted Hall",
+      "wiki": "https://en.wikipedia.org/wiki/Old_Royal_Naval_College",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🎨",
+      "coordinates": [51.483178956837534, -0.00583620815820324],
+      "description": "James Thornhill's baroque ceiling, painted 1707-1726 and called Britain's Sistine Chapel; 2026 is its 300th anniversary. Ticket also covers the Chapel and the Victorian Skittle Alley, and converts to a free annual pass. £19 adult, kids free — but only £5 on the first Sunday of the month. Kids can make a peace dove for the Peter Walker installation"
+    },
+    {
+      "name": "Southwark Cathedral",
+      "wiki": "https://en.wikipedia.org/wiki/Southwark_Cathedral",
+      "category": "landmark",
+      "city": "London",
+      "icon": "⛪",
+      "coordinates": [51.5067748460881, -0.08946308132002904],
+      "description": "FREE. Oldest Gothic church structure in London, largely 1220, on a site of worship since the 7th century. Shakespeare memorial — his brother Edmund is buried here. Harvard Chapel for John Harvard, baptised here 1607. Parts close during services"
+    },
+    {
+      "name": "Queen's House",
+      "wiki": "https://en.wikipedia.org/wiki/Queen%27s_House",
+      "category": "museum",
+      "city": "London",
+      "icon": "🖼️",
+      "coordinates": [51.48123425071048, -0.003679842327688832],
+      "description": "Inigo Jones, 1616-1635, the first consciously classical building in England. FREE, but pre-book to guarantee entry. Tulip Stairs, Britain's first self-supporting spiral staircase and the site of the 1966 ghost photograph. Elizabeth I's Armada Portrait, plus Holbein, Canaletto and Gainsborough across 22 rooms. Free volunteer tours Mon 12:00/13:30 and Thu 12:00, ~45min. Allow 30-60min otherwise"
+    },
+    {
+      "name": "St Dunstan in the East Church Garden",
+      "wiki": "https://en.wikipedia.org/wiki/St_Dunstan-in-the-East",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🌿",
+      "coordinates": [51.509841871060985, -0.08253520185308909],
+      "description": "FREE. Church of 1100, gutted in the December 1941 Blitz; only Wren's tower and steeple survived, his one Gothic steeple in London, finished 1701. The City planted the ruined nave and opened it in 1971 — ivy, fig trees and ferns over the walls, fountain where the nave was. Small, and busy with photographers"
+    },
+    {
+      "name": "Shakespeare's Globe",
+      "wiki": "https://en.wikipedia.org/wiki/Shakespeare%27s_Globe",
+      "category": "landmark",
+      "city": "London",
+      "icon": "🎭",
+      "coordinates": [51.50806, -0.09717],
+      "description": "Reconstruction of the 1599 open-air playhouse, opened 1997. ~1h guided tour of the wooden 'O'. Family tours for age 7+ add a live stage-combat demo where kids handle the weapons; a spooky tour covers ghosts in the plays. Tours run in all weather and the theatre is open-air"
+    },
+    {
+      "name": "Tabard Gardens",
+      "wiki": "https://en.wikipedia.org/wiki/Tabard_Gardens",
+      "category": "nature",
+      "city": "London",
+      "icon": "🛝",
+      "coordinates": [51.49861, -0.08908],
+      "description": "FREE. 1.8ha Green Flag park, laid out 1929 in an LCC slum clearance. Playground for under-14s, outdoor gym, table tennis, wildlife mound, big grass areas. Open 7:30am to dusk, not locked"
+    },
+    {
+      "name": "House of MinaLima",
+      "wiki": "https://en.wikipedia.org/wiki/MinaLima",
+      "category": "museum",
+      "city": "London",
+      "icon": "⚡",
+      "coordinates": [51.514675955106746, -0.13493391534462232],
+      "description": "FREE. Gallery and shop from the two graphic designers who made the paper props for the Harry Potter and Fantastic Beasts films. Four floors of original artwork — Marauder's Map, cascading Hogwarts letters, Daily Prophet front pages — plus their illustrated classics. Photography allowed. Quietest on weekday mornings"
+    },
+    {
+      "name": "Bermondsey Beer Mile",
+      "wiki": "https://en.wikipedia.org/wiki/Bermondsey_Beer_Mile",
+      "category": "food",
+      "city": "London",
+      "icon": "🍻",
+      "coordinates": [51.49866210661573, -0.07360475667354191],
+      "description": "~15 independent breweries and taprooms in the railway arches, running 2.5 miles from Druid St through Enid St to Spa Terminus. Started 2009 with The Kernel. Saturday is the full route — many Spa Terminus arches are Saturday-only, ~11:00-17:00. Wed-Fri a good part is still open, but mostly from mid-afternoon. Hours vary a lot, so check each one"
+    },
+    {
+      "name": "Southwark Brewing Company",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.50124859908162, -0.07743402528065704],
+      "description": "Railway arch brewery and taproom on Druid St, the usual first stop on the Bermondsey Beer Mile, 8-10min from London Bridge. Thu-Fri 17:00-22:00, Sat 11:00-18:00, Sun 12:00-17:00"
+    },
+    {
+      "name": "The Kernel Spa Road",
+      "category": "food",
+      "city": "London",
+      "icon": "🍺",
+      "coordinates": [51.496075614149845, -0.06977548806642678],
+      "description": "The brewery that started the Bermondsey Beer Mile in 2009; the end of the route. Taproom moved here Aug 2024 — big airy room, 25 keg taps + 2 handpumps, Yagi Izakaya Japanese kitchen through 2026. Closed Mon-Tue. Bookings for 4+"
     }
   ],
   "categories": {
     "museum": {
-      "color": "#795548",
+      "color": "#0097A7",
       "icon": "🏛️",
       "description": "Museums"
     },
     "maritime": {
-      "color": "#0277BD",
+      "color": "#3FA9D8",
       "icon": "⚓",
       "description": "Ships & Maritime"
     },
     "landmark": {
-      "color": "#C2185B",
+      "color": "#E2725B",
       "icon": "🗼",
       "description": "Landmarks"
     },
     "castle": {
-      "color": "#455A64",
+      "color": "#607D8B",
       "icon": "🏰",
       "description": "Castles"
     },
     "town": {
-      "color": "#00897B",
+      "color": "#2FA37B",
       "icon": "🏙️",
       "description": "Towns & Day Trips"
     },
     "shopping": {
-      "color": "#3949AB",
+      "color": "#5C6BC0",
       "icon": "🛍️",
       "description": "Shopping"
     },
     "nature": {
-      "color": "#2E7D32",
+      "color": "#7CB342",
       "icon": "🌲",
       "description": "Nature & Countryside"
     },
     "show": {
-      "color": "#6A1B9A",
+      "color": "#E8792B",
       "icon": "🎭",
       "description": "Shows"
     },
     "fireworks": {
-      "color": "#E65100",
+      "color": "#7E57C2",
       "icon": "🎆",
       "description": "Fireworks (Bonfire Night)"
     },
     "event": {
-      "color": "#F9A825",
+      "color": "#C0CA33",
       "icon": "🎪",
       "description": "Events"
     },
     "food": {
-      "color": "#D84315",
+      "color": "#E0A415",
       "icon": "🍽",
       "description": "Food & Drink"
     }
