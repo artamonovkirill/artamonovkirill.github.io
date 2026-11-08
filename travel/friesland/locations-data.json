@@ -1,0 +1,270 @@
+{
+  "locations": [
+    {
+      "name": "Museum Voorlinden",
+      "wiki": "https://en.wikipedia.org/wiki/Museum_Voorlinden",
+      "link": "https://www.voorlinden.nl/en/",
+      "category": "museum",
+      "city": "Wassenaar",
+      "icon": "🎨",
+      "coordinates": [52.11923128792007, 4.347300596138766],
+      "description": "Modern and contemporary art museum on the Voorlinden estate"
+    },
+    {
+      "name": "Royal Eise Eisinga Planetarium",
+      "wiki": "https://en.wikipedia.org/wiki/Eise_Eisinga_Planetarium",
+      "link": "https://www.eisinga-planetarium.nl/en/plan-your-visit/",
+      "category": "museum",
+      "city": "Franeker",
+      "icon": "🪐",
+      "coordinates": [53.187448759372884, 5.543727025061716],
+      "description": "UNESCO site, oldest working planetarium (1781), built into a living-room ceiling. Pre-booked time slot required and no Museumkaart. €6.50/€5.00"
+    },
+    {
+      "name": "Molen De Onderneming",
+      "wiki": "https://nl.wikipedia.org/wiki/De_Onderneming_(Witmarsum)",
+      "category": "landmark",
+      "city": "Witmarsum",
+      "icon": "🌬️",
+      "coordinates": [53.099262010827104, 5.468882999924704],
+      "description": "Thatched octagonal stellingmolen from 1850, Rijksmonument, volunteer-run grain and barley mill. Worth the walk out from the village even if it is shut"
+    },
+    {
+      "name": "Nice Flavour",
+      "link": "https://niceflavour.nl/",
+      "category": "food",
+      "city": "Witmarsum",
+      "icon": "🍟",
+      "coordinates": [53.099030263385764, 5.4708239845800195],
+      "description": "Eetcafé, cafetaria and pizza in one, and the only place in the village for an evening meal. Three awards at the Nederlandse Horecaprijzen"
+    },
+    {
+      "name": "Kazemattenmuseum Kornwerderzand",
+      "link": "https://www.kazemattenmuseum.nl/",
+      "category": "museum",
+      "city": "Kornwerderzand",
+      "icon": "🪖",
+      "coordinates": [53.07356199149626, 5.333904169233197],
+      "description": "Bunkers of the 1940 Kornwerderzand defence line, where Dutch troops held off the German advance. Shut for winterstop from 1 Dec, but group visits still run by appointment. Free with Museumkaart"
+    },
+    {
+      "name": "Sluisweg & Steiger Kornwerderzand",
+      "link": "https://deafsluitdijk.nl/nieuws/wat-is-er-mogelijk-voor-fietsers-en-wandelaars-op-de-afsluitdijk/",
+      "category": "nature",
+      "city": "Kornwerderzand",
+      "icon": "🥾",
+      "coordinates": [53.07329061773994, 5.341682326905505],
+      "description": "Walk out along the sluices to the pier, past the casemates and the free Vismigratierivier viewpoint. The 4 km path on to Zurich is reachable from the Frisian side; crossing the whole dijk is not, as the fietsbus stops 1 Nov to 1 Mar"
+    },
+    {
+      "name": "Willemshaven & pier",
+      "link": "https://www.willemshaven.nl/",
+      "category": "nature",
+      "city": "Harlingen",
+      "icon": "⚓",
+      "coordinates": [53.17442934427701, 5.410010276767785],
+      "description": "Park here and walk the quays out to the pier for a view over the Wadden Sea, with the Vlieland ferries and fishing fleet passing. Lightship Jenni Baynton, the 11Fountains sperm-whale fountain, and the old lighthouse nearby"
+    },
+    {
+      "name": "Havenbrouwerij Het Brouwdok",
+      "category": "drinks",
+      "city": "Harlingen",
+      "icon": "🍺",
+      "coordinates": [53.17152021408428, 5.412853679210359],
+      "description": "Harbour brewery in the Willemshaven, a short walk along the quays from the pier"
+    },
+    {
+      "name": "Us Heit, De Friese Bierbrouwerij",
+      "link": "https://www.usheit.com/nl/proeflokaal/reserveren/",
+      "category": "drinks",
+      "city": "Bolsward",
+      "icon": "🍻",
+      "coordinates": [53.061844456021305, 5.53403017941177],
+      "description": "Working family brewery, eight beers plus Frysk Hynder whisky, with a small museum of old equipment and a terrace by the hop garden. In winter the proeflokaal opens Saturday afternoon only. The tour at 14:30 needs a reservation 24 h ahead, €14.50 pp or €34.50 with a tasting"
+    },
+    {
+      "name": "Rederij Doeksen ferry terminal",
+      "link": "https://www.rederij-doeksen.nl/",
+      "category": "transport",
+      "city": "Harlingen",
+      "icon": "⛴️",
+      "coordinates": [53.17646191005707, 5.413443529477664],
+      "description": "Departures to both Vlieland and Terschelling: 2 h ferry or 50 min fast service. Winter Dagkaart €28.00 adult, €16.00 child 4-11. The car park under the terminal is steep; P1 Tsjerk Hiddes is cheaper, about 10 min walk"
+    },
+    {
+      "name": "West-Terschelling harbour",
+      "link": "https://www.vvvterschelling.nl/",
+      "category": "town",
+      "city": "Terschelling",
+      "icon": "🏝️",
+      "coordinates": [53.357097000752454, 5.216178552613538],
+      "description": "Where the ferry lands. No permit needed to bring a car, unlike Vlieland, but a winter return runs about €205 and excludes passengers, so go on foot and use the island bus"
+    },
+    {
+      "name": "Eetcafé Storm & Brouwerij Schoemrakker",
+      "link": "http://www.schoemrakkerbierterschelling.nl/nl/het-proeflokaal",
+      "category": "drinks",
+      "city": "Terschelling",
+      "icon": "🍺",
+      "coordinates": [53.35907298988285, 5.2147481741206505],
+      "description": "Proeflokaal of Schoemrakker, the island brewery behind it at the foot of the Brandaris, with all its beers on tap. No tours at present"
+    },
+    {
+      "name": "Veerdam Oost-Vlieland",
+      "link": "https://vlieland.net/",
+      "category": "town",
+      "city": "Vlieland",
+      "icon": "🏝️",
+      "coordinates": [53.29612865058969, 5.075819728562389],
+      "description": "Where the ferry lands, walking distance from the village, with a bus meeting the boat and bike rental on the harbour. Car-free island: bringing one needs a T-ontheffing from the municipality. Reservation is mandatory for all passengers"
+    },
+    {
+      "name": "Grutte Pier Brouwerij",
+      "link": "https://gruttepier.nl/pages/proeflokaal",
+      "category": "drinks",
+      "city": "Wyns",
+      "icon": "🍻",
+      "coordinates": [53.27589432498189, 5.840564642357348],
+      "description": "Taste among the kettles and wooden barrels, or outside by the water at a wood fire. A proefzwaard is four small glasses from the tap, €13.75 pp, and the tour with a tasting is 1.5 h from €12.50 pp. Walk-ins welcome. Yard with a trampoline, swings and go-karts, and games inside. Proeflokaal Sat and Sun 14:00-20:00; do not count on Friday, though older sources list it"
+    },
+    {
+      "name": "Jopie Huisman Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Jopie_Huisman",
+      "link": "https://www.jopiehuismanmuseum.com/",
+      "category": "museum",
+      "city": "Workum",
+      "icon": "🖼️",
+      "coordinates": [52.979926327702465, 5.443744325044605],
+      "description": "Rag-and-bone man who painted what passed through his hands: worn boots, patched trousers, scrap, the people of Workum. He refused to sell most of it, so the collection stayed here. Free with Museumkaart"
+    },
+    {
+      "name": "De Hinde",
+      "link": "https://www.dehinde.nl/restaurant/",
+      "category": "food",
+      "city": "Hindeloopen",
+      "icon": "🐟",
+      "coordinates": [52.94419479108421, 5.401910457702081],
+      "description": "On the old harbour looking over the dyke to the IJsselmeer, a family business for generations and in the Michelin guide for regional cooking at €€. Own kitchen garden, house-smoked IJsselmeer eel, game in winter. Lunch only in winter, 12:00-17:00, but open every day from 18 Dec to 3 Jan instead of Fri to Sun. The 11:00-21:00 hours on Michelin and Tripadvisor are the summer ones"
+    },
+    {
+      "name": "Wintervaren, Sloep Events Friesland",
+      "link": "https://sloepeventsfriesland.nl/",
+      "category": "nature",
+      "city": "Woudsend",
+      "icon": "⛵",
+      "coordinates": [52.94543670090632, 5.627370038533308],
+      "description": "Two hours through the lakes in a covered heated sloop, skipper narrating as you go, finishing at dusk. €35 pp, Thu to Sun only at 14:00, so 2 or 3 Jan are the realistic days. Board at Waechswal, park at Lynbaen 15"
+    },
+    {
+      "name": "Zuiderzeelicht",
+      "link": "https://www.zuiderzeemuseum.nl/zien-doen/zuiderzeelicht",
+      "category": "event",
+      "city": "Enkhuizen",
+      "icon": "🏮",
+      "coordinates": [52.70769778250264, 5.296286240367246],
+      "description": "90 min walk through the museum's open-air Zuiderzee village lit up in the dark, the only way to see it in winter. Ends 3 Jan, shut 31 Dec and 1 Jan. Online ticket needed even with Museumkaart and dates sell out. Unpaved paths. Free parking here at Enkhuizerzand; the entrance is a temporary gate on Kooizandweg"
+    },
+    {
+      "name": "Fries Museum",
+      "wiki": "https://en.wikipedia.org/wiki/Fries_Museum",
+      "link": "https://www.friesmuseum.nl/te-zien-en-te-doen",
+      "category": "museum",
+      "city": "Leeuwarden",
+      "icon": "👑",
+      "coordinates": [53.19968973678457, 5.7944533943732095],
+      "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom and its legendary king, runs to 7 Feb 2027 with the Odin of Lejre on loan; a new permanent Mata Hari room opened 9 Dec, she being a Leeuwarden native. €17.50, free under 18, free with Museumkaart, €20 combined with Princessehof"
+    },
+    {
+      "name": "Elfstedenhal",
+      "link": "https://elfstedenhal.frl/tickets-tarieven/",
+      "category": "sport",
+      "city": "Leeuwarden",
+      "icon": "⛸️",
+      "coordinates": [53.20303449986255, 5.769022225062939],
+      "description": "Full 400 m artificial oval open to recreational skaters, plus an infield and a hockey rink: the reliable substitute when the natural ice never comes. €10.50 from 18, €7.50 up to 17; skate rental €7.50, Easy Gliders €5.00, helmet €2.50, sizes 25 to 49. OG Capitals play ice hockey here"
+    },
+    {
+      "name": "Decemberlicht",
+      "link": "https://www.decemberlicht.frl/",
+      "category": "event",
+      "city": "Leeuwarden",
+      "icon": "💡",
+      "coordinates": [53.203281735261825, 5.791255053899095],
+      "description": "Free 1.5 km light route by Kroft&Smids: fifteen facades carrying quotations, poems, animations and light objects, 45 to 60 min, daily 17:00 to 22:00. Follow the blue lantern light. Route maps here at the Visitor Center; the walk itself starts at Kleine Kerkstraat corner Grote Kerkstraat. Dates for this winter not published yet, last edition ran 16 Dec to 4 Jan"
+    },
+    {
+      "name": "Paviljoen 't Mar, Mirnser Klif",
+      "link": "https://paviljoentmar.nl/",
+      "category": "nature",
+      "city": "Mirns",
+      "icon": "🪁",
+      "coordinates": [52.85155070424091, 5.481104609689592],
+      "description": "Café on the clifftop with a panorama over the IJsselmeer and the Rijsterbos out the back, free parking, and a sandy beach below. The best kitespot on the east shore sits here, water only 10 to 40 cm deep in winter, so expect kiters to watch. Open all year and late Fri to Sun"
+    },
+    {
+      "name": "Rijsterbos",
+      "link": "https://www.waterlandvanfriesland.nl/nl/blogs/9x-wandelen-in-gaasterland",
+      "category": "nature",
+      "city": "Rijs",
+      "icon": "🌲",
+      "coordinates": [52.861326461073894, 5.4952289883970655],
+      "description": "It Fryske Gea car park with an info board, start of a 7 km loop rated simple: stately lanes through the wood, then out along the beach past the Mirnser Klif. Narrow winding side paths for extra loops. Explicitly recommended as a winter walk"
+    },
+    {
+      "name": "Oudemirdumer Klif",
+      "link": "https://www.waterlandvanfriesland.nl/nl/blogs/9x-wandelen-in-gaasterland",
+      "category": "nature",
+      "city": "Oudemirdum",
+      "icon": "⛰️",
+      "coordinates": [52.84220031132016, 5.533262386355963],
+      "description": "Six metre cliff over the IJsselmeer owned by Natuurmonumenten, with a public viewpoint, reached by the Minne Minnespad named after the last Zuiderzee fisherman of Oudemirdum. The damp soil carries over 200 plant species despite the modest height"
+    }
+  ],
+  "categories": {
+    "museum": {
+      "color": "#0097A7",
+      "icon": "🏛️",
+      "description": "Museums"
+    },
+    "landmark": {
+      "color": "#E2725B",
+      "icon": "🗼",
+      "description": "Landmarks"
+    },
+    "nature": {
+      "color": "#7CB342",
+      "icon": "🌲",
+      "description": "Nature & Walks"
+    },
+    "drinks": {
+      "color": "#FFC107",
+      "icon": "🍺",
+      "description": "Breweries & Bars"
+    },
+    "food": {
+      "color": "#C2185B",
+      "icon": "🍽️",
+      "description": "Restaurants & Cafés"
+    },
+    "town": {
+      "color": "#2FA37B",
+      "icon": "🏙️",
+      "description": "Towns & Day Trips"
+    },
+    "transport": {
+      "color": "#808080",
+      "icon": "⛴️",
+      "description": "Ferries & Stations"
+    },
+    "event": {
+      "color": "#7E57C2",
+      "icon": "🎪",
+      "description": "Events"
+    },
+    "sport": {
+      "color": "#1E88E5",
+      "icon": "⛸️",
+      "description": "Skating & Sport"
+    }
+  }
+}
