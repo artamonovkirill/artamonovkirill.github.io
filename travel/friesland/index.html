@@ -136,11 +136,6 @@
             color: rgba(255,255,255,0.7);
         }
 
-        .legend-count-total {
-            font-weight: normal;
-            opacity: 0.55;
-        }
-
         .snowflake {
             position: absolute;
             top: -10px;
@@ -157,16 +152,16 @@
             100% { transform: translate(var(--drift, 8px), 95px) rotate(var(--spin, 180deg)); opacity: 0.15; }
         }
 
-        .treat {
+        .trinket {
             position: absolute;
-            top: -20px;
-            font-size: 14px;
+            top: -28px;
+            font-size: 22px;
             line-height: 1;
-            animation: treat-fall linear both;
+            animation: trinket-fall linear both;
             pointer-events: none;
         }
 
-        @keyframes treat-fall {
+        @keyframes trinket-fall {
             0% { transform: translateY(0) rotate(0deg); opacity: 0; }
             15% { opacity: 1; }
             80% { opacity: 1; }
@@ -371,11 +366,6 @@
                     <div id="legend-items"></div>
                 </div>
 
-                <div class="legend" id="regions-section">
-                    <h3>Regions</h3>
-                    <div id="region-items"></div>
-                </div>
-
                 <div class="sidebar-footer" id="sidebar-footer"></div>
             </div>
         </div>
@@ -436,7 +426,6 @@
 
             // Load saved state
             const savedCategories = loadState('categories') || {};
-            const savedRegions = loadState('regions') || {};
             // Build state
             const categoryState = {};
             Object.keys(data.categories).forEach(key => {
@@ -447,26 +436,16 @@
                 }
             });
 
-            // Regions: only these are toggleable, rest always visible
-            const regions = [];
-            const cityToRegion = {};
-            regions.forEach(r => r.cities.forEach(c => { cityToRegion[c] = r.key; }));
-
-            const regionState = {};
-            regions.forEach(r => {
-                regionState[r.key] = r.key in savedRegions ? savedRegions[r.key] : true;
-            });
-
             // Build all markers
             const allMarkers = [];
 
             data.locations.forEach(location => {
                 const category = data.categories[location.category];
-                const city = location.city || 'Other';
                 const markerIcon = location.icon || category.icon;
+                const markerColor = location.color || category.color;
 
                 const icon = L.divIcon({
-                    html: `<div style="background-color: ${category.color}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
+                    html: `<div style="background-color: ${markerColor}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 12px;">${markerIcon}</div>`,
                     className: 'custom-marker',
                     iconSize: [24, 24],
                     iconAnchor: [12, 12]
@@ -478,7 +457,7 @@
                 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
                 const popupContent = `
                     <div class="popup-title">${location.name}</div>
-                    <div class="popup-category" style="background-color: ${category.color};">
+                    <div class="popup-category" style="background-color: ${markerColor};">
                         ${markerIcon} ${location.category}
                     </div>
                     <div class="popup-description">${location.description}</div>
@@ -520,36 +499,18 @@
                     });
                 }
 
-                const region = cityToRegion[city] || null;
-                allMarkers.push({ marker, category: location.category, region, name: location.name });
+                allMarkers.push({ marker, category: location.category, name: location.name });
             });
-
-            // Count element references populated during legend creation
-            const categoryCountEls = {};
-            const regionCountEls = {};
 
             // Visibility
             function updateVisibility() {
                 let visibleCount = 0;
-                const catCounts = {};
-                const regionCounts = {};
                 allMarkers.forEach(m => {
-                    const regionVisible = m.region === null || regionState[m.region];
-                    const categoryVisible = categoryState[m.category];
-                    const visible = categoryVisible && regionVisible;
-                    if (visible) {
+                    if (categoryState[m.category]) {
                         if (!map.hasLayer(m.marker)) m.marker.addTo(map);
                         visibleCount++;
                     } else {
                         if (map.hasLayer(m.marker)) map.removeLayer(m.marker);
-                    }
-                    // Category count: filtered by region
-                    if (regionVisible) {
-                        catCounts[m.category] = (catCounts[m.category] || 0) + 1;
-                    }
-                    // Region count: filtered by category
-                    if (categoryVisible && m.region !== null) {
-                        regionCounts[m.region] = (regionCounts[m.region] || 0) + 1;
                     }
                 });
 
@@ -560,20 +521,6 @@
                 } else {
                     countEl.textContent = total;
                 }
-
-                Object.entries(categoryCountEls).forEach(([key, { el, total: t }]) => {
-                    const filtered = catCounts[key] || 0;
-                    el.innerHTML = filtered < t
-                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
-                        : t;
-                });
-
-                Object.entries(regionCountEls).forEach(([key, { el, total: t }]) => {
-                    const filtered = regionCounts[key] || 0;
-                    el.innerHTML = filtered < t
-                        ? filtered + ' <span class="legend-count-total">/ ' + t + '</span>'
-                        : t;
-                });
             }
 
             // Category legend
@@ -593,7 +540,6 @@
                     <div class="legend-text">${category.description}</div>
                     <div class="legend-count">${count}</div>
                 `;
-                categoryCountEls[key] = { el: legendItem.querySelector('.legend-count'), total: count };
 
                 legendItem.addEventListener('click', () => {
                     categoryState[key] = !categoryState[key];
@@ -605,36 +551,10 @@
                 legendContainer.appendChild(legendItem);
             });
 
-            // Region legend
-            const regionContainer = document.getElementById('region-items');
-
-            regions.forEach(r => {
-                const count = allMarkers.filter(m => m.region === r.key).length;
-                if (!count) return;
-                const regionItem = document.createElement('div');
-                regionItem.className = regionState[r.key] ? 'legend-item active' : 'legend-item';
-
-                regionItem.innerHTML = `
-                    <div class="legend-text">${r.label}</div>
-                    <div class="legend-count">${count}</div>
-                `;
-                regionCountEls[r.key] = { el: regionItem.querySelector('.legend-count'), total: count };
-
-                regionItem.addEventListener('click', () => {
-                    regionState[r.key] = !regionState[r.key];
-                    regionItem.classList.toggle('active', regionState[r.key]);
-                    saveState('regions', regionState);
-                    updateVisibility();
-                });
-
-                regionContainer.appendChild(regionItem);
-            });
-
             // Sidebar footer
             document.getElementById('sidebar-footer').innerHTML = '<a id="reset-btn">Reset all</a>';
             document.getElementById('reset-btn').addEventListener('click', () => {
                 localStorage.removeItem('tripmap:' + mapId + ':categories');
-                localStorage.removeItem('tripmap:' + mapId + ':regions');
                 location.reload();
             });
 
@@ -773,28 +693,28 @@
                 setTimeout(launch, Math.random() * 2000 + 500);
 
                 // Occasionally something Dutch falls instead of a snowflake
-                const treats = ['🧀', '⛸️', '🎄', '☃️'];
+                const trinkets = ['🧀', '⛸️', '🎄', '☃️', '🐮'];
 
-                function makeTreat(delay) {
-                    const treat = document.createElement('div');
-                    treat.className = 'treat';
-                    treat.textContent = treats[Math.floor(Math.random() * treats.length)];
-                    treat.style.left = (Math.random() * 85 + 5) + '%';
+                function makeTrinket(delay) {
+                    const trinket = document.createElement('div');
+                    trinket.className = 'trinket';
+                    trinket.textContent = trinkets[Math.floor(Math.random() * trinkets.length)];
+                    trinket.style.left = (Math.random() * 85 + 5) + '%';
                     const duration = Math.random() * 0.7 + 1.3;
-                    treat.style.animationDuration = duration + 's';
-                    treat.style.animationDelay = delay + 's';
-                    treat.addEventListener('animationend', () => treat.remove());
-                    // Timers continue in a hidden tab. This removes a treat
+                    trinket.style.animationDuration = duration + 's';
+                    trinket.style.animationDelay = delay + 's';
+                    trinket.addEventListener('animationend', () => trinket.remove());
+                    // Timers continue in a hidden tab. This removes a trinket
                     // that the tab hid in mid-fall.
-                    setTimeout(() => treat.remove(), (delay + duration + 1) * 1000);
-                    el.appendChild(treat);
+                    setTimeout(() => trinket.remove(), (delay + duration + 1) * 1000);
+                    el.appendChild(trinket);
                 }
 
-                function dropTreat() {
-                    setTimeout(dropTreat, Math.random() * 5000 + 3000);
+                function dropTrinket() {
+                    setTimeout(dropTrinket, Math.random() * 5000 + 3000);
 
                     // A hidden tab does not advance the animation, so
-                    // 'animationend' does not occur. Do not make treats that
+                    // 'animationend' does not occur. Do not make trinkets that
                     // nothing can remove.
                     if (document.hidden) return;
 
@@ -802,9 +722,9 @@
                     // loosely spaced so it does not look like a row.
                     const roll = Math.random();
                     const count = roll < 0.7 ? 1 : roll < 0.92 ? 2 : 3;
-                    for (let i = 0; i < count; i++) makeTreat(Math.random() * 0.5);
+                    for (let i = 0; i < count; i++) makeTrinket(Math.random() * 0.5);
                 }
-                setTimeout(dropTreat, Math.random() * 3000 + 1000);
+                setTimeout(dropTrinket, Math.random() * 3000 + 1000);
             });
         }
     </script>
