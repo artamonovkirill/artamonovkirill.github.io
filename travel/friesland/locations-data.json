@@ -44,6 +44,7 @@
     },
     {
       "name": "Kazemattenmuseum Kornwerderzand",
+      "wiki": "https://nl.wikipedia.org/wiki/Kazemattenmuseum",
       "link": "https://www.kazemattenmuseum.nl/",
       "category": "museum",
       "city": "Kornwerderzand",
@@ -54,6 +55,7 @@
     },
     {
       "name": "Sluisweg & Steiger Kornwerderzand",
+      "wiki": "https://nl.wikipedia.org/wiki/Kornwerderzand",
       "link": "https://deafsluitdijk.nl/nieuws/wat-is-er-mogelijk-voor-fietsers-en-wandelaars-op-de-afsluitdijk/",
       "category": "walk",
       "city": "Kornwerderzand",
@@ -64,6 +66,7 @@
     },
     {
       "name": "Willemshaven & pier",
+      "wiki": "https://nl.wikipedia.org/wiki/Haven_van_Harlingen",
       "link": "https://www.willemshaven.nl/",
       "category": "walk",
       "city": "Harlingen",
@@ -82,14 +85,15 @@
       "description": "Harbour brewery in the Willemshaven, a short walk along the quays from the pier"
     },
     {
-      "name": "Cultuur Historisch Centrum De Tiid",
+      "name": "Bolsward town walk",
+      "wiki": "https://nl.wikipedia.org/wiki/Stadhuis_van_Bolsward",
       "link": "https://www.detiid.nl/",
       "category": "walk",
       "city": "Bolsward",
       "icon": "🥾",
       "color": "#E8792B",
       "coordinates": [53.062497106564365, 5.5226927328361795],
-      "description": "The 1615 renaissance town hall, now the VVV and Museum De Tiid, and the start of the town walk: 4.1 km on paved streets, the longest of the four town walks, through a canal town that calls itself the Klein Amsterdam of Friesland. Free along the way are the Broerekerk, the oldest building in town, burnt out and left as a ruin under a glass roof, plus the Vleermuis fountain of the 11fountains, the Julianapark and the Hoog Bolwerk; the Martinikerk is free when open. Free parking at Plein 1455. A €3 paper route and a shorter 2.7 km 11fountains variant are sold here"
+      "description": "Longest of the four, 4.1 km, from the 1615 town hall that is now the VVV and Museum De Tiid. Past the burnt-out Broerekerk under its glass roof and the Vleermuis fountain. Free parking at Plein 1455, €3 route"
     },
     {
       "name": "Us Heit, De Friese Bierbrouwerij",
@@ -99,10 +103,11 @@
       "icon": "🍺",
       "color": "#FFC107",
       "coordinates": [53.061844456021305, 5.53403017941177],
-      "description": "Working family brewery, eight beers plus Frysk Hynder whisky, with a small museum of old equipment and a terrace by the hop garden. In winter the proeflokaal opens Saturday afternoon only. The tour at 14:30 needs a reservation 24 h ahead, €14.50 pp or €34.50 with a tasting"
+      "description": "Family brewery, eight beers plus Frysk Hynder whisky, small museum of old equipment and a terrace by the hop garden. Winter proeflokaal is Saturday afternoon only. Tour at 14:30, reserve 24 h ahead: €14.50, or €34.50 with a tasting"
     },
     {
       "name": "Rederij Doeksen ferry terminal",
+      "wiki": "https://nl.wikipedia.org/wiki/Rederij_Doeksen",
       "link": "https://www.rederij-doeksen.nl/",
       "category": "islands",
       "city": "Harlingen",
@@ -113,6 +118,7 @@
     },
     {
       "name": "West-Terschelling harbour",
+      "wiki": "https://nl.wikipedia.org/wiki/West-Terschelling",
       "link": "https://www.vvvterschelling.nl/",
       "category": "islands",
       "city": "Terschelling",
@@ -120,6 +126,16 @@
       "color": "#808080",
       "coordinates": [53.357097000752454, 5.216178552613538],
       "description": "Where the ferry lands. No permit needed to bring a car, unlike Vlieland, but a winter return runs about €205 and excludes passengers, so go on foot and use the island bus"
+    },
+    {
+      "name": "Zeehondentocht WadExperience",
+      "link": "https://www.wadexperienceterschelling.nl/",
+      "category": "viewpoint",
+      "city": "Terschelling",
+      "icon": "🦭",
+      "color": "#7CB342",
+      "coordinates": [53.35645015282572, 5.213818752058354],
+      "description": "RIB out to the sandbanks between Terschelling and Vlieland, 45 min, €29.50 adult and €22.50 child 5-12. Grey seals pup here in midwinter. Needs 5 aboard to sail, so book ahead. Low water is best"
     },
     {
       "name": "Eetcafé Storm & Brouwerij Schoemrakker",
@@ -133,6 +149,7 @@
     },
     {
       "name": "Veerdam Oost-Vlieland",
+      "wiki": "https://en.wikipedia.org/wiki/Vlieland",
       "link": "https://vlieland.net/",
       "category": "islands",
       "city": "Vlieland",
@@ -142,6 +159,16 @@
       "description": "Where the ferry lands, walking distance from the village, with a bus meeting the boat and bike rental on the harbour. Car-free island: bringing one needs a T-ontheffing from the municipality. Reservation is mandatory for all passengers"
     },
     {
+      "name": "Vliehors Expres",
+      "link": "https://www.vliehors-expres.nl/",
+      "category": "viewpoint",
+      "city": "Vlieland",
+      "icon": "🚐",
+      "color": "#7CB342",
+      "coordinates": [53.30432752950063, 5.049659052054071],
+      "description": "Two hours by bus across the Vliehors, the island's western 20 km² of sandflat, with seals at the point and a stop at the Drenkelingenhuisje, a wreck survivors' refuge now a beachcombers' museum. Winter boarding from the beach at 't Badhuys"
+    },
+    {
       "name": "Grutte Pier Brouwerij",
       "link": "https://gruttepier.nl/pages/proeflokaal",
       "category": "drinks",
@@ -149,7 +176,7 @@
       "icon": "🍺",
       "color": "#FFC107",
       "coordinates": [53.27589432498189, 5.840564642357348],
-      "description": "Taste among the kettles and wooden barrels, or outside by the water at a wood fire. A proefzwaard is four small glasses from the tap, €13.75 pp, and the tour with a tasting is 1.5 h from €12.50 pp. Walk-ins welcome. Yard with a trampoline, swings and go-karts, and games inside. Proeflokaal Sat and Sun 14:00-20:00; do not count on Friday, though older sources list it"
+      "description": "Taste among the kettles and barrels, or outside by the water at a wood fire. Proefzwaard of four glasses €13.75, tour with tasting from €12.50. Walk-ins welcome. Games inside, go-karts and swings in the yard. Sat and Sun 14:00-20:00 only"
     },
     {
       "name": "Jopie Huisman Museum",
@@ -170,7 +197,7 @@
       "icon": "🦢",
       "color": "#7CB342",
       "coordinates": [53.0043358756523, 5.403629265520999],
-      "description": "Steel plateau in the middle of the Warkumerwaard, at the far end of the Slinkewei, with a view over the Gaasterwad and both the inner and outer waard. Thousands of geese in winter, plus Bewick's swans and great egrets, so bring binoculars. Open all year. Park free in the verge at the plateau, which makes the 3 km brick lane optional. Google Maps calls it Uitkijkpunt IJsselmeer, not Hokje Bakker. No dogs anywhere in the reserve"
+      "description": "Steel plateau in the middle of the Warkumerwaard. Thousands of geese in winter, plus Bewick's swans and great egrets, so bring binoculars. Free verge parking at the plateau makes the 3 km lane optional. Google Maps calls it Uitkijkpunt IJsselmeer. No dogs"
     },
     {
       "name": "Uitkijkpunt It Soal",
@@ -180,17 +207,36 @@
       "icon": "🦆",
       "color": "#7CB342",
       "coordinates": [52.97197581364638, 5.409707082716544],
-      "description": "Plateau over the Warkumerwaard bird reserve, with an info panel and large flocks of ducks and geese in winter. The waard itself is shut to the public, so viewpoints are the only way to see it. Hard surface all the way: turn right into the big car park 50 to 100 m before camping It Soal, walk past the surf school to the beach, then right. Paid parking, and it stays open when the campsite shuts. No dogs anywhere in the reserve"
+      "description": "Plateau over the Warkumerwaard, which is closed to the public, so viewpoints are the only way in. Ducks and geese in winter. Hard surface throughout: park just before camping It Soal, past the surf school to the beach, then right. Paid. No dogs"
     },
     {
-      "name": "Sluishuis Hindeloopen",
+      "name": "Hindeloopen town walk",
       "wiki": "https://nl.wikipedia.org/wiki/Sylh%C3%BAs",
       "category": "walk",
       "city": "Hindeloopen",
       "icon": "🥾",
       "color": "#E8792B",
       "coordinates": [52.94375917921936, 5.402712910333642],
-      "description": "Hand-worked 17th-century Zuiderzee lock with a wooden drawbridge and the lock-keeper's house, and the place to start the town walk. Hindeloopen is the second smallest of the eleven cities and a protected townscape, so the centre itself is the attraction: about 2.5 km on paved streets, signposted, with boards along the way. Free parking just outside the centre. The VVV sells a paper route for €3 at Museum Hindeloopen"
+      "description": "Second smallest of the eleven cities and a protected townscape, so the centre is the sight. 2.5 km signposted from the hand-worked 17th-century lock and its drawbridge. Free parking outside the centre, €3 route at the museum"
+    },
+    {
+      "name": "Nieuwjaarsduik Lemmer",
+      "link": "https://www.beachclublemmer.nl/evenementen",
+      "category": "event",
+      "city": "Lemmer",
+      "icon": "🐻‍❄️",
+      "color": "#7E57C2",
+      "coordinates": [52.84411339394511, 5.701429109688892],
+      "description": "Official Unox duik off the Baai van Lemmer, early afternoon, with sign-up at the Beachclub an hour before. Changing rooms and hot showers at zwembad Ny Sudersé, snert after"
+    },
+    {
+      "name": "Nieuwjaarsduik Hindeloopen",
+      "category": "event",
+      "city": "Hindeloopen",
+      "icon": "🐻‍❄️",
+      "color": "#7E57C2",
+      "coordinates": [52.944056366087814, 5.401986567369356],
+      "description": "Into the IJsselmeer from the old harbour, early afternoon, with the borrel in Café de Boekanier after"
     },
     {
       "name": "De Hinde",
@@ -200,17 +246,28 @@
       "icon": "🐟",
       "color": "#C2185B",
       "coordinates": [52.94419479108421, 5.401910457702081],
-      "description": "On the old harbour looking over the dyke to the IJsselmeer, a family business for generations and in the Michelin guide for regional cooking at €€. Own kitchen garden, house-smoked IJsselmeer eel, game in winter. Lunch only in winter, 12:00-17:00, but open every day from 18 Dec to 3 Jan instead of Fri to Sun. The 11:00-21:00 hours on Michelin and Tripadvisor are the summer ones"
+      "description": "On the old harbour, Michelin-listed for regional cooking at €€. Own kitchen garden, house-smoked IJsselmeer eel, game in winter. Winter lunch only, 12:00-17:00, but daily from 18 Dec to 3 Jan. The 11:00-21:00 listed online is summer hours"
     },
     {
-      "name": "Fries Scheepvaart Museum",
+      "name": "Sloten town walk",
+      "wiki": "https://en.wikipedia.org/wiki/Sloten,_Friesland",
+      "category": "walk",
+      "city": "Sloten",
+      "icon": "🥾",
+      "color": "#E8792B",
+      "coordinates": [52.89491392194133, 5.645610609693108],
+      "description": "Smallest of the eleven cities. Shortest walk of the four, 1.7 km from the old town hall, now Museum Sloten: Lemsterpoort, Grutte Tsjerke, the working mill De Kaai, Kievit fountain. Free alley variant, or a €3 booklet."
+    },
+    {
+      "name": "Sneek town walk",
+      "wiki": "https://nl.wikipedia.org/wiki/Waterpoort_(Sneek)",
       "link": "https://www.friesscheepvaartmuseum.nl/",
       "category": "walk",
       "city": "Sneek",
       "icon": "🥾",
       "color": "#E8792B",
       "coordinates": [53.032474685992916, 5.6632614385404185],
-      "description": "Museum and VVV together, and the start of the town walk. The signature sight is the Waterpoort of about 1492, two octagonal towers with a bridge between them over the water, the only one of Sneek's five city gates still standing, with the Fortuna fountain of the 11fountains behind it. The paper route is €3 and sources give its length as either 2.5 or 3.5 km; a free izi.travel audio tour covers 4.1 km and 22 sights, but in Dutch only. Sneek is the largest of the four towns, so it is the one with shops and cafés open on a winter day. Parking all round the old centre, free lots within walking distance, but paid 13:00 to 21:00 on Sunday"
+      "description": "Largest of the four, so the one with shops and cafés open on a winter day. The Waterpoort of about 1492 is the sight, Fortuna fountain behind it. €3 route from the museum, 2.5 to 3.5 km. Sunday parking paid 13:00 to 21:00"
     },
     {
       "name": "Wintervaren, Sloep Events Friesland",
@@ -224,13 +281,14 @@
     },
     {
       "name": "Zuiderzeelicht",
+      "wiki": "https://en.wikipedia.org/wiki/Zuiderzee_Museum",
       "link": "https://www.zuiderzeemuseum.nl/zien-doen/zuiderzeelicht",
       "category": "walk",
       "city": "Enkhuizen",
       "icon": "🥾",
       "color": "#C0CA33",
       "coordinates": [52.70769778250264, 5.296286240367246],
-      "description": "90 min walk through the museum's open-air Zuiderzee village lit up in the dark, the only way to see it in winter. Ends 3 Jan, shut 31 Dec and 1 Jan. Online ticket needed even with Museumkaart and dates sell out. Unpaved paths. Free parking here at Enkhuizerzand; the entrance is a temporary gate on Kooizandweg"
+      "description": "90 min through the open-air Zuiderzee village lit up in the dark, the only way to see it in winter. Ends 3 Jan, shut 31 Dec and 1 Jan. Online ticket needed even with Museumkaart, and dates sell out. Free parking at Enkhuizerzand"
     },
     {
       "name": "Fries Museum",
@@ -241,17 +299,18 @@
       "icon": "👑",
       "color": "#0097A7",
       "coordinates": [53.19968973678457, 5.7944533943732095],
-      "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom and its legendary king, runs to 7 Feb 2027 with the Odin of Lejre on loan; a new permanent Mata Hari room opened 9 Dec, she being a Leeuwarden native. €17.50, free under 18, free with Museumkaart, €20 combined with Princessehof"
+      "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom, runs to 7 Feb 2027 with the Odin of Lejre on loan, plus a new permanent room on Leeuwarden native Mata Hari. €17.50, free with Museumkaart"
     },
     {
       "name": "Elfstedenhal",
+      "wiki": "https://nl.wikipedia.org/wiki/Elfstedenhal",
       "link": "https://elfstedenhal.frl/tickets-tarieven/",
       "category": "sport",
       "city": "Leeuwarden",
       "icon": "⛸️",
       "color": "#1E88E5",
       "coordinates": [53.20303449986255, 5.769022225062939],
-      "description": "Full 400 m artificial oval open to recreational skaters, plus an infield and a hockey rink: the reliable substitute when the natural ice never comes. €10.50 from 18, €7.50 up to 17; skate rental €7.50, Easy Gliders €5.00, helmet €2.50, sizes 25 to 49. OG Capitals play ice hockey here"
+      "description": "Full 400 m artificial oval open to recreational skaters, the reliable substitute when the natural ice never comes. €10.50 adult, €7.50 up to 17; skates €7.50, helmet €2.50, sizes 25 to 49"
     },
     {
       "name": "Decemberlicht",
@@ -261,20 +320,22 @@
       "icon": "🥾",
       "color": "#C0CA33",
       "coordinates": [53.203281735261825, 5.791255053899095],
-      "description": "Free 1.5 km light route by Kroft&Smids: fifteen facades carrying quotations, poems, animations and light objects, 45 to 60 min, daily 17:00 to 22:00. Follow the blue lantern light. Route maps here at the Visitor Center; the walk itself starts at Kleine Kerkstraat corner Grote Kerkstraat. Dates for this winter not published yet, last edition ran 16 Dec to 4 Jan"
+      "description": "Free 1.5 km light route: fifteen facades with quotations, poems and light objects, 45 to 60 min, evenings. Follow the blue lantern light. Maps at the Visitor Center, walk starts at Kleine Kerkstraat"
     },
     {
       "name": "Paviljoen 't Mar, Mirnser Klif",
+      "wiki": "https://nl.wikipedia.org/wiki/Mirnser_Klif",
       "link": "https://paviljoentmar.nl/",
       "category": "viewpoint",
       "city": "Mirns",
       "icon": "🪁",
       "color": "#E8792B",
       "coordinates": [52.85155070424091, 5.481104609689592],
-      "description": "Café on the clifftop with a panorama over the IJsselmeer and the Rijsterbos out the back, free parking, and a sandy beach below. The best kitespot on the east shore sits here, water only 10 to 40 cm deep in winter, so expect kiters to watch. Open all year and late Fri to Sun"
+      "description": "Café on the clifftop with a panorama over the IJsselmeer, the Rijsterbos behind and a sandy beach below. The best kitespot on the east shore, water only 10 to 40 cm deep, so expect kiters. Free parking, open all year, late Fri to Sun"
     },
     {
       "name": "Rijsterbos",
+      "wiki": "https://nl.wikipedia.org/wiki/Rijsterbos",
       "link": "https://www.waterlandvanfriesland.nl/nl/blogs/9x-wandelen-in-gaasterland",
       "category": "walk",
       "city": "Rijs",
@@ -285,6 +346,7 @@
     },
     {
       "name": "Oudemirdumer Klif",
+      "wiki": "https://nl.wikipedia.org/wiki/Oudemirdumer_Klif",
       "link": "https://www.waterlandvanfriesland.nl/nl/blogs/9x-wandelen-in-gaasterland",
       "category": "viewpoint",
       "city": "Oudemirdum",
@@ -334,6 +396,11 @@
       "color": "#1E88E5",
       "icon": "⛸️",
       "description": "Skating & Sport"
+    },
+    "event": {
+      "color": "#7E57C2",
+      "icon": "🎪",
+      "description": "Events"
     }
   }
 }
