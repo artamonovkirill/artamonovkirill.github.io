@@ -169,6 +169,16 @@
       "description": "Two hours by bus across the Vliehors, the island's western 20 km² of sandflat, with seals at the point and a stop at the Drenkelingenhuisje, a wreck survivors' refuge now a beachcombers' museum. Winter boarding from the beach at 't Badhuys"
     },
     {
+      "name": "Vuurboetsduin",
+      "link": "https://vlieland.net/nl/bedrijf/vuurtoren",
+      "category": "viewpoint",
+      "city": "Vlieland",
+      "icon": "🔭",
+      "color": "#7CB342",
+      "coordinates": [53.296524427498674, 5.05844493505407],
+      "description": "Long stairway from Vuurboetsplein up the island's highest dune, free and always open. North Sea on one side, Wadden flats on the other, Texel and Terschelling on a clear day. The lighthouse opens weekday afternoons and weekend mornings over the holidays"
+    },
+    {
       "name": "Grutte Pier Brouwerij",
       "link": "https://gruttepier.nl/pages/proeflokaal",
       "category": "drinks",
@@ -259,6 +269,26 @@
       "description": "Smallest of the eleven cities. Shortest walk of the four, 1.7 km from the old town hall, now Museum Sloten: Lemsterpoort, Grutte Tsjerke, the working mill De Kaai, Kievit fountain. Free alley variant, or a €3 booklet."
     },
     {
+      "name": "De Stolp",
+      "link": "https://www.destolpsneek.nl/",
+      "category": "sport",
+      "city": "Sneek",
+      "icon": "🎳",
+      "color": "#1E88E5",
+      "coordinates": [53.03640582544454, 5.635596306035713],
+      "description": "Eight bowling lanes, two 7 m climbing walls with over twenty graded routes, squash and padel courts, a pub and a restaurant under one roof. Opens 9:00 on weekdays, 14:00 Saturday and 13:00 Sunday, but the times vary"
+    },
+    {
+      "name": "Weduwe Joustra",
+      "link": "https://www.weduwejoustra.nl/",
+      "category": "drinks",
+      "city": "Sneek",
+      "icon": "🥃",
+      "color": "#FFC107",
+      "coordinates": [53.03255492976565, 5.6641000190513],
+      "description": "Beerenburg made in the same house since 1864, six generations on one recipe, in a building dated 1484 a few doors along the town walk. Shop open Mon to Sat, shut Sundays and holidays. No distillery tours in Nov or Dec"
+    },
+    {
       "name": "Sneek town walk",
       "wiki": "https://nl.wikipedia.org/wiki/Waterpoort_(Sneek)",
       "link": "https://www.friesscheepvaartmuseum.nl/",
@@ -311,6 +341,26 @@
       "color": "#1E88E5",
       "coordinates": [53.20303449986255, 5.769022225062939],
       "description": "Full 400 m artificial oval open to recreational skaters, the reliable substitute when the natural ice never comes. €10.50 adult, €7.50 up to 17; skates €7.50, helmet €2.50, sizes 25 to 49"
+    },
+    {
+      "name": "Swimfun",
+      "link": "https://swimfun.nl/",
+      "category": "sport",
+      "city": "Joure",
+      "icon": "🌊",
+      "color": "#1E88E5",
+      "coordinates": [53.00216069185151, 5.801474024610631],
+      "description": "Subtropical pool: wave pool every half hour, the Wild River rapids from nearly 5 m up, a 55 m slide and a themed tube slide, plus a toddler and a 25 m lane pool. Wellness has herbal baths and a Turkish steam bath"
+    },
+    {
+      "name": "Zwemcentrum De Welle",
+      "link": "https://www.sportbedrijfdrachten.nl/zwemmen",
+      "category": "sport",
+      "city": "Drachten",
+      "icon": "🏊",
+      "color": "#1E88E5",
+      "coordinates": [53.11352879443593, 6.087688582875939],
+      "description": "The largest pool complex in the north: a 50 m lane pool, a slide, whirlpool and bubble bath, a toddler pool with fountain, and an outdoor pool. More sport than spa"
     },
     {
       "name": "Decemberlicht",
