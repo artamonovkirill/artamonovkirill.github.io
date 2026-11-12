@@ -20,7 +20,7 @@
       "icon": "🪐",
       "color": "#0097A7",
       "coordinates": [53.187448759372884, 5.543727025061716],
-      "description": "UNESCO site, oldest working planetarium (1781), built into a living-room ceiling. Pre-booked time slot required and no Museumkaart. €6.50/€5.00"
+      "description": "UNESCO site, oldest working planetarium (1781), built into a living-room ceiling. Pre-booked time slot required."
     },
     {
       "name": "Molen De Onderneming",
@@ -51,7 +51,7 @@
       "icon": "🪖",
       "color": "#0097A7",
       "coordinates": [53.07356199149626, 5.333904169233197],
-      "description": "Bunkers of the 1940 Kornwerderzand defence line, where Dutch troops held off the German advance. Shut for winterstop from 1 Dec, but group visits still run by appointment. Free with Museumkaart"
+      "description": "Bunkers of the 1940 Kornwerderzand defence line, where Dutch troops held off the German advance. Shut for winterstop from 1 Dec, but group visits still run by appointment."
     },
     {
       "name": "Sluisweg & Steiger Kornwerderzand",
@@ -62,7 +62,7 @@
       "icon": "🥾",
       "color": "#7CB342",
       "coordinates": [53.07329061773994, 5.341682326905505],
-      "description": "Walk out along the sluices to the pier, past the casemates and the free Vismigratierivier viewpoint. The 4 km path on to Zurich is reachable from the Frisian side; crossing the whole dijk is not, as the fietsbus stops 1 Nov to 1 Mar"
+      "description": "Walk out along the sluices to the pier, past the casemates and the free Vismigratierivier viewpoint. The 4 km path on to Zurich is reachable from the Frisian side; crossing the whole dijk is not, as the fietsbus stops 1 Nov to 1 Mar. Come back after dark: Roosegaarde clad these 1932 sluice gates in retro-reflective prisms, so they use no power and light up in your own headlights as you drive past"
     },
     {
       "name": "Willemshaven & pier",
@@ -94,6 +94,26 @@
       "color": "#E8792B",
       "coordinates": [53.062497106564365, 5.5226927328361795],
       "description": "Longest of the four, 4.1 km, from the 1615 town hall that is now the VVV and Museum De Tiid. Past the burnt-out Broerekerk under its glass roof and the Vleermuis fountain. Free parking at Plein 1455, €3 route"
+    },
+    {
+      "name": "Nieuwjaarsconcert, Martinikerk",
+      "link": "https://www.christelijkeconcertagenda.nl/concertdetails/46068/Nieuwjaarsconcert%20door%20Jos%20Moeke%20op%20het%20prachtige%20Hinsz-orgel%20van%20Martinikerk",
+      "category": "event",
+      "city": "Bolsward",
+      "icon": "🎹",
+      "color": "#7E57C2",
+      "coordinates": [53.064667121216, 5.5270149780901585],
+      "description": "Jos Moeke plays Reger, Ireland, Leclerc and Grison on the Hinsz organ, 1 Jan 15:00-16:10. €10.00 for adults, children free. The one thing on in the week on the day the pools and museums all shut"
+    },
+    {
+      "name": "Museum De Tiid",
+      "link": "https://www.detiid.nl/museum",
+      "category": "museum",
+      "city": "Bolsward",
+      "icon": "🕰️",
+      "color": "#0097A7",
+      "coordinates": [53.06198524229551, 5.522941753887695],
+      "description": "Inside the 1615 town hall where the town walk starts: southwest Fryslân told through Titus Brandsma, Gysbert Japicx and Grutte Pier. Open seven days, Mon to Sat 10:00-17:00 and Sun 12:00-17:00. €9.00 adult, €5.00 for 6-17. The tower loft is the highlight and is reserved separately"
     },
     {
       "name": "Us Heit, De Friese Bierbrouwerij",
@@ -189,6 +209,16 @@
       "description": "Taste among the kettles and barrels, or outside by the water at a wood fire. Proefzwaard of four glasses €13.75, tour with tasting from €12.50. Walk-ins welcome. Games inside, go-karts and swings in the yard. Sat and Sun 14:00-20:00 only"
     },
     {
+      "name": "Observeum",
+      "link": "https://www.observeum.nl/sterrenkijken/",
+      "category": "museum",
+      "city": "Burgum",
+      "icon": "🌌",
+      "color": "#0097A7",
+      "coordinates": [53.204144096535614, 6.000320796226847],
+      "description": "Public observatory: Friday and Saturday 19:00-22:00 from October to March. Clear sky and the domes open; clouded over and they move to the 4 m digital planetarium."
+    },
+    {
       "name": "Jopie Huisman Museum",
       "wiki": "https://en.wikipedia.org/wiki/Jopie_Huisman",
       "link": "https://www.jopiehuismanmuseum.com/",
@@ -197,7 +227,7 @@
       "icon": "🎨",
       "color": "#0097A7",
       "coordinates": [52.979926327702465, 5.443744325044605],
-      "description": "Rag-and-bone man who painted what passed through his hands: worn boots, patched trousers, scrap, the people of Workum. He refused to sell most of it, so the collection stayed here. Free with Museumkaart"
+      "description": "Rag-and-bone man who painted what passed through his hands: worn boots, patched trousers, scrap, the people of Workum. He refused to sell most of it, so the collection stayed here."
     },
     {
       "name": "Uitkijkpunt Hokje Bakker",
@@ -228,6 +258,17 @@
       "color": "#E8792B",
       "coordinates": [52.94375917921936, 5.402712910333642],
       "description": "Second smallest of the eleven cities and a protected townscape, so the centre is the sight. 2.5 km signposted from the hand-worked 17th-century lock and its drawbridge. Free parking outside the centre, €3 route at the museum"
+    },
+    {
+      "name": "UNESCO Ir. D.F. Woudagemaal",
+      "wiki": "https://en.wikipedia.org/wiki/Wouda_pumping_station",
+      "link": "https://www.woudagemaal.nl/kerstvakantie-bij-het-woudagemaal",
+      "category": "museum",
+      "city": "Lemmer",
+      "icon": "♨️",
+      "color": "#0097A7",
+      "coordinates": [52.84655714603249, 5.679761611542466],
+      "description": "The largest steam pumping station ever built, and still working. Winter is Thu to Sat 10:00-17:00 and Sun 13:00-17:00, with Tue and Wed added in the Christmas holiday. Shut 25 and 31 Dec and 1 Jan. Mad Science workshop for ages 6-12 is included in the ticket, booked by email"
     },
     {
       "name": "Nieuwjaarsduik Lemmer",
@@ -318,7 +359,7 @@
       "icon": "🥾",
       "color": "#C0CA33",
       "coordinates": [52.70769778250264, 5.296286240367246],
-      "description": "90 min through the open-air Zuiderzee village lit up in the dark, the only way to see it in winter. Ends 3 Jan, shut 31 Dec and 1 Jan. Online ticket needed even with Museumkaart, and dates sell out. Free parking at Enkhuizerzand"
+      "description": "90 min through the open-air Zuiderzee village lit up in the dark, the only way to see it in winter. Ends 3 Jan, shut 31 Dec and 1 Jan. Free parking at Enkhuizerzand"
     },
     {
       "name": "Fries Museum",
@@ -329,7 +370,7 @@
       "icon": "👑",
       "color": "#0097A7",
       "coordinates": [53.19968973678457, 5.7944533943732095],
-      "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom, runs to 7 Feb 2027 with the Odin of Lejre on loan, plus a new permanent room on Leeuwarden native Mata Hari. €17.50, free with Museumkaart"
+      "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom, runs to 7 Feb 2027 with the Odin of Lejre on loan, plus a new permanent room on Leeuwarden native Mata Hari."
     },
     {
       "name": "Elfstedenhal",
@@ -341,6 +382,17 @@
       "color": "#1E88E5",
       "coordinates": [53.20303449986255, 5.769022225062939],
       "description": "Full 400 m artificial oval open to recreational skaters, the reliable substitute when the natural ice never comes. €10.50 adult, €7.50 up to 17; skates €7.50, helmet €2.50, sizes 25 to 49"
+    },
+    {
+      "name": "Thialf",
+      "wiki": "https://en.wikipedia.org/wiki/Thialf",
+      "link": "https://mijn.thialf.nl/activiteiten/recreatief-schaatsen",
+      "category": "sport",
+      "city": "Heerenveen",
+      "icon": "⛸️",
+      "color": "#1E88E5",
+      "coordinates": [52.95492650173736, 5.940278943444063],
+      "description": "The Olympic oval itself, open to recreational skaters on published sessions. €15.00 for 16+ and €9.50 up to 15 per dagdeel, skates from €5.00, helmet €4.00. Book the slot ahead: the track shuts to the public during national championships, which often fall around the turn of the year"
     },
     {
       "name": "Swimfun",
