@@ -25,12 +25,24 @@
     {
       "name": "Molen De Onderneming",
       "wiki": "https://nl.wikipedia.org/wiki/De_Onderneming_(Witmarsum)",
+      "link": "https://mevrouwdemolenaar.nl/",
       "category": "landmark",
       "city": "Witmarsum",
       "icon": "🌬️",
       "color": "#E2725B",
       "coordinates": [53.099262010827104, 5.468882999924704],
-      "description": "Thatched octagonal stellingmolen from 1850, Rijksmonument, volunteer-run grain and barley mill. Worth the walk out from the village even if it is shut"
+      "description": "Thatched octagonal stellingmolen from 1850, Rijksmonument, volunteer-run grain and barley mill. Open to the public Sat 09:00-12:00, or by appointment. The bakery under the sails sells its ancient-grain Mennobôle Fri 15:30-18:00 and Sat 10:00-13:00"
+    },
+    {
+      "name": "Menno Simons monument",
+      "wiki": "https://en.wikipedia.org/wiki/Menno_Simons",
+      "link": "https://doopsgezindemonumenten.nl/stg-menno-simons-sdmf/",
+      "category": "landmark",
+      "city": "Witmarsum",
+      "icon": "⛪",
+      "color": "#E2725B",
+      "coordinates": [53.09911427029039, 5.4817569459165965],
+      "description": "The priest who gave the Mennonites their name was born here. The 1879 monument stands where the hidden church stood, its footprint marked on the ground. Free, always open, walkable from the village"
     },
     {
       "name": "Nice Flavour",
@@ -310,6 +322,17 @@
       "description": "Smallest of the eleven cities. Shortest walk of the four, 1.7 km from the old town hall, now Museum Sloten: Lemsterpoort, Grutte Tsjerke, the working mill De Kaai, Kievit fountain. Free alley variant, or a €3 booklet."
     },
     {
+      "name": "Houtzaagmolen De Rat",
+      "wiki": "https://en.wikipedia.org/wiki/De_Rat,_IJlst",
+      "link": "https://houtzaagmolenderat.nl/welkom/",
+      "category": "landmark",
+      "city": "IJlst",
+      "icon": "🪚",
+      "color": "#E2725B",
+      "coordinates": [53.01287870475773, 5.626927711615933],
+      "description": "A wind-powered sawmill still cutting logs into planks, with visitors on the saw floor and out on the stelling. €2.00 adults, €1.00 up to 15. Nov to Apr it opens Sat 09:00-17:00 only and shuts on public holidays. Sawing depends on wind and volunteers, so ring the miller first on 06 216 175 40"
+    },
+    {
       "name": "De Stolp",
       "link": "https://www.destolpsneek.nl/",
       "category": "sport",
@@ -373,6 +396,16 @@
       "description": "The history of Frisia itself. REDBAD, on the medieval Frisian kingdom, runs to 7 Feb 2027 with the Odin of Lejre on loan, plus a new permanent room on Leeuwarden native Mata Hari."
     },
     {
+      "name": "Blokhuispoort",
+      "link": "https://www.blokhuispoort.nl/agenda/",
+      "category": "museum",
+      "city": "Leeuwarden",
+      "icon": "🔑",
+      "color": "#0097A7",
+      "coordinates": [53.199910366044236, 5.800240132504012],
+      "description": "A 1593 prison that held people until 2007. The H-wing cell block is free, seven days a week: mug shots, small exhibitions, the open-air exercise cages, and craft shops trading out of the cells. A former warder runs 2 h tours of the A-wing, the bunker and the isolation cellars, Sat 14:00 and 16:00 and Sun 11:00, twelve people maximum, booked ahead"
+    },
+    {
       "name": "Elfstedenhal",
       "wiki": "https://nl.wikipedia.org/wiki/Elfstedenhal",
       "link": "https://elfstedenhal.frl/tickets-tarieven/",
@@ -403,6 +436,16 @@
       "color": "#1E88E5",
       "coordinates": [53.00216069185151, 5.801474024610631],
       "description": "Subtropical pool: wave pool every half hour, the Wild River rapids from nearly 5 m up, a 55 m slide and a themed tube slide, plus a toddler and a 25 m lane pool. Wellness has herbal baths and a Turkish steam bath"
+    },
+    {
+      "name": "Bosbergtoren",
+      "link": "https://appelscha.nl/bosbergtoren-in-appelscha/",
+      "category": "viewpoint",
+      "city": "Appelscha",
+      "icon": "🗼",
+      "color": "#7CB342",
+      "coordinates": [52.959215371652284, 6.346619255675518],
+      "description": "A 33 m tower shaped like a pine trunk, on the 27 m drift dune that is the highest point of the Frisian mainland. The top three platforms have glass floors and face Friesland, Groningen and Drenthe. €2.50, free under 4, lift as well as stairs. Winter hours are given as both 10:00-17:00 and 10:00-18:00"
     },
     {
       "name": "Zwemcentrum De Welle",
